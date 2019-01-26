@@ -1,1 +1,6 @@
+# All log files
 *.log
+
+# InifinityBladeEffects and KiteDemo add-on packs
+GameProject/Content/InfinityBladeEffects
+GameProject/Content/KiteDemo
