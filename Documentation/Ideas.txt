@@ -36,17 +36,3 @@ Ideas:
 	players with skill points/XP (e.g. kill X enemies 
 	in certain area OR 25 melee kills)
 - [LOW] Cheat mode
-
-
-
-
-
-
-
-
-
-
-
-
-  
- 
