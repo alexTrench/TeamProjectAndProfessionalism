@@ -1,0 +1,29 @@
+Task Allocation:
+----------------
+
+Everyone:
+    - Game design (incl. document)
+    - Sound design
+
+Carl:
+    - AI
+    - Character controllers/character switching
+    - Animations
+
+Andrew:
+    - Project management
+    - Pickups
+    - Environment/level design
+
+Alex Pascal:
+    - Weapons + inventory
+    - User interface (HUD)
+
+Alex Trench:
+    - Menus + loading/saving
+    - Traps (maybe doors)
+    - Multiplayer
+
+Haoming:
+    - Skill trees/XP levelling
+    - Testing (incl. test plan)

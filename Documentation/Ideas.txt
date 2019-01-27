@@ -1,0 +1,52 @@
+Ideas:
+------
+
+- Unreal Engine
+- Multiple areas inside of world 
+- Different areas unlocked depending on wave number OR 
+  XP points
+- Environments depend on assets available (desert, grass, etc)
+- Genre: Top-down shooter
+- Single player
+- Loading and saving functionality
+
+- 4/5 playable characters
+- Ability to cycle through characters during game
+- Each character has own traits/unique abilities
+- Each character has own skill tree/XP system
+- Character 1 - Melee (Beserker)
+- Character 2 - Heavy machine gunner
+- Character 3 - General assault rifle
+- Character 4 - SMG/pyro
+- Character 5 - Scout/sniper
+- Regenerating health for characters
+
+- Wave based survival
+- Endless waves (can't complete)
+- Restart from wave 1 OR resume from wave X 
+- Zombie enemies
+- Special zombie on random wave (e.g. every 10 waves)
+- Unlimited ammo
+- Power-ups (including traps/turrets)
+
+- [LOW] When character dies they become an enemy (zombie)
+- [LOW] Player harming traps
+- [LOW] Multiple zombie enemy types
+- [LOW] Mini challenges generated every wave which rewards 
+	players with skill points/XP (e.g. kill X enemies 
+	in certain area OR 25 melee kills)
+- [LOW] Cheat mode
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ 
