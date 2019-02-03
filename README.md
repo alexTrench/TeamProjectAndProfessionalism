@@ -1,4 +1,10 @@
 # TeamProjectAndProfessionalism
 Repository containing assignment work for the module KV6002 Team Project and Professionalism.
 
-Use Unreal version 4.20.3 for compatibility
+Style guide:
+
+  - Use Unreal Engine version 4.20.3 for compatibility
+  - Keep file structure neat and organised
+  - Give GitHub commits appropriate and detailed information
+  - Enclose any blueprint work in Unreal Engine with coloured comment bubble
+  - Any work specific to you in Unreal Engine, give the folder your colour. E.g "AI" is coloured blue
