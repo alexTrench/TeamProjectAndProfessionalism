@@ -13,7 +13,7 @@ Carl (Characters + AI):
     - Friendly AI characters must follow player around environment
     - Friendly AI characters must attack and deal damage to enemies
     - Player should have the ability to switch control to friendly characters
-    - Could have multiple enmy types
+    - Could have multiple enemy types
 
 Andrew (Gameplay programming):
     - Must have interaction and control for the player (mouse, keyboard and control)
