@@ -26,6 +26,7 @@ public class SimpleCharacterMotor : MonoBehaviour
     float speed;
     Quaternion targetRotation, targetPivotRotation;
 
+    public GameObject m_parent;
 
     void Awake()
     {
@@ -45,11 +46,12 @@ public class SimpleCharacterMotor : MonoBehaviour
     {
         var x = Input.GetAxis("Mouse Y");
         var y = Input.GetAxis("Mouse X");
-
+        
         x *= invertY ? -1 : 1;
+
         targetRotation = transform.localRotation * Quaternion.AngleAxis(y * lookSpeed * Time.deltaTime, Vector3.up);
         targetPivotRotation = cameraPivot.localRotation * Quaternion.AngleAxis(x * lookSpeed * Time.deltaTime, Vector3.right);
-
+        
         transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, Time.deltaTime * 15);
         cameraPivot.localRotation = Quaternion.Slerp(cameraPivot.localRotation, targetPivotRotation, Time.deltaTime * 15);
     }
@@ -61,7 +63,7 @@ public class SimpleCharacterMotor : MonoBehaviour
             var x = Input.GetAxis("Horizontal");
             var z = Input.GetAxis("Vertical");
             var run = Input.GetKey(KeyCode.LeftShift);
-
+            
             var translation = new Vector3(x, 0, z);
             speed = run ? runSpeed : walkSpeed;
             movement = transform.TransformDirection(translation * speed);

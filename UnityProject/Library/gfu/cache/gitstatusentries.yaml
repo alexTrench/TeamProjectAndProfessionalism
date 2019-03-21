@@ -1,0 +1,1236 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1dd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 5
+  lastUpdatedAtString: 2019-03-21T05:08:54.273+00:00
+  initializedAtString: 2019-03-21T05:08:43.429+00:00
+  entries:
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations.meta
+    projectPath: Assets\Characters\Assault\Animations.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultAnimatorController.controller
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultAnimatorController.controller
+    projectPath: Assets\Characters\Assault\Animations\AssaultAnimatorController.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultAnimatorController.controller.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultAnimatorController.controller.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultAnimatorController.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultDead.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultDead.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultDead.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultDead.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultDead.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultDead.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrow.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrow.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultGrenadeThrow.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrow.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrow.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultGrenadeThrow.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrowAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrowAvatarMask.mask
+    projectPath: Assets\Characters\Assault\Animations\AssaultGrenadeThrowAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrowAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultGrenadeThrowAvatarMask.mask.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultGrenadeThrowAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultIdle.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultIdle.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultIdle.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultIdle.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultIdle.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultIdle.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultReload.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultReload.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultReload.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultReload.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultReload.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultReload.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultReloadAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultReloadAvatarMask.mask
+    projectPath: Assets\Characters\Assault\Animations\AssaultReloadAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultReloadAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultReloadAvatarMask.mask.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultReloadAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunBackwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunBackwards.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunBackwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunBackwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunBackwards.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunBackwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunForwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunForwards.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunForwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunForwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunForwards.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunForwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunLeft.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunLeft.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunLeft.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunLeft.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunLeft.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunLeft.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunRight.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunRight.fbx
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunRight.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\Animations\AssaultRunRight.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\Animations\AssaultRunRight.fbx.meta
+    projectPath: Assets\Characters\Assault\Animations\AssaultRunRight.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab
+    projectPath: Assets\Characters\Assault\AssaultCharacter.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab.meta
+    projectPath: Assets\Characters\Assault\AssaultCharacter.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\AssaultRig.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\AssaultRig.fbx
+    projectPath: Assets\Characters\Assault\AssaultRig.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\AssaultRig.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\AssaultRig.fbx.meta
+    projectPath: Assets\Characters\Assault\AssaultRig.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\swat.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\swat.fbx
+    projectPath: Assets\Characters\Assault\swat.fbx
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Assault\swat.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\swat.fbx.meta
+    projectPath: Assets\Characters\Assault\swat.fbx.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations.meta
+    projectPath: Assets\Characters\Demolition\Animations.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionAnimatorController.controller
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionAnimatorController.controller
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionAnimatorController.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionAnimatorController.controller.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionAnimatorController.controller.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionAnimatorController.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionDead.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionDead.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionDead.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionDead.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionDead.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionDead.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrow.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrow.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionGrenadeThrow.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrow.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrow.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionGrenadeThrow.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrowAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrowAvatarMask.mask
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionGrenadeThrowAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrowAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionGrenadeThrowAvatarMask.mask.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionGrenadeThrowAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionIdle.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionIdle.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionIdle.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionIdle.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionIdle.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionIdle.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionReload.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionReload.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionReload.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionReload.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionReload.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionReload.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionReloadAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionReloadAvatarMask.mask
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionReloadAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionReloadAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionReloadAvatarMask.mask.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionReloadAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunBackwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunBackwards.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunBackwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunBackwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunBackwards.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunBackwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunForwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunForwards.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunForwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunForwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunForwards.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunForwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunLeft.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunLeft.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunLeft.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunLeft.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunLeft.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunLeft.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunRight.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunRight.fbx
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunRight.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunRight.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Animations\DemolitionRunRight.fbx.meta
+    projectPath: Assets\Characters\Demolition\Animations\DemolitionRunRight.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Barnes.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Barnes.fbx
+    projectPath: Assets\Characters\Demolition\Barnes.fbx
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\Barnes.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\Barnes.fbx.meta
+    projectPath: Assets\Characters\Demolition\Barnes.fbx.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab
+    projectPath: Assets\Characters\Demolition\DemolitionCharacter.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab.meta
+    projectPath: Assets\Characters\Demolition\DemolitionCharacter.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\DemolitionRig.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\DemolitionRig.fbx
+    projectPath: Assets\Characters\Demolition\DemolitionRig.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Demolition\DemolitionRig.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\DemolitionRig.fbx.meta
+    projectPath: Assets\Characters\Demolition\DemolitionRig.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations.meta
+    projectPath: Assets\Characters\Heavy\Animations.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyAnimatorController.controller
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyAnimatorController.controller
+    projectPath: Assets\Characters\Heavy\Animations\HeavyAnimatorController.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyAnimatorController.controller.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyAnimatorController.controller.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyAnimatorController.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyDead.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyDead.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyDead.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyDead.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyDead.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyDead.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrow.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrow.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyGrenadeThrow.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrow.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrow.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyGrenadeThrow.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrowAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrowAvatarMask.mask
+    projectPath: Assets\Characters\Heavy\Animations\HeavyGrenadeThrowAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrowAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyGrenadeThrowAvatarMask.mask.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyGrenadeThrowAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyIdle.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyIdle.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyIdle.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyIdle.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyIdle.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyIdle.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyReload.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyReload.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyReload.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyReload.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyReload.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyReload.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyReloadAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyReloadAvatarMask.mask
+    projectPath: Assets\Characters\Heavy\Animations\HeavyReloadAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyReloadAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyReloadAvatarMask.mask.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyReloadAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunBackwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunBackwards.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunBackwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunBackwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunBackwards.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunBackwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunForwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunForwards.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunForwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunForwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunForwards.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunForwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunLeft.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunLeft.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunLeft.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunLeft.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunLeft.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunLeft.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunRight.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunRight.fbx
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunRight.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Animations\HeavyRunRight.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Animations\HeavyRunRight.fbx.meta
+    projectPath: Assets\Characters\Heavy\Animations\HeavyRunRight.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab
+    projectPath: Assets\Characters\Heavy\HeavyCharacter.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab.meta
+    projectPath: Assets\Characters\Heavy\HeavyCharacter.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\HeavyRig.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\HeavyRig.fbx
+    projectPath: Assets\Characters\Heavy\HeavyRig.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\HeavyRig.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\HeavyRig.fbx.meta
+    projectPath: Assets\Characters\Heavy\HeavyRig.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Soldado_Brian.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Soldado_Brian.fbx
+    projectPath: Assets\Characters\Heavy\Soldado_Brian.fbx
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Heavy\Soldado_Brian.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\Soldado_Brian.fbx.meta
+    projectPath: Assets\Characters\Heavy\Soldado_Brian.fbx.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations.meta
+    projectPath: Assets\Characters\Light\Animations.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightAnimatorController.controller
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightAnimatorController.controller
+    projectPath: Assets\Characters\Light\Animations\LightAnimatorController.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightAnimatorController.controller.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightAnimatorController.controller.meta
+    projectPath: Assets\Characters\Light\Animations\LightAnimatorController.controller.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightDead.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightDead.fbx
+    projectPath: Assets\Characters\Light\Animations\LightDead.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightDead.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightDead.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightDead.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrow.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrow.fbx
+    projectPath: Assets\Characters\Light\Animations\LightGrenadeThrow.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrow.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrow.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightGrenadeThrow.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrowAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrowAvatarMask.mask
+    projectPath: Assets\Characters\Light\Animations\LightGrenadeThrowAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrowAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightGrenadeThrowAvatarMask.mask.meta
+    projectPath: Assets\Characters\Light\Animations\LightGrenadeThrowAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightIdle.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightIdle.fbx
+    projectPath: Assets\Characters\Light\Animations\LightIdle.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightIdle.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightIdle.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightIdle.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightReload.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightReload.fbx
+    projectPath: Assets\Characters\Light\Animations\LightReload.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightReload.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightReload.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightReload.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightReloadAvatarMask.mask
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightReloadAvatarMask.mask
+    projectPath: Assets\Characters\Light\Animations\LightReloadAvatarMask.mask
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightReloadAvatarMask.mask.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightReloadAvatarMask.mask.meta
+    projectPath: Assets\Characters\Light\Animations\LightReloadAvatarMask.mask.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunBackwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunBackwards.fbx
+    projectPath: Assets\Characters\Light\Animations\LightRunBackwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunBackwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunBackwards.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightRunBackwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunForwards.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunForwards.fbx
+    projectPath: Assets\Characters\Light\Animations\LightRunForwards.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunForwards.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunForwards.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightRunForwards.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunLeft.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunLeft.fbx
+    projectPath: Assets\Characters\Light\Animations\LightRunLeft.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunLeft.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunLeft.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightRunLeft.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunRight.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunRight.fbx
+    projectPath: Assets\Characters\Light\Animations\LightRunRight.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Animations\LightRunRight.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Animations\LightRunRight.fbx.meta
+    projectPath: Assets\Characters\Light\Animations\LightRunRight.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\eve_j_gonzales.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\eve_j_gonzales.fbx
+    projectPath: Assets\Characters\Light\eve_j_gonzales.fbx
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\eve_j_gonzales.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\eve_j_gonzales.fbx.meta
+    projectPath: Assets\Characters\Light\eve_j_gonzales.fbx.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\LightCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\LightCharacter.prefab
+    projectPath: Assets\Characters\Light\LightCharacter.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\LightCharacter.prefab.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\LightCharacter.prefab.meta
+    projectPath: Assets\Characters\Light\LightCharacter.prefab.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\LightRig.fbx
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\LightRig.fbx
+    projectPath: Assets\Characters\Light\LightRig.fbx
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\LightRig.fbx.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\LightRig.fbx.meta
+    projectPath: Assets\Characters\Light\LightRig.fbx.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials.meta
+    projectPath: Assets\Characters\Light\Materials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Bodymat.mat
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Bodymat.mat
+    projectPath: Assets\Characters\Light\Materials\Bodymat.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Bodymat.mat.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Bodymat.mat.meta
+    projectPath: Assets\Characters\Light\Materials\Bodymat.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Bottommat.mat
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Bottommat.mat
+    projectPath: Assets\Characters\Light\Materials\Bottommat.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Bottommat.mat.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Bottommat.mat.meta
+    projectPath: Assets\Characters\Light\Materials\Bottommat.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Hairmat.mat
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Hairmat.mat
+    projectPath: Assets\Characters\Light\Materials\Hairmat.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Hairmat.mat.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Hairmat.mat.meta
+    projectPath: Assets\Characters\Light\Materials\Hairmat.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Shoesmat.mat
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Shoesmat.mat
+    projectPath: Assets\Characters\Light\Materials\Shoesmat.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Shoesmat.mat.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Shoesmat.mat.meta
+    projectPath: Assets\Characters\Light\Materials\Shoesmat.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Topmat.mat
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Topmat.mat
+    projectPath: Assets\Characters\Light\Materials\Topmat.mat
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Materials\Topmat.mat.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Materials\Topmat.mat.meta
+    projectPath: Assets\Characters\Light\Materials\Topmat.mat.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures.meta
+    projectPath: Assets\Characters\Light\Textures.meta
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Diffuse.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Diffuse.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Diffuse.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Diffuse.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Diffuse.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Diffuse.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Gloss.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Gloss.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Gloss.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Gloss.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Gloss.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Gloss.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Normal.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Normal.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Normal.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Normal.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Normal.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Normal.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Opacity.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Opacity.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Opacity.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Opacity.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Opacity.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Opacity.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Specular.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Specular.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Specular.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Body_Specular.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Body_Specular.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Body_Specular.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Diffuse.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Diffuse.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Diffuse.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Diffuse.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Diffuse.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Diffuse.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Gloss.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Gloss.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Gloss.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Gloss.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Gloss.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Gloss.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Normal.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Normal.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Normal.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Normal.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Normal.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Normal.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Opacity.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Opacity.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Opacity.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Opacity.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Opacity.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Opacity.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Specular.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Specular.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Specular.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Specular.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Bottom_Specular.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Bottom_Specular.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Diffuse.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Diffuse.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Diffuse.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Diffuse.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Diffuse.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Diffuse.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Gloss.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Gloss.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Gloss.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Gloss.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Gloss.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Gloss.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Normal.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Normal.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Normal.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Normal.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Normal.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Normal.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Opacity.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Opacity.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Opacity.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Opacity.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Opacity.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Opacity.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Specular.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Specular.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Specular.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Specular.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Hair_Specular.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Hair_Specular.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Diffuse.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Diffuse.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Diffuse.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Diffuse.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Diffuse.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Diffuse.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Gloss.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Gloss.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Gloss.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Gloss.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Gloss.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Gloss.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Normal.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Normal.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Normal.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Normal.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Normal.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Normal.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Opacity.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Opacity.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Opacity.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Opacity.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Opacity.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Opacity.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Specular.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Specular.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Specular.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Specular.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Shoes_Specular.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Shoes_Specular.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Diffuse.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Diffuse.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Diffuse.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Diffuse.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Diffuse.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Diffuse.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Gloss.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Gloss.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Gloss.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Gloss.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Gloss.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Gloss.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Normal.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Normal.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Normal.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Normal.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Normal.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Normal.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Opacity.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Opacity.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Opacity.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Opacity.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Opacity.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Opacity.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Specular.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Specular.png
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Specular.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\Remy_Top_Specular.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\Remy_Top_Specular.png.meta
+    projectPath: Assets\Characters\Light\Textures\Remy_Top_Specular.png.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\SpacePirate_diffuse.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\SpacePirate_diffuse.png
+    projectPath: Assets\Characters\Light\Textures\SpacePirate_diffuse.png
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\SpacePirate_diffuse.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\SpacePirate_diffuse.png.meta
+    projectPath: Assets\Characters\Light\Textures\SpacePirate_diffuse.png.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\SpacePirate_normal.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\SpacePirate_normal.png
+    projectPath: Assets\Characters\Light\Textures\SpacePirate_normal.png
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\SpacePirate_normal.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\SpacePirate_normal.png.meta
+    projectPath: Assets\Characters\Light\Textures\SpacePirate_normal.png.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\SpacePirate_specular.png
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\SpacePirate_specular.png
+    projectPath: Assets\Characters\Light\Textures\SpacePirate_specular.png
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Characters\Light\Textures\SpacePirate_specular.png.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\Textures\SpacePirate_specular.png.meta
+    projectPath: Assets\Characters\Light\Textures\SpacePirate_specular.png.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Scenes\SampleScene.unity
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\SampleScene.unity
+    projectPath: Assets\Scenes\SampleScene.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts.meta
+    projectPath: Assets\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\BaseCharacter.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\BaseCharacter.cs
+    projectPath: Assets\Scripts\BaseCharacter.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\BaseCharacter.cs.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\BaseCharacter.cs.meta
+    projectPath: Assets\Scripts\BaseCharacter.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\BasePlayer.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\BasePlayer.cs
+    projectPath: Assets\Scripts\BasePlayer.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\BasePlayer.cs.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\BasePlayer.cs.meta
+    projectPath: Assets\Scripts\BasePlayer.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\CameraControllerScript.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\CameraControllerScript.cs
+    projectPath: Assets\Scripts\CameraControllerScript.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\CameraControllerScript.cs.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\CameraControllerScript.cs.meta
+    projectPath: Assets\Scripts\CameraControllerScript.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\PlayerAnimationScript.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\PlayerAnimationScript.cs
+    projectPath: Assets\Scripts\PlayerAnimationScript.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\PlayerAnimationScript.cs.meta
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\PlayerAnimationScript.cs.meta
+    projectPath: Assets\Scripts\PlayerAnimationScript.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Shared\Prefabs\Player.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Shared\Prefabs\Player.prefab
+    projectPath: Assets\Shared\Prefabs\Player.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Shared\Scripts\SimpleCharacterMotor.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Shared\Scripts\SimpleCharacterMotor.cs
+    projectPath: Assets\Shared\Scripts\SimpleCharacterMotor.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Logs\Packages-Update.log
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Logs\Packages-Update.log
+    projectPath: Logs\Packages-Update.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Packages\manifest.json
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Packages\manifest.json
+    projectPath: Packages\manifest.json
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\ProjectSettings\ProjectSettings.asset
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\ProjectSettings.asset
+    projectPath: ProjectSettings\ProjectSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\ProjectSettings\ProjectVersion.txt
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\ProjectVersion.txt
+    projectPath: ProjectSettings\ProjectVersion.txt
+    originalPath: 
+    status: 3
+    staged: 0
