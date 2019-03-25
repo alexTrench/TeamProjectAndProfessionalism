@@ -7,6 +7,14 @@
 [Tt]emp/
 [Uu]nityGenerated/
 
+UnityProject/[Aa]ssets/AssetStoreTools*
+UnityProject/[Bb]uild/
+UnityProject/[Ll]ibrary/
+UnityProject/[Ll]ocal[Cc]ache/
+UnityProject/[Oo]bj/
+UnityProject/[Tt]emp/
+UnityProject/[Uu]nityGenerated/
+
 # File on crash reports
 sysinfo.txt
 
