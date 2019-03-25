@@ -2,10 +2,10 @@
 using UnityEngine;
 
 /**
- * @brief Static helper class to determine 
- *        which inputs are in use.
- * @author Andrew Alford
- * @date 25/03/2019
+ * @brief   Static helper class to determine 
+ *          which inputs are in use.
+ * @author  Andrew Alford
+ * @date    25/03/2019
  * @version 1.0 - 25/03/2019
  */
 public static class InputManager {
