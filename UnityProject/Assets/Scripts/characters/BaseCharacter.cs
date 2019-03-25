@@ -1,9 +1,13 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BaseCharacter : MonoBehaviour
+public class BaseCharacter : MonoBehaviour, IDamagable
 {
+    [SerializeField]
+    public int m_health = 100;
+    public int m_maxHealth = 100;
+
+    protected bool m_isDead = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,20 @@ public class BaseCharacter : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (!m_isDead)
+        {
+            m_health -= damage;
+            if (m_health <= 0)
+                m_isDead = true;
+        }
+    }
+
+    public bool IsDead()
+    {
+        return m_isDead;
     }
 }
