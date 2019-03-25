@@ -14,6 +14,10 @@ UnityProject/[Ll]ocal[Cc]ache/
 UnityProject/[Oo]bj/
 UnityProject/[Tt]emp/
 UnityProject/[Uu]nityGenerated/
+UnityProject/.vs/
+UnityProject/*.csproj
+UnityProject/*.sln
+UnityProject/obj/
 
 # File on crash reports
 sysinfo.txt
