@@ -50,8 +50,9 @@ public class CharacterManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N))
+        if (InputManager.NextCharacter()) {
             SwitchCharacter();
+        }
     }
 
     void SwitchCharacter()

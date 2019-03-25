@@ -13,60 +13,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-25T23:08:22.429+00:00
-  initializedAtString: 2019-03-25T22:58:01.853+00:00
+  lastUpdatedAtString: 2019-03-25T23:15:34.692+00:00
+  initializedAtString: 2019-03-25T23:09:31.497+00:00
   entries:
-  - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scenes\SampleScene.unity
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\SampleScene.unity
-    projectPath: Assets\Scenes\SampleScene.unity
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
     projectPath: Assets\Scripts\Player\CharacterManagerScript.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\utility\Follow.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Follow.cs
-    projectPath: Assets\Scripts\utility\Follow.cs
+  - path: UnityProject\Assets\Scripts\utility\InputManager.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\InputManager.cs
+    projectPath: Assets\Scripts\utility\InputManager.cs
     originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\Scripts\utility\Follow.cs.meta
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Follow.cs.meta
-    projectPath: Assets\Scripts\utility\Follow.cs.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\Scripts\utility\FollowTarget.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\FollowTarget.cs
-    projectPath: Assets\Scripts\utility\FollowTarget.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\utility\FollowTarget.cs.meta
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\FollowTarget.cs.meta
-    projectPath: Assets\Scripts\utility\FollowTarget.cs.meta
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\CurrentLayout.dwlt
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
@@ -94,12 +58,6 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -121,30 +79,6 @@ MonoBehaviour:
   - path: UnityProject\Library\StateCache\Hierarchy\93f5a8-mainStage.json
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\StateCache\Hierarchy\93f5a8-mainStage.json
     projectPath: Library\StateCache\Hierarchy\93f5a8-mainStage.json
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\UnityProject.sln
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\UnityProject.sln
-    projectPath: UnityProject.sln
     originalPath: 
     status: 3
     staged: 0
