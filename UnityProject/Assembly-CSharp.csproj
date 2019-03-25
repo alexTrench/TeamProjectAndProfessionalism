@@ -68,7 +68,7 @@
      <Compile Include="Assets\Scripts\Shared\Scripts\ProximityActivate.cs" />
      <Compile Include="Assets\Scripts\Shared\Scripts\SimpleCameraController.cs" />
      <Compile Include="Assets\Scripts\Shared\Scripts\SimpleCharacterMotor.cs" />
-     <Compile Include="Assets\Scripts\utility\Follow.cs" />
+     <Compile Include="Assets\Scripts\utility\FollowTarget.cs" />
      <Compile Include="Assets\Scripts\utility\InputManager.cs" />
      <Compile Include="Assets\Scripts\Zombies\RandomAttackScript.cs" />
      <Compile Include="Assets\Scripts\Zombies\Zombie.cs" />
