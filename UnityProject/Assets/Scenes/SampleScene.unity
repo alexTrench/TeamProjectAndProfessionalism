@@ -482,10 +482,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1030169799}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9c11c5b604591f488ecc7e15c51e86c, type: 3}
+  m_Script: {fileID: 11500000, guid: a76eab9b89392ee4db11158ebe69439f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_activePlayer: {fileID: 2083989239}
+  target: {fileID: 2083989243}
+  offset: {x: 0, y: 7, z: -2.5}
 --- !u!81 &1030169801
 AudioListener:
   m_ObjectHideFlags: 0
@@ -543,13 +544,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030169799}
-  m_LocalRotation: {x: 0.46291366, y: -0, z: -0, w: 0.88640344}
-  m_LocalPosition: {x: 0, y: 5, z: -2.5}
+  m_LocalRotation: {x: 0.5735764, y: 0, z: 0, w: 0.8191521}
+  m_LocalPosition: {x: 0, y: 7, z: -2.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 55.151, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 70, y: 0, z: 0}
 --- !u!1001 &1598049665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -807,9 +808,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2083989239 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1413193281340909708, guid: 1492acb3dac29b84d80dce227bda9cf2,
+--- !u!4 &2083989243 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1413193281340909751, guid: 1492acb3dac29b84d80dce227bda9cf2,
     type: 3}
   m_PrefabInstance: {fileID: 1598049665}
   m_PrefabAsset: {fileID: 0}
