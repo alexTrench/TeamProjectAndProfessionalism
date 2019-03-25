@@ -1,9 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerAnimationScript : MonoBehaviour
 {
+    private Player m_player;
     private Animator m_animator;
 
     private readonly int m_directionHash         = Animator.StringToHash("Direction");
@@ -15,12 +14,19 @@ public class PlayerAnimationScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        m_player = GetComponent<Player>();
         m_animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //if (m_player.IsDead())
+        //{
+        //    m_animator.SetTrigger(m_isDeadHash);
+        //    return;
+        //}
+
         float direction = Input.GetAxis("Horizontal");
         float speed = Input.GetAxis("Vertical");
 

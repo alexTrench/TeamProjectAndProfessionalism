@@ -9,8 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1413193281340909751}
-  - component: {fileID: 1413193281340909745}
   - component: {fileID: 1413193281340909746}
+  - component: {fileID: 1691037260844312039}
+  - component: {fileID: 1413193281340909745}
   - component: {fileID: 5613990577769557473}
   m_Layer: 0
   m_Name: AssaultCharacter
@@ -34,18 +35,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1413193281340909745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1413193281340909708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e373566c6c2ae642bc26be4c3526b51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!143 &1413193281340909746
 CharacterController:
   m_ObjectHideFlags: 0
@@ -64,6 +53,32 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &1691037260844312039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413193281340909708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72a0e21262c8ff6498efddd2cfa87ac5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_health: 100
+  m_maxHealth: 100
+--- !u!114 &1413193281340909745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413193281340909708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e373566c6c2ae642bc26be4c3526b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5613990577769557473
 MonoBehaviour:
   m_ObjectHideFlags: 0
