@@ -1,14 +1,13 @@
 ﻿using UnityEngine;
 
 /**
- * @brief Helper class to allow one object to follow another.
+ * @brief   Helper class to allow one object to follow another.
  * @extends MonoBehaviour
- * @author Andrew Alford
- * @date 25/03/2019
+ * @author  Andrew Alford
+ * @date    25/03/2019
  * @version 1.0 - 25/03/2019
  */
-public class Follow : MonoBehaviour
-{
+public class Follow : MonoBehaviour {
     //[target] What the camera should be following.
     [SerializeField] private Transform target = null;
     //[offset] The offset between the camera and the offset.

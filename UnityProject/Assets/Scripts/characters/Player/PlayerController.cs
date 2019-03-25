@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 
 /**
- * @brief Controls a character with user input.
+ * @brief   Controls a character with user input.
  * @extends MonoBehaviour
- * @date 25/03/2019
+ * @date    25/03/2019
  * @version 1.0 - 25/03/2019
  */
-public class PlayerController : MonoBehaviour
-{
+public class PlayerController : MonoBehaviour {
     //[movementSpeed] How quickly the player is moving.
     [SerializeField] private int movementSpeed = 12;
 
