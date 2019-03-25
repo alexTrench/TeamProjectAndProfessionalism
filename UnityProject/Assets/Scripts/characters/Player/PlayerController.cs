@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour {
     //[movementSpeed] How quickly the player is moving.
     [SerializeField] private int movementSpeed = 12;
 
-
+//test
     /**
      * Updates the player once every frame.
      */
