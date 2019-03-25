@@ -9,6 +9,8 @@ public class CharacterManagerScript : MonoBehaviour
     public BaseCharacter m_character3;
     public BaseCharacter m_character4;
 
+    public FollowTarget followingCamera;
+
     private List<BaseCharacter> m_playerCharacters;
     private int m_currentPlayerIndex = 0;
 
@@ -48,12 +50,14 @@ public class CharacterManagerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.N))
+        if (InputManager.NextCharacter()) {
             SwitchCharacter();
+        }
     }
 
     void SwitchCharacter()
     {
+        
         if (m_playerCharacters.Count <= 1)
             return;
 
@@ -80,6 +84,8 @@ public class CharacterManagerScript : MonoBehaviour
                 player.GetComponent<PlayerAnimationScript>().enabled = false;
             }
         }
+
+        followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
 
     BaseCharacter GetCurrentPlayer()

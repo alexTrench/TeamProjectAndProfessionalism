@@ -61,7 +61,7 @@ public static class InputManager {
     public static bool Reload() {
         try {
             return Input.GetKeyDown(KeyCode.R) ||
-                Input.GetKeyDown(KeyCode.JoystickButton5);
+                Input.GetKeyDown(KeyCode.JoystickButton2);
         } catch(ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -80,7 +80,27 @@ public static class InputManager {
     public static bool Die() {
         try {
             return Input.GetKeyDown(KeyCode.P) ||
-                Input.GetKeyDown(KeyCode.JoystickButton2);
+                Input.GetKeyDown(KeyCode.JoystickButton3);
+        } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool NextCharacter() {
+        try {
+            return Input.GetKeyDown(KeyCode.E) ||
+                Input.GetKeyDown(KeyCode.JoystickButton5);
+        } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool PreviousCharacter() {
+        try {
+            return Input.GetKeyDown(KeyCode.Q) ||
+                Input.GetKeyDown(KeyCode.JoystickButton4);
         } catch(ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;

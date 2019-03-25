@@ -837,6 +837,7 @@ MonoBehaviour:
   m_character2: {fileID: 1673134513}
   m_character3: {fileID: 2092042116}
   m_character4: {fileID: 337636869}
+  followingCamera: {fileID: 1030169800}
 --- !u!4 &1425466674
 Transform:
   m_ObjectHideFlags: 0
