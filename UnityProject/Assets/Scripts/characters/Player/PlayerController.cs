@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour {
         if(InputManager.usingXboxOneController()) {
             //Rotate with controller
             Vector3 playerDirection = Vector3.right * 
-            Input.GetAxisRaw("RightStickHorizontal") + 
-            Vector3.forward * -Input.GetAxisRaw("RightStickVertical");
+            InputManager.lookRightAxis.ToFloat() + 
+            Vector3.forward * -InputManager.lookForwardAxis.ToFloat();
 
             //If the player has moved.
             if (playerDirection.sqrMagnitude > 0.0f) {

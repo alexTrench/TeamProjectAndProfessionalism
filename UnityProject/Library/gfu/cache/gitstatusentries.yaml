@@ -13,14 +13,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-26T16:18:27.402+00:00
-  initializedAtString: 2019-03-26T15:53:13.059+00:00
+  lastUpdatedAtString: 2019-03-26T23:43:44.512+00:00
+  initializedAtString: 2019-03-26T23:43:28.925+00:00
   entries:
+  - path: UnityProject\Assembly-CSharp.csproj
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
+    projectPath: Assets\Scripts\characters\Player\PlayerAnimationScript.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\characters\Player\PlayerController.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\characters\Player\PlayerController.cs
+    projectPath: Assets\Scripts\characters\Player\PlayerController.cs
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Assets\Scripts\utility\InputManager.cs
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\InputManager.cs
     projectPath: Assets\Scripts\utility\InputManager.cs
     originalPath: 
-    status: 3
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Scripts\utility\InputManager.cs.meta
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\InputManager.cs.meta
+    projectPath: Assets\Scripts\utility\InputManager.cs.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Scripts\utility\Inputs.meta
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs.meta
+    projectPath: Assets\Scripts\utility\Inputs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs
+    projectPath: Assets\Scripts\utility\Inputs\InputBinding.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs.meta
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs.meta
+    projectPath: Assets\Scripts\utility\Inputs\InputBinding.cs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs
+    projectPath: Assets\Scripts\utility\Inputs\InputManager.cs
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs.meta
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs.meta
+    projectPath: Assets\Scripts\utility\Inputs\InputManager.cs.meta
+    originalPath: 
+    status: 1
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
@@ -28,9 +82,33 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\CurrentLayout.dwlt
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\expandedItems
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -49,6 +127,18 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\8e\8e373566c6c2ae642bc26be4c3526b51
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e373566c6c2ae642bc26be4c3526b51
+    projectPath: Library\metadata\8e\8e373566c6c2ae642bc26be4c3526b51
     originalPath: 
     status: 3
     staged: 0
@@ -124,15 +214,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\StateCache\Hierarchy\93f5a8-mainStage.json
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\StateCache\Hierarchy\93f5a8-mainStage.json
-    projectPath: Library\StateCache\Hierarchy\93f5a8-mainStage.json
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\ProjectSettings\InputManager.asset
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\InputManager.asset
+    projectPath: ProjectSettings\InputManager.asset
     originalPath: 
     status: 3
     staged: 0
