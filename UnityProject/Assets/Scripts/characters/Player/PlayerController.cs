@@ -4,13 +4,20 @@
  * @brief   Controls a character with user input.
  * @extends MonoBehaviour
  * @date    25/03/2019
- * @version 1.0 - 25/03/2019
+ * @version 1.1 - 26/03/2019
  */
 public class PlayerController : MonoBehaviour {
     //[movementSpeed] How quickly the player is moving.
     [SerializeField] private int movementSpeed = 12;
 
-//test
+
+    /**
+     * @brief Initialises the Player Controller.
+     */
+    private void Awake() {
+        Cursor.visible = false;
+    }
+
     /**
      * Updates the player once every frame.
      */
@@ -18,16 +25,16 @@ public class PlayerController : MonoBehaviour {
     {
         //Move the player.
         if(InputManager.Forward()) {
-            transform.position += transform.forward / movementSpeed;
+            transform.position += transform.forward * movementSpeed * Time.deltaTime;
         }
         if(InputManager.Backward()) {
-            transform.position += -transform.forward / movementSpeed;
+            transform.position += -transform.forward * movementSpeed * Time.deltaTime;
         }
         if(InputManager.Right()) {
-            transform.position += transform.right / movementSpeed;
+            transform.position += transform.right * movementSpeed * Time.deltaTime;
         }
         if(InputManager.Left()) {
-            transform.position += -transform.right / movementSpeed;
+            transform.position += -transform.right * movementSpeed * Time.deltaTime;
         }
 
         if(InputManager.usingXboxOneController()) {
