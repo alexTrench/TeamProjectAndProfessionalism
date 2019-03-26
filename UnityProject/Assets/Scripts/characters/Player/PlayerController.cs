@@ -25,16 +25,16 @@ public class PlayerController : MonoBehaviour {
     {
         //Move the player.
         if(InputManager.Forward()) {
-            transform.position += transform.forward / movementSpeed;
+            transform.position += transform.forward * movementSpeed * Time.deltaTime;
         }
         if(InputManager.Backward()) {
-            transform.position += -transform.forward / movementSpeed;
+            transform.position += -transform.forward * movementSpeed * Time.deltaTime;
         }
         if(InputManager.Right()) {
-            transform.position += transform.right / movementSpeed;
+            transform.position += transform.right * movementSpeed * Time.deltaTime;
         }
         if(InputManager.Left()) {
-            transform.position += -transform.right / movementSpeed;
+            transform.position += -transform.right * movementSpeed * Time.deltaTime;
         }
 
         if(InputManager.usingXboxOneController()) {
