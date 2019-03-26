@@ -26,68 +26,86 @@ public class CharacterManagerScript : MonoBehaviour
 
         Debug.Assert(m_playerCharacters.Count > 0, "No players added to the CharacterManager!");
 
-        for (int i = 0; i < m_playerCharacters.Count; ++i)
-        {
-            // Enable current player
-            if (i == 0)
-            {
-                BaseCharacter player = m_playerCharacters[m_currentPlayerIndex];
-                player.GetComponent<CharacterController>().enabled = true;
-                player.GetComponent<PlayerController>().enabled = true;
-                player.GetComponent<PlayerAnimationScript>().enabled = true;
-            }
-            // Disable all other player characters
-            else
-            {
-                BaseCharacter player = m_playerCharacters[i];
-                player.GetComponent<CharacterController>().enabled = false;
-                player.GetComponent<PlayerController>().enabled = false;
-                player.GetComponent<PlayerAnimationScript>().enabled = false;
-            }
-        }
+        EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (InputManager.NextCharacter()) {
-            SwitchCharacter();
-        }
+        if (InputManager.PreviousCharacter())
+            SwitchPreviousCharacter();
+        else if (InputManager.NextCharacter())
+            SwitchNextCharacter();
     }
 
-    void SwitchCharacter()
+    // Switches to next character
+    void SwitchNextCharacter()
     {
+        if (m_playerCharacters.Count <= 1)
+            return;
+
+        // Update current player index to character that isn't dead
+        if (++m_currentPlayerIndex > m_playerCharacters.Count - 1)
+            m_currentPlayerIndex = 0;
+
+        //bool isCharacterDead = true;
+        //int loopCounter = 0;
+
+        //do
+        //{
+        //    if (++m_currentPlayerIndex > m_playerCharacters.Count - 1)
+        //        m_currentPlayerIndex = 0;
+
+        //    isCharacterDead = m_playerCharacters[m_currentPlayerIndex].IsDead();
+        //    loopCounter++;
+        //}
+        //while (isCharacterDead);
+
+        // Enable current character and disable others
+        EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
         
+        followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
+    }
+
+    // Switches to previous character
+    void SwitchPreviousCharacter()
+    {
         if (m_playerCharacters.Count <= 1)
             return;
 
         // Update current player index
-        if (++m_currentPlayerIndex > m_playerCharacters.Count - 1)
-            m_currentPlayerIndex = 0;
+        if (--m_currentPlayerIndex < 0)
+            m_currentPlayerIndex = m_playerCharacters.Count - 1;
 
-        for (int i = 0; i < m_playerCharacters.Count; ++i)
-        {
-            // Enable current player
-            if (m_currentPlayerIndex == i)
-            {
-                BaseCharacter player = m_playerCharacters[m_currentPlayerIndex];
-                player.GetComponent<CharacterController>().enabled = true;
-                player.GetComponent<PlayerController>().enabled = true;
-                player.GetComponent<PlayerAnimationScript>().enabled = true;
-            }
-            // Disable all other player characters
-            else
-            {
-                BaseCharacter player = m_playerCharacters[i];
-                player.GetComponent<CharacterController>().enabled = false;
-                player.GetComponent<PlayerController>().enabled = false;
-                player.GetComponent<PlayerAnimationScript>().enabled = false;
-            }
-        }
+        // Enable current character and disable others
+        EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
 
         followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
 
+    // Enables the given character and disables the other characters
+    void EnableCharacter(BaseCharacter character)
+    {
+        foreach (var playerCharacter in m_playerCharacters)
+        {
+            // Enable current character
+            if (character == playerCharacter)
+            {
+                playerCharacter.GetComponent<CharacterController>().enabled = true;
+                playerCharacter.GetComponent<PlayerController>().enabled = true;
+                playerCharacter.GetComponent<PlayerAnimationScript>().enabled = true;
+            }
+            // Disable other character
+            else
+            {
+                playerCharacter.GetComponent<CharacterController>().enabled = false;
+                playerCharacter.GetComponent<PlayerController>().enabled = false;
+                playerCharacter.GetComponent<PlayerAnimationScript>().enabled = false;
+            }
+        }
+    }
+
+    // Remove this?
     BaseCharacter GetCurrentPlayer()
     {
         return m_playerCharacters[m_currentPlayerIndex];
