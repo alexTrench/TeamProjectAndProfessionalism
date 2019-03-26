@@ -27,8 +27,8 @@ public class PlayerAnimationScript : MonoBehaviour
         //    return;
         //}
 
-        float direction = Input.GetAxis("Horizontal");
-        float speed = Input.GetAxis("Vertical");
+        float speed = InputManager.GetBackwardAxis();
+        float direction = InputManager.GetRightAxis();
 
         // Update direction
         m_animator.SetFloat(m_directionHash, direction);
