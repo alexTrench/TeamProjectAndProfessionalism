@@ -13,18 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-25T23:15:34.692+00:00
-  initializedAtString: 2019-03-25T23:09:31.497+00:00
+  lastUpdatedAtString: 2019-03-26T09:06:52.462+00:00
+  initializedAtString: 2019-03-26T09:05:23.547+00:00
   entries:
-  - path: UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
-    projectPath: Assets\Scripts\Player\CharacterManagerScript.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\utility\InputManager.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\InputManager.cs
-    projectPath: Assets\Scripts\utility\InputManager.cs
+  - path: UnityProject\Assets\Scripts\characters\Player\PlayerController.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\characters\Player\PlayerController.cs
+    projectPath: Assets\Scripts\characters\Player\PlayerController.cs
     originalPath: 
     status: 3
     staged: 0
@@ -55,6 +49,30 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
+    projectPath: Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
+    projectPath: Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491
+    projectPath: Library\metadata\8e\8e5ef13128537604eb5f240183c83491
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
+    projectPath: Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
     originalPath: 
     status: 3
     staged: 0
