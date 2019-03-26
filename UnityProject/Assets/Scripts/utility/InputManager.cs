@@ -107,6 +107,53 @@ public static class InputManager {
         }
     }
 
+    public static bool FireWeapon() {
+        try {
+            return Input.GetKeyDown(KeyCode.Mouse0);
+        } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool MenuUp() {
+        try {
+            return Input.GetKeyDown(KeyCode.UpArrow);
+        } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool MenuDown() {
+        try {
+            return Input.GetKeyDown(KeyCode.DownArrow);
+        } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool MenuSelect() {
+        try {
+            return Input.GetKeyDown(KeyCode.Return) ||
+                Input.GetKeyDown(KeyCode.KeypadEnter);
+        } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool MenuBack() {
+        try {
+            return Input.GetKeyDown(KeyCode.Escape) ||
+                Input.GetKeyDown(KeyCode.Backspace);
+        } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
     public static bool usingXboxOneController() {
 
          string[] names = Input.GetJoystickNames();
