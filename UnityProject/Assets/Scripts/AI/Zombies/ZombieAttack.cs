@@ -8,7 +8,6 @@ public class ZombieAttack : MonoBehaviour
     public float m_timeBetweenAttacks = 0.5f;
 
     private readonly int m_isAttackingHash = Animator.StringToHash("IsAttacking");
-    private readonly int m_isPlayerDeadHash = Animator.StringToHash("IsPlayerDead");
 
     private Animator m_animator;
     private GameObject m_playerObject;
@@ -36,9 +35,6 @@ public class ZombieAttack : MonoBehaviour
 
         if (m_attackTimer >= m_timeBetweenAttacks && m_playerInRange)
             Attack();
-
-        if (m_player.IsDead())
-            m_animator.SetTrigger(m_isPlayerDeadHash);
     }
 
     void Attack()
@@ -46,10 +42,7 @@ public class ZombieAttack : MonoBehaviour
         m_attackTimer = 0.0f;
 
         if (!m_player.IsDead())
-        {
             m_animator.SetTrigger(m_isAttackingHash);
-            m_player.TakeDamage(m_attackDamage);
-        }
     }
 
     private void OnTriggerEnter(Collider other)

@@ -21,11 +21,12 @@ public class PlayerAnimationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (m_player.IsDead())
-        //{
-        //    m_animator.SetTrigger(m_isDeadHash);
-        //    return;
-        //}
+        // Check if player is dead
+        if (m_player.IsDead())
+        {
+            m_animator.SetTrigger(m_isDeadHash);
+            return;
+        }
 
         float speed = InputManager.GetBackwardAxis();
         float direction = InputManager.GetRightAxis();

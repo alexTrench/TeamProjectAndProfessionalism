@@ -41,25 +41,26 @@ public class CharacterManagerScript : MonoBehaviour
     // Switches to next character
     void SwitchNextCharacter()
     {
-        if (m_playerCharacters.Count <= 1)
+        // Get and store num of characters
+        int numCharacters = m_playerCharacters.Count;
+
+        if (numCharacters <= 1)
             return;
 
-        // Update current player index to character that isn't dead
-        if (++m_currentPlayerIndex > m_playerCharacters.Count - 1)
-            m_currentPlayerIndex = 0;
+        // Switch to next character that isn't dead
+        int currentIndex = m_currentPlayerIndex;
 
-        //bool isCharacterDead = true;
-        //int loopCounter = 0;
+        do
+        {
+            if (++currentIndex > numCharacters - 1)
+                currentIndex = 0;
 
-        //do
-        //{
-        //    if (++m_currentPlayerIndex > m_playerCharacters.Count - 1)
-        //        m_currentPlayerIndex = 0;
+            if (currentIndex == m_currentPlayerIndex)
+                break;
+        }
+        while (m_playerCharacters[currentIndex].IsDead());
 
-        //    isCharacterDead = m_playerCharacters[m_currentPlayerIndex].IsDead();
-        //    loopCounter++;
-        //}
-        //while (isCharacterDead);
+        m_currentPlayerIndex = currentIndex;
 
         // Enable current character and disable others
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
@@ -70,12 +71,27 @@ public class CharacterManagerScript : MonoBehaviour
     // Switches to previous character
     void SwitchPreviousCharacter()
     {
-        if (m_playerCharacters.Count <= 1)
+        // Get and store num of characters
+        int numCharacters = m_playerCharacters.Count;
+
+        if (numCharacters <= 1)
             return;
 
-        // Update current player index
-        if (--m_currentPlayerIndex < 0)
-            m_currentPlayerIndex = m_playerCharacters.Count - 1;
+        // Switch to next character that isn't dead
+        int currentIndex = m_currentPlayerIndex;
+
+        do
+        {
+            if (--currentIndex < 0)
+                currentIndex = numCharacters - 1;
+
+            if (currentIndex == m_currentPlayerIndex)
+                break;
+
+        }
+        while (m_playerCharacters[currentIndex].IsDead());
+
+        m_currentPlayerIndex = currentIndex;
 
         // Enable current character and disable others
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
@@ -104,10 +120,20 @@ public class CharacterManagerScript : MonoBehaviour
             }
         }
     }
-
-    // Remove this?
+    
     BaseCharacter GetCurrentPlayer()
     {
         return m_playerCharacters[m_currentPlayerIndex];
+    }
+
+    public bool AreAllPlayersDead()
+    {
+        foreach (var playerCharacter in m_playerCharacters)
+        {
+            if (!playerCharacter.IsDead())
+                return false;
+        }
+
+        return true;
     }
 }

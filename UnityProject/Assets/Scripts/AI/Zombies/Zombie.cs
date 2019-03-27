@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 public class Zombie : BaseCharacter
@@ -27,6 +25,7 @@ public class Zombie : BaseCharacter
             return;
         }
 
+        transform.LookAt(m_playerTransform);
         m_nav.SetDestination(m_playerTransform.position);
     }
 }

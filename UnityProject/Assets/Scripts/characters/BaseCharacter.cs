@@ -2,7 +2,6 @@
 
 public class BaseCharacter : MonoBehaviour, IDamagable
 {
-    [SerializeField]
     public int m_health = 100;
     public int m_maxHealth = 100;
 
