@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-28T15:11:34.335+00:00
+  lastUpdatedAtString: 2019-03-28T15:14:10.527+00:00
   initializedAtString: 2019-03-28T13:36:52.426+00:00
   entries:
   - path: UnityProject\.vs\UnityProject\v15\.suo
@@ -2399,6 +2399,12 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\gfu\cache\branches.yaml
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
@@ -2409,7 +2415,7 @@ MonoBehaviour:
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
