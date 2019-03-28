@@ -44,7 +44,7 @@ public class RPGexplosion : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Projectille" || collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Projectille")
         {
 
         }

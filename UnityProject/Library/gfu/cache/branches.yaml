@@ -15,6 +15,7 @@ MonoBehaviour:
   cacheType: 2
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-03-28T00:33:19.084+00:00
 =======
   lastUpdatedAtString: 2019-03-28T00:08:27.151+00:00
@@ -23,12 +24,16 @@ MonoBehaviour:
   lastUpdatedAtString: 2019-03-28T00:08:27.151+00:00
 >>>>>>> parent of efd207a9... Damage
   initializedAtString: 2019-03-28T00:08:27.046+00:00
+=======
+  lastUpdatedAtString: 2019-03-26T17:33:38.935+00:00
+  initializedAtString: 2019-03-26T17:13:26.476+00:00
+>>>>>>> parent of 1ea6adc3... Added Rocket and Shotgun to assult Character for testing
   localBranches:
+  - name: button_mapping
+    tracking: origin/button_mapping
   - name: master
     tracking: origin/master
   remoteBranches:
-  - name: origin/Alex's-Branch
-    tracking: '[None]'
   - name: origin/button_mapping
     tracking: '[None]'
   - name: origin/HEAD
@@ -45,8 +50,14 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - button_mapping
     - master
     values:
+    - name: button_mapping
+      remote:
+        name: origin
+        url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
+      trackingBranch: button_mapping
     - name: master
       remote:
         name: origin
@@ -57,17 +68,11 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
-      - Alex's-Branch
       - button_mapping
       - HEAD
       - master
     subKeyValues:
     - Values:
-      - name: Alex's-Branch
-        remote:
-          name: origin
-          url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
-        trackingBranch: 
       - name: button_mapping
         remote:
           name: origin
