@@ -13,12 +13,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-28T00:31:49.458+00:00
+  lastUpdatedAtString: 2019-03-28T00:18:12.708+00:00
   initializedAtString: 2019-03-28T00:02:44.613+00:00
   entries:
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\EffectExamples\Fire & Explosion Effects\Prefabs\SmallExplosion.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\Fire
+      & Explosion Effects\Prefabs\SmallExplosion.prefab
+    projectPath: Assets\EffectExamples\Fire & Explosion Effects\Prefabs\SmallExplosion.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Rocket Launcher\RPGexplosion.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Rocket
+      Launcher\RPGexplosion.cs
+    projectPath: Assets\Weapons\Rocket Launcher\RPGexplosion.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Rocket Launcher\RPGprefab.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Rocket
+      Launcher\RPGprefab.prefab
+    projectPath: Assets\Weapons\Rocket Launcher\RPGprefab.prefab
     originalPath: 
     status: 3
     staged: 0
@@ -28,61 +55,11 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\AK Purchase.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\AK
-      Purchase.prefab
-    projectPath: Assets\Weapons\WallWeapons\AK Purchase.prefab
+  - path: UnityProject\Assets\Weapons\Scripts\WeaponManagement\WeaponManager.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Scripts\WeaponManagement\WeaponManager.cs
+    projectPath: Assets\Weapons\Scripts\WeaponManagement\WeaponManager.cs
     originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\AK Purchase.prefab.meta
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\AK
-      Purchase.prefab.meta
-    projectPath: Assets\Weapons\WallWeapons\AK Purchase.prefab.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\M4 Purchase.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\M4
-      Purchase.prefab
-    projectPath: Assets\Weapons\WallWeapons\M4 Purchase.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\M4 Purchase.prefab.meta
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\M4
-      Purchase.prefab.meta
-    projectPath: Assets\Weapons\WallWeapons\M4 Purchase.prefab.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\RPG Purchase.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\RPG
-      Purchase.prefab
-    projectPath: Assets\Weapons\WallWeapons\RPG Purchase.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\RPG Purchase.prefab.meta
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\RPG
-      Purchase.prefab.meta
-    projectPath: Assets\Weapons\WallWeapons\RPG Purchase.prefab.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\Shotgun Purchase .prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\Shotgun
-      Purchase .prefab
-    projectPath: Assets\Weapons\WallWeapons\Shotgun Purchase .prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Weapons\WallWeapons\Shotgun Purchase .prefab.meta
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\WallWeapons\Shotgun
-      Purchase .prefab.meta
-    projectPath: Assets\Weapons\WallWeapons\Shotgun Purchase .prefab.meta
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
@@ -126,6 +103,12 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\metadata\64\64891a0eb28db934898420d80ca07cb3
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\64\64891a0eb28db934898420d80ca07cb3
+    projectPath: Library\metadata\64\64891a0eb28db934898420d80ca07cb3
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
@@ -153,6 +136,48 @@ MonoBehaviour:
   - path: UnityProject\Library\StateCache\SceneView\b5854e-mainStage.json
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\StateCache\SceneView\b5854e-mainStage.json
     projectPath: Library\StateCache\SceneView\b5854e-mainStage.json
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\ProjectSettings\EditorSettings.asset
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\EditorSettings.asset
+    projectPath: ProjectSettings\EditorSettings.asset
     originalPath: 
     status: 3
     staged: 0

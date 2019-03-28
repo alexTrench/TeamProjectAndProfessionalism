@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 7
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-03-28T00:33:19.096+00:00
+=======
+  lastUpdatedAtString: 2019-03-28T00:18:07.214+00:00
+>>>>>>> parent of efd207a9... Damage
   initializedAtString: 2019-03-28T00:02:44.607+00:00
   gitLocks: []
