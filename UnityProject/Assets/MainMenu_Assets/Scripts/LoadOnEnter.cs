@@ -9,7 +9,7 @@ public class LoadOnEnter : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         // load scene by index from File->Build Settings
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
