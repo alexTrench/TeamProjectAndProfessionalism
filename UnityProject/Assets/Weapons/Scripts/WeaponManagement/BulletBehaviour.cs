@@ -30,7 +30,7 @@ public class BulletBehaviour : MonoBehaviour
         }
         else if (other.gameObject.tag == "Enemy")
         {
-            other.GetComponent<TargetPractice>().TakeDamage(damage);
+            other.GetComponent<Zombie>().GetComponentInParent<BaseCharacter>().TakeDamage((int)damage);
             Debug.Log("damage = " + damage);
 
             Destroy(gameObject);

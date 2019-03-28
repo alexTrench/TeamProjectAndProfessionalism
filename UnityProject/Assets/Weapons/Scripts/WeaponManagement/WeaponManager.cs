@@ -56,9 +56,8 @@ public class WeaponManager : MonoBehaviour
     {
         //used later to check if the weapon has been changed
         int previousSelectedWeapon = selectedWeapon;
-
         //scroll wheel used
-        if (Input.GetAxis("Mouse ScrollWheel") > 0f)
+        if (Input.mouseScrollDelta.y > 0f)
         {
             //checks how many children the weapon manager had, each weapon is one child
             //this will loop the cycle of changing weapons back to the first child
@@ -72,7 +71,7 @@ public class WeaponManager : MonoBehaviour
             }
         }
         //oposite of the above
-        if (Input.GetAxis("Mouse ScrollWheel") < 0f)
+        if (Input.mouseScrollDelta.y < 0f)
         {
             if (selectedWeapon <= 0)
             {
