@@ -61,6 +61,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
+    <Compile Include="Assets\GameControllers\PlayerStats.cs" />
+    <Compile Include="Assets\GameControllers\TargetPractice.cs" />
+    <Compile Include="Assets\GameControllers\weaponDatabase.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\ActiveStateToggler.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\ApplicationManager.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\ChangeColor.cs" />
@@ -138,6 +141,7 @@
     <Compile Include="Assets\MainMenu_Assets\VRStandardAssets\Scripts\VRInput.cs" />
     <Compile Include="Assets\MainMenu_Assets\VRStandardAssets\Scripts\VRInteractiveItem.cs" />
     <Compile Include="Assets\MainMenu_Assets\VRStandardAssets\Scripts\VRTrackingReset.cs" />
+    <Compile Include="Assets\PowerUps\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Scenes\CameraController.cs" />
     <Compile Include="Assets\Scripts\AI\HitMarkerHandlerScript.cs" />
     <Compile Include="Assets\Scripts\AI\HitMarkerScript.cs" />
@@ -160,6 +164,20 @@
     <Compile Include="Assets\Scripts\utility\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\utility\Inputs\InputBinding.cs" />
     <Compile Include="Assets\Scripts\utility\Inputs\InputManager.cs" />
+    <Compile Include="Assets\Weapons\870 Shotgun\ShotgunScript.cs" />
+    <Compile Include="Assets\Weapons\Ak_47\AK_Script.cs" />
+    <Compile Include="Assets\Weapons\Grenades\GrenadeScript.cs" />
+    <Compile Include="Assets\Weapons\Grenades\GrenadeThrower.cs" />
+    <Compile Include="Assets\Weapons\M4 Carbine\M4_Script.cs" />
+    <Compile Include="Assets\Weapons\Rocket Launcher\RPG_Script.cs" />
+    <Compile Include="Assets\Weapons\Rocket Launcher\RPGexplosion.cs" />
+    <Compile Include="Assets\Weapons\Scripts\WeaponManagement\BulletBehaviour.cs" />
+    <Compile Include="Assets\Weapons\Scripts\WeaponManagement\Inventory.cs" />
+    <Compile Include="Assets\Weapons\Scripts\WeaponManagement\WallPickup.cs" />
+    <Compile Include="Assets\Weapons\Scripts\WeaponManagement\WeaponManager.cs" />
+    <Compile Include="Assets\Weapons\Scripts\WeaponManagement\WeaponPickup.cs" />
+    <Compile Include="Assets\Weapons\Scripts\WeaponManagement\WeaponsInfo.cs" />
+    <Compile Include="Assets\Weapons\WallWeapons\ItemId.cs" />
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\Shaders\TMPro_Properties.cginc" />
