@@ -76,9 +76,11 @@
     <Compile Include="Assets\MainMenu_Assets\Scripts\QuitOnClick.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\QuitOnEnter.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\ResizePanel.cs" />
+    <Compile Include="Assets\MainMenu_Assets\Scripts\ReturnToMainMenu.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\ScrollDetailTexture.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\SelectOnInput.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\SetAudioLevels.cs" />
+    <Compile Include="Assets\MainMenu_Assets\Scripts\Settings.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\ShowSliderValue.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\MainMenu_Assets\Scripts\TiltWindow.cs" />
