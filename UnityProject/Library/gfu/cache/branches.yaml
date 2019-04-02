@@ -13,11 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-03-28T15:14:09.455+00:00
-  initializedAtString: 2019-03-28T15:14:09.428+00:00
+  lastUpdatedAtString: 2019-04-02T17:15:30.238+01:00
+  initializedAtString: 2019-04-02T15:09:57.813+01:00
   localBranches:
-  - name: MainMenu
-    tracking: 
   - name: master
     tracking: origin/master
   remoteBranches:
@@ -29,6 +27,8 @@ MonoBehaviour:
     tracking: '[None]'
   - name: origin/master
     tracking: '[None]'
+  - name: origin/Skilltree
+    tracking: '[None]'
   remotes:
   - name: origin
     url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
@@ -39,14 +39,8 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - MainMenu
     - master
     values:
-    - name: MainMenu
-      remote:
-        name: 
-        url: 
-      trackingBranch: 
     - name: master
       remote:
         name: origin
@@ -61,6 +55,7 @@ MonoBehaviour:
       - button_mapping
       - HEAD
       - master
+      - Skilltree
     subKeyValues:
     - Values:
       - name: Alex's-Branch
@@ -79,6 +74,11 @@ MonoBehaviour:
           url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
         trackingBranch: 
       - name: master
+        remote:
+          name: origin
+          url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
+        trackingBranch: 
+      - name: Skilltree
         remote:
           name: origin
           url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git

@@ -13,30 +13,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-02T17:13:26.836+01:00
-  initializedAtString: 2019-04-02T14:36:10.775+01:00
+  lastUpdatedAtString: 2019-04-02T17:40:55.344+01:00
+  initializedAtString: 2019-04-02T17:18:53.783+01:00
   entries:
-  - path: UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab
-    projectPath: Assets\Characters\Assault\AssaultCharacter.prefab
+  - path: UnityProject\.vs\UnityProject\v15\.suo
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+    projectPath: .vs\UnityProject\v15\.suo
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab
-    projectPath: Assets\Characters\Demolition\DemolitionCharacter.prefab
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab
-    projectPath: Assets\Characters\Heavy\HeavyCharacter.prefab
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Characters\Light\LightCharacter.prefab
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\LightCharacter.prefab
-    projectPath: Assets\Characters\Light\LightCharacter.prefab
+  - path: UnityProject\Assembly-CSharp.csproj
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assembly-CSharp-Editor.csproj
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor.csproj
+    projectPath: Assembly-CSharp-Editor.csproj
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     status: 3
     staged: 0
@@ -46,21 +58,46 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
-    projectPath: Assets\Scripts\characters\Player\PlayerAnimationScript.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
-    projectPath: Assets\Scripts\Player\CharacterManagerScript.cs
+  - path: UnityProject\Assets\Scenes\SampleScene\NavMesh-Floor 1.asset
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\SampleScene\NavMesh-Floor
+      1.asset
+    projectPath: Assets\Scenes\SampleScene\NavMesh-Floor 1.asset
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Assets\Scripts\Player\Player.cs
     fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\Player.cs
     projectPath: Assets\Scripts\Player\Player.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\assetDatabase3
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+    projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\CurrentLayout.dwlt
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\branches.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\gitlog.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -73,6 +110,126 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\repoinfo.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\InspectorExpandedItems.asset
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\LastSceneManagerSetup.txt
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\LastSceneManagerSetup.txt
+    projectPath: Library\LastSceneManagerSetup.txt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
+    projectPath: Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2.info
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2.info
+    projectPath: Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
+    projectPath: Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887.info
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887.info
+    projectPath: Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491
+    projectPath: Library\metadata\8e\8e5ef13128537604eb5f240183c83491
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491.info
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491.info
+    projectPath: Library\metadata\8e\8e5ef13128537604eb5f240183c83491.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
+    projectPath: Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568.info
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568.info
+    projectPath: Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ProjectSettings.asset
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\ProjectSettings.asset
+    projectPath: Library\ProjectSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0

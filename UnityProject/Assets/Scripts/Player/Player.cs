@@ -15,6 +15,7 @@ public class Player : BaseCharacter
         m_nav = GetComponent<NavMeshAgent>();
         m_characterManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
         Debug.Assert(m_characterManager != null, "Could not find CharacterManagerScript!");
+        GetComponent<PlayerAnimationScript>().enabled = true;
     }
 
     // Update is called once per frame
