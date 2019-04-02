@@ -19,6 +19,18 @@ UnityProject/*.csproj
 UnityProject/*.sln
 UnityProject/obj/
 
+/UnityProject/Assets/AssetStoreTools*
+/UnityProject/Build/
+/UnityProject/Library/
+/UnityProject/[Ll]ocal[Cc]ache/
+/UnityProject/Obj/
+/UnityProject/Temp/
+/UnityProject/UnityGenerated/
+/UnityProject/.vs/
+/UnityProject/*.csproj
+/UnityProject/*.sln
+/UnityProject/obj/
+
 # File on crash reports
 sysinfo.txt
 
