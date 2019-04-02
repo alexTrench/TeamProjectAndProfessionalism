@@ -3,11 +3,10 @@ using UnityEngine.AI;
 
 public class ZombieAnimationScript : MonoBehaviour
 {
-    public CharacterManagerScript m_characterManager;
-
-    private Zombie m_zombie;
-    private Animator m_animator;
-    private NavMeshAgent m_nav;
+    private CharacterManagerScript m_characterManager;
+    private Zombie                 m_zombie;
+    private Animator               m_animator;
+    private NavMeshAgent           m_nav;
     
     private readonly int m_isDeadHash = Animator.StringToHash("IsDead");
     private readonly int m_speedHash = Animator.StringToHash("Speed");
@@ -16,6 +15,8 @@ public class ZombieAnimationScript : MonoBehaviour
     void Start()
     {
         // Init private variables
+        m_characterManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
+        Debug.Assert(m_characterManager != null, "Could not find CharacterManagerScript component!");
         m_zombie = GetComponent<Zombie>();
         m_animator = GetComponentInChildren<Animator>();
         m_nav = GetComponent<NavMeshAgent>();

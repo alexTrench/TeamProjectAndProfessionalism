@@ -131,7 +131,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_health: 5
   m_maxHealth: 5
-  m_secondsBeforeDestroy: 10
+  m_secsBeforePlayerSearch: 2
+  m_secsBeforeDestroy: 10
 --- !u!114 &4634163032942507743
 MonoBehaviour:
   m_ObjectHideFlags: 0

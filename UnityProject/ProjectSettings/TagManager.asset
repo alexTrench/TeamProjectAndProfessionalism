@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Shootable
   - Enemy
+  - Projectille
+  - Gun
+  - CharacterManager
   layers:
   - Default
   - TransparentFX
