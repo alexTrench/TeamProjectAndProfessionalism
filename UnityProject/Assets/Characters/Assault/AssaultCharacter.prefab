@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1691037260844312039}
   - component: {fileID: 1413193281340909745}
   - component: {fileID: 5613990577769557473}
+  - component: {fileID: 1464129901331255260}
   m_Layer: 0
   m_Name: AssaultCharacter
   m_TagString: Player
@@ -107,6 +108,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 12
+--- !u!195 &1464129901331255260
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413193281340909708}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.3
+  m_Speed: 2
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 90
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1045589607841553592
 PrefabInstance:
   m_ObjectHideFlags: 0

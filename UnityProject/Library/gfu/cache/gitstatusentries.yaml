@@ -13,432 +13,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-28T22:10:52.533+00:00
-  initializedAtString: 2019-03-28T21:24:44.392+00:00
+  lastUpdatedAtString: 2019-04-02T17:13:26.836+01:00
+  initializedAtString: 2019-04-02T14:36:10.775+01:00
   entries:
-  - path: .gitignore
-    fullPath: D:\TeamProjectAndProfessionalism\.gitignore
-    projectPath: ..\.gitignore
+  - path: UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Assault\AssaultCharacter.prefab
+    projectPath: Assets\Characters\Assault\AssaultCharacter.prefab
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Demolition\DemolitionCharacter.prefab
+    projectPath: Assets\Characters\Demolition\DemolitionCharacter.prefab
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\EffectExamples\FireExplosionEffects\Materials.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\FireExplosionEffects\Materials.meta
-    projectPath: Assets\EffectExamples\FireExplosionEffects\Materials.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\EffectExamples\FireExplosionEffects\Prefabs.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\FireExplosionEffects\Prefabs.meta
-    projectPath: Assets\EffectExamples\FireExplosionEffects\Prefabs.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\EffectExamples\Shared\Scripts.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\Shared\Scripts.meta
-    projectPath: Assets\EffectExamples\Shared\Scripts.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\EffectExamples\Shared\Shaders.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\Shared\Shaders.meta
-    projectPath: Assets\EffectExamples\Shared\Shaders.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller.meta
+  - path: UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Heavy\HeavyCharacter.prefab
+    projectPath: Assets\Characters\Heavy\HeavyCharacter.prefab
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller
+  - path: UnityProject\Assets\Characters\Light\LightCharacter.prefab
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Characters\Light\LightCharacter.prefab
+    projectPath: Assets\Characters\Light\LightCharacter.prefab
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller.meta
+  - path: UnityProject\Assets\Scenes\SampleScene.unity
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\SampleScene.unity
+    projectPath: Assets\Scenes\SampleScene.unity
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller.meta
+  - path: UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
+    projectPath: Assets\Scripts\characters\Player\PlayerAnimationScript.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller.meta
+  - path: UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
+    projectPath: Assets\Scripts\Player\CharacterManagerScript.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller.meta
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller.meta
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller.meta
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller.meta
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller.meta
-    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller.meta
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Background.prefab
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Background.prefab
-    projectPath: Assets\MainMenu_Assets\Prefabs\MainMenu_Background.prefab
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Background.prefab.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Background.prefab.meta
-    projectPath: Assets\MainMenu_Assets\Prefabs\MainMenu_Background.prefab.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Canvas.prefab
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Canvas.prefab
-    projectPath: Assets\MainMenu_Assets\Prefabs\MainMenu_Canvas.prefab
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Canvas.prefab.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Canvas.prefab.meta
-    projectPath: Assets\MainMenu_Assets\Prefabs\MainMenu_Canvas.prefab.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Sounds.prefab
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Sounds.prefab
-    projectPath: Assets\MainMenu_Assets\Prefabs\MainMenu_Sounds.prefab
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Sounds.prefab.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Prefabs\MainMenu_Sounds.prefab.meta
-    projectPath: Assets\MainMenu_Assets\Prefabs\MainMenu_Sounds.prefab.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\SampleScenes\Materials.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\SampleScenes\Materials.meta
-    projectPath: Assets\SampleScenes\Materials.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\SampleScenes\Scripts.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\SampleScenes\Scripts.meta
-    projectPath: Assets\SampleScenes\Scripts.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\SampleScenes\Textures.meta
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\SampleScenes\Textures.meta
-    projectPath: Assets\SampleScenes\Textures.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\Scenes\MainMenu.unity
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMenu.unity
-    projectPath: Assets\Scenes\MainMenu.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\boot.config
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\boot.config
-    projectPath: Builds\UnityProject_Data\boot.config
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\globalgamemanagers
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\globalgamemanagers
-    projectPath: Builds\UnityProject_Data\globalgamemanagers
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\globalgamemanagers.assets
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\globalgamemanagers.assets
-    projectPath: Builds\UnityProject_Data\globalgamemanagers.assets
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\level0
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\level0
-    projectPath: Builds\UnityProject_Data\level0
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\level1
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\level1
-    projectPath: Builds\UnityProject_Data\level1
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\Managed\Assembly-CSharp.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\Managed\Assembly-CSharp.dll
-    projectPath: Builds\UnityProject_Data\Managed\Assembly-CSharp.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\Managed\Assembly-CSharp.pdb
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\Managed\Assembly-CSharp.pdb
-    projectPath: Builds\UnityProject_Data\Managed\Assembly-CSharp.pdb
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\Managed\NavMeshComponents.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\Managed\NavMeshComponents.dll
-    projectPath: Builds\UnityProject_Data\Managed\NavMeshComponents.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\Managed\Unity.Postprocessing.Runtime.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\Managed\Unity.Postprocessing.Runtime.dll
-    projectPath: Builds\UnityProject_Data\Managed\Unity.Postprocessing.Runtime.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\Managed\Unity.ProGrids.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\Managed\Unity.ProGrids.dll
-    projectPath: Builds\UnityProject_Data\Managed\Unity.ProGrids.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\Managed\Unity.TextMeshPro.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\Managed\Unity.TextMeshPro.dll
-    projectPath: Builds\UnityProject_Data\Managed\Unity.TextMeshPro.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\resources.assets
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\resources.assets
-    projectPath: Builds\UnityProject_Data\resources.assets
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\sharedassets0.assets
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\sharedassets0.assets
-    projectPath: Builds\UnityProject_Data\sharedassets0.assets
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\sharedassets1.assets
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\sharedassets1.assets
-    projectPath: Builds\UnityProject_Data\sharedassets1.assets
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Builds\UnityProject_Data\sharedassets1.assets.resS
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Builds\UnityProject_Data\sharedassets1.assets.resS
-    projectPath: Builds\UnityProject_Data\sharedassets1.assets.resS
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\assetDatabase3
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
-    projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\CurrentLayout.dwlt
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\expandedItems
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
+  - path: UnityProject\Assets\Scripts\Player\Player.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\Player.cs
+    projectPath: Assets\Scripts\Player\Player.cs
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\InspectorExpandedItems.asset
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\64\64891a0eb28db934898420d80ca07cb3
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\64\64891a0eb28db934898420d80ca07cb3
-    projectPath: Library\metadata\64\64891a0eb28db934898420d80ca07cb3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
-    projectPath: Library\ScriptAssemblies\Unity.ProGrids.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe1.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe1.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe2.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe2.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe3.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe3.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe3.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe4.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe4.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe4.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe5.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe5.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe5.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe6.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe6.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe6.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe7.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe7.log
-    projectPath: Library\shadercompiler-UnityShaderCompiler.exe7.log
     originalPath: 
     status: 3
     staged: 0

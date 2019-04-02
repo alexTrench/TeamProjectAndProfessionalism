@@ -1,9 +1,11 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerAnimationScript : MonoBehaviour
 {
-    private Player m_player;
-    private Animator m_animator;
+    private Player       m_player;
+    private Animator     m_animator;
+    private NavMeshAgent m_nav;
 
     private readonly int m_directionHash         = Animator.StringToHash("Direction");
     private readonly int m_speedHash             = Animator.StringToHash("Speed");
@@ -16,6 +18,7 @@ public class PlayerAnimationScript : MonoBehaviour
     {
         m_player = GetComponent<Player>();
         m_animator = GetComponentInChildren<Animator>();
+        m_nav = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -28,13 +31,20 @@ public class PlayerAnimationScript : MonoBehaviour
             return;
         }
 
-        float speed = InputManager.GetBackwardAxis();
-        float direction = InputManager.GetRightAxis();
-
-        // Update direction
+        // Update speed and direction
+        float speed = 0.0f;
+        float direction = 0.0f;
+        if (m_player.IsPlayerControlled()) // Player controlled
+        {
+            speed = InputManager.GetBackwardAxis();
+            direction = InputManager.GetRightAxis();
+        }
+        else // AI controlled
+        {
+            speed = m_nav.velocity.magnitude;
+            //direction = m_nav.
+        }
         m_animator.SetFloat(m_directionHash, direction);
-
-        // Update speed
         m_animator.SetFloat(m_speedHash, speed);
 
         if (InputManager.Reload()) {

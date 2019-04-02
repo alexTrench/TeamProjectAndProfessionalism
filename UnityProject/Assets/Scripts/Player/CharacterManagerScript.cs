@@ -1,17 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class CharacterManagerScript : MonoBehaviour
 {
     private List<BaseCharacter> m_playerCharacters;
     private int                 m_currentPlayerIndex = 0;
+    private FollowTarget        m_followingCamera;
 
     public BaseCharacter m_character1;
     public BaseCharacter m_character2;
     public BaseCharacter m_character3;
     public BaseCharacter m_character4;
-    public FollowTarget  m_followingCamera;
 
     private void Awake()
     {
@@ -22,6 +23,10 @@ public class CharacterManagerScript : MonoBehaviour
         if (m_character3 != null) m_playerCharacters.Add(m_character3);
         if (m_character4 != null) m_playerCharacters.Add(m_character4);
         Debug.Assert(m_playerCharacters.Count > 0, "No players added to the CharacterManager!");
+
+        // Init following camera
+        m_followingCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<FollowTarget>();
+        Debug.Assert(m_followingCamera != null, "Could not find FollowTarget component!");
 
         // Set initial player controlled character
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
@@ -107,20 +112,22 @@ public class CharacterManagerScript : MonoBehaviour
             {
                 playerCharacter.GetComponent<CharacterController>().enabled = true;
                 playerCharacter.GetComponent<PlayerController>().enabled = true;
-                playerCharacter.GetComponent<PlayerAnimationScript>().enabled = true;
+                playerCharacter.GetComponent<NavMeshAgent>().enabled = false;
+                playerCharacter.GetComponent<Player>().SetIsPlayerControlled(true);
             }
             // Disable other character
             else
             {
                 playerCharacter.GetComponent<CharacterController>().enabled = false;
                 playerCharacter.GetComponent<PlayerController>().enabled = false;
-                playerCharacter.GetComponent<PlayerAnimationScript>().enabled = false;
+                playerCharacter.GetComponent<NavMeshAgent>().enabled = true;
+                playerCharacter.GetComponent<Player>().SetIsPlayerControlled(false);
             }
         }
     }
     
     // Returns the currently controlled player character
-    BaseCharacter GetCurrentPlayer()
+    public BaseCharacter GetCurrentPlayer()
     {
         return m_playerCharacters[m_currentPlayerIndex];
     }

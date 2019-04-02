@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 670003001829068952}
   - component: {fileID: 3605909425107290012}
   - component: {fileID: 8816889171170908175}
+  - component: {fileID: 8262657337817558953}
   m_Layer: 0
   m_Name: HeavyCharacter
   m_TagString: Player
@@ -107,6 +108,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 12
+--- !u!195 &8262657337817558953
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8481658356826870848}
+  m_Enabled: 0
+  m_AgentTypeID: 0
+  m_Radius: 0.3
+  m_Speed: 2
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 90
+  m_StoppingDistance: 1
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &8481658356503099808
 PrefabInstance:
   m_ObjectHideFlags: 0
