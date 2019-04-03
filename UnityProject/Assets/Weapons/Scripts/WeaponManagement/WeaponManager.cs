@@ -9,7 +9,6 @@ public class WeaponManager : MonoBehaviour
     //the first item under manager is index 0 ,then 1, ect.
     public int selectedWeapon = 0;
     Inventory inventory;
-    
     //used for current weapons
 
     // Start is called before the first frame update
@@ -17,6 +16,7 @@ public class WeaponManager : MonoBehaviour
     {
         inventory = GetComponentInParent<Inventory>();
         SelectWeapon();
+
     }
 
     // Update is called once per frame
@@ -57,7 +57,7 @@ public class WeaponManager : MonoBehaviour
         //used later to check if the weapon has been changed
         int previousSelectedWeapon = selectedWeapon;
         //scroll wheel used
-        if (Input.mouseScrollDelta.y > 0f)
+        if (Input.mouseScrollDelta.y > 0f && GetComponentInParent<Player>().IsPlayerControlled())
         {
             //checks how many children the weapon manager had, each weapon is one child
             //this will loop the cycle of changing weapons back to the first child
@@ -71,7 +71,7 @@ public class WeaponManager : MonoBehaviour
             }
         }
         //oposite of the above
-        if (Input.mouseScrollDelta.y < 0f)
+        if (Input.mouseScrollDelta.y < 0f && GetComponentInParent<Player>().IsPlayerControlled())
         {
             if (selectedWeapon <= 0)
             {

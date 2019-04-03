@@ -13,223 +13,893 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-02T17:40:55.344+01:00
-  initializedAtString: 2019-04-02T17:18:53.783+01:00
+  lastUpdatedAtString: 2019-04-03T17:03:38.865+01:00
+  initializedAtString: 2019-04-03T17:03:37.951+01:00
   entries:
   - path: UnityProject\.vs\UnityProject\v15\.suo
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
     projectPath: .vs\UnityProject\v15\.suo
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Assembly-CSharp-Editor.csproj
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor.csproj
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor.csproj
     projectPath: Assembly-CSharp-Editor.csproj
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Assets\EffectExamples\FireExplosionEffects.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\FireExplosionEffects.meta
+    projectPath: Assets\EffectExamples\FireExplosionEffects.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\EffectExamples\FireExplosionEffects\Materials.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\FireExplosionEffects\Materials.meta
+    projectPath: Assets\EffectExamples\FireExplosionEffects\Materials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\EffectExamples\FireExplosionEffects\Prefabs.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\FireExplosionEffects\Prefabs.meta
+    projectPath: Assets\EffectExamples\FireExplosionEffects\Prefabs.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\EffectExamples\Shared.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\Shared.meta
+    projectPath: Assets\EffectExamples\Shared.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\EffectExamples\Shared\Scripts.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\Shared\Scripts.meta
+    projectPath: Assets\EffectExamples\Shared\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\EffectExamples\Shared\Shaders.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\Shared\Shaders.meta
+    projectPath: Assets\EffectExamples\Shared\Shaders.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\SampleScenes.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\SampleScenes.meta
+    projectPath: Assets\SampleScenes.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\SampleScenes\Materials.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\SampleScenes\Materials.meta
+    projectPath: Assets\SampleScenes\Materials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\SampleScenes\Scripts.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\SampleScenes\Scripts.meta
+    projectPath: Assets\SampleScenes\Scripts.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\SampleScenes\Textures.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\SampleScenes\Textures.meta
+    projectPath: Assets\SampleScenes\Textures.meta
+    originalPath: 
+    status: 1
+    staged: 0
   - path: UnityProject\Assets\Scenes\SampleScene.unity
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\SampleScene.unity
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\SampleScene.unity
     projectPath: Assets\Scenes\SampleScene.unity
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scenes\SampleScene\NavMesh-Floor 1.asset
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\SampleScene\NavMesh-Floor
-      1.asset
-    projectPath: Assets\Scenes\SampleScene\NavMesh-Floor 1.asset
+  - path: UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\CharacterManagerScript.cs
+    projectPath: Assets\Scripts\Player\CharacterManagerScript.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\Player\Player.cs
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Player\Player.cs
-    projectPath: Assets\Scripts\Player\Player.cs
+  - path: UnityProject\Assets\Weapons\Ak_47\AK_Script.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Ak_47\AK_Script.cs
+    projectPath: Assets\Weapons\Ak_47\AK_Script.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box.meta
+    projectPath: Assets\Weapons\Mystery Box.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\source.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\source.meta
+    projectPath: Assets\Weapons\Mystery Box\source.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\source\Simple Long Crate.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\source\Simple Long Crate.meta
+    projectPath: Assets\Weapons\Mystery Box\source\Simple Long Crate.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\source\Simple Long Crate\images
+      used to create.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\source\Simple Long Crate\images used to create.meta
+    projectPath: Assets\Weapons\Mystery Box\source\Simple Long Crate\images used to
+      create.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\source\Simple Long Crate\materials.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\source\Simple Long Crate\materials.meta
+    projectPath: Assets\Weapons\Mystery Box\source\Simple Long Crate\materials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\source\Simple Long Crate\materials\Materials.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\source\Simple Long Crate\materials\Materials.meta
+    projectPath: Assets\Weapons\Mystery Box\source\Simple Long Crate\materials\Materials.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\source\Simple Long Crate\model.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\source\Simple Long Crate\model.meta
+    projectPath: Assets\Weapons\Mystery Box\source\Simple Long Crate\model.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\source\Simple Long Crate\model\obj.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\source\Simple Long Crate\model\obj.meta
+    projectPath: Assets\Weapons\Mystery Box\source\Simple Long Crate\model\obj.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Mystery Box\textures.meta
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Mystery
+      Box\textures.meta
+    projectPath: Assets\Weapons\Mystery Box\textures.meta
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Scripts\WeaponManagement\WeaponManager.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Scripts\WeaponManagement\WeaponManager.cs
+    projectPath: Assets\Weapons\Scripts\WeaponManagement\WeaponManager.cs
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\CurrentLayout.dwlt
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
     projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\EditorUserBuildSettings.asset
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\EditorUserBuildSettings.asset
+    projectPath: Library\EditorUserBuildSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\expandedItems
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Library\gfu\cache\branches.yaml
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlog.yaml
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\InspectorExpandedItems.asset
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\LastSceneManagerSetup.txt
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\LastSceneManagerSetup.txt
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\LastSceneManagerSetup.txt
     projectPath: Library\LastSceneManagerSetup.txt
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
-    projectPath: Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2
+  - path: UnityProject\Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb
+    projectPath: Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb.info
+    projectPath: Library\metadata\03\03ffb9844f8d40e8a2f59dd2aff561eb.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c
+    projectPath: Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c.info
+    projectPath: Library\metadata\0a\0a1161a2ab6569948a0aa7899197218c.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec
+    projectPath: Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec.info
+    projectPath: Library\metadata\0a\0a822dba3d5c4c85b150866e5442a5ec.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84
+    projectPath: Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84.info
+    projectPath: Library\metadata\0e\0e372f1bbea04aa9bd68055d4105bd84.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\10\10145f279f90346bbb61712ff585828b
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\10\10145f279f90346bbb61712ff585828b
+    projectPath: Library\metadata\10\10145f279f90346bbb61712ff585828b
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
+    projectPath: Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2.info
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2.info
     projectPath: Library\metadata\14\1492acb3dac29b84d80dce227bda9cf2.info
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
-    projectPath: Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887
+  - path: UnityProject\Library\metadata\14\14a535af49e406642adc4f3720dbe671.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\14\14a535af49e406642adc4f3720dbe671.info
+    projectPath: Library\metadata\14\14a535af49e406642adc4f3720dbe671.info
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887.info
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887.info
     projectPath: Library\metadata\1e\1e73e6abbf83a274d8af133a67ff5887.info
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\metadata\20\207f588d26d0a154388264433dba3aed.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\20\207f588d26d0a154388264433dba3aed.info
+    projectPath: Library\metadata\20\207f588d26d0a154388264433dba3aed.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa
+    projectPath: Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa.info
+    projectPath: Library\metadata\20\20a9b557a46149dfbfa04a3a7080f5aa.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\25\25ebe415cc14c4f4ea15c34a796b75bb
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\25\25ebe415cc14c4f4ea15c34a796b75bb
+    projectPath: Library\metadata\25\25ebe415cc14c4f4ea15c34a796b75bb
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\28\28375447bcea455c9b51a6650b10c9d7
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\28\28375447bcea455c9b51a6650b10c9d7
+    projectPath: Library\metadata\28\28375447bcea455c9b51a6650b10c9d7
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\28\28375447bcea455c9b51a6650b10c9d7.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\28\28375447bcea455c9b51a6650b10c9d7.info
+    projectPath: Library\metadata\28\28375447bcea455c9b51a6650b10c9d7.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694
+    projectPath: Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694.info
+    projectPath: Library\metadata\2a\2a3f4f8c4e2df41108f55825c24ff694.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\2f\2f1849b9179b464381598f68663790d3
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\2f\2f1849b9179b464381598f68663790d3
+    projectPath: Library\metadata\2f\2f1849b9179b464381598f68663790d3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\2f\2f1849b9179b464381598f68663790d3.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\2f\2f1849b9179b464381598f68663790d3.info
+    projectPath: Library\metadata\2f\2f1849b9179b464381598f68663790d3.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\33\3349fc02d104e2b458470ec533f51c16.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\33\3349fc02d104e2b458470ec533f51c16.info
+    projectPath: Library\metadata\33\3349fc02d104e2b458470ec533f51c16.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\37\37a77a7d1752db448ba271c332836697.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\37\37a77a7d1752db448ba271c332836697.info
+    projectPath: Library\metadata\37\37a77a7d1752db448ba271c332836697.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\38\38c39678ca8b90f44b2eb7c0a3168f03.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\38\38c39678ca8b90f44b2eb7c0a3168f03.info
+    projectPath: Library\metadata\38\38c39678ca8b90f44b2eb7c0a3168f03.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\3a\3a0a8403dc07ac04b8786dea89a7e669.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\3a\3a0a8403dc07ac04b8786dea89a7e669.info
+    projectPath: Library\metadata\3a\3a0a8403dc07ac04b8786dea89a7e669.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\3a\3aba9fe1ad29b42ffb0eea781318a626
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\3a\3aba9fe1ad29b42ffb0eea781318a626
+    projectPath: Library\metadata\3a\3aba9fe1ad29b42ffb0eea781318a626
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\3d\3dcbbc060dea46168ffc09a580836240
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\3d\3dcbbc060dea46168ffc09a580836240
+    projectPath: Library\metadata\3d\3dcbbc060dea46168ffc09a580836240
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\3d\3dcbbc060dea46168ffc09a580836240.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\3d\3dcbbc060dea46168ffc09a580836240.info
+    projectPath: Library\metadata\3d\3dcbbc060dea46168ffc09a580836240.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\46\46c02d8d6499b4309ac1ec5d0b818585
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\46\46c02d8d6499b4309ac1ec5d0b818585
+    projectPath: Library\metadata\46\46c02d8d6499b4309ac1ec5d0b818585
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\4c\4c433abcdb28444ebb7bd395ba5c76fc
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\4c\4c433abcdb28444ebb7bd395ba5c76fc
+    projectPath: Library\metadata\4c\4c433abcdb28444ebb7bd395ba5c76fc
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\4c\4cd7f6cf6430b2347803bd0c957fbbce.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\4c\4cd7f6cf6430b2347803bd0c957fbbce.info
+    projectPath: Library\metadata\4c\4cd7f6cf6430b2347803bd0c957fbbce.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\4d\4dfd3f5da88944ec6ac5977d676c30c6
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\4d\4dfd3f5da88944ec6ac5977d676c30c6
+    projectPath: Library\metadata\4d\4dfd3f5da88944ec6ac5977d676c30c6
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\4f\4f768b64e6c37495699fffe3007e4379
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\4f\4f768b64e6c37495699fffe3007e4379
+    projectPath: Library\metadata\4f\4f768b64e6c37495699fffe3007e4379
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\54\54c9317d6f50fc7498bcc516730c4ff0.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\54\54c9317d6f50fc7498bcc516730c4ff0.info
+    projectPath: Library\metadata\54\54c9317d6f50fc7498bcc516730c4ff0.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5
+    projectPath: Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5.info
+    projectPath: Library\metadata\54\54e5fc61925bc4ca3b2c1e82dfb35eb5.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88
+    projectPath: Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88.info
+    projectPath: Library\metadata\66\66083b7f6dc2e433eae33f3244b2ce88.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\76\76078ddafb924ce19edc6034201cb15b
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\76\76078ddafb924ce19edc6034201cb15b
+    projectPath: Library\metadata\76\76078ddafb924ce19edc6034201cb15b
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\76\76078ddafb924ce19edc6034201cb15b.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\76\76078ddafb924ce19edc6034201cb15b.info
+    projectPath: Library\metadata\76\76078ddafb924ce19edc6034201cb15b.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\76\762eeef4ed65fb649bc883de4d2741f6.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\76\762eeef4ed65fb649bc883de4d2741f6.info
+    projectPath: Library\metadata\76\762eeef4ed65fb649bc883de4d2741f6.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\7d\7da0c11c52b4044de81c175887699282
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\7d\7da0c11c52b4044de81c175887699282
+    projectPath: Library\metadata\7d\7da0c11c52b4044de81c175887699282
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\7d\7da0c11c52b4044de81c175887699282.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\7d\7da0c11c52b4044de81c175887699282.info
+    projectPath: Library\metadata\7d\7da0c11c52b4044de81c175887699282.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\82\821f5482c5a3f4389885f4432433f56f
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\82\821f5482c5a3f4389885f4432433f56f
+    projectPath: Library\metadata\82\821f5482c5a3f4389885f4432433f56f
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\82\821f5482c5a3f4389885f4432433f56f.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\82\821f5482c5a3f4389885f4432433f56f.info
+    projectPath: Library\metadata\82\821f5482c5a3f4389885f4432433f56f.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2
+    projectPath: Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2.info
+    projectPath: Library\metadata\85\85dba6b2d7204a7f9a1f976eb0a6b4d2.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\88\880f2fc52037c4fe09edb80cfe84ac7c.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\88\880f2fc52037c4fe09edb80cfe84ac7c.info
+    projectPath: Library\metadata\88\880f2fc52037c4fe09edb80cfe84ac7c.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\8a\8a465411eb7832841b033e78a5878544.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8a\8a465411eb7832841b033e78a5878544.info
+    projectPath: Library\metadata\8a\8a465411eb7832841b033e78a5878544.info
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491
     projectPath: Library\metadata\8e\8e5ef13128537604eb5f240183c83491
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491.info
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e5ef13128537604eb5f240183c83491.info
     projectPath: Library\metadata\8e\8e5ef13128537604eb5f240183c83491.info
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
-    projectPath: Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568
+  - path: UnityProject\Library\metadata\93\93c1370867fcb45079592da39e0994c5
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\93\93c1370867fcb45079592da39e0994c5
+    projectPath: Library\metadata\93\93c1370867fcb45079592da39e0994c5
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\97\97dff1b5ae41ee84886ae7a80ae21499
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\97\97dff1b5ae41ee84886ae7a80ae21499
+    projectPath: Library\metadata\97\97dff1b5ae41ee84886ae7a80ae21499
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863
+    projectPath: Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863.info
+    projectPath: Library\metadata\9e\9e69df8ff024a4dc1a9e5c22725e4863.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\a8\a8d9e44eff3f447db9448925617ccb44
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\a8\a8d9e44eff3f447db9448925617ccb44
+    projectPath: Library\metadata\a8\a8d9e44eff3f447db9448925617ccb44
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0
+    projectPath: Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0.info
+    projectPath: Library\metadata\a9\a98bc92072da64d49a393088e55ce2a0.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\ac\acc34040a66fe4170bc8885268860cfe
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\ac\acc34040a66fe4170bc8885268860cfe
+    projectPath: Library\metadata\ac\acc34040a66fe4170bc8885268860cfe
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f
+    projectPath: Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f.info
+    projectPath: Library\metadata\b6\b6e75d7f429a4e7e9e1ffb4f85cff49f.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b
+    projectPath: Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b.info
+    projectPath: Library\metadata\b7\b7e8a8fb69eacee439474914ea54bf9b.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\bb\bbec1324b05a54939ad2fea2d7e11063
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\bb\bbec1324b05a54939ad2fea2d7e11063
+    projectPath: Library\metadata\bb\bbec1324b05a54939ad2fea2d7e11063
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\cd\cd44c1bc0fa624a39aa784af44c62180
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\cd\cd44c1bc0fa624a39aa784af44c62180
+    projectPath: Library\metadata\cd\cd44c1bc0fa624a39aa784af44c62180
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\db\db5bf9456b579a74e93e9dcd3673a942.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\db\db5bf9456b579a74e93e9dcd3673a942.info
+    projectPath: Library\metadata\db\db5bf9456b579a74e93e9dcd3673a942.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\e2\e21bec35f48a44298911b25ead550ce3
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e2\e21bec35f48a44298911b25ead550ce3
+    projectPath: Library\metadata\e2\e21bec35f48a44298911b25ead550ce3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\e2\e21bec35f48a44298911b25ead550ce3.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e2\e21bec35f48a44298911b25ead550ce3.info
+    projectPath: Library\metadata\e2\e21bec35f48a44298911b25ead550ce3.info
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568.info
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568.info
     projectPath: Library\metadata\e3\e3e9547d9e46ea44ca04f5bf66802568.info
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\metadata\e4\e45f79867376940b7ba31502238d8efa.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e4\e45f79867376940b7ba31502238d8efa.info
+    projectPath: Library\metadata\e4\e45f79867376940b7ba31502238d8efa.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\e6\e69259f6ff914146ad610be5491eb44a
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e6\e69259f6ff914146ad610be5491eb44a
+    projectPath: Library\metadata\e6\e69259f6ff914146ad610be5491eb44a
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\e6\e69259f6ff914146ad610be5491eb44a.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\e6\e69259f6ff914146ad610be5491eb44a.info
+    projectPath: Library\metadata\e6\e69259f6ff914146ad610be5491eb44a.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\f1\f1687bb24464840ae9e1d253685ae0f6.info
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\f1\f1687bb24464840ae9e1d253685ae0f6.info
+    projectPath: Library\metadata\f1\f1687bb24464840ae9e1d253685ae0f6.info
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\metadata\f8\f8eca3a711f4842eba0c52ea9885ef7f
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\metadata\f8\f8eca3a711f4842eba0c52ea9885ef7f
+    projectPath: Library\metadata\f8\f8eca3a711f4842eba0c52ea9885ef7f
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Library\ProjectSettings.asset
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\ProjectSettings.asset
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ProjectSettings.asset
     projectPath: Library\ProjectSettings.asset
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
+    projectPath: Library\ScriptAssemblies\Unity.ProGrids.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe1.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe1.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe2.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe2.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe3.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe3.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe3.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe4.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe4.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe4.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe5.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe5.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe5.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe6.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe6.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe6.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe7.log
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe7.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe7.log
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\ProjectSettings\ProjectSettings.asset
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\ProjectSettings.asset
+    projectPath: ProjectSettings\ProjectSettings.asset
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\ProjectSettings\QualitySettings.asset
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\QualitySettings.asset
+    projectPath: ProjectSettings\QualitySettings.asset
     originalPath: 
     status: 3
     staged: 0

@@ -13,9 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2019-04-02T17:15:30.238+01:00
-  initializedAtString: 2019-04-02T15:09:57.813+01:00
+  lastUpdatedAtString: 2019-04-03T16:56:10.652+01:00
+  initializedAtString: 2019-04-03T15:56:05.329+01:00
   localBranches:
+  - name: Alex's-Branch
+    tracking: origin/Alex's-Branch
+  - name: button_mapping
+    tracking: origin/button_mapping
   - name: master
     tracking: origin/master
   remoteBranches:
@@ -39,8 +43,20 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
+    - Alex's-Branch
+    - button_mapping
     - master
     values:
+    - name: Alex's-Branch
+      remote:
+        name: origin
+        url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
+      trackingBranch: Alex's-Branch
+    - name: button_mapping
+      remote:
+        name: origin
+        url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
+      trackingBranch: button_mapping
     - name: master
       remote:
         name: origin
