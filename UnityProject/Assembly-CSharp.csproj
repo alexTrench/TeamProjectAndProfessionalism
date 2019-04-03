@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Desert Environment\Example\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\GameControllers\PlayerStats.cs" />
     <Compile Include="Assets\GameControllers\TargetPractice.cs" />
@@ -187,6 +188,7 @@
     <None Include="Assets\EffectExamples\Misc Effects\Shaders\FireFly.shader" />
     <None Include="Assets\EffectExamples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\Desert Environment\Models\Shaders\WindShader.shader" />
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\EffectExamples\Misc Effects\Shaders\Respawn.shader" />
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
@@ -772,6 +774,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{FDE690F1-626F-FFA0-5754-E83120972A79}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="NavMeshComponentsEditor.csproj">
       <Project>{C992D1F6-D642-D9F8-CA8B-B03B8BEBEB76}</Project>
       <Name>NavMeshComponentsEditor</Name>
