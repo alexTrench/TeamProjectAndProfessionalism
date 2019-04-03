@@ -45,7 +45,7 @@ public class ShotgunScript : MonoBehaviour
     {
         //mouse 1 is right click
         //get key does while
-        if(Input.GetKey(KeyCode.Mouse1) && Time.time >= nextFireTime)
+        if (InputManager.FireWeapon() && Time.time >= nextFireTime)
         {
             
             if (CurrentAmmo > 0)
