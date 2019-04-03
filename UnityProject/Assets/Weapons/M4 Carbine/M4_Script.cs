@@ -36,7 +36,7 @@ public class M4_Script : MonoBehaviour
     void Update()
     {
         //if the right mouse button is pressed
-        if (Input.GetKey(KeyCode.Mouse1) && Time.time >= nextFireTime)
+        if (InputManager.FireWeapon() && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
         {
 
             if (CurrentAmmo > 0)
