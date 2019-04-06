@@ -152,4 +152,9 @@ public class CharacterManagerScript : MonoBehaviour
     {
         return m_playerCharacters;
     }
+
+    public int GetPlayerIndex()
+    {
+        return m_currentPlayerIndex;
+    }
 }

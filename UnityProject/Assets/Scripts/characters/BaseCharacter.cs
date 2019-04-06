@@ -33,4 +33,14 @@ public class BaseCharacter : MonoBehaviour, IDamagable
     {
         return m_isDead;
     }
+
+    public float getHealth()
+    {
+        return (float) m_health;
+    }
+
+    public float getMaxHealth()
+    {
+        return (float) m_maxHealth;
+    }
 }

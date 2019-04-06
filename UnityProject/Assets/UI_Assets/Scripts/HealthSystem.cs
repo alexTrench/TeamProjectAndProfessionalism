@@ -23,6 +23,17 @@ public class HealthSystem
         return health / healthMAX;
     }
 
+    public void setHealth(float newHealth)
+    {
+        health = newHealth;
+        OnHealthChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void setHealthMax(float newHealthMax)
+    {
+        healthMAX = newHealthMax;
+    }
+
     public void Damage(float damageAmount)
     {
         health -= damageAmount;
