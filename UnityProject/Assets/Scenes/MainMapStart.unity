@@ -105394,5 +105394,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 832323748}
+    - target: {fileID: 6319480067886145919, guid: 31fa574a0cc6fc8479fa3cb64ec2c475,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.49019608
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31fa574a0cc6fc8479fa3cb64ec2c475, type: 3}
