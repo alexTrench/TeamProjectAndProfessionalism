@@ -108,6 +108,7 @@
     <Compile Include="Assets\Scripts\utility\Inputs\InputBinding.cs" />
     <Compile Include="Assets\Scripts\utility\Inputs\InputManager.cs" />
     <Compile Include="Assets\Skilltree\Script\Playerstats.cs" />
+    <Compile Include="Assets\UI_Assets\Scripts\CountdownScript.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\EnergyBar.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\EnergyHandler.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\EnergySystem.cs" />
