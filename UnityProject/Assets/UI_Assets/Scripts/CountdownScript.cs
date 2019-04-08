@@ -10,8 +10,7 @@ public class CountdownScript : MonoBehaviour
     [SerializeField] private Text  enemiesLeft;
 
     private float timer;
-    private bool  canCount = true;
-    private bool  doOnce = false;
+    private int enemiesLeftINT;
 
     private void Start()
     {
@@ -20,16 +19,23 @@ public class CountdownScript : MonoBehaviour
 
     private void Update()
     {
-        if(timer >= 0.0f && canCount)
+        enemiesLeftINT = int.Parse(enemiesLeft.text);
+
+        if (timer >= 0.0f && enemiesLeftINT <= 0)
         {
             timer -= Time.deltaTime;
             uiNumber.text = timer.ToString("F");
-        } else if (timer <= 0.0f && !doOnce)
+        }
+        else
         {
-            canCount = false;
-            doOnce = true;
-            uiNumber.text = "0.00";
-            timer = 0.0f; 
+            if(enemiesLeftINT <= 0)
+            {
+                enemiesLeft.text = "10";
+                timer = mainTimer;
+            } else
+            {
+                uiNumber.text = "NOW";
+            }
         }
     }
 }

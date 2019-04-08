@@ -117,6 +117,7 @@
     <Compile Include="Assets\UI_Assets\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\MiniHealthHandler.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\PlayerInUse.cs" />
+    <Compile Include="Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs" />
     <Compile Include="Assets\Weapons\870 Shotgun\ShotgunScript.cs" />
     <Compile Include="Assets\Weapons\Ak_47\AK_Script.cs" />
     <Compile Include="Assets\Weapons\Grenades\GrenadeScript.cs" />
