@@ -88,6 +88,7 @@
     <Compile Include="Assets\Scenes\CameraController.cs" />
     <Compile Include="Assets\Scripts\AI\HitMarkerHandlerScript.cs" />
     <Compile Include="Assets\Scripts\AI\HitMarkerScript.cs" />
+    <Compile Include="Assets\Scripts\AI\ZombieManagerScript.cs" />
     <Compile Include="Assets\Scripts\AI\Zombies\RandomAttackScript.cs" />
     <Compile Include="Assets\Scripts\AI\Zombies\Zombie.cs" />
     <Compile Include="Assets\Scripts\AI\Zombies\ZombieAnimationScript.cs" />
