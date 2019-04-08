@@ -54,6 +54,7 @@ public class Zombie : BaseCharacter
         m_nav.SetDestination(m_targetTransform.position);
     }
 
+    // Returns the nearest player character
     private Player GetNearestPlayer()
     {
         // Find nearest player character
