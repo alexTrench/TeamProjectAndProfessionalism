@@ -21,7 +21,7 @@ public class PlayerInUse : MonoBehaviour
         // look on the list of objects and get the component for character manager script
         charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
 
-        currentPlayerIndex = charactersManager.GetPlayerIndex();
+        currentPlayerIndex = charactersManager.GetCurrentPlayerIndex();
 
         currentPlayerInfo.text = (currentPlayerIndex + 1).ToString();
 
@@ -31,7 +31,7 @@ public class PlayerInUse : MonoBehaviour
 
     private void Update()
     {
-        updatedPlayerIndex = charactersManager.GetPlayerIndex();
+        updatedPlayerIndex = charactersManager.GetCurrentPlayerIndex();
 
         if(updatedPlayerIndex != currentPlayerIndex)
         {

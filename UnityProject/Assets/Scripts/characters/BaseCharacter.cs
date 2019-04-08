@@ -2,45 +2,49 @@
 
 public class BaseCharacter : MonoBehaviour, IDamagable
 {
-    public int m_health = 100;
-    public int m_maxHealth = 100;
+    [SerializeField] protected float m_health    = 100.0f;
+    [SerializeField] protected float m_maxHealth = 100.0f;
 
     protected bool m_isDead = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        // Empty   
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        // Empty
     }
 
-    public void TakeDamage(int damage)
+    // Take damage interface
+    public void TakeDamage(float damage)
     {
         if (!m_isDead)
         {
             m_health -= damage;
-            if (m_health <= 0)
+            if (m_health <= 0.0f)
                 m_isDead = true;
         }
     }
 
+    // Returns true if the character is dead
     public bool IsDead()
     {
         return m_isDead;
     }
 
-    public float getHealth()
+    // Returns the current health of the character
+    public float GetHealth()
     {
-        return (float) m_health;
+        return m_health;
     }
 
-    public float getMaxHealth()
+    // Returns the max health of the character
+    public float GetMaxHealth()
     {
-        return (float) m_maxHealth;
+        return m_maxHealth;
     }
 }
