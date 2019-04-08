@@ -7,6 +7,7 @@ public class CountdownScript : MonoBehaviour
 {
     [SerializeField] private Text  uiNumber;
     [SerializeField] private float mainTimer;
+    [SerializeField] private Text  enemiesLeft;
 
     private float timer;
     private bool  canCount = true;
