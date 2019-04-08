@@ -10,10 +10,10 @@ public class CharacterManagerScript : MonoBehaviour
     [SerializeField] private Player m_character3;
     [SerializeField] private Player m_character4;
 
-    private List<Player> m_playerCharacters;
-    private int          m_currentPlayerIndex   = 0;
-    private FollowTarget m_followingCamera;
-    private Queue        m_deadPlayerCharacters;
+    private List<Player>  m_playerCharacters;
+    private int           m_currentPlayerIndex   = 0;
+    private FollowTarget  m_followingCamera;
+    private Queue<Player> m_deadPlayerCharacters;
 
     private void Awake()
     {
@@ -24,6 +24,9 @@ public class CharacterManagerScript : MonoBehaviour
         if (m_character3 != null) m_playerCharacters.Add(m_character3);
         if (m_character4 != null) m_playerCharacters.Add(m_character4);
         Debug.Assert(m_playerCharacters.Count > 0, "No players added to the CharacterManager!");
+
+        // Init queue
+        m_deadPlayerCharacters = new Queue<Player>();
 
         // Init following camera
         m_followingCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<FollowTarget>();
@@ -180,9 +183,6 @@ public class CharacterManagerScript : MonoBehaviour
     public void RevivePlayer()
     {
         if (m_deadPlayerCharacters.Count > 0)
-        {
-            Player player = m_deadPlayerCharacters.Peek() as Player;
-            player.Revive();
-        }
+            m_deadPlayerCharacters.Dequeue().Revive();
     }
 }

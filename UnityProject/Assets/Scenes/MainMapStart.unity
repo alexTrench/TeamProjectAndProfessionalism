@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028355, g: 0.22571374, b: 0.30692255, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22106,6 +22106,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: miniHealthBar_Char2
       objectReference: {fileID: 0}
+    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
+        type: 3}
+      propertyPath: m_Text
+      value: Player 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8989087013665438576, guid: 3beb0f43acbb38049908e249bd23b712,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22210,11 +22215,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
-        type: 3}
-      propertyPath: m_Text
-      value: Player 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3beb0f43acbb38049908e249bd23b712, type: 3}
@@ -61839,6 +61839,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: miniHealthBar_Char3
       objectReference: {fileID: 0}
+    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
+        type: 3}
+      propertyPath: m_Text
+      value: Player 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8989087013665438576, guid: 3beb0f43acbb38049908e249bd23b712,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -61943,11 +61948,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
-        type: 3}
-      propertyPath: m_Text
-      value: Player 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3beb0f43acbb38049908e249bd23b712, type: 3}
@@ -97118,6 +97118,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: miniHealthBar_Char4
       objectReference: {fileID: 0}
+    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
+        type: 3}
+      propertyPath: m_Text
+      value: Player 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8989087013665438576, guid: 3beb0f43acbb38049908e249bd23b712,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -97222,11 +97227,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
-        type: 3}
-      propertyPath: m_Text
-      value: Player 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3beb0f43acbb38049908e249bd23b712, type: 3}
@@ -106085,6 +106085,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: miniHealthBar_Char1
       objectReference: {fileID: 0}
+    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
+        type: 3}
+      propertyPath: m_Text
+      value: Player 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8989087013665438576, guid: 3beb0f43acbb38049908e249bd23b712,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -106189,11 +106194,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 789609096178311783, guid: 3beb0f43acbb38049908e249bd23b712,
-        type: 3}
-      propertyPath: m_Text
-      value: Player 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3beb0f43acbb38049908e249bd23b712, type: 3}
