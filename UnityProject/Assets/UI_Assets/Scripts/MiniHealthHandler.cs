@@ -24,7 +24,7 @@ public class MiniHealthHandler : MonoBehaviour
         // look on the list of objects and get the component for character manager script
         charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
 
-        playerHealth = charactersManager.getPlayerByIndex(playerIndex).getHealth();
+        playerHealth = charactersManager.GetPlayerByIndex(playerIndex).GetHealth();
 
         healthSystem = new HealthSystem(playerHealth);
         healthBar.Setup(healthSystem);
@@ -33,7 +33,7 @@ public class MiniHealthHandler : MonoBehaviour
     private void Update()
     {
         // update the current player index and its health
-        uPlayerHealth = charactersManager.getPlayerByIndex(playerIndex).getHealth();
+        uPlayerHealth = charactersManager.GetPlayerByIndex(playerIndex).GetHealth();
 
         if (uPlayerHealth < playerHealth)
         {

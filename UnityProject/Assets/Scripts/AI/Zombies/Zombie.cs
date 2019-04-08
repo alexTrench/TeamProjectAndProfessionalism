@@ -5,7 +5,7 @@ using UnityEngine.AI;
 public class Zombie : BaseCharacter
 {
     private CharacterManagerScript m_characterManager;
-    private List<BaseCharacter>    m_playerCharacters;
+    private List<Player>           m_playerCharacters;
     private Transform              m_targetTransform;
     private NavMeshAgent           m_nav;
     private float                  m_timer;
@@ -54,7 +54,7 @@ public class Zombie : BaseCharacter
         m_nav.SetDestination(m_targetTransform.position);
     }
 
-    private BaseCharacter GetNearestPlayer()
+    private Player GetNearestPlayer()
     {
         // Find nearest player character
         float distance = float.MaxValue;

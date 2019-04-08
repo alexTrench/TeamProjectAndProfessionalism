@@ -31,7 +31,7 @@ public class HealthHandler : MonoBehaviour
         playersHealth = new List<float> { 100.0f, 100.0f, 100.0f, 100.0f };
 
         // initialise the current player's index
-        cPlayerIndex = charactersManager.GetPlayerIndex();
+        cPlayerIndex = charactersManager.GetCurrentPlayerIndex();
 
         healthSystem = new HealthSystem(100.0f);
         healthBar.Setup(healthSystem);
@@ -40,8 +40,8 @@ public class HealthHandler : MonoBehaviour
     private void Update()
     {
         // update the current player index and its health
-        uPlayerHealth = charactersManager.GetCurrentPlayer().getHealth();
-        uPlayerIndex = charactersManager.GetPlayerIndex();
+        uPlayerHealth = charactersManager.GetCurrentPlayer().GetHealth();
+        uPlayerIndex = charactersManager.GetCurrentPlayerIndex();
 
         // if updated index is different
         if (uPlayerIndex != cPlayerIndex)

@@ -45,4 +45,11 @@ public class Player : BaseCharacter
     {
         m_isPlayerControlled = isPlayerControlled;
     }
+
+    // Revives the player character
+    public void Revive()
+    {
+        m_isDead = false;
+        m_health = m_maxHealth;
+    }
 }

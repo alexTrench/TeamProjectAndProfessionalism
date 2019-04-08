@@ -10,219 +10,219 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   cacheType: 6
-  lastUpdatedAtString: 2019-04-08T20:16:24.509+01:00
-  initializedAtString: 2019-04-08T19:22:43.675+01:00
+  lastUpdatedAtString: 2019-04-08T20:16:32.700+01:00
+  initializedAtString: 2019-04-08T20:01:09.356+01:00
   entries:
   - path: UnityProject\.vs\UnityProject\v15\.suo
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
     projectPath: .vs\UnityProject\v15\.suo
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Assets\Scenes\MainMapStart.unity
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
     projectPath: Assets\Scenes\MainMapStart.unity
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
-  - path: UnityProject\Assets\UI_Assets\Prefabs\EnergyBar.prefab
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\EnergyBar.prefab
-    projectPath: Assets\UI_Assets\Prefabs\EnergyBar.prefab
-    originalPath: 
+  - path: UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
+    projectPath: Assets\Scripts\Characters\CharacterManagerScript.cs
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\EnergyBar.prefab.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\EnergyBar.prefab.meta
     projectPath: Assets\UI_Assets\Prefabs\EnergyBar.prefab.meta
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\HPBar.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\HPBar.prefab
     projectPath: Assets\UI_Assets\Prefabs\HPBar.prefab
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\HPBar.prefab.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\HPBar.prefab.meta
     projectPath: Assets\UI_Assets\Prefabs\HPBar.prefab.meta
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\nextWave.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\nextWave.prefab
     projectPath: Assets\UI_Assets\Prefabs\nextWave.prefab
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\nextWave.prefab.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\nextWave.prefab.meta
     projectPath: Assets\UI_Assets\Prefabs\nextWave.prefab.meta
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\pEnergyBar.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\pEnergyBar.prefab
     projectPath: Assets\UI_Assets\Prefabs\pEnergyBar.prefab
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\pEnergyBar.prefab.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\pEnergyBar.prefab.meta
     projectPath: Assets\UI_Assets\Prefabs\pEnergyBar.prefab.meta
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\pHealthBar.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\pHealthBar.prefab
     projectPath: Assets\UI_Assets\Prefabs\pHealthBar.prefab
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\pHealthBar.prefab.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\pHealthBar.prefab.meta
     projectPath: Assets\UI_Assets\Prefabs\pHealthBar.prefab.meta
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\TimeOutline.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\TimeOutline.prefab
     projectPath: Assets\UI_Assets\Prefabs\TimeOutline.prefab
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\TimeOutline.prefab.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\TimeOutline.prefab.meta
     projectPath: Assets\UI_Assets\Prefabs\TimeOutline.prefab.meta
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\WaveOutline.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\WaveOutline.prefab
     projectPath: Assets\UI_Assets\Prefabs\WaveOutline.prefab
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Prefabs\WaveOutline.prefab.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Prefabs\WaveOutline.prefab.meta
     projectPath: Assets\UI_Assets\Prefabs\WaveOutline.prefab.meta
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Scripts\CountdownScript.cs
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Scripts\CountdownScript.cs
     projectPath: Assets\UI_Assets\Scripts\CountdownScript.cs
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs
     projectPath: Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs.meta
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs.meta
     projectPath: Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs.meta
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
+    originalPath:
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\gitlog.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+    fullPath: F:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\metadata\47\476cc7d7cd9874016adc216baab94a0a.info
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\47\476cc7d7cd9874016adc216baab94a0a.info
     projectPath: Library\metadata\47\476cc7d7cd9874016adc216baab94a0a.info
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Library\metadata\a1\a186f8a87ca4f4d3aa864638ad5dfb65.info
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\a1\a186f8a87ca4f4d3aa864638ad5dfb65.info
     projectPath: Library\metadata\a1\a186f8a87ca4f4d3aa864638ad5dfb65.info
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Library\metadata\fc\fcf7219bab7fe46a1ad266029b2fee19.info
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\metadata\fc\fcf7219bab7fe46a1ad266029b2fee19.info
     projectPath: Library\metadata\fc\fcf7219bab7fe46a1ad266029b2fee19.info
-    originalPath: 
+    originalPath:
     status: 5
     staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
