@@ -8,6 +8,7 @@ public class EXPHandler : MonoBehaviour
     [SerializeField] private EXPBar    expBar;
     [SerializeField] private Text      expValue;
     [SerializeField] private Text      level;
+    [SerializeField] private Text      maxExpText;
     private EXPSystem expSystem;
 
     private int currentExpValue;
@@ -15,17 +16,16 @@ public class EXPHandler : MonoBehaviour
 
     private int levelNumber;
 
+    private int maxEXP;
     private int remainingEXP;
-    private int levelsUnlocked;
-
-    int test = 1;
-    
 
     // Start is called before the first frame update
     void Start()
     {
-        expSystem = new EXPSystem(100);
+        maxEXP = 100;
+        expSystem = new EXPSystem(maxEXP);
         expBar.Setup(expSystem);
+        maxExpText.text = maxEXP.ToString();
 
         currentExpValue = int.Parse(expValue.text);
     }
@@ -34,25 +34,30 @@ public class EXPHandler : MonoBehaviour
     {
         updatedExpValue = int.Parse(expValue.text);
 
-        if(updatedExpValue != currentExpValue)
+        if (updatedExpValue != currentExpValue)
         {
-            if(updatedExpValue < 100)
+            if(updatedExpValue < maxEXP)
             {
                 expValue.text = updatedExpValue.ToString();
+
                 expSystem.IncreaseExp(updatedExpValue);
                 currentExpValue = updatedExpValue;
             } else
             {
-                levelsUnlocked = updatedExpValue / 100;
-                remainingEXP   = updatedExpValue % 100;
+                remainingEXP   = updatedExpValue % maxEXP;
 
                 expValue.text = remainingEXP.ToString();
+
                 expSystem.IncreaseExp(remainingEXP);
-                currentExpValue = updatedExpValue;
+                currentExpValue = remainingEXP;
 
                 levelNumber = int.Parse(level.text);
-                levelNumber = levelNumber + levelsUnlocked;
+                levelNumber++;
                 level.text = levelNumber.ToString();
+
+                maxEXP = maxEXP + 10;
+                maxExpText.text = maxEXP.ToString();
+                expSystem.SetMaxExp(maxEXP);
             }
         }
     }

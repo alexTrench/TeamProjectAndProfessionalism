@@ -9,6 +9,7 @@ public class HealthBar : MonoBehaviour
     private HealthSystem healthSystem;
     public  GameObject   healthBar;
     public  Text         healthText;
+    public  Text         maxHealthText;
 
     public void Setup(HealthSystem healthSystem)
     {
@@ -21,5 +22,6 @@ public class HealthBar : MonoBehaviour
     {
         healthBar.transform.localScale = new Vector3(healthSystem.GetHealthPercent(), 1);
         healthText.text = ((int)healthSystem.GetHealth()).ToString();
+        //maxHealthText.text = ((int)healthSystem.GetHealth()).ToString();
     }
 }

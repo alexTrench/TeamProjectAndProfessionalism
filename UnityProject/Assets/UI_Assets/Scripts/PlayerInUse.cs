@@ -7,6 +7,8 @@ public class PlayerInUse : MonoBehaviour
 {
     [SerializeField] private List<Text> players;
     [SerializeField] private List<Text> playersHealth;
+    [SerializeField] private List<Text> playersHealthDelimiter;
+    [SerializeField] private List<Text> playersMaxHealth;
     [SerializeField] private Text currentPlayerInfo;
 
     // characters manager
@@ -25,8 +27,10 @@ public class PlayerInUse : MonoBehaviour
 
         currentPlayerInfo.text = (currentPlayerIndex + 1).ToString();
 
-        players[currentPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
-        playersHealth[currentPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
+        players[currentPlayerIndex].color                = new Color(1f, 0f, 0f, 0.5882353f);
+        playersHealth[currentPlayerIndex].color          = new Color(1f, 0f, 0f, 0.5882353f);
+        playersHealthDelimiter[currentPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
+        playersMaxHealth[currentPlayerIndex].color       = new Color(1f, 0f, 0f, 0.5882353f);
     }
 
     private void Update()
@@ -42,6 +46,12 @@ public class PlayerInUse : MonoBehaviour
        
             playersHealth[currentPlayerIndex].color = new Color(0f, 0f, 0f, 1f);
             playersHealth[updatedPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
+
+            playersHealthDelimiter[currentPlayerIndex].color = new Color(0f, 0f, 0f, 1f);
+            playersHealthDelimiter[updatedPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
+
+            playersMaxHealth[currentPlayerIndex].color = new Color(0f, 0f, 0f, 1f);
+            playersMaxHealth[updatedPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
 
             currentPlayerIndex = updatedPlayerIndex;
         }

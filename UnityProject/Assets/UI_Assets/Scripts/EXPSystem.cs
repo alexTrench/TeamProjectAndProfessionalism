@@ -19,6 +19,11 @@ public class EXPSystem
         return exp;
     }
 
+    public void SetMaxExp(int newExpMax)
+    {
+        expMAX = newExpMax;
+    }
+
     public float GetExpPercent()
     {
         return (float)exp / expMAX;
@@ -28,7 +33,6 @@ public class EXPSystem
     {
         exp = increaseAmount;
         if (exp >= expMAX) exp = 0;
-        Debug.Log(exp + " " + increaseAmount + " " + GetExpPercent());
         OnEXPChanged?.Invoke(this, EventArgs.Empty);
     }
 }

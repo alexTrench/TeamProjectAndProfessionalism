@@ -103,6 +103,9 @@
     <Compile Include="Assets\Scripts\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\SimpleCharacterMotor.cs" />
+    <Compile Include="Assets\Scripts\utility\FollowTarget.cs" />
+    <Compile Include="Assets\Scripts\utility\Inputs\InputBinding.cs" />
+    <Compile Include="Assets\Scripts\utility\Inputs\InputManager.cs" />
     <Compile Include="Assets\Skilltree\Script\Playerstats.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\CheckEnemies.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\CountdownScript.cs" />
@@ -118,10 +121,6 @@
     <Compile Include="Assets\UI_Assets\Scripts\MiniHealthHandler.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\PlayerInUse.cs" />
     <Compile Include="Assets\UI_Assets\Scripts\PressOToIncreaseEXP.cs" />
-    <Compile Include="Assets\UI_Assets\Scripts\PressZToDecreaseEnemies.cs" />
-    <Compile Include="Assets\utility\FollowTarget.cs" />
-    <Compile Include="Assets\utility\Inputs\InputBinding.cs" />
-    <Compile Include="Assets\utility\Inputs\InputManager.cs" />
     <Compile Include="Assets\Weapons\870 Shotgun\ShotgunScript.cs" />
     <Compile Include="Assets\Weapons\Ak_47\AK_Script.cs" />
     <Compile Include="Assets\Weapons\Grenades\GrenadeScript.cs" />

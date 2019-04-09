@@ -7,23 +7,23 @@ public class PressOToIncreaseEXP : MonoBehaviour
 {
     [SerializeField] private Text expText;
 
-    private int expINT;
+    private int expFloat;
 
     // Start is called before the first frame update
     private void Start()
     {
-        expINT = int.Parse(expText.text);
+        expFloat = int.Parse(expText.text);
     }
 
     // Update is called once per frame
     private void Update()
     {
-        expINT = int.Parse(expText.text);
+        expFloat = int.Parse(expText.text);
 
         if (Input.GetKeyDown(KeyCode.O))
         {
-            expINT = expINT + 5;
-            expText.text = expINT.ToString();
+            expFloat = expFloat + 5;
+            expText.text = expFloat.ToString();
         }
     }
 }
