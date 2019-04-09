@@ -92,3 +92,27 @@ MonoBehaviour:
     bulletSpeed: 80
     reloadTime: 1.4
     isPurchased: 0
+  - itemID: 4
+    name: Sci-Fi Heavy
+    weaponObject: {fileID: 1294672646082164, guid: 8d43e76b346f2f8448846e9211629d15,
+      type: 3}
+    bulleType: {fileID: 9070727495835887393, guid: 8c57bcecbdf47a44288f1063c3875df7,
+      type: 3}
+    damage: 30
+    fireRate: 0.1
+    MaxAmmo: 30
+    bulletSpeed: 200
+    reloadTime: 1.4
+    isPurchased: 0
+  - itemID: 5
+    name: Sci-Fi Pistol
+    weaponObject: {fileID: 1374600452982646, guid: 57bf5071e0a1c8947b8918a8f96184a6,
+      type: 3}
+    bulleType: {fileID: 8146788076166803898, guid: e75355bd86d826d41870567af2c07a55,
+      type: 3}
+    damage: 30
+    fireRate: 0.1
+    MaxAmmo: 30
+    bulletSpeed: 200
+    reloadTime: 1.4
+    isPurchased: 0

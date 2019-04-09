@@ -48,4 +48,10 @@ public class BaseCharacter : MonoBehaviour, IDamagable
     {
         return m_maxHealth;
     }
+
+    // Sets the max health of the character
+    public void SetMaxHealth(float maxHealth)
+    {
+        m_maxHealth = maxHealth;
+    }
 }

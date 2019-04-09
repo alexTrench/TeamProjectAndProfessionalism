@@ -33,7 +33,7 @@ public class RPG_Script : MonoBehaviour
         
     }
 
-    void Fire()
+    public void Fire()
     {
 
         GameObject o = Instantiate(database.weapons[id].bulleType, bulletSpawnLocation.position, bulletSpawnLocation.rotation);
@@ -43,5 +43,5 @@ public class RPG_Script : MonoBehaviour
         Physics.IgnoreLayerCollision(8, 8);
        
     }
-
+    
 }
