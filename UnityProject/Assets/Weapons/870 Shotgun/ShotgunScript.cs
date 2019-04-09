@@ -49,22 +49,21 @@ public class ShotgunScript : MonoBehaviour
         //get key does while
         if (InputManager.FireWeapon() == true && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
         {
-
-            if (CurrentAmmo > 0)
-            {
+            //if (CurrentAmmo > 0)
+            //{
                 //the fire function
                 Fire();
                 //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
                 nextFireTime = Time.time + database.weapons[id].fireRate;
 
-            }
-            else
-            {
-                if (IsReloading == false)
-                {
-                    StartCoroutine(Reload());
-                }
-            }
+            //}
+            //else
+            //{
+            //    if (IsReloading == false)
+            //    {
+            //        StartCoroutine(Reload());
+            //    }
+            //}
         }
     }
 
@@ -76,26 +75,34 @@ public class ShotgunScript : MonoBehaviour
 
     public void Fire()
     {
-        fireSound.Play();
 
-        for (int i = 0; i < bullets.Capacity; i++)
+        if (CurrentAmmo > 0)
         {
-            //creates a randam rotation for each bullet quaternion
-            bullets[i] = Random.rotation;
-            //spawns a bullets in at the spawnpoint
-            GameObject o = Instantiate(database.weapons[id].bulleType, bulletSpawn.position, bulletSpawn.rotation);
-            //shoots out the bullets forward at a angle max to spread angle
-            o.transform.rotation = Quaternion.RotateTowards(o.transform.rotation, bullets[i], spreadAngle);
-            //add the speed of the bullet to the rigid body
-            o.GetComponent<Rigidbody>().AddForce(o.transform.forward * database.weapons[id].bulletSpeed);
-            //next object in list   
+            fireSound.Play();
 
-            CurrentAmmo--;
+            for (int i = 0; i < bullets.Capacity; i++)
+            {
+                //creates a randam rotation for each bullet quaternion
+                bullets[i] = Random.rotation;
+                //spawns a bullets in at the spawnpoint
+                GameObject o = Instantiate(database.weapons[id].bulleType, bulletSpawn.position, bulletSpawn.rotation);
+                //shoots out the bullets forward at a angle max to spread angle
+                o.transform.rotation = Quaternion.RotateTowards(o.transform.rotation, bullets[i], spreadAngle);
+                //add the speed of the bullet to the rigid body
+                o.GetComponent<Rigidbody>().AddForce(o.transform.forward * database.weapons[id].bulletSpeed);
+                //next object in list   
+
+                CurrentAmmo--;
+            }
         }
-
-
+        else
+        {
+            if (IsReloading == false)
+            {
+                StartCoroutine(Reload());
+            }
+        }
     }
-
 
     IEnumerator Reload()
     {

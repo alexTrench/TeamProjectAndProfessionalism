@@ -89,8 +89,23 @@ public class WeaponPickup : MonoBehaviour
                     //item can be added to inventory
                     //once picked up set inventory full
                     inventory.isFull[i] = true;
-                    primaryWeapon = Instantiate(database.weapons[id].weaponObject, inventory.slots[i].transform.position, manager.transform.rotation);
-                    primaryWeapon.transform.SetParent(inventory.slots[i].transform);
+
+                    //weapons that are these id's have a wired 90 angle,
+                    //so this spawns them in differently to compencate          
+                    if(database.weapons[id].itemID == 4 || database.weapons[id].itemID == 5 || database.weapons[id].itemID == 6)
+                    {
+                       //this spawns the weapon on the primary or secondary inventory slot
+                       //at a rotated angle to take into consideration the -90 degree of the gun when imported
+                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, inventory.slots[i].transform.position, manager.transform.rotation * Quaternion.Euler(0,-90,0));
+                       primaryWeapon.transform.SetParent(inventory.slots[i].transform);
+                    }
+                    else
+                    {
+                       //these guns are the right allignment so no need to mess with the rotation
+                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, inventory.slots[i].transform.position, manager.transform.rotation);
+                       primaryWeapon.transform.SetParent(inventory.slots[i].transform);                  
+                    }
+                    
                     break;
                 }             
             }      
@@ -116,9 +131,9 @@ public class WeaponPickup : MonoBehaviour
                     //getchild(0) is just the first child, since there is only ever going to be one child for each one this is fine
                     SwapWeapon = inventory.slots[i].transform.GetChild(0).gameObject;
                     Destroy(SwapWeapon);
-                   //need to set back the is full boolean of the same inventory slot
-                   //only for now 
-                   inventory.isFull[i] = false;
+                    //need to set back the is full boolean of the same inventory slot
+                    //only for now 
+                    inventory.isFull[i] = false;
                     //Needs get the gun id and reset that   
                     int itemId = inventory.slots[i].gameObject.GetComponentInChildren<ItemId>().itemId;
                     Debug.Log(itemId);

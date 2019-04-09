@@ -38,20 +38,10 @@ public class AK_Script : MonoBehaviour
         //if the right mouse button is pressed
         if (InputManager.FireWeapon() && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
         {
-
-            if (CurrentAmmo > 0)
-            {
                 Fire();
                 //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
                 nextFireTime = Time.time + database.weapons[id].fireRate;
-            }
-            else
-            {
-                if (IsReloading == false)
-                {
-                    StartCoroutine(Reload());
-                }
-            }
+           
 
         }
     }
@@ -64,26 +54,35 @@ public class AK_Script : MonoBehaviour
 
     public void Fire()
     {
-        fireSound.Play();
 
+        if(CurrentAmmo > 0)
+        {
+            fireSound.Play();
+            //creates a clone of the bullet
+            GameObject bullet = Instantiate(database.weapons[id].bulleType);
 
-        //creates a clone of the bullet
-        GameObject bullet = Instantiate(database.weapons[id].bulleType);
+            //tells the bullets collision to ignore collision with itself 
+            //and the charactor to which the spawn point is attached
+            Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
+                bulletSpawn.parent.GetComponent<Collider>());
 
-        //tells the bullets collision to ignore collision with itself 
-        //and the charactor to which the spawn point is attached
-        Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
-            bulletSpawn.parent.GetComponent<Collider>());
+            //spawns at the bullet spawn point
+            bullet.transform.position = bulletSpawn.position;
+            //transforms the roatation into angles, into 360 degrees
+            Vector3 rotation = bullet.transform.rotation.eulerAngles;
+            bullet.transform.rotation = Quaternion.Euler(rotation.x, transform.eulerAngles.y, rotation.z);
 
-        //spawns at the bullet spawn point
-        bullet.transform.position = bulletSpawn.position;
-        //transforms the roatation into angles, into 360 degrees
-        Vector3 rotation = bullet.transform.rotation.eulerAngles;
-        bullet.transform.rotation = Quaternion.Euler(rotation.x, transform.eulerAngles.y, rotation.z);
-
-        //adds the speed to the rigid body, creating movement
-        bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * database.weapons[id].bulletSpeed, ForceMode.Impulse);
-        CurrentAmmo--;
+            //adds the speed to the rigid body, creating movement
+            bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * database.weapons[id].bulletSpeed, ForceMode.Impulse);
+            CurrentAmmo--;
+        }
+        else
+        {
+            if (IsReloading == false)
+            {
+                StartCoroutine(Reload());
+            }
+        }
 
     }
 
