@@ -6,18 +6,19 @@ using UnityEngine.SceneManagement;
 public class ReturnToMainMenu : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
+    void Start() 
     {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(0);
-            Cursor.visible = true;
-        }
+
+    }
+
+    public void returnToMainMenu()
+    {
+        SceneManager.LoadScene(0);
+        Cursor.visible = true;
     }
 }

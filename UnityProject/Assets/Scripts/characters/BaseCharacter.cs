@@ -4,6 +4,7 @@ public class BaseCharacter : MonoBehaviour, IDamagable
 {
     [SerializeField] protected float m_health    = 100.0f;
     [SerializeField] protected float m_maxHealth = 100.0f;
+    // add energy and max energy for each character.
 
     protected bool m_isDead = false;
 

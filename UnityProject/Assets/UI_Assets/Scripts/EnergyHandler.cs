@@ -18,6 +18,6 @@ public class EnergyHandler : MonoBehaviour
 
     private void Update()
     {
-        energySystem.DecreaseEnergy(0.2f);
+
     }
 }
