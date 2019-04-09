@@ -95,6 +95,7 @@ public class ShotgunScript : MonoBehaviour
                 CurrentAmmo--;
             }
         }
+        //if they have no ammo, they must reload
         else
         {
             if (IsReloading == false)
