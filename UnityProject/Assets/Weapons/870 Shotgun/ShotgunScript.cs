@@ -23,6 +23,7 @@ public class ShotgunScript : MonoBehaviour
     private int CurrentAmmo;
     private bool IsReloading = false;
 
+    private AudioSource fireSound;
 
     //awkae called before the game starts
     void Awake()
@@ -30,16 +31,17 @@ public class ShotgunScript : MonoBehaviour
         gameController = GameObject.FindGameObjectWithTag("GameController");
         database = gameController.GetComponent<weaponDatabase>();
         CurrentAmmo = database.weapons[id].MaxAmmo;
+        fireSound = GetComponent<AudioSource>();
         //list of bullet angles for the amount of shells in a shotgun
         bullets = new List<Quaternion>(shellCount);
-        for (int i = 0; i < shellCount ; i++)
+        for (int i = 0; i < shellCount; i++)
         {
             //empty rotation added to stop potential errors
             bullets.Add(Quaternion.Euler(Vector3.zero));
         }
 
     }
- 
+
     // Update is called once per frame
     void Update()
     {
@@ -47,14 +49,14 @@ public class ShotgunScript : MonoBehaviour
         //get key does while
         if (InputManager.FireWeapon() == true && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
         {
-            
+
             if (CurrentAmmo > 0)
             {
                 //the fire function
                 Fire();
                 //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
                 nextFireTime = Time.time + database.weapons[id].fireRate;
-                
+
             }
             else
             {
@@ -74,8 +76,9 @@ public class ShotgunScript : MonoBehaviour
 
     public void Fire()
     {
-    
-        for(int i = 0; i < bullets.Capacity; i++)
+        fireSound.Play();
+
+        for (int i = 0; i < bullets.Capacity; i++)
         {
             //creates a randam rotation for each bullet quaternion
             bullets[i] = Random.rotation;
@@ -90,7 +93,7 @@ public class ShotgunScript : MonoBehaviour
             CurrentAmmo--;
         }
 
-       
+
     }
 
 

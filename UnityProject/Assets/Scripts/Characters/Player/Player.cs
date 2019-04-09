@@ -12,7 +12,7 @@ public class Player : BaseCharacter
     private ZombieManagerScript    m_zombieManager;
     private Transform              m_lookAtTransform;
     private Inventory              m_inventory;
-
+    
     [SerializeField] private float m_distanceThreshold = 5.0f;
     [SerializeField] private float m_navMeshRadius     = 3.0f;
 

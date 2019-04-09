@@ -17,7 +17,7 @@ public class M4_Script : MonoBehaviour
     //is reloding
     private bool IsReloading = false;
 
-
+    private AudioSource fireSound;
 
 
 
@@ -27,7 +27,7 @@ public class M4_Script : MonoBehaviour
         gameController = GameObject.FindGameObjectWithTag("GameController");
         database = gameController.GetComponent<weaponDatabase>();
         CurrentAmmo = database.weapons[id].MaxAmmo;
-
+        fireSound = GetComponent<AudioSource>();
 
 
     }
@@ -64,7 +64,7 @@ public class M4_Script : MonoBehaviour
 
     public void Fire()
     {
-
+        fireSound.Play();
         //creates a clone of the bullet
         GameObject bullet = Instantiate(database.weapons[id].bulleType);
 

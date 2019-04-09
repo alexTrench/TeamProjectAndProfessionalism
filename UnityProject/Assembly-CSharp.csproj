@@ -86,6 +86,12 @@
     <Compile Include="Assets\MainMenu_Assets\Scripts\TiltWindow.cs" />
     <Compile Include="Assets\PowerUps\Scripts\PowerUp.cs" />
     <Compile Include="Assets\Scenes\CameraController.cs" />
+    <Compile Include="Assets\Sci-Fi Weapons\Base Pack\Prefabs\Heavys\HeavyRifleScript.cs" />
+    <Compile Include="Assets\Sci-Fi Weapons\Base Pack\Prefabs\Heavys\HeavySciFiBullet.cs" />
+    <Compile Include="Assets\Sci-Fi Weapons\Base Pack\Prefabs\Pistol\SciFiPistolBullets.cs" />
+    <Compile Include="Assets\Sci-Fi Weapons\Base Pack\Prefabs\Pistol\SciFiPistolScript.cs" />
+    <Compile Include="Assets\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\SciFiRifleBulletScript.cs" />
+    <Compile Include="Assets\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\SciFiRifleScript.cs" />
     <Compile Include="Assets\Scripts\AI\HitMarkerHandlerScript.cs" />
     <Compile Include="Assets\Scripts\AI\HitMarkerScript.cs" />
     <Compile Include="Assets\Scripts\AI\ZombieManagerScript.cs" />
@@ -93,11 +99,11 @@
     <Compile Include="Assets\Scripts\AI\Zombies\Zombie.cs" />
     <Compile Include="Assets\Scripts\AI\Zombies\ZombieAnimationScript.cs" />
     <Compile Include="Assets\Scripts\AI\Zombies\ZombieAttack.cs" />
-    <Compile Include="Assets\Scripts\Characters\BaseCharacter.cs" />
-    <Compile Include="Assets\Scripts\Characters\CharacterManagerScript.cs" />
-    <Compile Include="Assets\Scripts\Characters\Player\Player.cs" />
-    <Compile Include="Assets\Scripts\Characters\Player\PlayerAnimationScript.cs" />
-    <Compile Include="Assets\Scripts\Characters\Player\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\characters\BaseCharacter.cs" />
+    <Compile Include="Assets\Scripts\characters\CharacterManagerScript.cs" />
+    <Compile Include="Assets\Scripts\characters\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\characters\Player\PlayerAnimationScript.cs" />
+    <Compile Include="Assets\Scripts\characters\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IDamagable.cs" />
     <Compile Include="Assets\Scripts\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\AdjustTimeScale.cs" />
@@ -157,28 +163,28 @@
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\MainMenu_Assets\Scripts\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.ProGrids">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProGrids.Editor">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>F:/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Documents/Unity/TeamProjectAndProfessionalism/UnityProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.9f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
