@@ -1,14 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MiniHealthHandler : MonoBehaviour
 {
     [SerializeField] private HealthSystem healthSystem;
     [SerializeField] private HealthBar    healthBar;
     [SerializeField] private int          playerIndex;
-
-
+    
     // characters manager
     private CharacterManagerScript charactersManager;
 

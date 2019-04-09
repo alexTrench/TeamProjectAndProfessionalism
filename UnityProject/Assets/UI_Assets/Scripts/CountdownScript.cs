@@ -9,11 +9,17 @@ public class CountdownScript : MonoBehaviour
     [SerializeField] private float mainTimer;
     [SerializeField] private Text  enemiesLeft;
 
+    private ZombieManagerScript zombieManager;
+    private int enemiesNo;
+    
     private float timer;
     private int enemiesLeftINT;
 
     private void Start()
     {
+        // look on the list of objects and get the component for character manager script
+        zombieManager = GameObject.FindGameObjectWithTag("ZombieManager").GetComponent<ZombieManagerScript>();
+
         timer = mainTimer;
     }
 
@@ -30,8 +36,15 @@ public class CountdownScript : MonoBehaviour
         {
             if(enemiesLeftINT <= 0)
             {
-                enemiesLeft.text = "10";
-                timer = mainTimer;
+                enemiesNo = zombieManager.GetNumOfZombies();
+                enemiesLeft.text = enemiesNo.ToString();
+                if(enemiesNo != 0)
+                {
+                    timer = mainTimer;
+                } else
+                {
+                    uiNumber.text = "NOW";
+                }
             } else
             {
                 uiNumber.text = "NOW";
