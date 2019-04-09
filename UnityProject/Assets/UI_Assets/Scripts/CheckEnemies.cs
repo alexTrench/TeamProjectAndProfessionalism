@@ -5,29 +5,32 @@ using UnityEngine.UI;
 
 public class CheckEnemies : MonoBehaviour
 {
-    [SerializeField] private Text enemiesLeft;
+    [SerializeField] private Text enemiesLeftText;
 
-    private int enemiesLeftINT;
+    private int enemiesLeft;
+    private int updatedEnemiesLeft;
+
+    private ZombieManagerScript zombieManager;
 
     // Start is called before the first frame update
     private void Start()
     {
-        enemiesLeftINT = int.Parse(enemiesLeft.text);
+        // look on the list of objects and get the component for character manager script
+        zombieManager = GameObject.FindGameObjectWithTag("ZombieManager").GetComponent<ZombieManagerScript>();
+
+        enemiesLeft = zombieManager.GetNumOfZombies();
+        enemiesLeftText.text = enemiesLeft.ToString();
 
     }
 
     // Update is called once per frame
     private void Update()
     {
-        enemiesLeftINT = int.Parse(enemiesLeft.text);
-
-        if (Input.GetKeyDown(KeyCode.Z))
+        updatedEnemiesLeft = zombieManager.GetNumOfZombies();
+        if(updatedEnemiesLeft != enemiesLeft)
         {
-            if (enemiesLeftINT > 0)
-            {
-                --enemiesLeftINT;
-                enemiesLeft.text = enemiesLeftINT.ToString();
-            }
+            enemiesLeftText.text = updatedEnemiesLeft.ToString();
+            enemiesLeft = updatedEnemiesLeft;
         }
     }
 }
