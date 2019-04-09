@@ -101,4 +101,8 @@ public class AK_Script : MonoBehaviour
 
     }
 
+    public bool GetIsReloading()
+    {
+        return IsReloading;
+    }
 }

@@ -10,9 +10,9 @@ public class CharacterManagerScript : MonoBehaviour
     [SerializeField] private Player m_character3;
     [SerializeField] private Player m_character4;
 
-    private List<Player>  m_playerCharacters;
-    private int           m_currentPlayerIndex   = 0;
-    private FollowTarget  m_followingCamera;
+    private List<Player> m_playerCharacters;
+    private int m_currentPlayerIndex = 0;
+    private FollowTarget m_followingCamera;
     private Queue<Player> m_deadPlayerCharacters;
 
     private void Awake()
@@ -35,7 +35,7 @@ public class CharacterManagerScript : MonoBehaviour
         // Set initial player controlled character
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -80,7 +80,7 @@ public class CharacterManagerScript : MonoBehaviour
 
         // Enable current character and disable others
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
-        
+
         m_followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
 
@@ -127,8 +127,7 @@ public class CharacterManagerScript : MonoBehaviour
                 playerCharacter.GetComponent<PlayerController>().enabled = true;
                 playerCharacter.GetComponent<NavMeshAgent>().enabled = false;
                 playerCharacter.GetComponent<Player>().SetIsPlayerControlled(true);
-                playerCharacter.GetComponent<WeaponPickup>().enabled = true;
-    
+                //playerCharacter.GetComponent<WeaponPickup>().enabled = true;
             }
             // Disable other character
             else
@@ -137,11 +136,11 @@ public class CharacterManagerScript : MonoBehaviour
                 playerCharacter.GetComponent<PlayerController>().enabled = false;
                 playerCharacter.GetComponent<NavMeshAgent>().enabled = true;
                 playerCharacter.GetComponent<Player>().SetIsPlayerControlled(false);
-                playerCharacter.GetComponent<WeaponPickup>().enabled = false;
+                //playerCharacter.GetComponent<WeaponPickup>().enabled = false;
             }
         }
     }
-    
+
     // Returns the currently controlled player character
     public Player GetCurrentPlayer()
     {

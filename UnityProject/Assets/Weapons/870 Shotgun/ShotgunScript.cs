@@ -111,5 +111,8 @@ public class ShotgunScript : MonoBehaviour
 
     }
 
-
+    public bool GetIsReloading()
+    {
+        return IsReloading;
+    }
 }

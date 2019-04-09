@@ -42,21 +42,16 @@ public class PlayerAnimationScript : MonoBehaviour
         else // AI controlled
         {
             speed = m_nav.velocity.magnitude;
-            //direction = m_nav.
         }
         m_animator.SetFloat(m_directionHash, direction);
         m_animator.SetFloat(m_speedHash, speed);
 
-        if (InputManager.Reload()) {
-            // Play reload animation
-            m_animator.SetTrigger(m_isReloadingHash);
-        }
+        // Reloading
+        m_animator.SetBool("IsReloading", m_player.IsReloading());
+
         if (InputManager.ThrowGrenade()) {
             // Play throwing grenade animation
             m_animator.SetTrigger(m_isThrowingGrenadeHash);
-        }
-        if (InputManager.Die()) {
-            m_animator.SetTrigger(m_isDeadHash);
         }
     }
 }

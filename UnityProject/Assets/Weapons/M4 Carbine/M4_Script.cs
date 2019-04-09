@@ -98,5 +98,9 @@ public class M4_Script : MonoBehaviour
 
     }
 
+    public bool GetIsReloading()
+    {
+        return IsReloading;
+    }
 }
 

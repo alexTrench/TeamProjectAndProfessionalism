@@ -43,5 +43,5 @@ public class RPG_Script : MonoBehaviour
         Physics.IgnoreLayerCollision(8, 8);
        
     }
-
+    
 }

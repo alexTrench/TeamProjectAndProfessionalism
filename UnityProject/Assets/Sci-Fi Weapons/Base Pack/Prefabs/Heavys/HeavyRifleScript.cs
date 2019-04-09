@@ -65,7 +65,7 @@ public class HeavyRifleScript : MonoBehaviour
         IsReloading = false;
     }
 
-    private void Fire()
+    public void Fire()
     {
         muzzleFlash.Play();
         firesound.Play();
@@ -120,5 +120,9 @@ public class HeavyRifleScript : MonoBehaviour
 
     }
 
+    public bool GetIsReloading()
+    {
+        return IsReloading;
+    }
 }
 
