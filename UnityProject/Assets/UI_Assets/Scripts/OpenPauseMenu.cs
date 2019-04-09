@@ -36,11 +36,15 @@ public class OpenPauseMenu : MonoBehaviour
 
     void ActivateMenu()
     {
+        Time.timeScale = 0.001f;
+        AudioListener.pause = true;
         pauseMenuUI.SetActive(true);
     }
 
     void DeactivateMenu()
     {
+        Time.timeScale = 1.0f;
+        AudioListener.pause = false;
         pauseMenuUI.SetActive(false);
     }
 }
