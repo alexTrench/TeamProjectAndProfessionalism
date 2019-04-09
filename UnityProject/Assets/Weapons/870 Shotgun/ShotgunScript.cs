@@ -72,7 +72,7 @@ public class ShotgunScript : MonoBehaviour
         IsReloading = false;
     }
 
-    void Fire()
+    public void Fire()
     {
     
         for(int i = 0; i < bullets.Capacity; i++)

@@ -62,7 +62,7 @@ public class AK_Script : MonoBehaviour
         IsReloading = false;
     }
 
-    private void Fire()
+    public void Fire()
     {
 
             //creates a clone of the bullet
