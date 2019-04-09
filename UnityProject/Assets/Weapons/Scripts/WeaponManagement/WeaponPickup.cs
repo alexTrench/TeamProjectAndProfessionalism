@@ -84,11 +84,7 @@ public class WeaponPickup : MonoBehaviour
             {
                 if (inventory.isFull[i] == false && database.weapons[id].isPurchased == false)
                 {
-                    //sets weapon as purchased so cannot buy again
-                    database.weapons[id].isPurchased = true;
-                    //item can be added to inventory
-                    //once picked up set inventory full
-                    inventory.isFull[i] = true;
+                   
 
                     //weapons that are these id's have a wired 90 angle,
                     //so this spawns them in differently to compencate          
@@ -96,17 +92,24 @@ public class WeaponPickup : MonoBehaviour
                     {
                        //this spawns the weapon on the primary or secondary inventory slot
                        //at a rotated angle to take into consideration the -90 degree of the gun when imported
-                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, inventory.slots[i].transform.position, manager.transform.rotation * Quaternion.Euler(0,-90,0));
+                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, manager.transform.position, manager.transform.rotation * Quaternion.Euler(0,-90,0));
                        primaryWeapon.transform.SetParent(inventory.slots[i].transform);
+                       //Debug.Log(inventory.slots[i].transform.position);
                     }
                     else
                     {
                        //these guns are the right allignment so no need to mess with the rotation
-                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, inventory.slots[i].transform.position, manager.transform.rotation);
-                       primaryWeapon.transform.SetParent(inventory.slots[i].transform);                  
+                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, manager.transform.position, manager.transform.rotation);
+                       primaryWeapon.transform.SetParent(inventory.slots[i].transform);
+                       //Debug.Log(inventory.slots[i].transform.position);
                     }
-                    
-                    break;
+                     //sets weapon as purchased so cannot buy again
+                     database.weapons[id].isPurchased = true;
+                     //item can be added to inventory
+                     //once picked up set inventory full
+                     inventory.isFull[i] = true;
+
+                break;
                 }             
             }      
     }
@@ -126,9 +129,10 @@ public class WeaponPickup : MonoBehaviour
             {
                 if(inventory.isActive[i] == true)
                 {
-                 
+
                     //removes the weapon from the primary or secondary slot, dependent on which was activer
                     //getchild(0) is just the first child, since there is only ever going to be one child for each one this is fine
+                    Debug.Log(inventory.slots[i].transform.GetChild(0).gameObject);
                     SwapWeapon = inventory.slots[i].transform.GetChild(0).gameObject;
                     Destroy(SwapWeapon);
                     //need to set back the is full boolean of the same inventory slot
