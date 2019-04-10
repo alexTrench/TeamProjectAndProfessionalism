@@ -19,11 +19,14 @@ public class Wave
     //calculated from base variables.
     private const float DIMINISH_RETURNS = 2.5f;
 
-    //[numEnemies] How many enemies are currently on the map
-    private int numEnemies;
+    //[totalEnemies] How many enemies will exist in this wave.
+    private int totalEnemies = 0;
+
+    //[enemiesRemaining] Tracks the current number of enemies in the wave.
+    private int enemiesRemaining = 0;
 
     //[waveNo] The wave that is currently in session.
-    private int waveNo;
+    private readonly int waveNo;
 
     /**
      * @brief Constructor for a Wave.
@@ -32,9 +35,17 @@ public class Wave
         //Update the wave number.
         waveNo = ++totalWaves;
 
-        //Calculate the number of enemies to spawn in this wave.
-        numEnemies = (int)(waveNo * (BASE_ENEMIES / DIMINISH_RETURNS));
+        Debug.Log(waveNo);
 
-        Debug.Log("num enemies:\t" + numEnemies);
+        //Calculate the number of enemies to spawn in this wave.
+        totalEnemies = (int)(waveNo * (BASE_ENEMIES / DIMINISH_RETURNS));
+
+        //Reset the number of enemies remaining.
+        enemiesRemaining = totalEnemies;
+
+        Debug.Log("num enemies:\t" + totalEnemies);
     }
+
+    //@reutrns the number of enemies left to fight in the wave.
+    public int GetNumEnemies() => enemiesRemaining;
 }

@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 /**
  * @brief   Manages the games gameplay.
@@ -13,10 +14,13 @@ public class GameplayManager : MonoBehaviour
 
     //[COOLDOWN] The amount of time (in seconds) 
     //allocated between waves.
-    private const float COOLDOWN = 30.0f;
+    private const float COOLDOWN = 10.0f;
 
     //[currentWave] The wave currently in progress.
     private Wave currentWave = null;
+
+    //[cooldownInProgress] 'true' inbetween waves.
+    public bool cooldownInProgress = false;
 
     /**
      * @brief runs immediatly to make sure there 
@@ -37,23 +41,50 @@ public class GameplayManager : MonoBehaviour
         }
     }
 
-    /**
-     * @brief Starts up the Gameplay Manager.
-     */
-    private void Start() {
-        StartWave();
+    private void Update() {
+        //Start a new wave.
+        if(!WaveInProgress() && !cooldownInProgress) {
+            StartCoroutine(StartWave());
+        }
+        //Wave in session.
+        else if(WaveInProgress() && !cooldownInProgress) {
+            if(currentWave.GetNumEnemies() == 0) {
+                StartCoroutine(EndWave());
+            }
+        }
+        //Cooldown in session.
+        else if(!WaveInProgress() && cooldownInProgress) {
+
+        }
+        //Error
+        else {
+            Debug.LogError("Unrecognised gameplay state");
+        }
     }
 
-    private void StartWave() {
-        currentWave = new Wave();
+    private IEnumerator StartWave() {
+        yield return currentWave = new Wave();
+        Debug.Log("Wave start");
     }
 
-    private void EndWave() {
+    private IEnumerator EndWave() {
+        yield return currentWave = null;
+        Debug.Log("Wave end");
+        //Begin the cooldown period.
+        StartCoroutine(CooldownPeriod());
+    }
 
+    private IEnumerator CooldownPeriod() {
+        cooldownInProgress = true;
+        yield return new WaitForSeconds(COOLDOWN);
+        cooldownInProgress = false;
     }
 
     //@reutrns the current wave in progress.
     public Wave GetWave() => currentWave;
 
+    //@returns 'true' if a wave is currently in progress.
+    public bool WaveInProgress() => !(currentWave == null);
 
+    public bool IsCooldownInProgres() => cooldownInProgress;
 }
