@@ -14,26 +14,145 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 1536
-    y: 33
+    x: 0
+    y: 43
     width: 1920
-    height: 997
+    height: 1007
   m_ShowMode: 4
   m_Title: 
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_RootView: {fileID: 5}
-  m_MinSize: {x: 950, y: 548}
-=======
-  m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 374}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
   m_RootView: {fileID: 7}
   m_MinSize: {x: 950, y: 300}
->>>>>>> button_mapping
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1576
+    y: 0
+    width: 344
+    height: 957
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 2}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 957
+  m_MinSize: {x: 683, y: 348}
+  m_MaxSize: {x: 12008, y: 8048}
+  vertical: 0
+  controlID: 64
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 581
+    width: 1576
+    height: 376
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 12}
+  m_Panes:
+  - {fileID: 18}
+  - {fileID: 12}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 4}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1576
+    height: 957
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
+  vertical: 1
+  controlID: 65
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 202
+    height: 581
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,41 +165,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
+  - {fileID: 8}
   - {fileID: 3}
-  - {fileID: 4}
-  - {fileID: 5}
+  - {fileID: 10}
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 0
-<<<<<<< HEAD
-    y: 631
-    width: 1176
-    height: 316
-  m_MinSize: {x: 234, y: 274}
-  m_MaxSize: {x: 10004, y: 10024}
-  m_ActualView: {fileID: 16}
-=======
-    x: 1576
-    y: 0
-    width: 344
-    height: 957
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
-  m_ActualView: {fileID: 17}
->>>>>>> button_mapping
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
-=======
     y: 0
     width: 1920
-    height: 997
+    height: 1007
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
---- !u!114 &3
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,41 +188,17 @@ MonoBehaviour:
   m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 2}
-  m_Position:
-    serializedVersion: 2
-    x: 202
-    y: 0
-    width: 1176
-    height: 947
-  m_MinSize: {x: 234, y: 498}
-  m_MaxSize: {x: 10004, y: 14048}
-  vertical: 1
-  controlID: 60
---- !u!114 &4
-=======
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1920
-<<<<<<< HEAD
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
-=======
-    height: 957
-  m_MinSize: {x: 683, y: 348}
-  m_MaxSize: {x: 12008, y: 8048}
-  vertical: 0
-  controlID: 64
->>>>>>> button_mapping
---- !u!114 &4
+--- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -140,38 +212,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Children:
   - {fileID: 6}
-  - {fileID: 7}
-  - {fileID: 8}
-  - {fileID: 9}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 30
-    width: 1920
-    height: 947
-  m_MinSize: {x: 909, y: 324}
-  m_MaxSize: {x: 22006, y: 10024}
-  vertical: 0
-  controlID: 118
-=======
-    y: 683
-=======
-    y: 581
->>>>>>> button_mapping
+    y: 0
     width: 1576
-    height: 376
-  m_MinSize: {x: 102, y: 124}
-  m_MaxSize: {x: 4002, y: 4024}
-  m_ActualView: {fileID: 12}
-  m_Panes:
-  - {fileID: 18}
-  - {fileID: 12}
-  m_Selected: 1
-  m_LastSelected: 0
->>>>>>> button_mapping
---- !u!114 &5
+    height: 581
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
+  vertical: 0
+  controlID: 66
+--- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -187,245 +239,12 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 977
+    y: 987
     width: 1920
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-=======
-    y: 0
-    width: 1576
-    height: 957
-  m_MinSize: {x: 406, y: 348}
-  m_MaxSize: {x: 8006, y: 8048}
-  vertical: 1
-  controlID: 65
->>>>>>> button_mapping
---- !u!114 &6
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-<<<<<<< HEAD
-    width: 202
-<<<<<<< HEAD
-    height: 947
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
-  m_ActualView: {fileID: 14}
-=======
-    height: 581
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
-  m_ActualView: {fileID: 16}
->>>>>>> button_mapping
-  m_Panes:
-  - {fileID: 14}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &5
-=======
-    width: 1016
-    height: 947
-  m_MinSize: {x: 200, y: 324}
-  m_MaxSize: {x: 4002, y: 8024}
-  vertical: 1
-  controlID: 32
---- !u!114 &7
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_Children:
-  - {fileID: 6}
-  - {fileID: 7}
-  - {fileID: 8}
-=======
-  m_Children: []
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-  m_Position:
-    serializedVersion: 2
-    x: 1016
-    y: 0
-<<<<<<< HEAD
-    width: 1920
-<<<<<<< HEAD
-    height: 997
-  m_MinSize: {x: 950, y: 548}
-=======
-    height: 1007
-  m_MinSize: {x: 950, y: 300}
->>>>>>> button_mapping
-  m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &6
-=======
-    width: 204
-    height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &8
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1220
-    y: 0
-<<<<<<< HEAD
-    width: 1920
-    height: 30
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 
---- !u!114 &7
-=======
-    width: 423
-    height: 947
-  m_MinSize: {x: 234, y: 274}
-  m_MaxSize: {x: 10004, y: 10024}
-  m_ActualView: {fileID: 17}
-  m_Panes:
-  - {fileID: 17}
-  - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &9
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-<<<<<<< HEAD
-  m_Children:
-  - {fileID: 4}
-  - {fileID: 3}
-  - {fileID: 9}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-    y: 30
-    width: 1920
-    height: 947
-  m_MinSize: {x: 713, y: 498}
-  m_MaxSize: {x: 18008, y: 14048}
-=======
-    y: 0
-    width: 1576
-<<<<<<< HEAD
-    height: 683
-  m_MinSize: {x: 404, y: 224}
-  m_MaxSize: {x: 8004, y: 4024}
->>>>>>> button_mapping
-=======
-    height: 581
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
->>>>>>> button_mapping
-  vertical: 0
-  controlID: 133
---- !u!114 &8
-=======
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 1643
-    y: 0
-    width: 277
-    height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  m_Selected: 0
-  m_LastSelected: 0
---- !u!114 &10
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
-    serializedVersion: 2
-    x: 0
-<<<<<<< HEAD
-    y: 977
-    width: 1920
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
---- !u!114 &9
-=======
-    y: 0
-    width: 1016
-    height: 339
-  m_MinSize: {x: 102, y: 124}
-  m_MaxSize: {x: 4002, y: 4024}
-  m_ActualView: {fileID: 14}
-  m_Panes:
-  - {fileID: 19}
-  - {fileID: 14}
-  - {fileID: 13}
-  m_Selected: 1
-  m_LastSelected: 2
 --- !u!114 &11
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -440,42 +259,22 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1378
+    x: 202
     y: 0
-<<<<<<< HEAD
-    width: 542
-    height: 947
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
-  m_ActualView: {fileID: 15}
-=======
     width: 1374
     height: 581
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 20}
->>>>>>> button_mapping
   m_Panes:
-  - {fileID: 11}
+  - {fileID: 20}
   - {fileID: 15}
-  m_Selected: 1
-  m_LastSelected: 0
---- !u!114 &10
-=======
-    x: 0
-    y: 339
-    width: 1016
-    height: 608
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
+  - {fileID: 13}
+  - {fileID: 19}
+  - {fileID: 14}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 3
 --- !u!114 &12
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -483,41 +282,25 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-<<<<<<< HEAD
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: 111653112392082826, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    y: 0
-    width: 1176
-    height: 631
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
-  m_ActualView: {fileID: 18}
-  m_Panes:
-  - {fileID: 18}
-  - {fileID: 17}
-  - {fileID: 13}
-  - {fileID: 12}
-  m_Selected: 0
-  m_LastSelected: 1
---- !u!114 &11
-=======
-    y: 756
-=======
     y: 654
->>>>>>> button_mapping
     width: 1574
     height: 356
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
->>>>>>> button_mapping
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -525,8 +308,6 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-=======
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
   m_EditorHideFlags: 0
   m_Script: {fileID: 12373, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -540,16 +321,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 1381
+    x: 202
     y: 73
-    width: 537
-=======
-    x: 2756
-    y: 63
-    width: 419
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-    height: 927
+    width: 1437
+    height: 663
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MixersTreeState:
     scrollPos: {x: 0, y: 0}
@@ -571,7 +346,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 8}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -625,27 +400,16 @@ MonoBehaviour:
       splitSize: 6
       xOffset: 0
     m_HorizontalSplitter:
-<<<<<<< HEAD
-      ID: 323
+      ID: 378
       splitterInitialOffset: 158
       currentActiveSplitter: -1
-      realSizes: cd0000004d010000
-=======
-      ID: 5380
-      splitterInitialOffset: 158
-      currentActiveSplitter: -1
-      realSizes: a000000004010000
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+      realSizes: 240200007a030000
       relativeSizes:
       - 0.3809524
       - 0.61904764
       minSizes: a0000000a0000000
       maxSizes: 0000000000000000
-<<<<<<< HEAD
-      lastTotalSize: 538
-=======
-      lastTotalSize: 420
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+      lastTotalSize: 1438
       splitSize: 6
       xOffset: -1
   m_SectionOrder: 00000000030000000100000002000000
@@ -654,11 +418,7 @@ MonoBehaviour:
   m_ShowReferencedBuses: 1
   m_ShowBusConnections: 0
   m_ShowBusConnectionsOfSelection: 0
-<<<<<<< HEAD
---- !u!114 &12
-=======
---- !u!114 &13
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+--- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -858,11 +618,7 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
-<<<<<<< HEAD
---- !u!114 &13
-=======
---- !u!114 &14
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+--- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -883,30 +639,15 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-    x: 0
-    y: 73
-=======
-    x: 1536
-    y: 63
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-    width: 1014
-    height: 319
+    x: 204
+    y: 22
+    width: 1175
+    height: 659
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastSelectedObjectID: 50096
---- !u!114 &14
-=======
-  m_LastSelectedObjectID: -37730
---- !u!114 &15
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
   m_LastSelectedObjectID: 13394
 --- !u!114 &16
->>>>>>> button_mapping
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -927,39 +668,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 2552
-    y: 63
+    x: 0
+    y: 73
     width: 200
-<<<<<<< HEAD
-    height: 927
-=======
     height: 561
->>>>>>> button_mapping
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-      m_SelectedIDs: d6fbffff
-      m_LastClickedID: -1066
-      m_ExpandedIDs: 7aebffffd6fbffff882800003a370000
-=======
-      m_SelectedIDs: 9e6cffff
-      m_LastClickedID: -37730
-      m_ExpandedIDs: b06cffffb86cffffce6cffffdc6cffffe46cffffec6cffff026dffff0a6dffff126dffff186dffff206dffff266dffff2e6dffff346dffff3e6dffff446dffff5a6dffff606dffff666dffff6c6dffff726dffff7c6dffff5acfffffbad5ffffbcd5ffffd6fbffffe8b00000
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
-      m_SelectedIDs: 52340000
-      m_LastClickedID: 13394
-      m_ExpandedIDs: d6fbfffffe1f0000ca3500005e390000
->>>>>>> button_mapping
-=======
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e0faffff
->>>>>>> button_mapping
+      m_ExpandedIDs: caf8ffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -975,11 +694,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-<<<<<<< HEAD
-        m_ClientGUIView: {fileID: 4}
-=======
-        m_ClientGUIView: {fileID: 7}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+        m_ClientGUIView: {fileID: 6}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -987,11 +702,7 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 3eb9eb664cbe6c84d9c3cef6831b207d
-<<<<<<< HEAD
---- !u!114 &15
-=======
---- !u!114 &16
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+--- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1012,23 +723,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 1378
-    y: 73
-    width: 540
-=======
-    x: 3179
-    y: 63
-    width: 275
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-    height: 927
-=======
     x: 1576
     y: 73
     width: 342
     height: 937
->>>>>>> button_mapping
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -1039,11 +737,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-<<<<<<< HEAD
---- !u!114 &16
-=======
---- !u!114 &17
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1064,24 +758,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-    x: 202
-    y: 704
-    width: 1172
-    height: 296
-=======
-    x: 2756
-    y: 63
-    width: 419
-    height: 927
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
     x: 0
     y: 756
     width: 1576
     height: 254
->>>>>>> button_mapping
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1095,43 +775,10 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    - Assets/Weapons/Mystery Box
-  m_ViewMode: 1
-  m_StartGridSize: 16
-  m_LastFolders:
-  - Assets/Weapons/Mystery Box
-  m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 873}
-    m_SelectedIDs: b0130000
-    m_LastClickedID: 5040
-    m_ExpandedIDs: 00000000e20d0000720e0000800f000002100000c81000006611000012120000641200000614000002160000561600000a1700006a1700007e180000d61800000a190000e4190000e61c0000ee1d00002c72000000ca9a3b
-=======
-    - Assets/MainMenu/Prefabs
-=======
     - Assets/Scripts/Gameplay
->>>>>>> button_mapping
   m_ViewMode: 1
-  m_StartGridSize: 16
+  m_StartGridSize: 50
   m_LastFolders:
-<<<<<<< HEAD
-  - Assets/MainMenu/Prefabs
-  m_LastFoldersGridSize: 16
-  m_LastProjectPath: D:\TeamProjectAndProfessionalism\UnityProject
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 580e0000
-    m_LastClickedID: 3672
-    m_ExpandedIDs: 00000000d40d0000640e00008a0f00003c10000082100000bc10000058120000e4130000da1500002c160000e016000050180000a8180000dc180000b6190000aa1d00008a70000000ca9a3b
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
   - Assets/Scripts/Gameplay
   m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject
@@ -1141,12 +788,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 387}
     m_SelectedIDs: 42100000
     m_LastClickedID: 4162
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000d80d0000680e00008a0f00003a10000080100000ba100000e6130000de15000030160000e216000052180000aa180000de1800001a190000bc190000b41d00006870000000ca9a3b
->>>>>>> button_mapping
-=======
-    m_ExpandedIDs: 00000000742b0000022c0000242d0000d42d00001a2e0000542e0000783100006c330000c033000070340000d23500002a3600005e3600009a3600003c3700003a3b00004e710000
->>>>>>> button_mapping
+    m_ExpandedIDs: 00000000243d0000b43d0000d63e0000863f0000cc3f000006400000324300002a4500007e45000030460000a0470000f84700002c480000684800000a490000084d00000a820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1162,11 +804,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 2}
-=======
-      m_ClientGUIView: {fileID: 8}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1178,15 +816,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000e20d0000720e0000800f000002100000c81000006611000012120000641200000614000002160000561600000a1700006a1700007e180000d61800000a190000e4190000e61c0000ee1d00002c720000
-=======
-    m_ExpandedIDs: 00000000d40d0000640e00008a0f00003c10000082100000bc10000058120000e4130000da1500002c160000e016000050180000a8180000dc180000b6190000aa1d00008a700000
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
-    m_ExpandedIDs: 00000000742b0000022c0000242d0000d42d00001a2e0000542e0000783100006c330000c033000070340000d23500002a3600005e3600009a3600003c3700003a3b00004e710000
->>>>>>> button_mapping
+    m_ExpandedIDs: 00000000243d0000b43d0000d63e0000863f0000cc3f000006400000324300002a4500007e45000030460000a0470000f84700002c480000684800000a490000084d00000a820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1211,19 +841,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-<<<<<<< HEAD
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-<<<<<<< HEAD
-    m_HadKeyboardFocusLastEvent: 0
-=======
-    m_HadKeyboardFocusLastEvent: 1
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
     m_SelectedInstanceIDs: 140c0000
     m_LastClickedInstanceID: 3092
     m_HadKeyboardFocusLastEvent: 1
->>>>>>> button_mapping
     m_ExpandedInstanceIDs: 8a33000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1240,11 +860,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-<<<<<<< HEAD
-      m_ClientGUIView: {fileID: 2}
-=======
-      m_ClientGUIView: {fileID: 11}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+      m_ClientGUIView: {fileID: 0}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1253,14 +869,9 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 16
-<<<<<<< HEAD
-  m_DirectoriesAreaWidth: 324
---- !u!114 &17
-=======
+    m_GridSize: 50
   m_DirectoriesAreaWidth: 190
---- !u!114 &18
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+--- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1281,22 +892,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 202
     y: 73
-<<<<<<< HEAD
-    width: 1172
-    height: 611
-=======
-    x: 1536
-    y: 402
-    width: 1014
-    height: 588
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
     width: 1370
-    height: 663
->>>>>>> button_mapping
+    height: 561
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -1308,17 +907,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
-    m_HBaseRangeMin: -528
-    m_HBaseRangeMax: 528
-    m_VBaseRangeMin: -297
-    m_VBaseRangeMax: 297
-=======
-    m_HBaseRangeMin: -507
-    m_HBaseRangeMax: 507
-    m_VBaseRangeMin: -285
-    m_VBaseRangeMax: 285
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+    m_HBaseRangeMin: -483.5
+    m_HBaseRangeMax: 483.5
+    m_VBaseRangeMin: -272
+    m_VBaseRangeMax: 272
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -1327,7 +919,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1336,70 +928,30 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-<<<<<<< HEAD
-<<<<<<< HEAD
-      width: 1172
-      height: 594
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 586, y: 297}
-=======
-      width: 1014
-      height: 571
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 507, y: 285.5}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
       width: 1370
-      height: 646
+      height: 544
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 685, y: 323}
->>>>>>> button_mapping
+    m_Translation: {x: 685, y: 272}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-<<<<<<< HEAD
-      x: -586
-      y: -297
-      width: 1172
-      height: 594
-=======
-      x: -507
-      y: -285.5
-      width: 1014
-      height: 571
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
       x: -685
-      y: -323
+      y: -272
       width: 1370
-      height: 646
->>>>>>> button_mapping
+      height: 544
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 1
-<<<<<<< HEAD
-<<<<<<< HEAD
-  m_LastWindowPixelSize: {x: 1172, y: 611}
-=======
-  m_LastWindowPixelSize: {x: 1014, y: 588}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
-  m_LastWindowPixelSize: {x: 1370, y: 663}
->>>>>>> button_mapping
+  m_LastWindowPixelSize: {x: 1370, y: 561}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
   m_XRRenderMode: 0
-<<<<<<< HEAD
---- !u!114 &18
-=======
---- !u!114 &19
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+--- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1419,48 +971,20 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
     x: 202
     y: 73
-<<<<<<< HEAD
-    width: 1172
-    height: 611
-=======
-    x: 1536
-    y: 63
-    width: 1014
-    height: 319
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
     width: 1370
-<<<<<<< HEAD
-    height: 663
->>>>>>> button_mapping
-=======
     height: 561
->>>>>>> button_mapping
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 35d8aa3b2686af3408819666ac0c1f16
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-<<<<<<< HEAD
-    m_Target: {x: 15.579718, y: 0.8256528, z: -29.881062}
-    speed: 2
-    m_Value: {x: 15.579718, y: 0.8256528, z: -29.881062}
-=======
-    m_Target: {x: 528.12494, y: 133.23155, z: 0}
-    speed: 2
-    m_Value: {x: 528.12494, y: 133.23155, z: 0}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
     m_Target: {x: -0.46738243, y: 11.159556, z: -1.6837158}
     speed: 2
     m_Value: {x: -0.46738243, y: 11.159556, z: -1.6837158}
->>>>>>> button_mapping
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1480,47 +1004,27 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
-<<<<<<< HEAD
-    m_Target: {x: 0.2977247, y: -0.44584122, z: 0.16766025, w: 0.82733047}
+    m_Target: {x: 0.575941, y: -0.010295985, z: 0.0072552343, w: 0.81739426}
     speed: 2
-    m_Value: {x: 0.2977247, y: -0.44584122, z: 0.16766025, w: 0.82733047}
+    m_Value: {x: 0.575941, y: -0.010295985, z: 0.0072552343, w: 0.81739426}
   m_Size:
-    m_Target: 6.3412457
-    speed: 2
-    m_Value: 6.3412457
-=======
-    m_Target: {x: 0, y: 0, z: 0, w: -1}
-    speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
-  m_Size:
-<<<<<<< HEAD
-    m_Target: 205.80539
-    speed: 2
-    m_Value: 205.80539
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
-=======
     m_Target: 22
     speed: 2
     m_Value: 22
->>>>>>> button_mapping
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_ShowGlobalGrid: 1
-<<<<<<< HEAD
-  m_LastSceneViewRotation: {x: -0.28467742, y: -0.0052031577, z: -0.0046871933, w: -0.95859784}
-=======
-  m_LastSceneViewRotation: {x: -0.036403827, y: -0.55540735, z: 0.024347758, w: -0.83042437}
->>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
