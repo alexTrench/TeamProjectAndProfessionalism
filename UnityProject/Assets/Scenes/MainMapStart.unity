@@ -15921,7 +15921,7 @@ GameObject:
   m_Layer: 0
   m_Name: C1
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -34636,7 +34636,7 @@ GameObject:
   m_Layer: 0
   m_Name: D1
   m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -36007,7 +36007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ede255314ecdf5a46ae5e8d75801b438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numZombies: 10
   spawnPoints:
   - {fileID: 2091890225}
   - {fileID: 705274565}
@@ -40044,7 +40043,7 @@ GameObject:
   m_Layer: 0
   m_Name: B1
   m_TagString: Untagged
-  m_Icon: {fileID: 419385456094870383, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -93587,7 +93586,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9b9334e69453034e9d7cada0eec866e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cooldownInProgress: 0
+  enemyManager: {fileID: 581917001}
 --- !u!4 &1780791541
 Transform:
   m_ObjectHideFlags: 0
@@ -114646,7 +114645,7 @@ GameObject:
   m_Layer: 0
   m_Name: A1
   m_TagString: Untagged
-  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

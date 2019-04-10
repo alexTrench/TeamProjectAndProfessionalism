@@ -5,7 +5,6 @@ using UnityEngine;
 public class ZombieManagerScript : MonoBehaviour
 {
     private List<Zombie> m_zombieCharacters;
-    [SerializeField] private int numZombies = 10;
     [SerializeField] private Transform[] spawnPoints = null;
     [SerializeField] private GameObject enemy_template = null;
 
@@ -13,18 +12,13 @@ public class ZombieManagerScript : MonoBehaviour
     {
         // Add zombies already in scene to list
         m_zombieCharacters = new List<Zombie>();
-
-        //Spawn zombies.
-        Spawn();
     }
 
-    private void Spawn() {
-        for(int i = 0; i < numZombies; i++) {
-            int spawnIndex = Random.Range(0, spawnPoints.Length);
-            GameObject zombie = Instantiate(enemy_template, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation) as GameObject;
-            zombie.SetActive(true);
-            m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
-        }
+    public void Spawn() {
+        int spawnIndex = Random.Range(0, spawnPoints.Length);
+        GameObject zombie = Instantiate(enemy_template, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation) as GameObject;
+        zombie.SetActive(true);
+        m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
     }
 
     // Update is called once per frame
