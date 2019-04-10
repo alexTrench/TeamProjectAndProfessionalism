@@ -114,10 +114,18 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1920
+<<<<<<< HEAD
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
   m_LastLoadedLayoutName: 
+=======
+    height: 957
+  m_MinSize: {x: 683, y: 348}
+  m_MaxSize: {x: 12008, y: 8048}
+  vertical: 0
+  controlID: 64
+>>>>>>> button_mapping
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,6 +147,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 30
     width: 1920
     height: 947
@@ -148,8 +157,11 @@ MonoBehaviour:
   controlID: 118
 =======
     y: 683
+=======
+    y: 581
+>>>>>>> button_mapping
     width: 1576
-    height: 274
+    height: 376
   m_MinSize: {x: 102, y: 124}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 12}
@@ -185,8 +197,8 @@ MonoBehaviour:
     y: 0
     width: 1576
     height: 957
-  m_MinSize: {x: 404, y: 348}
-  m_MaxSize: {x: 8004, y: 8048}
+  m_MinSize: {x: 406, y: 348}
+  m_MaxSize: {x: 8006, y: 8048}
   vertical: 1
   controlID: 65
 >>>>>>> button_mapping
@@ -212,10 +224,17 @@ MonoBehaviour:
     y: 0
 <<<<<<< HEAD
     width: 202
+<<<<<<< HEAD
     height: 947
   m_MinSize: {x: 202, y: 224}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 14}
+=======
+    height: 581
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 16}
+>>>>>>> button_mapping
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
@@ -340,9 +359,15 @@ MonoBehaviour:
 =======
     y: 0
     width: 1576
+<<<<<<< HEAD
     height: 683
   m_MinSize: {x: 404, y: 224}
   m_MaxSize: {x: 8004, y: 4024}
+>>>>>>> button_mapping
+=======
+    height: 581
+  m_MinSize: {x: 406, y: 224}
+  m_MaxSize: {x: 8006, y: 4024}
 >>>>>>> button_mapping
   vertical: 0
   controlID: 133
@@ -426,7 +451,7 @@ MonoBehaviour:
   m_ActualView: {fileID: 15}
 =======
     width: 1374
-    height: 683
+    height: 581
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 20}
@@ -468,6 +493,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 0
     width: 1176
     height: 631
@@ -484,8 +510,11 @@ MonoBehaviour:
 --- !u!114 &11
 =======
     y: 756
+=======
+    y: 654
+>>>>>>> button_mapping
     width: 1574
-    height: 254
+    height: 356
   m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 >>>>>>> button_mapping
@@ -901,11 +930,16 @@ MonoBehaviour:
     x: 2552
     y: 63
     width: 200
+<<<<<<< HEAD
     height: 927
+=======
+    height: 561
+>>>>>>> button_mapping
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       m_SelectedIDs: d6fbffff
@@ -920,6 +954,11 @@ MonoBehaviour:
       m_SelectedIDs: 52340000
       m_LastClickedID: 13394
       m_ExpandedIDs: d6fbfffffe1f0000ca3500005e390000
+>>>>>>> button_mapping
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: e0faffff
 >>>>>>> button_mapping
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1102,7 +1141,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 387}
     m_SelectedIDs: 42100000
     m_LastClickedID: 4162
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000d80d0000680e00008a0f00003a10000080100000ba100000e6130000de15000030160000e216000052180000aa180000de1800001a190000bc190000b41d00006870000000ca9a3b
+>>>>>>> button_mapping
+=======
+    m_ExpandedIDs: 00000000742b0000022c0000242d0000d42d00001a2e0000542e0000783100006c330000c033000070340000d23500002a3600005e3600009a3600003c3700003a3b00004e710000
 >>>>>>> button_mapping
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1136,10 +1179,14 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000e20d0000720e0000800f000002100000c81000006611000012120000641200000614000002160000561600000a1700006a1700007e180000d61800000a190000e4190000e61c0000ee1d00002c720000
 =======
     m_ExpandedIDs: 00000000d40d0000640e00008a0f00003c10000082100000bc10000058120000e4130000da1500002c160000e016000050180000a8180000dc180000b6190000aa1d00008a700000
 >>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+=======
+    m_ExpandedIDs: 00000000742b0000022c0000242d0000d42d00001a2e0000542e0000783100006c330000c033000070340000d23500002a3600005e3600009a3600003c3700003a3b00004e710000
+>>>>>>> button_mapping
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1386,7 +1433,11 @@ MonoBehaviour:
 >>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
 =======
     width: 1370
+<<<<<<< HEAD
     height: 663
+>>>>>>> button_mapping
+=======
+    height: 561
 >>>>>>> button_mapping
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: 35d8aa3b2686af3408819666ac0c1f16

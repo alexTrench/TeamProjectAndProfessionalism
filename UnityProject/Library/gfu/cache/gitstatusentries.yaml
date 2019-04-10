@@ -15,6 +15,7 @@ MonoBehaviour:
   cacheType: 6
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-04-10T20:54:04.829+01:00
   initializedAtString: 2019-04-10T20:27:24.965+01:00
   entries:
@@ -423,6 +424,11 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+=======
+  lastUpdatedAtString: 2019-04-10T21:28:18.258+01:00
+  initializedAtString: 2019-04-10T21:28:17.186+01:00
+  entries:
+>>>>>>> button_mapping
   - path: UnityProject\Library\assetDatabase3
 <<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
@@ -433,6 +439,7 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   - path: UnityProject\Library\CurrentLayout.dwlt
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
@@ -476,6 +483,8 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+=======
+>>>>>>> button_mapping
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
 <<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
@@ -506,6 +515,7 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: UnityProject\Library\InspectorExpandedItems.asset
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2098,6 +2108,8 @@ MonoBehaviour:
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\TimeManager.asset
     projectPath: ProjectSettings\TimeManager.asset
 =======
+=======
+>>>>>>> button_mapping
 =======
 >>>>>>> button_mapping
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
