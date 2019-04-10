@@ -10,17 +10,21 @@ using UnityEngine;
  */
 public class GameplayManager : MonoBehaviour
 {
+    //[GM] The singleton of this object.
     public static GameplayManager GM;
+
+    //[enemyManager] Manages all the enemies in the game.
+    [SerializeField] ZombieManagerScript enemyManager = null;
 
     //[COOLDOWN] The amount of time (in seconds) 
     //allocated between waves.
-    private const float COOLDOWN = 10.0f;
+    public const float COOLDOWN = 5.0f;
 
     //[currentWave] The wave currently in progress.
     private Wave currentWave = null;
 
     //[cooldownInProgress] 'true' inbetween waves.
-    public bool cooldownInProgress = false;
+    private bool cooldownInProgress = false;
 
     /**
      * @brief runs immediatly to make sure there 
@@ -41,15 +45,23 @@ public class GameplayManager : MonoBehaviour
         }
     }
 
+    /**
+     * @brief Updates the Gameplay Manager once every frame.
+     */
     private void Update() {
         //Start a new wave.
         if(!WaveInProgress() && !cooldownInProgress) {
-            StartCoroutine(StartWave());
+            StartWave();
         }
         //Wave in session.
         else if(WaveInProgress() && !cooldownInProgress) {
+
+            //Tell the wave how many enemies remain.
+            currentWave.SetNumEnemies(enemyManager.GetNumOfZombies());
+
+            //Check to end the current wave.
             if(currentWave.GetNumEnemies() == 0) {
-                StartCoroutine(EndWave());
+                EndWave();
             }
         }
         //Cooldown in session.
@@ -57,23 +69,28 @@ public class GameplayManager : MonoBehaviour
 
         }
         //Error
-        else {
+        else if(WaveInProgress() && cooldownInProgress) {
             Debug.LogError("Unrecognised gameplay state");
         }
     }
 
-    private IEnumerator StartWave() {
-        yield return currentWave = new Wave();
-        Debug.Log("Wave start");
-    }
+    /**
+     * @brief Begins the next wave.
+     */
+    private void StartWave() => currentWave = new Wave(enemyManager);
 
-    private IEnumerator EndWave() {
-        yield return currentWave = null;
-        Debug.Log("Wave end");
+    /**
+     * @brief Ends the current wave.
+     */
+    private void EndWave() {
+        currentWave = null;
         //Begin the cooldown period.
         StartCoroutine(CooldownPeriod());
     }
 
+    /**
+     * @brief Waits until the cooldown period is over.
+     */
     private IEnumerator CooldownPeriod() {
         cooldownInProgress = true;
         yield return new WaitForSeconds(COOLDOWN);
@@ -86,5 +103,6 @@ public class GameplayManager : MonoBehaviour
     //@returns 'true' if a wave is currently in progress.
     public bool WaveInProgress() => !(currentWave == null);
 
+    //@returns 'true' if the cooldown period is in progress.
     public bool IsCooldownInProgres() => cooldownInProgress;
 }

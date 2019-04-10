@@ -14,11 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cacheType: 5
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-04-10T20:27:25.016+01:00
   initializedAtString: 2019-04-10T20:27:25.016+01:00
 =======
   lastUpdatedAtString: 2019-04-10T15:10:32.468+01:00
   initializedAtString: 2019-04-10T15:10:32.468+01:00
 >>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+=======
+  lastUpdatedAtString: 2019-04-10T21:10:44.890+01:00
+  initializedAtString: 2019-04-10T19:33:07.810+01:00
+>>>>>>> button_mapping
   ahead: 0
   behind: 0

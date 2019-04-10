@@ -14,21 +14,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cacheType: 6
 <<<<<<< HEAD
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-04-10T20:54:04.829+01:00
   initializedAtString: 2019-04-10T20:27:24.965+01:00
   entries:
   - path: UnityProject\.vs\UnityProject\v15\.suo
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+=======
+  lastUpdatedAtString: 2019-04-10T21:14:28.551+01:00
+  initializedAtString: 2019-04-10T19:33:07.759+01:00
+  entries:
+  - path: UnityProject\.vs\UnityProject\v15\.suo
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+>>>>>>> button_mapping
     projectPath: .vs\UnityProject\v15\.suo
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+=======
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+>>>>>>> button_mapping
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
@@ -37,10 +50,15 @@ MonoBehaviour:
     staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+=======
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+>>>>>>> button_mapping
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: UnityProject\Assembly-CSharp.csproj
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
@@ -182,10 +200,15 @@ MonoBehaviour:
     staged: 0
   - path: UnityProject\Assets\Scenes\MainMapStart.unity
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
+=======
+  - path: UnityProject\Assets\Scenes\MainMapStart.unity
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
+>>>>>>> button_mapping
     projectPath: Assets\Scenes\MainMapStart.unity
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
     projectPath: Assets\Scripts\Characters\CharacterManagerScript.cs
@@ -362,6 +385,41 @@ MonoBehaviour:
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMenu.unity
     projectPath: Assets\Scenes\MainMenu.unity
 >>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+=======
+  - path: UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
+    projectPath: Assets\Scripts\AI\ZombieManagerScript.cs
+>>>>>>> button_mapping
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
+    projectPath: Assets\Scripts\GamePlay\GameplayManager.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\Gameplay\Wave.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Gameplay\Wave.cs
+    projectPath: Assets\Scripts\Gameplay\Wave.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\UI\CountdownScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\CountdownScript.cs
+    projectPath: Assets\Scripts\UI\CountdownScript.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\weapons\AK_Script.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\AK_Script.cs
+    projectPath: Assets\Scripts\weapons\AK_Script.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\weapons\ShotgunScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\ShotgunScript.cs
+    projectPath: Assets\Scripts\weapons\ShotgunScript.cs
     originalPath: 
     status: 3
     staged: 0
@@ -375,6 +433,7 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: UnityProject\Library\CurrentLayout.dwlt
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
     projectPath: Library\CurrentLayout.dwlt
@@ -389,6 +448,10 @@ MonoBehaviour:
     staged: 0
   - path: UnityProject\Library\gfu\cache\branches.yaml
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
+=======
+  - path: UnityProject\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
+>>>>>>> button_mapping
     projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
@@ -404,7 +467,11 @@ MonoBehaviour:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlog.yaml
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
+=======
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
+>>>>>>> button_mapping
     projectPath: Library\gfu\cache\gitlog.yaml
     originalPath: 
     status: 3
@@ -441,14 +508,19 @@ MonoBehaviour:
     staged: 0
   - path: UnityProject\Library\InspectorExpandedItems.asset
 <<<<<<< HEAD
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
 =======
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
 >>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
+=======
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
+>>>>>>> button_mapping
     projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   - path: UnityProject\Library\LastSceneManagerSetup.txt
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\LastSceneManagerSetup.txt
@@ -2026,6 +2098,8 @@ MonoBehaviour:
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\TimeManager.asset
     projectPath: ProjectSettings\TimeManager.asset
 =======
+=======
+>>>>>>> button_mapping
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
