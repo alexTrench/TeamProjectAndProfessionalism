@@ -13,26 +13,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-10T14:38:01.682+01:00
-  initializedAtString: 2019-04-10T14:16:15.230+01:00
+  lastUpdatedAtString: 2019-04-10T15:08:57.088+01:00
+  initializedAtString: 2019-04-10T14:39:37.380+01:00
   entries:
+  - path: UnityProject\.vs\UnityProject\v15\.suo
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+    projectPath: .vs\UnityProject\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\Fade.anim
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\Fade.anim
-    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\Fade.anim
+  - path: UnityProject\Assembly-CSharp.csproj
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
-    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
+  - path: UnityProject\Assets\GUI\Animations\FadeToWhite.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\GUI\Animations\FadeToWhite.anim
+    projectPath: Assets\GUI\Animations\FadeToWhite.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\GUI\Animations\FadeToWhite.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\GUI\Animations\FadeToWhite.controller
+    projectPath: Assets\GUI\Animations\FadeToWhite.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\GUI\Prefabs\FadeToWhite.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\GUI\Prefabs\FadeToWhite.prefab
+    projectPath: Assets\GUI\Prefabs\FadeToWhite.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\GUI\Prefabs\PauseMenu_Canvas.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\GUI\Prefabs\PauseMenu_Canvas.prefab
+    projectPath: Assets\GUI\Prefabs\PauseMenu_Canvas.prefab
     originalPath: 
     status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\FadeToBlack.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\FadeToBlack.prefab
+    projectPath: Assets\MainMenu\Prefabs\FadeToBlack.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\FadeToWhite.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\FadeToWhite.prefab
+    projectPath: Assets\MainMenu\Prefabs\FadeToWhite.prefab
+    originalPath: 
+    status: 1
     staged: 0
   - path: UnityProject\Assets\Scenes\MainMapStart.unity
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
@@ -50,7 +86,13 @@ MonoBehaviour:
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\ReturnToMainMenu.cs
     projectPath: Assets\Scripts\MainMenu\ReturnToMainMenu.cs
     originalPath: 
-    status: 3
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\Scripts\UI\SwitchMainMenu.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\SwitchMainMenu.cs
+    projectPath: Assets\Scripts\UI\SwitchMainMenu.cs
+    originalPath: 
+    status: 1
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
@@ -85,6 +127,24 @@ MonoBehaviour:
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
     originalPath: 
     status: 3
     staged: 0
