@@ -41,16 +41,16 @@ public class PlayerInUse : MonoBehaviour
         {
             currentPlayerInfo.text = (updatedPlayerIndex + 1).ToString();
 
-            players[currentPlayerIndex].color = new Color(0f, 0f, 0f, 1f);
+            players[currentPlayerIndex].color = new Color(0f, 0f, 0f, 0.4901961f);
             players[updatedPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
        
-            playersHealth[currentPlayerIndex].color = new Color(0f, 0f, 0f, 1f);
+            playersHealth[currentPlayerIndex].color = new Color(0f, 0f, 0f, 0.4901961f);
             playersHealth[updatedPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
 
-            playersHealthDelimiter[currentPlayerIndex].color = new Color(0f, 0f, 0f, 1f);
+            playersHealthDelimiter[currentPlayerIndex].color = new Color(0f, 0f, 0f, 0.4901961f);
             playersHealthDelimiter[updatedPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
 
-            playersMaxHealth[currentPlayerIndex].color = new Color(0f, 0f, 0f, 1f);
+            playersMaxHealth[currentPlayerIndex].color = new Color(0f, 0f, 0f, 0.4901961f);
             playersMaxHealth[updatedPlayerIndex].color = new Color(1f, 0f, 0f, 0.5882353f);
 
             currentPlayerIndex = updatedPlayerIndex;
