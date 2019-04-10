@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-10T10:18:23.892+01:00
-  initializedAtString: 2019-04-10T10:18:22.485+01:00
+  lastUpdatedAtString: 2019-04-10T10:23:36.899+01:00
+  initializedAtString: 2019-04-10T10:23:35.826+01:00
   entries:
   - path: UnityProject\Assembly-CSharp.csproj
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
@@ -34,9 +34,65 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\TextMesh
+      Pro\Documentation\TextMesh Pro User Guide 2016.pdf
+    projectPath: Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\TextMesh Pro\Sprites\EmojiOne.json
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\TextMesh
+      Pro\Sprites\EmojiOne.json
+    projectPath: Assets\TextMesh Pro\Sprites\EmojiOne.json
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\TextMesh Pro\Sprites\EmojiOne.png
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\TextMesh
+      Pro\Sprites\EmojiOne.png
+    projectPath: Assets\TextMesh Pro\Sprites\EmojiOne.png
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\utility\TextMesh Pro\Documentation\TextMesh Pro User
+      Guide 2016.pdf
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\utility\TextMesh
+      Pro\Documentation\TextMesh Pro User Guide 2016.pdf
+    projectPath: Assets\utility\TextMesh Pro\Documentation\TextMesh Pro User Guide
+      2016.pdf
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\utility\TextMesh Pro\Sprites\EmojiOne.json
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\utility\TextMesh
+      Pro\Sprites\EmojiOne.json
+    projectPath: Assets\utility\TextMesh Pro\Sprites\EmojiOne.json
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\utility\TextMesh Pro\Sprites\EmojiOne.png
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\utility\TextMesh
+      Pro\Sprites\EmojiOne.png
+    projectPath: Assets\utility\TextMesh Pro\Sprites\EmojiOne.png
+    originalPath: 
+    status: 5
+    staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\CurrentLayout.dwlt
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -58,137 +114,47 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
-    projectPath: Library\metadata\01\0188ec438976e5849b40a2c1ce5f20f9
+  - path: UnityProject\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b
+    projectPath: Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
-    projectPath: Library\metadata\11\1186e0491049e40ba8e7e19e418d9e8e.info
+  - path: UnityProject\Library\metadata\8e\8e7e8f5a82a3a134e91c54efd2274ea9
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e7e8f5a82a3a134e91c54efd2274ea9
+    projectPath: Library\metadata\8e\8e7e8f5a82a3a134e91c54efd2274ea9
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\13\136dc24f151211d438acee17aff4e934
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\13\136dc24f151211d438acee17aff4e934
-    projectPath: Library\metadata\13\136dc24f151211d438acee17aff4e934
+  - path: UnityProject\Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
+    projectPath: Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
-    projectPath: Library\metadata\18\181f65fb096cedd4493bc9971257d8b1.info
+  - path: UnityProject\Library\metadata\d0\d0603b6d5186471b96c778c3949c7ce2
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\d0\d0603b6d5186471b96c778c3949c7ce2
+    projectPath: Library\metadata\d0\d0603b6d5186471b96c778c3949c7ce2
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\23\23c8bee69b591054094d32918f98facd.info
-    projectPath: Library\metadata\23\23c8bee69b591054094d32918f98facd.info
+  - path: UnityProject\Library\metadata\df\dffef66376be4fa480fb02b19edbe903
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\df\dffef66376be4fa480fb02b19edbe903
+    projectPath: Library\metadata\df\dffef66376be4fa480fb02b19edbe903
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
-    projectPath: Library\metadata\25\2590b98e5cafc4e32b61170d7b917ee6.info
+  - path: UnityProject\Library\metadata\f5\f54d1bd14bd3ca042bd867b519fee8cc
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\f5\f54d1bd14bd3ca042bd867b519fee8cc
+    projectPath: Library\metadata\f5\f54d1bd14bd3ca042bd867b519fee8cc
     originalPath: 
     status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    projectPath: Library\metadata\55\555cd6f54c03341b1970d950df1a5ee5
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\87\877ef3585573ce44eab899298be23158.info
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\87\877ef3585573ce44eab899298be23158.info
-    projectPath: Library\metadata\87\877ef3585573ce44eab899298be23158.info
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
-    projectPath: Library\metadata\c5\c5c83d14802e712408f23409f3c59e26.info
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
-    projectPath: Library\metadata\d6\d601ecb6855bb432bae2aa49d8fd82e8.info
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
-    projectPath: Library\metadata\da\dae2ecee8a704dd59797e26554ff8606
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    originalPath: 
-    status: 5
     staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
-    projectPath: Library\ScriptAssemblies\Unity.ProGrids.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    status: 5
     staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
