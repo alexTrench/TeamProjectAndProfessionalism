@@ -57,7 +57,9 @@ public class AK_Script : MonoBehaviour
 
         if(CurrentAmmo > 0)
         {
-            fireSound.Play();
+            if(fireSound) {
+                fireSound.Play();
+            }
             //creates a clone of the bullet
             GameObject bullet = Instantiate(database.weapons[id].bulleType);
 

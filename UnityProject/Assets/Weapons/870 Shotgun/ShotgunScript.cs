@@ -78,7 +78,9 @@ public class ShotgunScript : MonoBehaviour
 
         if (CurrentAmmo > 0)
         {
-            fireSound.Play();
+            if(fireSound) {
+                fireSound.Play();
+            }
 
             for (int i = 0; i < bullets.Capacity; i++)
             {
