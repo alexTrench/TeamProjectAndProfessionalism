@@ -65,20 +65,22 @@ public class SciFiPistolScript : MonoBehaviour
         IsReloading = false;
     }
 
-    private void Fire()
+    public void Fire()
     {
+
         muzzleFlash.Play();
+        Debug.Log(muzzleFlash.isEmitting);
         fireSound.Play();
         //raycasting
         //RaycastHit hit;
         //if we hit something with the ray
         //if (Physics.Raycast(bulletSpawn.transform.position, bulletSpawn.transform.forward, out hit, 13))
         //{
-    //    Debug.Log(hit.transform.name);
+        //    Debug.Log(hit.transform.name);
 
-    //    //does damage to enemys with a health script attach
-    //    Zombie target = hit.transform.GetComponent<Zombie>();
-    //    //other.GetComponent<Zombie>().GetComponentInParent<BaseCharacter>().TakeDamage((int)damage);
+       //does damage to enemys with a health script attach
+       //Zombie target = hit.transform.GetComponent<Zombie>();
+        //other.GetComponent<Zombie>().GetComponentInParent<BaseCharacter>().TakeDamage((int)damage);
 
     //    if (target != null)
     //    {
@@ -87,13 +89,13 @@ public class SciFiPistolScript : MonoBehaviour
     //        Debug.Log(target.m_health);
     //    }
    
-    //creates a clone of the bullet
-    GameObject bullet = Instantiate(database.weapons[id].bulleType);
+        //creates a clone of the bullet
+        GameObject bullet = Instantiate(database.weapons[id].bulleType);
 
         //tells the bullets collision to ignore collision with itself 
         //and the charactor to which the spawn point is attached
         Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
-            bulletSpawn.parent.GetComponent<Collider>());
+        bulletSpawn.parent.GetComponent<Collider>());
 
         //spawns at the bullet spawn point
         bullet.transform.position = bulletSpawn.position;

@@ -16,8 +16,9 @@ public class AK_Script : MonoBehaviour
     private int CurrentAmmo;
     //is reloding
     private bool IsReloading = false;
-
-
+    //muzzle flash
+    public ParticleSystem muzzleFlash;
+    //fire sound
     private AudioSource fireSound;
 
 
@@ -57,9 +58,10 @@ public class AK_Script : MonoBehaviour
 
         if(CurrentAmmo > 0)
         {
-            if(fireSound) {
+            if(fireSound.isPlaying) {
                 fireSound.Play();
             }
+            muzzleFlash.Play();
             //creates a clone of the bullet
             GameObject bullet = Instantiate(database.weapons[id].bulleType);
 
