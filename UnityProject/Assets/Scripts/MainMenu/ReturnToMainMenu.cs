@@ -18,6 +18,7 @@ public class ReturnToMainMenu : MonoBehaviour
 
     public void switchToMainMenu()
     {
+        Time.timeScale = 1.0f;
         Cursor.visible = true;
         SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
