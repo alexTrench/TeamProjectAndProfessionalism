@@ -16,9 +16,9 @@ public class ReturnToMainMenu : MonoBehaviour
 
     }
 
-    public void returnToMainMenu()
+    public void switchToMainMenu()
     {
-        SceneManager.LoadScene(0);
         Cursor.visible = true;
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 }

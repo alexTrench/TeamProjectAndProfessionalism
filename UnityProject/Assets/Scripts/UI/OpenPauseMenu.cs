@@ -38,15 +38,15 @@ public class OpenPauseMenu : MonoBehaviour
     void ActivateMenu()
     {
         Time.timeScale = 0.0f;
-        AudioListener.pause = true;
         pauseMenuUI.SetActive(true);
+        Cursor.visible = true;
     }
 
     void DeactivateMenu()
     {
         Time.timeScale = 1.0f;
-        AudioListener.pause = false;
         pauseMenuUI.SetActive(false);
+        Cursor.visible = false;
     }
 
     public static bool IsPaused() => isPaused;
