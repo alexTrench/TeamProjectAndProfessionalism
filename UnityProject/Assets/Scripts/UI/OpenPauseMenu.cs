@@ -7,7 +7,7 @@ public class OpenPauseMenu : MonoBehaviour
 {
     [SerializeField] private GameObject pauseMenuUI = null;
 
-    private bool isPaused;
+    private static bool isPaused;
 
     // Start is called before the first frame update
     void Start()
@@ -48,4 +48,6 @@ public class OpenPauseMenu : MonoBehaviour
         AudioListener.pause = false;
         pauseMenuUI.SetActive(false);
     }
+
+    public static bool IsPaused() => isPaused;
 }
