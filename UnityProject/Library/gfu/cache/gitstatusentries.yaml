@@ -13,12 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-10T21:40:21.297+01:00
-  initializedAtString: 2019-04-10T21:40:20.222+01:00
+  lastUpdatedAtString: 2019-04-10T21:49:47.697+01:00
+  initializedAtString: 2019-04-10T21:49:33.626+01:00
   entries:
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -37,12 +43,6 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     status: 3
     staged: 0
