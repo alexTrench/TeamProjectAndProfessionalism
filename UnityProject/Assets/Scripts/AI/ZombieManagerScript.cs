@@ -20,7 +20,6 @@ public class ZombieManagerScript : MonoBehaviour
 
     private void Spawn() {
         for(int i = 0; i < numZombies; i++) {
-            Debug.Log("spawning zombie");
             int spawnIndex = Random.Range(0, spawnPoints.Length);
             GameObject zombie = Instantiate(enemy_template, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation) as GameObject;
             zombie.SetActive(true);
