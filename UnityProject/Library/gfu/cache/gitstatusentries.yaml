@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-10T10:33:48.259+01:00
-  initializedAtString: 2019-04-10T10:24:15.604+01:00
+  lastUpdatedAtString: 2019-04-10T11:17:22.529+01:00
+  initializedAtString: 2019-04-10T10:44:45.722+01:00
   entries:
-  - path: .gitignore
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\.gitignore
-    projectPath: ..\.gitignore
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\.vs\UnityProject\v15\.suo
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
     projectPath: .vs\UnityProject\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
     originalPath: 
     status: 3
     staged: 0
@@ -34,28 +34,15 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Assembly-CSharp.csproj
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\MainMenu_Assets\Scripts\SelectOnInput.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Scripts\SelectOnInput.cs
-    projectPath: Assets\MainMenu_Assets\Scripts\SelectOnInput.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\SciFiRifleScript.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
-      Weapons\Base Pack\Prefabs\Rifles\SciFiRifleScript.cs
-    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\SciFiRifleScript.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
-    projectPath: Assets\Scripts\Characters\CharacterManagerScript.cs
     originalPath: 
     status: 3
     staged: 0
@@ -63,49 +50,13 @@ MonoBehaviour:
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
     projectPath: Assets\Scripts\GamePlay\GameplayManager.cs
     originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\Gameplay\Wave.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Gameplay\Wave.cs
+    projectPath: Assets\Scripts\Gameplay\Wave.cs
+    originalPath: 
     status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\UI\CheckEnemies.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\CheckEnemies.cs
-    projectPath: Assets\Scripts\UI\CheckEnemies.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\UI\CountdownScript.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\CountdownScript.cs
-    projectPath: Assets\Scripts\UI\CountdownScript.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\UI\EXPBar.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\EXPBar.cs
-    projectPath: Assets\Scripts\UI\EXPBar.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\UI\EXPHandler.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\EXPHandler.cs
-    projectPath: Assets\Scripts\UI\EXPHandler.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\UI\MiniHealthHandler.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\MiniHealthHandler.cs
-    projectPath: Assets\Scripts\UI\MiniHealthHandler.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\UI\OpenPauseMenu.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\OpenPauseMenu.cs
-    projectPath: Assets\Scripts\UI\OpenPauseMenu.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\weapons\WeaponManagement\BulletBehaviour.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\WeaponManagement\BulletBehaviour.cs
-    projectPath: Assets\Scripts\weapons\WeaponManagement\BulletBehaviour.cs
-    originalPath: 
-    status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
@@ -149,33 +100,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+  - path: UnityProject\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
+    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
     originalPath: 
     status: 3
     staged: 0
