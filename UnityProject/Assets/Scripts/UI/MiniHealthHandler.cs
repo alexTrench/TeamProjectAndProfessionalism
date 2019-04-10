@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class MiniHealthHandler : MonoBehaviour
 {
-    [SerializeField] private HealthSystem healthSystem;
-    [SerializeField] private HealthBar    healthBar;
-    [SerializeField] private int          playerIndex;
+    [SerializeField] private HealthSystem healthSystem = null;
+    [SerializeField] private HealthBar    healthBar = null;
+    [SerializeField] private int          playerIndex = 0;
     
     // characters manager
     private CharacterManagerScript charactersManager;

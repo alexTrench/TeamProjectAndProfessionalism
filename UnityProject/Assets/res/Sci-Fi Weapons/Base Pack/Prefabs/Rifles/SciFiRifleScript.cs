@@ -69,7 +69,7 @@ public class SciFiRifleScript : MonoBehaviour
         muzzleFlash.Play();
         fireSound.Play();
         //raycasting
-        RaycastHit hit;
+        //RaycastHit hit;
         //if we hit something with the ray
         //if (Physics.Raycast(bulletSpawn.transform.position, bulletSpawn.transform.forward, out hit))
         //{

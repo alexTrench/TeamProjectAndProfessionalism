@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class CharacterManagerScript : MonoBehaviour
 {
-    [SerializeField] private Player m_character1;
-    [SerializeField] private Player m_character2;
-    [SerializeField] private Player m_character3;
-    [SerializeField] private Player m_character4;
+    [SerializeField] private Player m_character1 = null;
+    [SerializeField] private Player m_character2 = null;
+    [SerializeField] private Player m_character3 = null;
+    [SerializeField] private Player m_character4 = null;
 
     private List<Player> m_playerCharacters;
     private int m_currentPlayerIndex = 0;

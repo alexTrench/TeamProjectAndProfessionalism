@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 
 public class SelectOnInput : MonoBehaviour
 {
-    [SerializeField] private EventSystem eventSystem;
+    [SerializeField] private EventSystem eventSystem = null;
     //public EventSystem eventSystem;
     public GameObject selectedObject;
 

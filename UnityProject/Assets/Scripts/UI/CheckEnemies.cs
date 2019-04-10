@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class CheckEnemies : MonoBehaviour
 {
-    [SerializeField] private Text enemiesLeftText;
+    [SerializeField] private Text enemiesLeftText = null;
 
     private int enemiesLeft;
     private int updatedEnemiesLeft;

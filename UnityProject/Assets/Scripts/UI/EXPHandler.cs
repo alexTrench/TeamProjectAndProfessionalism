@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class EXPHandler : MonoBehaviour
 {
-    [SerializeField] private EXPBar     expBar;
-    [SerializeField] private Text       expValue;
-    [SerializeField] private Text       level;
-    [SerializeField] private Text       maxExpText;
+    [SerializeField] private EXPBar     expBar = null;
+    [SerializeField] private Text       expValue = null;
+    [SerializeField] private Text       level = null;
+    [SerializeField] private Text       maxExpText = null;
     
     private EXPSystem expSystem;
 

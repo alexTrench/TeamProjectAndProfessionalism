@@ -13,80 +13,103 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-10T10:23:36.899+01:00
-  initializedAtString: 2019-04-10T10:23:35.826+01:00
+  lastUpdatedAtString: 2019-04-10T10:33:48.259+01:00
+  initializedAtString: 2019-04-10T10:24:15.604+01:00
   entries:
+  - path: .gitignore
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\.gitignore
+    projectPath: ..\.gitignore
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\.vs\UnityProject\v15\.suo
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+    projectPath: .vs\UnityProject\v15\.suo
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Assembly-CSharp.csproj
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assembly-CSharp-Editor.csproj
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor.csproj
-    projectPath: Assembly-CSharp-Editor.csproj
+  - path: UnityProject\Assets\MainMenu_Assets\Scripts\SelectOnInput.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Scripts\SelectOnInput.cs
+    projectPath: Assets\MainMenu_Assets\Scripts\SelectOnInput.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor-firstpass.csproj
-    projectPath: Assembly-CSharp-Editor-firstpass.csproj
+  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\SciFiRifleScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
+      Weapons\Base Pack\Prefabs\Rifles\SciFiRifleScript.cs
+    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\SciFiRifleScript.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\TextMesh
-      Pro\Documentation\TextMesh Pro User Guide 2016.pdf
-    projectPath: Assets\TextMesh Pro\Documentation\TextMesh Pro User Guide 2016.pdf
+  - path: UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
+    projectPath: Assets\Scripts\Characters\CharacterManagerScript.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
+    projectPath: Assets\Scripts\GamePlay\GameplayManager.cs
     originalPath: 
     status: 1
     staged: 0
-  - path: UnityProject\Assets\TextMesh Pro\Sprites\EmojiOne.json
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\TextMesh
-      Pro\Sprites\EmojiOne.json
-    projectPath: Assets\TextMesh Pro\Sprites\EmojiOne.json
+  - path: UnityProject\Assets\Scripts\UI\CheckEnemies.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\CheckEnemies.cs
+    projectPath: Assets\Scripts\UI\CheckEnemies.cs
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
-  - path: UnityProject\Assets\TextMesh Pro\Sprites\EmojiOne.png
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\TextMesh
-      Pro\Sprites\EmojiOne.png
-    projectPath: Assets\TextMesh Pro\Sprites\EmojiOne.png
+  - path: UnityProject\Assets\Scripts\UI\CountdownScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\CountdownScript.cs
+    projectPath: Assets\Scripts\UI\CountdownScript.cs
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
-  - path: UnityProject\Assets\utility\TextMesh Pro\Documentation\TextMesh Pro User
-      Guide 2016.pdf
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\utility\TextMesh
-      Pro\Documentation\TextMesh Pro User Guide 2016.pdf
-    projectPath: Assets\utility\TextMesh Pro\Documentation\TextMesh Pro User Guide
-      2016.pdf
+  - path: UnityProject\Assets\Scripts\UI\EXPBar.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\EXPBar.cs
+    projectPath: Assets\Scripts\UI\EXPBar.cs
     originalPath: 
-    status: 5
+    status: 3
     staged: 0
-  - path: UnityProject\Assets\utility\TextMesh Pro\Sprites\EmojiOne.json
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\utility\TextMesh
-      Pro\Sprites\EmojiOne.json
-    projectPath: Assets\utility\TextMesh Pro\Sprites\EmojiOne.json
+  - path: UnityProject\Assets\Scripts\UI\EXPHandler.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\EXPHandler.cs
+    projectPath: Assets\Scripts\UI\EXPHandler.cs
     originalPath: 
-    status: 5
+    status: 3
     staged: 0
-  - path: UnityProject\Assets\utility\TextMesh Pro\Sprites\EmojiOne.png
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\utility\TextMesh
-      Pro\Sprites\EmojiOne.png
-    projectPath: Assets\utility\TextMesh Pro\Sprites\EmojiOne.png
+  - path: UnityProject\Assets\Scripts\UI\MiniHealthHandler.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\MiniHealthHandler.cs
+    projectPath: Assets\Scripts\UI\MiniHealthHandler.cs
     originalPath: 
-    status: 5
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\UI\OpenPauseMenu.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\UI\OpenPauseMenu.cs
+    projectPath: Assets\Scripts\UI\OpenPauseMenu.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\weapons\WeaponManagement\BulletBehaviour.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\WeaponManagement\BulletBehaviour.cs
+    projectPath: Assets\Scripts\weapons\WeaponManagement\BulletBehaviour.cs
+    originalPath: 
+    status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\CurrentLayout.dwlt
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
     originalPath: 
     status: 3
     staged: 0
@@ -114,57 +137,45 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b
-    projectPath: Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\8e\8e7e8f5a82a3a134e91c54efd2274ea9
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e7e8f5a82a3a134e91c54efd2274ea9
-    projectPath: Library\metadata\8e\8e7e8f5a82a3a134e91c54efd2274ea9
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
-    projectPath: Library\metadata\8f\8f05276190cf498a8153f6cbe761d4e6
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\d0\d0603b6d5186471b96c778c3949c7ce2
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\d0\d0603b6d5186471b96c778c3949c7ce2
-    projectPath: Library\metadata\d0\d0603b6d5186471b96c778c3949c7ce2
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\df\dffef66376be4fa480fb02b19edbe903
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\df\dffef66376be4fa480fb02b19edbe903
-    projectPath: Library\metadata\df\dffef66376be4fa480fb02b19edbe903
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\metadata\f5\f54d1bd14bd3ca042bd867b519fee8cc
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\f5\f54d1bd14bd3ca042bd867b519fee8cc
-    projectPath: Library\metadata\f5\f54d1bd14bd3ca042bd867b519fee8cc
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\UnityProject.sln
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\UnityProject.sln
-    projectPath: UnityProject.sln
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0

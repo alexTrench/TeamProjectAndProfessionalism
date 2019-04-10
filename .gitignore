@@ -241,3 +241,8 @@ UnityProject/Library/assetDatabase3
 *.log
 *.dwlt
 *.yaml
+UnityProject/Library/gfu/cache/gitlocks.yaml
+*.yaml
+*.yaml
+*.yaml
+*.log
