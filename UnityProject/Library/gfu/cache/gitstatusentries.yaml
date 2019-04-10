@@ -13,222 +13,294 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-03-26T23:43:44.512+00:00
-  initializedAtString: 2019-03-26T23:43:28.925+00:00
+  lastUpdatedAtString: 2019-04-10T01:26:11.211+01:00
+  initializedAtString: 2019-04-09T23:52:25.892+01:00
   entries:
-  - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: UnityProject\.vs\UnityProject\v15\.suo
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
+    projectPath: .vs\UnityProject\v15\.suo
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\characters\Player\PlayerAnimationScript.cs
-    projectPath: Assets\Scripts\characters\Player\PlayerAnimationScript.cs
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\characters\Player\PlayerController.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\characters\Player\PlayerController.cs
-    projectPath: Assets\Scripts\characters\Player\PlayerController.cs
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\utility\InputManager.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\InputManager.cs
-    projectPath: Assets\Scripts\utility\InputManager.cs
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\button_controller\ButtonController.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\button_controller\ButtonController.controller
+    projectPath: Assets\MainMenu_Assets\Animation\button_controller\ButtonController.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToLeftSkillTree.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToLeftSkillTree.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToLeftSkillTree.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToRight.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToRight.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToRight.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToRightSkillTree.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToRightSkillTree.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\CloseToRightSkillTree.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\Fade.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\Fade.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\Fade.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToLeft.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToLeft.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToLeft.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToLeftSkillTree.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToLeftSkillTree.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToLeftSkillTree.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToRight.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToRight.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToRight.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToRightSkillTree.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToRightSkillTree.anim
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\FadeAnimations\OpenToRightSkillTree.anim
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Audio_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Audio_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Audio_Panel.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller
     originalPath: 
     status: 5
     staged: 0
-  - path: UnityProject\Assets\Scripts\utility\InputManager.cs.meta
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\InputManager.cs.meta
-    projectPath: Assets\Scripts\utility\InputManager.cs.meta
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_General.controller.meta
     originalPath: 
     status: 5
     staged: 0
-  - path: UnityProject\Assets\Scripts\utility\Inputs.meta
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs.meta
-    projectPath: Assets\Scripts\utility\Inputs.meta
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Panel.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character2_Skill.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_General.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Panel.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character3_Skill.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_General.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Panel.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller.meta
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Character4_Skill.controller.meta
+    originalPath: 
+    status: 5
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\GameSettings_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\GameSettings_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\GameSettings_Panel.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Help_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Help_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Help_Panel.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
+    projectPath: Assets\MainMenu_Assets\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scenes\MainMapStart.unity
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
+    projectPath: Assets\Scenes\MainMapStart.unity
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\UI_Assets\Animations.meta
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Animations.meta
+    projectPath: Assets\UI_Assets\Animations.meta
     originalPath: 
     status: 1
     staged: 0
-  - path: UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs
-    projectPath: Assets\Scripts\utility\Inputs\InputBinding.cs
+  - path: UnityProject\Assets\UI_Assets\Scripts\OpenPauseMenu.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\UI_Assets\Scripts\OpenPauseMenu.cs
+    projectPath: Assets\UI_Assets\Scripts\OpenPauseMenu.cs
     originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs.meta
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputBinding.cs.meta
-    projectPath: Assets\Scripts\utility\Inputs\InputBinding.cs.meta
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs
-    projectPath: Assets\Scripts\utility\Inputs\InputManager.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs.meta
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs.meta
-    projectPath: Assets\Scripts\utility\Inputs\InputManager.cs.meta
-    originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\CurrentLayout.dwlt
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\expandedItems
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\expandedItems
-    projectPath: Library\expandedItems
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\gfu\cache\branches.yaml
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\gfu\cache\gitlog.yaml
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\InspectorExpandedItems.asset
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
     projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\metadata\8e\8e373566c6c2ae642bc26be4c3526b51
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\8e\8e373566c6c2ae642bc26be4c3526b51
-    projectPath: Library\metadata\8e\8e373566c6c2ae642bc26be4c3526b51
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor.dll
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.CollabProxy.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.PackageManagerUI.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    projectPath: Library\ScriptAssemblies\Unity.Postprocessing.Runtime.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.dll
-    projectPath: Library\ScriptAssemblies\Unity.ProGrids.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.ProGrids.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.dll
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    projectPath: Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\ProjectSettings\InputManager.asset
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\InputManager.asset
-    projectPath: ProjectSettings\InputManager.asset
     originalPath: 
     status: 3
     staged: 0

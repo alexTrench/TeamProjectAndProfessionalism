@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Shootable
   - Enemy
+  - Projectille
+  - Gun
+  - CharacterManager
+  - Fire
+  - ZombieManager
+  - WallGun
   layers:
   - Default
   - TransparentFX
@@ -19,9 +25,9 @@ TagManager:
   - Ground
   - Postprocessing
   - Level
-  - 
-  - 
-  - 
+  - Enemys
+  - Players
+  - Weapon Box's
   - 
   - 
   - 

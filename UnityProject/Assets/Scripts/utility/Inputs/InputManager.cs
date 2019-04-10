@@ -177,7 +177,7 @@ public static class InputManager {
 
     public static bool FireWeapon() {
         try {
-            return Input.GetKeyDown(KeyCode.Mouse0);
+            return Input.GetKey(KeyCode.Mouse0);
         } catch(ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
