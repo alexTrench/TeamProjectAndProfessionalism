@@ -6,7 +6,7 @@ using UnityEngine;
 public class EXPBar : MonoBehaviour
 {
     private EXPSystem expSystem;
-    [SerializeField] private GameObject expBar;
+    [SerializeField] private GameObject expBar = null;
 
     public void Setup(EXPSystem expSystem)
     {

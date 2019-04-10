@@ -5,7 +5,7 @@ using UnityEngine.Animations;
 
 public class OpenPauseMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject pauseMenuUI;
+    [SerializeField] private GameObject pauseMenuUI = null;
 
     private bool isPaused;
 

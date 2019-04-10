@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class CountdownScript : MonoBehaviour
 {
-    [SerializeField] private Text  uiNumber;
-    [SerializeField] private float mainTimer;
-    [SerializeField] private Text  enemiesLeft;
+    [SerializeField] private Text uiNumber = null;
+    [SerializeField] private float mainTimer = 0.0f;
+    [SerializeField] private Text  enemiesLeft = null;
 
     private ZombieManagerScript zombieManager;
     private int enemiesNo;
