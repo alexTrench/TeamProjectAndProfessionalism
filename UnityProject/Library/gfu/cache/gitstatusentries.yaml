@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-04-10T20:54:04.829+01:00
   initializedAtString: 2019-04-10T20:27:24.965+01:00
   entries:
@@ -293,11 +294,83 @@ MonoBehaviour:
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\M4
       Carbine\M4_Carbine.prefab
     projectPath: Assets\Weapons\M4 Carbine\M4_Carbine.prefab
+=======
+  lastUpdatedAtString: 2019-04-10T16:24:20.365+01:00
+  initializedAtString: 2019-04-10T15:10:32.400+01:00
+  entries:
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToLeftKeyBinding.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToLeftKeyBinding.anim
+    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToLeftKeyBinding.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToRightKeyBinding.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToRightKeyBinding.anim
+    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToRightKeyBinding.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToLeftKeyBinding.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToLeftKeyBinding.anim
+    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToLeftKeyBinding.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToRightKeyBinding.anim
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToRightKeyBinding.anim
+    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToRightKeyBinding.anim
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Keyboard_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Keyboard_Panel.controller
+    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\Keyboard_Panel.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
+    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
+    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Xbox_Panel.controller
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Xbox_Panel.controller
+    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\Xbox_Panel.controller
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\PC_Panel.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\PC_Panel.prefab
+    projectPath: Assets\MainMenu\Prefabs\PC_Panel.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\Xbox_Panel.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Xbox_Panel.prefab
+    projectPath: Assets\MainMenu\Prefabs\Xbox_Panel.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\Scenes\MainMenu.unity
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMenu.unity
+    projectPath: Assets\Scenes\MainMenu.unity
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+=======
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
@@ -321,7 +394,11 @@ MonoBehaviour:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+=======
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
@@ -333,29 +410,46 @@ MonoBehaviour:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+=======
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+=======
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+=======
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\InspectorExpandedItems.asset
+<<<<<<< HEAD
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
+=======
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
+<<<<<<< HEAD
   - path: UnityProject\Library\LastSceneManagerSetup.txt
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\LastSceneManagerSetup.txt
     projectPath: Library\LastSceneManagerSetup.txt
@@ -1931,6 +2025,11 @@ MonoBehaviour:
   - path: UnityProject\ProjectSettings\TimeManager.asset
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\TimeManager.asset
     projectPath: ProjectSettings\TimeManager.asset
+=======
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
+>>>>>>> parent of c6b22de2... Merge pull request #39 from CarlPendleton/button_mapping
     originalPath: 
     status: 3
     staged: 0
