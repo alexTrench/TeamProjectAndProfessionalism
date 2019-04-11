@@ -5,22 +5,20 @@ using UnityEngine;
 public class ZombieManagerScript : MonoBehaviour
 {
     private List<Zombie> m_zombieCharacters;
+    [SerializeField] private Transform[] spawnPoints = null;
+    [SerializeField] private GameObject enemy_template = null;
 
     private void Awake()
     {
         // Add zombies already in scene to list
         m_zombieCharacters = new List<Zombie>();
-        GameObject[] zombies = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (var zombie in zombies)
-        {
-            m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
-        }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Empty
+    public void Spawn() {
+        int spawnIndex = Random.Range(0, spawnPoints.Length);
+        GameObject zombie = Instantiate(enemy_template, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation) as GameObject;
+        zombie.SetActive(true);
+        m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
     }
 
     // Update is called once per frame

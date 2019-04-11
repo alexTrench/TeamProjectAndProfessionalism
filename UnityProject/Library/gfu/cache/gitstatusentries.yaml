@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   cacheType: 6
   lastUpdatedAtString: 2019-04-11T14:55:39.239+01:00
   initializedAtString: 2019-04-11T14:53:34.152+01:00
@@ -19,102 +19,102 @@ MonoBehaviour:
   - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
     projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\Audio_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Audio_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\Audio_Panel.prefab
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\Game_Settings_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Game_Settings_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\Game_Settings_Panel.prefab
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\Graphics_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Graphics_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\Graphics_Panel.prefab
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\Help_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Help_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\Help_Panel.prefab
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\MainMenu_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\MainMenu_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\MainMenu_Panel.prefab
-    originalPath: 
+    originalPath:
     status: 1
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\PC_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\PC_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\PC_Panel.prefab
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\Xbox_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Xbox_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\Xbox_Panel.prefab
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Assets\Scenes\MainMenu.unity
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMenu.unity
     projectPath: Assets\Scenes\MainMenu.unity
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\CurrentLayout.dwlt
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
     projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\branches.yaml
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
     projectPath: Library\gfu\cache\branches.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
+    originalPath:
     status: 3
     staged: 0
