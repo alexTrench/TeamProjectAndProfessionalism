@@ -14,6 +14,9 @@ public class ZombieManagerScript : MonoBehaviour
         m_zombieCharacters = new List<Zombie>();
     }
 
+    /**
+     * @brief Spawns an enemy in a random location.
+     */
     public void Spawn() {
         int spawnIndex = Random.Range(0, spawnPoints.Length);
         GameObject zombie = Instantiate(enemy_template, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation) as GameObject;

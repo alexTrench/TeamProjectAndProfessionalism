@@ -1,20 +1,28 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 
 /**
  * @brief   Manages a wave.
  * @author  Andrew Alford
  * @date    10/04/19
- * @version 1.0 - 10/04/19
+ * @version 1.1 - 11/04/19
  */
 public class Wave
 {
     //[totalWaves] How many waves have occurred so far.
-    public static int WAVE_ID = 0;
+    private static int WAVE_ID = 0;
+
+    //[totalEnemies] How many enemies will exist in this wave.
+    private static int totalEnemies = 0;
+
+    //[spawningPeriodInProgress] While 'true' the 
+    //spawning period is currently in progress.
+    private static bool spawningPeriodInProgress = false;
 
     //[BASE_ENEMIES] A base used to calculate how many 
     //enemies to spawn in the wave.
-    private const int BASE_ENEMIES = 10;
+    private const int BASE_ENEMIES = 16;
 
     //[DIMINISH_RETURNS] diminishes the returns 
     //calculated from base variables.
@@ -22,12 +30,13 @@ public class Wave
 
     //[MAX_ENEMIES] The maxium number of 
     //enemies that can exist in the game.
-    private const int MAX_ENEMIES = 50;
+    private const int MAX_ENEMIES = 100;
 
-    private const float SPAWN_INTERVAL = 1.0f;
+    //[MIN_SPAWN_INTERVAL] The minimum spawn interval allowed.
+    private const float MIN_SPAWN_INTERVAL = 0.01f;
 
-    //[totalEnemies] How many enemies will exist in this wave.
-    private int totalEnemies = 0;
+    //[spawnInterval] How frequently to spawn enemies.
+    private float spawnInterval = 12f;
 
     //[enemiesRemaining] Tracks the current number of enemies in the wave.
     private int enemiesRemaining = 0;
@@ -38,7 +47,7 @@ public class Wave
     /**
      * @brief Constructor for a Wave.
      */
-    public Wave(ZombieManagerScript zombieManager) {
+    public Wave() {
         //Update the wave number.
         waveNo = ++WAVE_ID;
 
@@ -47,17 +56,55 @@ public class Wave
 
         //Reset the number of enemies remaining.
         enemiesRemaining = totalEnemies;
-        
-        //Spawn all the zombies in the wave.
-        for(int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) {
-            zombieManager.Spawn();
+    }
+
+    /**
+     * @brief Coroutine to spawn enemies over a set period of time.
+     * @param enemyManager - Manages all the enemies in the wave.
+     */
+    public IEnumerator SpawnEnemies(ZombieManagerScript enemyManager) {
+        spawningPeriodInProgress = true;
+        CalculateSpawnInterval();
+
+        Debug.Log("Wave: " + Wave.GetWaveID());
+        Debug.Log("spawn interval: " + spawnInterval);
+        for(int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) { 
+            enemyManager.Spawn();
+            yield return new WaitForSeconds(spawnInterval);
+        }
+        spawningPeriodInProgress = false;
+    }
+
+    /**
+     * @brief Calculates how frequently enemies spawn.
+     */
+    private void CalculateSpawnInterval() {
+        //Calculate the interval to 2dp.
+        spawnInterval = (float)Math.Round(
+            (spawnInterval /= waveNo * DIMINISH_RETURNS) * 100f) / 100f;
+
+        //Clamp the interval if neccassery.
+        if (spawnInterval < MIN_SPAWN_INTERVAL) {
+            spawnInterval = MIN_SPAWN_INTERVAL;
         }
     }
 
-    public void SetNumEnemies(int numEnemies) {
+    /**
+     * @brief Updates the wave.
+     * @param numEnemies - How many enemies are left to fight.
+     */
+    public void Update(int numEnemies) {
         enemiesRemaining = numEnemies;
     }
 
     //@reutrns the number of enemies left to fight in the wave.
-    public int GetNumEnemies() => enemiesRemaining;
+    public int GetNumEnemiesRemaining() => enemiesRemaining;
+
+    //@returns the total number of waves that have occurred so far.
+    public static int GetWaveID() => WAVE_ID;
+
+    //@returns the total number of enemies that will be in the wave.
+    public static int GetNumEnemiesTotal() => totalEnemies;
+
+    public static bool IsSpawningPeriodInProgress() => spawningPeriodInProgress;
 }
