@@ -13,150 +13,84 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-11T19:43:45.031+01:00
-  initializedAtString: 2019-04-11T18:17:43.426+01:00
+  lastUpdatedAtString: 2019-04-11T19:48:55.477+01:00
+  initializedAtString: 2019-04-11T19:46:29.622+01:00
   entries:
-  - path: UnityProject\.vs\UnityProject\v15\.suo
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
-    projectPath: .vs\UnityProject\v15\.suo
+  - path: UnityProject\Assembly-CSharp.csproj
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
+    projectPath: Assembly-CSharp.csproj
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
+  - path: UnityProject\Assets\Scripts\MainMenu\ActiveStateToggler.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\ActiveStateToggler.cs
+    projectPath: Assets\Scripts\MainMenu\ActiveStateToggler.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+  - path: UnityProject\Assets\Scripts\MainMenu\ChangeColor.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\ChangeColor.cs
+    projectPath: Assets\Scripts\MainMenu\ChangeColor.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+  - path: UnityProject\Assets\Scripts\MainMenu\DragMe.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\DragMe.cs
+    projectPath: Assets\Scripts\MainMenu\DragMe.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\GUI\Prefabs\EnergyBar.prefab
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\GUI\Prefabs\EnergyBar.prefab
-    projectPath: Assets\GUI\Prefabs\EnergyBar.prefab
+  - path: UnityProject\Assets\Scripts\MainMenu\DragPanel.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\DragPanel.cs
+    projectPath: Assets\Scripts\MainMenu\DragPanel.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\GUI\Prefabs\HPBar.prefab
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\GUI\Prefabs\HPBar.prefab
-    projectPath: Assets\GUI\Prefabs\HPBar.prefab
+  - path: UnityProject\Assets\Scripts\MainMenu\DropMe.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\DropMe.cs
+    projectPath: Assets\Scripts\MainMenu\DropMe.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\Scenes\MainMapStart.unity
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
-    projectPath: Assets\Scenes\MainMapStart.unity
+  - path: UnityProject\Assets\Scripts\MainMenu\PanelManager.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\PanelManager.cs
+    projectPath: Assets\Scripts\MainMenu\PanelManager.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\CheckEnemies.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CheckEnemies.cs
-    projectPath: Assets\Scripts\GUI\CheckEnemies.cs
+  - path: UnityProject\Assets\Scripts\MainMenu\ResizePanel.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\ResizePanel.cs
+    projectPath: Assets\Scripts\MainMenu\ResizePanel.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\CountdownScript.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CountdownScript.cs
-    projectPath: Assets\Scripts\GUI\CountdownScript.cs
+  - path: UnityProject\Assets\Scripts\MainMenu\ScrollDetailTexture.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\ScrollDetailTexture.cs
+    projectPath: Assets\Scripts\MainMenu\ScrollDetailTexture.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\EnergyBar.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\EnergyBar.cs
-    projectPath: Assets\Scripts\GUI\EnergyBar.cs
+  - path: UnityProject\Assets\Scripts\MainMenu\ShowSliderValue.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\ShowSliderValue.cs
+    projectPath: Assets\Scripts\MainMenu\ShowSliderValue.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\EnergyHandler.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\EnergyHandler.cs
-    projectPath: Assets\Scripts\GUI\EnergyHandler.cs
+  - path: UnityProject\Assets\Scripts\MainMenu\SimpleCameraController.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\SimpleCameraController.cs
+    projectPath: Assets\Scripts\MainMenu\SimpleCameraController.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\EnergySystem.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\EnergySystem.cs
-    projectPath: Assets\Scripts\GUI\EnergySystem.cs
+  - path: UnityProject\Assets\Scripts\MainMenu\TiltWindow.cs
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\MainMenu\TiltWindow.cs
+    projectPath: Assets\Scripts\MainMenu\TiltWindow.cs
     originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\EXPBar.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\EXPBar.cs
-    projectPath: Assets\Scripts\GUI\EXPBar.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\EXPHandler.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\EXPHandler.cs
-    projectPath: Assets\Scripts\GUI\EXPHandler.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\EXPSystem.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\EXPSystem.cs
-    projectPath: Assets\Scripts\GUI\EXPSystem.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\HealthBar.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\HealthBar.cs
-    projectPath: Assets\Scripts\GUI\HealthBar.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\HealthHandler.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\HealthHandler.cs
-    projectPath: Assets\Scripts\GUI\HealthHandler.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\HealthSystem.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\HealthSystem.cs
-    projectPath: Assets\Scripts\GUI\HealthSystem.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\MiniHealthHandler.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\MiniHealthHandler.cs
-    projectPath: Assets\Scripts\GUI\MiniHealthHandler.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\OpenPauseMenu.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\OpenPauseMenu.cs
-    projectPath: Assets\Scripts\GUI\OpenPauseMenu.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\PlayerInUse.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\PlayerInUse.cs
-    projectPath: Assets\Scripts\GUI\PlayerInUse.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\PressOToIncreaseEXP.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\PressOToIncreaseEXP.cs
-    projectPath: Assets\Scripts\GUI\PressOToIncreaseEXP.cs
-    originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\gfu\cache\branches.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
-    projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -181,6 +115,12 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
