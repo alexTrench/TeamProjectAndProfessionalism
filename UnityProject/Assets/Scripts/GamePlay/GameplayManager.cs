@@ -55,10 +55,6 @@ public class GameplayManager : MonoBehaviour
         }
         //Wave in session.
         else if(WaveInProgress() && !cooldownInProgress) {
-
-            //Tell the wave how many enemies remain.
-            currentWave.Update(enemyManager.GetNumOfZombies());
-
             //Check to end the current wave.
             if(currentWave.GetNumEnemiesRemaining() == 0) {
                 EndWave();
@@ -108,4 +104,11 @@ public class GameplayManager : MonoBehaviour
 
     //@returns 'true' if the cooldown period is in progress.
     public bool IsCooldownInProgres() => cooldownInProgress;
+
+    /**
+     * @brief Call this method whenever an enemy 
+     *        has died to decrement the number 
+     *        of enemies remaining in the wave.
+     */
+    public void EnemyHasDied() => currentWave.DecrementEnemiesRemaining();
 }
