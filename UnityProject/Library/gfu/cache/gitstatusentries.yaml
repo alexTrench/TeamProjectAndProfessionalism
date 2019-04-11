@@ -13,54 +13,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-10T16:24:20.365+01:00
-  initializedAtString: 2019-04-10T15:10:32.400+01:00
+  lastUpdatedAtString: 2019-04-11T14:55:39.239+01:00
+  initializedAtString: 2019-04-11T14:53:34.152+01:00
   entries:
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToLeftKeyBinding.anim
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToLeftKeyBinding.anim
-    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToLeftKeyBinding.anim
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToRightKeyBinding.anim
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToRightKeyBinding.anim
-    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\CloseToRightKeyBinding.anim
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToLeftKeyBinding.anim
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToLeftKeyBinding.anim
-    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToLeftKeyBinding.anim
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToRightKeyBinding.anim
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToRightKeyBinding.anim
-    projectPath: Assets\MainMenu\Animation\menus_controller\FadeAnimations\OpenToRightKeyBinding.anim
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Keyboard_Panel.controller
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Keyboard_Panel.controller
-    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\Keyboard_Panel.controller
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
-    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\MainMenu_Panel.controller
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
     projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\Resolution_Panel.controller
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Xbox_Panel.controller
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Animation\menus_controller\PanelControllers\Xbox_Panel.controller
-    projectPath: Assets\MainMenu\Animation\menus_controller\PanelControllers\Xbox_Panel.controller
+  - path: UnityProject\Assets\MainMenu\Prefabs\Audio_Panel.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Audio_Panel.prefab
+    projectPath: Assets\MainMenu\Prefabs\Audio_Panel.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\Game_Settings_Panel.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Game_Settings_Panel.prefab
+    projectPath: Assets\MainMenu\Prefabs\Game_Settings_Panel.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\Graphics_Panel.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Graphics_Panel.prefab
+    projectPath: Assets\MainMenu\Prefabs\Graphics_Panel.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\Help_Panel.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Help_Panel.prefab
+    projectPath: Assets\MainMenu\Prefabs\Help_Panel.prefab
+    originalPath: 
+    status: 1
+    staged: 0
+  - path: UnityProject\Assets\MainMenu\Prefabs\MainMenu_Panel.prefab
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\MainMenu_Panel.prefab
+    projectPath: Assets\MainMenu\Prefabs\MainMenu_Panel.prefab
     originalPath: 
     status: 1
     staged: 0
@@ -68,13 +56,13 @@ MonoBehaviour:
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\PC_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\PC_Panel.prefab
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: UnityProject\Assets\MainMenu\Prefabs\Xbox_Panel.prefab
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\MainMenu\Prefabs\Xbox_Panel.prefab
     projectPath: Assets\MainMenu\Prefabs\Xbox_Panel.prefab
     originalPath: 
-    status: 1
+    status: 3
     staged: 0
   - path: UnityProject\Assets\Scenes\MainMenu.unity
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMenu.unity
@@ -85,6 +73,18 @@ MonoBehaviour:
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\CurrentLayout.dwlt
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\gfu\cache\branches.yaml
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -109,12 +109,6 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\InspectorExpandedItems.asset
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
