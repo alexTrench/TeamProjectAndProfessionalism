@@ -62,7 +62,7 @@ MonoBehaviour:
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
     projectPath: Assets\Scenes\MainMapStart.unity
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Assets\Scripts\AI\HitMarkerScript.cs
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\AI\HitMarkerScript.cs
@@ -92,49 +92,49 @@ MonoBehaviour:
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CheckEnemies.cs
     projectPath: Assets\Scripts\GUI\CheckEnemies.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Assets\Scripts\weapons\M4_Script.cs
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\M4_Script.cs
     projectPath: Assets\Scripts\weapons\M4_Script.cs
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
     projectPath: Library\metadata\1b\1b355da31ea043feba0c03e35dd4bc62
     originalPath: 
-    status: 3
+    status: 5
     staged: 0
   - path: UnityProject\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b.info
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\metadata\1b\1b8d251f9af63b746bf2f7ffe00ebb9b.info
@@ -367,6 +367,12 @@ MonoBehaviour:
   - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
