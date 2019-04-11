@@ -18474,7 +18474,7 @@ PrefabInstance:
     - target: {fileID: 8296833136726096135, guid: f2eed991bae926c4190bba2c6120bee7,
         type: 3}
       propertyPath: m_Text
-      value: Speed Up
+      value: Speed UP
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2eed991bae926c4190bba2c6120bee7, type: 3}
@@ -117054,6 +117054,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Text
       value: Button 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3347335564886253062, guid: f2eed991bae926c4190bba2c6120bee7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 69
+      objectReference: {fileID: 0}
+    - target: {fileID: 4335978373032388209, guid: f2eed991bae926c4190bba2c6120bee7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 45.8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2eed991bae926c4190bba2c6120bee7, type: 3}
