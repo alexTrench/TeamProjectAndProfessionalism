@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1620013494058289234}
   - component: {fileID: 1620013494058289233}
   m_Layer: 5
-  m_Name: EnemiesLeft
+  m_Name: enemiesLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,7 +26,7 @@ RectTransform:
   m_GameObject: {fileID: 1620013494058289235}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -50}
-  m_LocalScale: {x: 181.38147, y: 100.89728, z: 1}
+  m_LocalScale: {x: 124.712456, y: 69.37394, z: 0.68757}
   m_Children:
   - {fileID: 1620013494564858618}
   - {fileID: 1620013495383470440}
@@ -192,14 +192,14 @@ RectTransform:
   m_GameObject: {fileID: 1620013495383470441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.00062561035}
-  m_LocalScale: {x: 0.0022463745, y: 0.004038275, z: 0.40745097}
+  m_LocalScale: {x: 0.003463011, y: 0.0062254053, z: 0.62812644}
   m_Children: []
   m_Father: {fileID: 1620013494058289234}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.043, y: -0.16320801}
+  m_AnchoredPosition: {x: 0.09, y: -0.07}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1620013495383470454
