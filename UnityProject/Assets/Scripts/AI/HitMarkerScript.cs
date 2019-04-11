@@ -14,12 +14,16 @@ public class HitMarkerScript : MonoBehaviour
     
     public void EnableMarker()
     {
-        m_capsuleCollider.enabled = true;
+        if (m_capsuleCollider) {
+            m_capsuleCollider.enabled = true;
+        }
     }
 
     public void DisableMarker()
     {
-        m_capsuleCollider.enabled = false;
+        if(m_capsuleCollider) {
+            m_capsuleCollider.enabled = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)

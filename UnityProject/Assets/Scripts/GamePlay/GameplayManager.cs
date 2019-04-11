@@ -6,7 +6,7 @@ using UnityEngine;
  * @extends MonoBehaviour
  * @author  Andrew Alford
  * @date    10/04/19
- * @version 1.0 - 10/04/19
+ * @version 1.1 - 11/04/19
  */
 public class GameplayManager : MonoBehaviour
 {
@@ -18,7 +18,7 @@ public class GameplayManager : MonoBehaviour
 
     //[COOLDOWN] The amount of time (in seconds) 
     //allocated between waves.
-    public const float COOLDOWN = 5.0f;
+    public const float COOLDOWN = 15.0f;
 
     //[currentWave] The wave currently in progress.
     private Wave currentWave = null;
@@ -57,10 +57,10 @@ public class GameplayManager : MonoBehaviour
         else if(WaveInProgress() && !cooldownInProgress) {
 
             //Tell the wave how many enemies remain.
-            currentWave.SetNumEnemies(enemyManager.GetNumOfZombies());
+            currentWave.Update(enemyManager.GetNumOfZombies());
 
             //Check to end the current wave.
-            if(currentWave.GetNumEnemies() == 0) {
+            if(currentWave.GetNumEnemiesRemaining() == 0) {
                 EndWave();
             }
         }
@@ -77,7 +77,10 @@ public class GameplayManager : MonoBehaviour
     /**
      * @brief Begins the next wave.
      */
-    private void StartWave() => currentWave = new Wave(enemyManager);
+    private void StartWave() {
+        currentWave = new Wave();
+        StartCoroutine(currentWave.SpawnEnemies(enemyManager));
+    }
 
     /**
      * @brief Ends the current wave.

@@ -102,7 +102,7 @@ public class M4_Script : MonoBehaviour
     {
         //makes it so it doesnt start hundreds of co routines for every frame
         IsReloading = true;
-        Debug.Log("reloading");
+        //Debug.Log("reloading");
         //waits for the duration of the reload time before reloading
         yield return new WaitForSeconds(database.weapons[id].reloadTime);
         CurrentAmmo = database.weapons[id].MaxAmmo;

@@ -34,11 +34,10 @@ public class CheckEnemies : MonoBehaviour
         updatedEnemiesLeft = zombieManager.GetNumOfZombies();
 
         // if the number of zombies has changes
-        if(updatedEnemiesLeft != enemiesLeft)
-        {
+        if (updatedEnemiesLeft != enemiesLeft) {
             // update the GUI text
+            enemiesLeft = zombieManager.GetNumOfZombies();
             enemiesLeftText.text = updatedEnemiesLeft.ToString();
-            enemiesLeft          = updatedEnemiesLeft;
         }
     }
 }
