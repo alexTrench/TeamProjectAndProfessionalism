@@ -4,17 +4,17 @@ using UnityEngine;
 
 public class HealthHandler : MonoBehaviour
 {
-    // declaration of the health system and bar;
-    public  HealthSystem healthSystem;
-    public  HealthBar    healthBar;
+    // variables which are accesible from inside the editor in order to link scene objects
+    [SerializeField] private HealthSystem healthSystem = null; // the health system logic for the bar
+    [SerializeField] private HealthBar    healthBar    = null; // GUI representation of the health bar
 
-    // current player in control
+    // local characters manager
     private CharacterManagerScript charactersManager;
     
     // list of all player's health
     private List<float> playersHealth;
 
-    // updated player health variables
+    // updated player health and index
     private float uPlayerHealth;
     private int   uPlayerIndex;
 
@@ -24,24 +24,25 @@ public class HealthHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // look on the list of objects and get the component for character manager script
+        // look up on the list of objects and get CharacterManagerScript component for the object tagged as CharacterManager
         charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
 
-        // initialise the list with generic health values for each character
+        // initialise the list with basic health values for each character
         playersHealth = new List<float> { 100.0f, 100.0f, 100.0f, 100.0f };
 
         // initialise the current player's index
         cPlayerIndex = charactersManager.GetCurrentPlayerIndex();
 
+        // initialise health system and setup a health bar
         healthSystem = new HealthSystem(100.0f);
         healthBar.Setup(healthSystem);
     }
 
     private void Update()
     {
-        // update the current player index and its health
+        // update the current player's index and health
         uPlayerHealth = charactersManager.GetCurrentPlayer().GetHealth();
-        uPlayerIndex = charactersManager.GetCurrentPlayerIndex();
+        uPlayerIndex  = charactersManager.GetCurrentPlayerIndex();
 
         // if updated index is different
         if (uPlayerIndex != cPlayerIndex)
@@ -58,7 +59,6 @@ public class HealthHandler : MonoBehaviour
                 healthSystem.Damage(playersHealth[uPlayerIndex] - uPlayerHealth);
                 playersHealth[uPlayerIndex] = uPlayerHealth;
             }
-            Debug.Log("updated player index: " + uPlayerIndex + "  health: " + playersHealth[uPlayerIndex]);
         }
         else if (uPlayerHealth < playersHealth[cPlayerIndex])
         {

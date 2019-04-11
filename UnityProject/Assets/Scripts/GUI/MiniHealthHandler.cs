@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class MiniHealthHandler : MonoBehaviour
 {
-    [SerializeField] private HealthSystem healthSystem = null;
-    [SerializeField] private HealthBar    healthBar = null;
-    [SerializeField] private int          playerIndex = 0;
+    // variables which are accesible from inside the editor in order to link scene objects
+    [SerializeField] private HealthSystem healthSystem = null; // the health system logic for the bar
+    [SerializeField] private HealthBar    healthBar    = null; // the GUI representation of the health bar
+    [SerializeField] private int          playerIndex  = 0;    // current player in use
     
     // characters manager
     private CharacterManagerScript charactersManager;
@@ -27,9 +28,11 @@ public class MiniHealthHandler : MonoBehaviour
         // look on the list of objects and get the component for character manager script
         charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
 
+        // get health/max health of current player in use
         playerHealth    = charactersManager.GetPlayerByIndex(playerIndex).GetHealth();
         playerMaxHealth = charactersManager.GetPlayerByIndex(playerIndex).GetMaxHealth();
 
+        // initialise a system and format the bar using the system's logic
         healthSystem = new HealthSystem(playerHealth);
         healthBar.Setup(healthSystem);
     }

@@ -2,27 +2,39 @@
 
 public class EnergySystem
 {
+    // public event that deals with changes of the value of energy
     public event EventHandler OnEnergyChanged;
 
+    // local private variables that hold energy and max energy
     private float energy;
     private float energyMAX;
 
+    // initialise function for the local private variables
     public EnergySystem(float energyMAX)
     {
         this.energyMAX = energyMAX;
         energy = energyMAX;
     }
 
+    // Get Energy
     public float GetEnergy()
     {
         return energy;
     }
 
+    // Get Max Energy
+    public float GetMaxEnergy()
+    {
+        return energyMAX;
+    }
+
+    // Get Energy Percent
     public float GetEnergyPercent()
     {
         return energy / energyMAX;
     }
 
+    // Decrease Energy by desired amount hold inside a parameter
     public void DecreaseEnergy(float decreaseAmount)
     {
         energy -= decreaseAmount;
@@ -30,6 +42,7 @@ public class EnergySystem
         OnEnergyChanged?.Invoke(this, EventArgs.Empty);
     }
 
+    // Increase Energy by desired amount hold inside a parameter
     public void RegenerateEnergy(float regenerateAmount)
     {
         energy += regenerateAmount;
