@@ -13,24 +13,16 @@ public class Wave
     //[totalWaves] How many waves have occurred so far.
     private static int WAVE_ID = 0;
 
-    //[totalEnemies] How many enemies will exist in this wave.
-    private static int totalEnemies = 0;
+    //[waveNo] The wave that is currently in session.
+    private readonly int waveNo;
 
     //[spawningPeriodInProgress] While 'true' the 
     //spawning period is currently in progress.
-    private static bool spawningPeriodInProgress = false;
-
-    //[BASE_ENEMIES] A base used to calculate how many 
-    //enemies to spawn in the wave.
-    private const int BASE_ENEMIES = 16;
+    private bool spawningPeriodInProgress = false;
 
     //[DIMINISH_RETURNS] diminishes the returns 
     //calculated from base variables.
     private const float DIMINISH_RETURNS = 2.5f;
-
-    //[MAX_ENEMIES] The maxium number of 
-    //enemies that can exist in the game.
-    private const int MAX_ENEMIES = 100;
 
     //[MIN_SPAWN_INTERVAL] The minimum spawn interval allowed.
     private const float MIN_SPAWN_INTERVAL = 0.01f;
@@ -38,11 +30,19 @@ public class Wave
     //[spawnInterval] How frequently to spawn enemies.
     private float spawnInterval = 12f;
 
+    //[BASE_ENEMIES] A base used to calculate how many 
+    //enemies to spawn in the wave.
+    private const int BASE_ENEMIES = 16;
+
+    //[MAX_ENEMIES] The maxium number of 
+    //enemies that can exist in the game.
+    private const int MAX_ENEMIES = 100;
+
+    //[totalEnemies] How many enemies will exist in this wave.
+    private int totalEnemies = 0;
+
     //[enemiesRemaining] Tracks the current number of enemies in the wave.
     private int enemiesRemaining = 0;
-
-    //[waveNo] The wave that is currently in session.
-    private readonly int waveNo;
 
     /**
      * @brief Constructor for a Wave.
@@ -66,8 +66,8 @@ public class Wave
         spawningPeriodInProgress = true;
         CalculateSpawnInterval();
 
-        Debug.Log("Wave: " + Wave.GetWaveID());
-        Debug.Log("spawn interval: " + spawnInterval);
+        Debug.Log("Wave: " + GetWaveID() + "\tEnemies: " + totalEnemies);
+
         for(int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) { 
             enemyManager.Spawn();
             yield return new WaitForSeconds(spawnInterval);
@@ -89,22 +89,18 @@ public class Wave
         }
     }
 
-    /**
-     * @brief Updates the wave.
-     * @param numEnemies - How many enemies are left to fight.
-     */
-    public void Update(int numEnemies) {
-        enemiesRemaining = numEnemies;
-    }
+    //@returns the total number of waves that have occurred so far.
+    public static int GetWaveID() => WAVE_ID;
+
+    //@brief Decrements the number of enemies remaining in the wave.
+    public void DecrementEnemiesRemaining() => enemiesRemaining--;
 
     //@reutrns the number of enemies left to fight in the wave.
     public int GetNumEnemiesRemaining() => enemiesRemaining;
 
-    //@returns the total number of waves that have occurred so far.
-    public static int GetWaveID() => WAVE_ID;
-
     //@returns the total number of enemies that will be in the wave.
-    public static int GetNumEnemiesTotal() => totalEnemies;
+    public int GetNumEnemiesTotal() => totalEnemies;
 
-    public static bool IsSpawningPeriodInProgress() => spawningPeriodInProgress;
+    //@returns 'true' if the spawning period is currently in progress.
+    public bool IsSpawningPeriodInProgress() => spawningPeriodInProgress;
 }

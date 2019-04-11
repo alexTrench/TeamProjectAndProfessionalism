@@ -30,14 +30,16 @@ public class CheckEnemies : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        // update the number of zombies each frame
-        updatedEnemiesLeft = zombieManager.GetNumOfZombies();
+        if(!(GameplayManager.GM.GetWave() == null)) {
+            // update the number of zombies each frame
+            updatedEnemiesLeft = GameplayManager.GM.GetWave().GetNumEnemiesRemaining();
 
-        // if the number of zombies has changes
-        if (updatedEnemiesLeft != enemiesLeft) {
-            // update the GUI text
-            enemiesLeft = zombieManager.GetNumOfZombies();
-            enemiesLeftText.text = updatedEnemiesLeft.ToString();
+            // if the number of zombies has changes
+            if (updatedEnemiesLeft != enemiesLeft) {
+                // update the GUI text
+                enemiesLeft = GameplayManager.GM.GetWave().GetNumEnemiesRemaining();
+                enemiesLeftText.text = updatedEnemiesLeft.ToString();
+            }
         }
     }
 }

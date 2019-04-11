@@ -8,6 +8,10 @@ public class ZombieManagerScript : MonoBehaviour
     [SerializeField] private Transform[] spawnPoints = null;
     [SerializeField] private GameObject enemy_template = null;
 
+    //[zombiesKilled] Tracks how many zombies have been killed
+    //during the gameplay session.
+    private int zombiesKilled = 0;
+
     private void Awake()
     {
         // Add zombies already in scene to list
@@ -31,13 +35,15 @@ public class ZombieManagerScript : MonoBehaviour
         List<int> zombiesToRemove = new List<int>();
 
         // Loop through zombies
-        // If zombie is dead, add index to list so the zombie can be removeed
+        // If zombie is dead, add index to list so the zombie can be removed
         for (int i = 0; i < m_zombieCharacters.Count; i++)
         {
-            if (m_zombieCharacters[i].IsDead())
+            if (m_zombieCharacters[i].IsDead()) {
                 zombiesToRemove.Add(i);
+                zombiesKilled++;
+                GameplayManager.GM.EnemyHasDied();
+            }
         }
-
         // Remove dead zombies from list
         foreach (var index in zombiesToRemove)
         {
