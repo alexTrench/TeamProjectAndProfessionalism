@@ -25,7 +25,7 @@ public class ZombieManagerScript : MonoBehaviour
         int spawnIndex = Random.Range(0, spawnPoints.Length);
 
         GameObject zombie;
-        if (gameObject.transform == null) {
+        if (gameObject == null) {
             zombie = Instantiate(
                 enemy_template,
                 spawnPoints[spawnIndex].position,
@@ -58,7 +58,6 @@ public class ZombieManagerScript : MonoBehaviour
             if (m_zombieCharacters[i].IsDead()) {
                 zombiesToRemove.Add(i);
                 zombiesKilled++;
-                Debug.Log("Zombies killed:\t" + zombiesKilled);
                 GameplayManager.GM.EnemyHasDied();
             }
         }

@@ -13,113 +13,113 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-12T18:02:27.030+01:00
-  initializedAtString: 2019-04-12T16:57:48.685+01:00
+  lastUpdatedAtString: 2019-04-12T21:47:54.792+01:00
+  initializedAtString: 2019-04-12T21:46:20.487+01:00
   entries:
-  - path: UnityProject\.vs\UnityProject\v15\.suo
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
-    projectPath: .vs\UnityProject\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
     projectPath: Assembly-CSharp.csproj
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Assembly-CSharp-Editor.csproj
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor.csproj
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor.csproj
     projectPath: Assembly-CSharp-Editor.csproj
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Assembly-CSharp-Editor-firstpass.csproj
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor-firstpass.csproj
     projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scenes\MainMapStart.unity
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
-    projectPath: Assets\Scenes\MainMapStart.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\CheckCurrentWave.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CheckCurrentWave.cs
-    projectPath: Assets\Scripts\GUI\CheckCurrentWave.cs
+  - path: UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
+    projectPath: Assets\Scripts\AI\ZombieManagerScript.cs
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     status: 3
