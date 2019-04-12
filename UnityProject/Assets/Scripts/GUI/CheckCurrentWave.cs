@@ -7,6 +7,7 @@ public class CheckCurrentWave : MonoBehaviour
 {
     // variable which is accesible from inside the editor in order to link scene objects
     [SerializeField] private Text waveText = null; // the UI Text element for Wave Count Number
+    [SerializeField] private Text endGameWaveText = null; // the UI Text element for Wave Count Number
 
 
     private int currentWave; // local variable that memorise the current wave
@@ -30,8 +31,15 @@ public class CheckCurrentWave : MonoBehaviour
         if(updatedWave != currentWave)
         {
             // update the GUI Text Element and the current wave variable
-            waveText.text = currentWave.ToString();
+            waveText.text = updatedWave.ToString();
             currentWave = updatedWave;
+        }
+
+        // if it is end game
+        if(OpenEndGameMenu.IsEndGame())
+        {
+            // update the number of waves survived inside End Game Panel
+            endGameWaveText.text = updatedWave.ToString();
         }
     }
 }
