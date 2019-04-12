@@ -23,12 +23,23 @@ public class ZombieManagerScript : MonoBehaviour
      */
     public void Spawn() {
         int spawnIndex = Random.Range(0, spawnPoints.Length);
-        GameObject zombie = Instantiate(
-            enemy_template, 
-            spawnPoints[spawnIndex].position, 
-            spawnPoints[spawnIndex].rotation,
-            gameObject.transform
-        ) as GameObject;
+
+        GameObject zombie;
+        if (gameObject.transform == null) {
+            zombie = Instantiate(
+                enemy_template,
+                spawnPoints[spawnIndex].position,
+                spawnPoints[spawnIndex].rotation
+            ) as GameObject;
+        }
+        else {
+            zombie = Instantiate(
+                enemy_template, 
+                spawnPoints[spawnIndex].position, 
+                spawnPoints[spawnIndex].rotation,
+                gameObject.transform
+            ) as GameObject;
+        }
 
         zombie.SetActive(true);
         m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
@@ -47,6 +58,7 @@ public class ZombieManagerScript : MonoBehaviour
             if (m_zombieCharacters[i].IsDead()) {
                 zombiesToRemove.Add(i);
                 zombiesKilled++;
+                Debug.Log("Zombies killed:\t" + zombiesKilled);
                 GameplayManager.GM.EnemyHasDied();
             }
         }
@@ -74,4 +86,7 @@ public class ZombieManagerScript : MonoBehaviour
     {
         return m_zombieCharacters.Count;
     }
+
+    //@returns the total number of zombies the player has killed.
+    public int GetNumberOfZombiesKilled() => zombiesKilled;
 }

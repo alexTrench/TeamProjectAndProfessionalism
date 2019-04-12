@@ -35,7 +35,7 @@ MonoBehaviour:
     status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
     originalPath: 
     status: 3
@@ -47,7 +47,7 @@ MonoBehaviour:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
     projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
@@ -59,19 +59,19 @@ MonoBehaviour:
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3

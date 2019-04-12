@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: master
-    tracking: origin/master
+    name: button_mapping
+    tracking: origin/button_mapping
   currentConfigBranch:
-    name: master
+    name: button_mapping
     remote:
       name: origin
       url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
-    trackingBranch: master
+    trackingBranch: button_mapping
   currentConfigRemote:
     name: origin
     url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
