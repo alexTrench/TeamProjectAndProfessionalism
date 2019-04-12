@@ -27,12 +27,11 @@ public class OpenEndGameMenu : MonoBehaviour
         // if it is not yet End Game (players are still alive)
         if(!isEndGame)
         {
+            // initialise number of dead players each frame
+            numberOfDead = 0;
             // loop through each individual player
             for (int index = 0; index <= 3; index++)
             {
-                // initialise number of dead players each frame
-                numberOfDead = 0;
-
                 // and check whether or not his health has reached 0 or below
                 if (charactersManager.GetPlayerByIndex(index).GetHealth() <= 0.0f)
                 {

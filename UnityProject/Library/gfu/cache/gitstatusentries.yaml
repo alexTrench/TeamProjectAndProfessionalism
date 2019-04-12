@@ -13,27 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-12T16:38:06.965+01:00
+  lastUpdatedAtString: 2019-04-12T16:46:01.165+01:00
   initializedAtString: 2019-04-12T16:17:21.405+01:00
   entries:
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\GUI\Prefabs\CheckCurrentWave.prefab
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\GUI\Prefabs\CheckCurrentWave.prefab
-    projectPath: Assets\GUI\Prefabs\CheckCurrentWave.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\CheckCurrentWave.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CheckCurrentWave.cs
-    projectPath: Assets\Scripts\GUI\CheckCurrentWave.cs
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
@@ -52,12 +34,6 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\gfu\cache\gitlog.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlog.yaml
-    projectPath: Library\gfu\cache\gitlog.yaml
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\gfu\cache\gitstatusentries.yaml
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitstatusentries.yaml
     projectPath: Library\gfu\cache\gitstatusentries.yaml
@@ -67,12 +43,6 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gittrackingstatus.yaml
     projectPath: Library\gfu\cache\gittrackingstatus.yaml
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\gfu\cache\repoinfo.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
-    projectPath: Library\gfu\cache\repoinfo.yaml
     originalPath: 
     status: 3
     staged: 0
