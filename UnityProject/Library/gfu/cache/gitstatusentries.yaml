@@ -13,9 +13,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-12T14:12:03.884+01:00
-  initializedAtString: 2019-04-12T13:58:49.270+01:00
+  lastUpdatedAtString: 2019-04-12T15:15:12.065+01:00
+  initializedAtString: 2019-04-12T14:18:18.395+01:00
   entries:
+  - path: .gitignore
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\.gitignore
+    projectPath: ..\.gitignore
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\.vs\UnityProject\v15\.suo
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
     projectPath: .vs\UnityProject\v15\.suo
@@ -40,27 +46,39 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\AI\WarZombie\WarZombie.prefab
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\AI\WarZombie\WarZombie.prefab
-    projectPath: Assets\AI\WarZombie\WarZombie.prefab
+  - path: UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
+    projectPath: Assets\Scripts\Characters\CharacterManagerScript.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
-    projectPath: Assets\Scripts\AI\ZombieManagerScript.cs
+  - path: UnityProject\Assets\Scripts\Gameplay\Wave.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Gameplay\Wave.cs
+    projectPath: Assets\Scripts\Gameplay\Wave.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
-    projectPath: Assets\Scripts\GamePlay\GameplayManager.cs
+  - path: UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\utility\Inputs\InputManager.cs
+    projectPath: Assets\Scripts\utility\Inputs\InputManager.cs
     originalPath: 
     status: 3
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\CurrentLayout.dwlt
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\expandedItems
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     status: 3
     staged: 0
@@ -85,6 +103,12 @@ MonoBehaviour:
   - path: UnityProject\Library\gfu\cache\repoinfo.yaml
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\repoinfo.yaml
     projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
     originalPath: 
     status: 3
     staged: 0

@@ -246,3 +246,5 @@ UnityProject/Library/gfu/cache/gitlocks.yaml
 *.yaml
 *.yaml
 *.log
+*.dwlt
+UnityProject/Library/expandedItems

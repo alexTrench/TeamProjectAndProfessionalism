@@ -44,6 +44,14 @@ public class CharacterManagerScript : MonoBehaviour
             SwitchPreviousCharacter();
         else if (InputManager.NextCharacter())
             SwitchNextCharacter();
+        else if (InputManager.CharacterHotKey1())
+            SwitchToSpecificCharacter(0);
+        else if (InputManager.CharacterHotKey2())
+            SwitchToSpecificCharacter(1);
+        else if (InputManager.CharacterHotKey3())
+            SwitchToSpecificCharacter(2);
+        else if (InputManager.CharacterHotKey4())
+            SwitchToSpecificCharacter(3);
 
         // Check for dead player characters
         foreach (var player in m_playerCharacters)
@@ -52,6 +60,35 @@ public class CharacterManagerScript : MonoBehaviour
             if (player.IsDead() && !m_deadPlayerCharacters.Contains(player))
                 m_deadPlayerCharacters.Enqueue(player);
         }
+    }
+
+    /**
+     * @brief Allows the player to switch to a specific character.
+     * @param characterIndex - The index of the character to be
+     *                         switched to.
+     */
+    void SwitchToSpecificCharacter(int characterIndex) {
+        //Check the index is within range.
+        if(characterIndex < 0 || characterIndex >= m_playerCharacters.Count) {
+            return;
+        }
+        //Check that the character is not already selected.
+        if(m_currentPlayerIndex == characterIndex) {
+            return;
+        }
+        //Check that the character is not dead.
+        if(m_playerCharacters[characterIndex].IsDead()) {
+            return;
+        }
+
+        //Change the player's character.
+        m_currentPlayerIndex = characterIndex;
+
+        // Enable current character and disable others
+        EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
+
+        //Make the camera follow the new character.
+        m_followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
 
     // Switches to next character

@@ -36,7 +36,7 @@ public class Wave
 
     //[MAX_ENEMIES] The maxium number of 
     //enemies that can exist in the game.
-    private const int MAX_ENEMIES = 100;
+    private const int MAX_ENEMIES = 250;
 
     //[totalEnemies] How many enemies will exist in this wave.
     private int totalEnemies = 0;
@@ -53,6 +53,10 @@ public class Wave
 
         //Calculate the number of enemies to spawn in this wave.
         totalEnemies = (int)(waveNo * (BASE_ENEMIES / DIMINISH_RETURNS));
+        //Clamp the number of enemies to help with the games performance.
+        if(totalEnemies > MAX_ENEMIES) {
+            totalEnemies = MAX_ENEMIES;
+        }
 
         //Reset the number of enemies remaining.
         enemiesRemaining = totalEnemies;
