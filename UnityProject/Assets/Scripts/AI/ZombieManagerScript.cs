@@ -23,7 +23,13 @@ public class ZombieManagerScript : MonoBehaviour
      */
     public void Spawn() {
         int spawnIndex = Random.Range(0, spawnPoints.Length);
-        GameObject zombie = Instantiate(enemy_template, spawnPoints[spawnIndex].position, spawnPoints[spawnIndex].rotation) as GameObject;
+        GameObject zombie = Instantiate(
+            enemy_template, 
+            spawnPoints[spawnIndex].position, 
+            spawnPoints[spawnIndex].rotation,
+            gameObject.transform
+        ) as GameObject;
+
         zombie.SetActive(true);
         m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
     }

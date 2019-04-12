@@ -6,7 +6,7 @@ using UnityEngine;
  *          which inputs are in use.
  * @author  Andrew Alford
  * @date    25/03/2019
- * @version 1.0 - 25/03/2019
+ * @version 1.1 - 12/04/2019
  */
 public static class InputManager {   
 
@@ -170,6 +170,86 @@ public static class InputManager {
             return Input.GetKeyDown(KeyCode.Q) ||
                 Input.GetKeyDown(KeyCode.JoystickButton4);
         } catch(ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool CharacterHotKey1() {
+        try {
+            return Input.GetKeyDown(KeyCode.Alpha1);
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool CharacterHotKey2() {
+        try {
+            return Input.GetKeyDown(KeyCode.Alpha2);
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool CharacterHotKey3() {
+        try {
+            return Input.GetKeyDown(KeyCode.Alpha3);
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool CharacterHotKey4() {
+        try {
+            return Input.GetKeyDown(KeyCode.Alpha4);
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool AbilityHotKey1() {
+        try {
+            return Input.GetKeyDown(KeyCode.Z);
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool AbilityHotKey2() {
+        try {
+            return Input.GetKeyDown(KeyCode.X);
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool AbilityHotKey3() {
+        try {
+            return Input.GetKeyDown(KeyCode.C);
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool AbilityHotKey4() {
+        try {
+            return Input.GetKeyDown(KeyCode.V);
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
