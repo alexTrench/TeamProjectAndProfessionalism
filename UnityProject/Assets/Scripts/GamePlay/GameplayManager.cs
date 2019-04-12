@@ -110,5 +110,9 @@ public class GameplayManager : MonoBehaviour
      *        has died to decrement the number 
      *        of enemies remaining in the wave.
      */
-    public void EnemyHasDied() => currentWave.DecrementEnemiesRemaining();
+    public void EnemyHasDied() {
+        if (WaveInProgress()) {
+            currentWave.DecrementEnemiesRemaining();
+        }
+    }
 }
