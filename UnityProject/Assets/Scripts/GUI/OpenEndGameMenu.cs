@@ -19,8 +19,6 @@ public class OpenEndGameMenu : MonoBehaviour
     {
         // look on the list of objects and get the component for character manager script
         charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
-
-        numberOfDead = 0;
     }
 
     // Update is called once per frame
@@ -32,6 +30,9 @@ public class OpenEndGameMenu : MonoBehaviour
             // loop through each individual player
             for (int index = 0; index <= 3; index++)
             {
+                // initialise number of dead players each frame
+                numberOfDead = 0;
+
                 // and check whether or not his health has reached 0 or below
                 if (charactersManager.GetPlayerByIndex(index).GetHealth() <= 0.0f)
                 {
