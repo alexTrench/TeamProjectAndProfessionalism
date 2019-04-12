@@ -9,6 +9,8 @@ public class LoadOnEnter : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         // load scene by index from File->Build Settings
+        Time.timeScale = 1.0f;
+        Cursor.visible = true;
         SceneManager.LoadScene(2, LoadSceneMode.Single);
     }
 
