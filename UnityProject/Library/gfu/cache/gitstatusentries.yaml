@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-11T23:32:54.389+01:00
-  initializedAtString: 2019-04-11T23:01:58.947+01:00
+  lastUpdatedAtString: 2019-04-12T14:12:03.884+01:00
+  initializedAtString: 2019-04-12T13:58:49.270+01:00
   entries:
   - path: UnityProject\.vs\UnityProject\v15\.suo
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
@@ -40,6 +40,12 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: UnityProject\Assets\AI\WarZombie\WarZombie.prefab
+    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\AI\WarZombie\WarZombie.prefab
+    projectPath: Assets\AI\WarZombie\WarZombie.prefab
+    originalPath: 
+    status: 3
+    staged: 0
   - path: UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
     projectPath: Assets\Scripts\AI\ZombieManagerScript.cs
@@ -49,18 +55,6 @@ MonoBehaviour:
   - path: UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GamePlay\GameplayManager.cs
     projectPath: Assets\Scripts\GamePlay\GameplayManager.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\Gameplay\Wave.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Gameplay\Wave.cs
-    projectPath: Assets\Scripts\Gameplay\Wave.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\CheckEnemies.cs
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CheckEnemies.cs
-    projectPath: Assets\Scripts\GUI\CheckEnemies.cs
     originalPath: 
     status: 3
     staged: 0
@@ -94,39 +88,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    fullPath: C:\Users\Andrew\Documents\GitHub\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
-    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0
