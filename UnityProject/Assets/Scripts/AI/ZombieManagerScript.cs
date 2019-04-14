@@ -22,27 +22,21 @@ public class ZombieManagerScript : MonoBehaviour
      * @brief Spawns an enemy in a random location.
      */
     public void Spawn() {
-        int spawnIndex = Random.Range(0, spawnPoints.Length);
+        if(gameObject != null && gameObject.activeInHierarchy) {
+            int spawnIndex = Random.Range(0, spawnPoints.Length);
 
-        GameObject zombie;
-        if (gameObject == null) {
-            zombie = Instantiate(
-                enemy_template,
-                spawnPoints[spawnIndex].position,
-                spawnPoints[spawnIndex].rotation
-            ) as GameObject;
-        }
-        else {
+            GameObject zombie;
+
             zombie = Instantiate(
                 enemy_template, 
                 spawnPoints[spawnIndex].position, 
                 spawnPoints[spawnIndex].rotation,
                 gameObject.transform
             ) as GameObject;
-        }
 
-        zombie.SetActive(true);
-        m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
+            zombie.SetActive(true);
+            m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
+        }
     }
 
     // Update is called once per frame
