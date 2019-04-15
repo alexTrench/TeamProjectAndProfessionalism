@@ -11,7 +11,7 @@ using UnityEngine;
 public class Wave
 {
     //[totalWaves] How many waves have occurred so far.
-    private static int WAVE_ID = 0;
+    public static int WAVE_ID = 0;
 
     //[waveNo] The wave that is currently in session.
     private readonly int waveNo;
