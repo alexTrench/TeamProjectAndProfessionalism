@@ -13,66 +13,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-15T21:53:45.528+01:00
-  initializedAtString: 2019-04-15T21:44:00.758+01:00
+  lastUpdatedAtString: 2019-04-15T21:58:45.064+01:00
+  initializedAtString: 2019-04-15T21:55:02.176+01:00
   entries:
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\EffectExamples\WeaponEffects\Materials\MuzzleFlashParticle.mat
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\WeaponEffects\Materials\MuzzleFlashParticle.mat
-    projectPath: Assets\EffectExamples\WeaponEffects\Materials\MuzzleFlashParticle.mat
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\EffectExamples\WeaponEffects\Textures\FlashParticle.tif
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\EffectExamples\WeaponEffects\Textures\FlashParticle.tif
-    projectPath: Assets\EffectExamples\WeaponEffects\Textures\FlashParticle.tif
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Heavys\Heavy_08.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
-      Weapons\Base Pack\Prefabs\Heavys\Heavy_08.prefab
-    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Heavys\Heavy_08.prefab
+  - path: UnityProject\Assets\Scripts\weapons\AK_Script.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\AK_Script.cs
+    projectPath: Assets\Scripts\weapons\AK_Script.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\MuzzleFlash (1).prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
-      Weapons\Base Pack\Prefabs\MuzzleFlash (1).prefab
-    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\MuzzleFlash (1).prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Pistol\MuzzleFlash
-      (1).prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
-      Weapons\Base Pack\Prefabs\Pistol\MuzzleFlash (1).prefab
-    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Pistol\MuzzleFlash (1).prefab
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Pistol\Pistol_01.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
-      Weapons\Base Pack\Prefabs\Pistol\Pistol_01.prefab
-    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Pistol\Pistol_01.prefab
+  - path: UnityProject\Assets\Scripts\weapons\M4_Script.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\M4_Script.cs
+    projectPath: Assets\Scripts\weapons\M4_Script.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\Rifle_06.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
-      Weapons\Base Pack\Prefabs\Rifles\Rifle_06.prefab
-    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Rifles\Rifle_06.prefab
+  - path: UnityProject\Assets\Scripts\weapons\ShotgunScript.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\ShotgunScript.cs
+    projectPath: Assets\Scripts\weapons\ShotgunScript.cs
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scenes\MainMapStart.unity
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
-    projectPath: Assets\Scenes\MainMapStart.unity
+  - path: UnityProject\Assets\Weapons\870 Shotgun\Shotgun 1.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\870
+      Shotgun\Shotgun 1.prefab
+    projectPath: Assets\Weapons\870 Shotgun\Shotgun 1.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Ak_47\AK_47 1.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Ak_47\AK_47
+      1.prefab
+    projectPath: Assets\Weapons\Ak_47\AK_47 1.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\M4 Carbine\M4_Carbine.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\M4
+      Carbine\M4_Carbine.prefab
+    projectPath: Assets\Weapons\M4 Carbine\M4_Carbine.prefab
     originalPath: 
     status: 3
     staged: 0

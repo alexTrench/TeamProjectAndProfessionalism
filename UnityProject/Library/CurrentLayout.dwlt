@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 202
     height: 947
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 62
+  controlID: 137
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,20 +319,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/res/Sci-Fi Weapons/Base Pack/Prefabs/Pistol
+    - Assets/res/Sci-Fi Weapons/Base Pack/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/res/Sci-Fi Weapons/Base Pack/Prefabs/Pistol
+  - Assets/res/Sci-Fi Weapons/Base Pack/Prefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 419}
-    m_SelectedIDs: c20e0000
-    m_LastClickedID: 3778
-    m_ExpandedIDs: 00000000e00d0000700e000000100000ca100000181200006c120000fe130000fa1500004c160000f61600000017000060170000c8180000fc180000a6190000d8190000f01b0000d41d0000c271000000ca9a3b
+    scrollPos: {x: 0, y: 391}
+    m_SelectedIDs: fe130000
+    m_LastClickedID: 5118
+    m_ExpandedIDs: 00000000e00d0000700e000000100000ca100000181200006c120000fe130000fc1500004e160000fa1600000417000064170000ce18000002190000ac190000de190000fa1b0000de1d00002072000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000e00d0000700e0000461000008e100000ca1000006c120000fe130000fa1500004c160000f6160000001700006017000070180000c8180000fc180000a6190000d8190000f01b0000d41d0000c2710000
+    m_ExpandedIDs: 00000000e00d0000700e000000100000ca100000181200006c120000fe130000fc1500004e160000fa1600000417000064170000ce18000002190000ac190000de190000fa1b0000de1d000020720000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -603,23 +603,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: d6fbffff
-      m_LastClickedID: -1066
-      m_ExpandedIDs: ca79ffff32f0ffff3ef0ffff78f5ffffe6f5ffffbef9ffffc8faffffd0faffffd6fbffff4c2100000e260000082c00000e2c0000e02d0000e62d0000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: d6fbffff1a260000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: WeaponManager
-        m_OriginalName: WeaponManager
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -2696
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 2}
       m_SearchString: 

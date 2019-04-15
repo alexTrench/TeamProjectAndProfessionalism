@@ -17,6 +17,8 @@ public class M4_Script : MonoBehaviour
     //is reloding
     private bool IsReloading = false;
 
+
+    public ParticleSystem muzzleFlash;
     private AudioSource fireSound;
 
 
@@ -70,6 +72,8 @@ public class M4_Script : MonoBehaviour
             if(fireSound) {
                 fireSound.Play();
             }
+
+            muzzleFlash.Play();
             //creates a clone of the bullet
             GameObject bullet = Instantiate(database.weapons[id].bulleType);
 
