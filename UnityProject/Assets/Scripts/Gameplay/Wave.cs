@@ -67,14 +67,17 @@ public class Wave
      * @param enemyManager - Manages all the enemies in the wave.
      */
     public IEnumerator SpawnEnemies(ZombieManagerScript enemyManager) {
+        
         spawningPeriodInProgress = true;
         CalculateSpawnInterval();
 
         Debug.Log("Wave: " + GetWaveID() + "\tEnemies: " + totalEnemies);
 
-        for(int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) { 
-            enemyManager.Spawn();
-            yield return new WaitForSeconds(spawnInterval);
+        for(int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) {
+            if(enemyManager != null && enemyManager.isActiveAndEnabled) {
+                enemyManager.Spawn();
+                yield return new WaitForSeconds(spawnInterval);
+            }
         }
         spawningPeriodInProgress = false;
     }
