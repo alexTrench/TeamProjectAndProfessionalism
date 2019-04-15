@@ -180,6 +180,9 @@
     <Compile Include="Assets\Scripts\weapons\ShotgunScript.cs" />
     <Compile Include="Assets\Scripts\weapons\WeaponManagement\BulletBehaviour.cs" />
     <Compile Include="Assets\Scripts\weapons\WeaponManagement\Inventory.cs" />
+    <Compile Include="Assets\Scripts\weapons\WeaponManagement\Player2Pickup.cs" />
+    <Compile Include="Assets\Scripts\weapons\WeaponManagement\Player3Pickup.cs" />
+    <Compile Include="Assets\Scripts\weapons\WeaponManagement\Player4Pickup.cs" />
     <Compile Include="Assets\Scripts\weapons\WeaponManagement\WallPickup.cs" />
     <Compile Include="Assets\Scripts\weapons\WeaponManagement\WeaponManager.cs" />
     <Compile Include="Assets\Scripts\weapons\WeaponManagement\WeaponPickup.cs" />
