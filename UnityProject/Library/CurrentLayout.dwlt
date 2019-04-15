@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 202
     height: 947
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -94,7 +94,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Alex
+  m_LastLoadedLayoutName: 
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 527
+  controlID: 62
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 498}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 493
+  controlID: 63
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,20 +319,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/weapons/WeaponManagement
+    - Assets/res/Sci-Fi Weapons/Base Pack/Prefabs/Pistol
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/weapons/WeaponManagement
+  - Assets/res/Sci-Fi Weapons/Base Pack/Prefabs/Pistol
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 515}
-    m_SelectedIDs: a4990000
-    m_LastClickedID: 39332
-    m_ExpandedIDs: 00000000f496000072970000b2980000e69800001c9900006e9a00008e9b00003e9d0000649d0000f69d0000fa9d0000409e00002c9f0000609f0000949f00001ea0000046a00000c6a100003ca3000044d3000000ca9a3b
+    scrollPos: {x: 0, y: 419}
+    m_SelectedIDs: c20e0000
+    m_LastClickedID: 3778
+    m_ExpandedIDs: 00000000e00d0000700e000000100000ca100000181200006c120000fe130000fa1500004c160000f61600000017000060170000c8180000fc180000a6190000d8190000f01b0000d41d0000c271000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -360,7 +360,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f496000072970000b2980000e69800001c9900006e9a00008e9b00003e9d0000649d0000f69d0000fa9d00002c9f0000609f0000949f00001ea0000046a00000c6a100003ca3000044d3000000ca9a3b
+    m_ExpandedIDs: 00000000e00d0000700e0000461000008e100000ca1000006c120000fe130000fa1500004c160000f6160000001700006017000070180000c8180000fc180000a6190000d8190000f01b0000d41d0000c2710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -511,8 +511,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -527,9 +526,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -19.35326, y: -2.0061786, z: -34.780907}
+    m_Target: {x: -22.651115, y: 1.0015156, z: -33.45347}
     speed: 2
-    m_Value: {x: -19.35326, y: -2.0061786, z: -34.780907}
+    m_Value: {x: -22.651115, y: 1.0015156, z: -33.45347}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -557,13 +556,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.13681126, y: 0.8295491, z: -0.48919076, w: -0.23199895}
+    m_Target: {x: -0.046899486, y: 0.9447115, z: -0.28481686, w: -0.15556355}
     speed: 2
-    m_Value: {x: -0.13681126, y: 0.8295491, z: -0.48919076, w: -0.23199895}
+    m_Value: {x: -0.046899486, y: 0.9447115, z: -0.28481686, w: -0.15556355}
   m_Size:
-    m_Target: 5.1571107
+    m_Target: 1.7419515
     speed: 2
-    m_Value: 5.1571107
+    m_Value: 1.7419515
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -604,20 +603,20 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 0a98ffff
-      m_LastClickedID: -26614
-      m_ExpandedIDs: 4a8cffff5a8cffff5c8cffff6a8cffffe48fffff4890ffffa891ffff1692fffff896ffff0a98ffff7caa000074b000007ab000004ab2000050b200000cb8000012b8000088bb0000
+      m_SelectedIDs: d6fbffff
+      m_LastClickedID: -1066
+      m_ExpandedIDs: ca79ffff32f0ffff3ef0ffff78f5ffffe6f5ffffbef9ffffc8faffffd0faffffd6fbffff4c2100000e260000082c00000e2c0000e02d0000e62d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: LightCharacter
-        m_OriginalName: LightCharacter
+        m_Name: WeaponManager
+        m_OriginalName: WeaponManager
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 47478
+        m_UserData: -2696
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0

@@ -25,13 +25,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413016124}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.002, y: 0.09, z: 0.603}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.002, y: 0.09, z: 0.553}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_Children: []
   m_Father: {fileID: 4166463531722480}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!198 &413016127
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -4939,7 +4939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
   bulletSpawn: {fileID: 5904353884517063371}
-  muzzleFlash: {fileID: 413016127}
+  muzzleFlash: {fileID: 5900990985027773970, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
+    type: 3}
 --- !u!114 &1602753650
 MonoBehaviour:
   m_ObjectHideFlags: 0
