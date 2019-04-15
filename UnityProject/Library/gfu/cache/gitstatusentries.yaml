@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-12T18:22:24.338+01:00
-  initializedAtString: 2019-04-12T18:03:43.123+01:00
+  lastUpdatedAtString: 2019-04-14T18:06:52.615+01:00
+  initializedAtString: 2019-04-14T18:06:45.685+01:00
   entries:
   - path: UnityProject\.vs\UnityProject\v15\.suo
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
@@ -34,33 +34,33 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
+  - path: UnityProject\Assembly-CSharp-Editor.csproj
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor.csproj
+    projectPath: Assembly-CSharp-Editor.csproj
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\AI\ZombieManagerScript.cs
-    projectPath: Assets\Scripts\AI\ZombieManagerScript.cs
+  - path: UnityProject\Assembly-CSharp-Editor-firstpass.csproj
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp-Editor-firstpass.csproj
+    projectPath: Assembly-CSharp-Editor-firstpass.csproj
     originalPath: 
     status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\CharacterData.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CharacterData.cs
-    projectPath: Assets\Scripts\GUI\CharacterData.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\SavePlayerUpgrades.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\SavePlayerUpgrades.cs
-    projectPath: Assets\Scripts\GUI\SavePlayerUpgrades.cs
-    originalPath: 
-    status: 1
     staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\CurrentLayout.dwlt
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
+    projectPath: Library\CurrentLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Library\expandedItems
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\expandedItems
+    projectPath: Library\expandedItems
     originalPath: 
     status: 3
     staged: 0
@@ -94,9 +94,27 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor.csprojAssemblyReference.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csproj.CoreCompileInputs.cache
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
+    projectPath: obj\Debug\Assembly-CSharp-Editor-firstpass.csprojAssemblyReference.cache
     originalPath: 
     status: 3
     staged: 0
