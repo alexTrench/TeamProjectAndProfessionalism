@@ -13,7 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-04-15T17:25:00.812+01:00
   initializedAtString: 2019-04-15T17:25:00.812+01:00
+=======
+  lastUpdatedAtString: 2019-04-15T21:55:02.245+01:00
+  initializedAtString: 2019-04-15T21:55:02.245+01:00
+>>>>>>> parent of 939c7196... Added More weapon managers
   ahead: 0
   behind: 0

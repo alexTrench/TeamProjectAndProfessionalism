@@ -13,9 +13,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-04-15T17:25:11.232+01:00
   initializedAtString: 2019-04-15T17:25:00.739+01:00
   entries:
+=======
+  lastUpdatedAtString: 2019-04-15T21:58:45.064+01:00
+  initializedAtString: 2019-04-15T21:55:02.176+01:00
+  entries:
+  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\weapons\AK_Script.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\AK_Script.cs
+    projectPath: Assets\Scripts\weapons\AK_Script.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\weapons\M4_Script.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\M4_Script.cs
+    projectPath: Assets\Scripts\weapons\M4_Script.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Scripts\weapons\ShotgunScript.cs
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\ShotgunScript.cs
+    projectPath: Assets\Scripts\weapons\ShotgunScript.cs
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\870 Shotgun\Shotgun 1.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\870
+      Shotgun\Shotgun 1.prefab
+    projectPath: Assets\Weapons\870 Shotgun\Shotgun 1.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\Ak_47\AK_47 1.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\Ak_47\AK_47
+      1.prefab
+    projectPath: Assets\Weapons\Ak_47\AK_47 1.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: UnityProject\Assets\Weapons\M4 Carbine\M4_Carbine.prefab
+    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Weapons\M4
+      Carbine\M4_Carbine.prefab
+    projectPath: Assets\Weapons\M4 Carbine\M4_Carbine.prefab
+    originalPath: 
+    status: 3
+    staged: 0
+>>>>>>> parent of 939c7196... Added More weapon managers
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
