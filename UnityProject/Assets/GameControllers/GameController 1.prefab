@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6003517966541462547}
   - component: {fileID: 6003517966541462546}
   m_Layer: 0
-  m_Name: GameController
+  m_Name: GameController 1
   m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -99,11 +99,11 @@ MonoBehaviour:
     bulleType: {fileID: 9070727495835887393, guid: 8c57bcecbdf47a44288f1063c3875df7,
       type: 3}
     damage: 30
-    fireRate: 0.1
+    fireRate: 0.2
     MaxAmmo: 30
-    bulletSpeed: 200
+    bulletSpeed: 60
     reloadTime: 1.4
-    isPurchased: 0
+    isPurchased: 1
   - itemID: 5
     name: Sci-Fi Pistol
     weaponObject: {fileID: 1374600452982646, guid: 57bf5071e0a1c8947b8918a8f96184a6,
@@ -111,8 +111,20 @@ MonoBehaviour:
     bulleType: {fileID: 8146788076166803898, guid: e75355bd86d826d41870567af2c07a55,
       type: 3}
     damage: 30
+    fireRate: 0.12
+    MaxAmmo: 30
+    bulletSpeed: 60
+    reloadTime: 1.4
+    isPurchased: 1
+  - itemID: 6
+    name: Sci-Fi Rifle
+    weaponObject: {fileID: 1671029925390012, guid: 119551172e2002344983c075ab97ef79,
+      type: 3}
+    bulleType: {fileID: 1843268629605268302, guid: 4d8be23d7e4a66244864e77fa14e090b,
+      type: 3}
+    damage: 30
     fireRate: 0.1
     MaxAmmo: 30
-    bulletSpeed: 200
+    bulletSpeed: 60
     reloadTime: 1.4
     isPurchased: 0

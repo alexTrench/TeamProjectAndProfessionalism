@@ -12,6 +12,9 @@ TagManager:
   - Fire
   - ZombieManager
   - WallGun
+  - Player2Weapons
+  - Player3Weapons
+  - Player4Weapons
   layers:
   - Default
   - TransparentFX

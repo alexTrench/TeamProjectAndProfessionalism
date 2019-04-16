@@ -23,6 +23,7 @@ public class ShotgunScript : MonoBehaviour
     private int CurrentAmmo;
     private bool IsReloading = false;
 
+    public ParticleSystem muzzleFlash;
     private AudioSource fireSound;
 
     //awkae called before the game starts
@@ -81,7 +82,7 @@ public class ShotgunScript : MonoBehaviour
             if(fireSound) {
                 fireSound.Play();
             }
-
+            muzzleFlash.Play();
             for (int i = 0; i < bullets.Capacity; i++)
             {
                 //creates a randam rotation for each bullet quaternion
