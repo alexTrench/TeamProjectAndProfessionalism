@@ -13,84 +13,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-15T17:21:11.404+01:00
-  initializedAtString: 2019-04-15T17:11:40.652+01:00
+  lastUpdatedAtString: 2019-04-15T17:25:11.232+01:00
+  initializedAtString: 2019-04-15T17:25:00.739+01:00
   entries:
-  - path: UnityProject\.vs\UnityProject\v15\.suo
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
-    projectPath: .vs\UnityProject\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scenes\MainMapStart.unity
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
-    projectPath: Assets\Scenes\MainMapStart.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\Gameplay\Wave.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Gameplay\Wave.cs
-    projectPath: Assets\Scripts\Gameplay\Wave.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\CheckEnemies.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\CheckEnemies.cs
-    projectPath: Assets\Scripts\GUI\CheckEnemies.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\GUI\KillInstance.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\GUI\KillInstance.cs
-    projectPath: Assets\Scripts\GUI\KillInstance.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\weapons\AK_Script.cs
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\AK_Script.cs
-    projectPath: Assets\Scripts\weapons\AK_Script.cs
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\CurrentLayout.dwlt
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\CurrentLayout.dwlt
-    projectPath: Library\CurrentLayout.dwlt
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Library\gfu\cache\gitlocks.yaml
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\gfu\cache\gitlocks.yaml
-    projectPath: Library\gfu\cache\gitlocks.yaml
     originalPath: 
     status: 3
     staged: 0
@@ -112,21 +40,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\LastSceneManagerSetup.txt
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\LastSceneManagerSetup.txt
-    projectPath: Library\LastSceneManagerSetup.txt
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: D:\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
     originalPath: 
     status: 3
     staged: 0
