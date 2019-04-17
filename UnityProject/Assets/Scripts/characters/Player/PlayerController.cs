@@ -24,19 +24,22 @@ public class PlayerController : MonoBehaviour {
     void Update()
     {
         if(!OpenPauseMenu.IsPaused()) {
+            Vector3 transformModifier  = new Vector3(0, 0, 0);
+
             //Move the player.
             if(InputManager.Forward()) {
-                transform.position += transform.forward * movementSpeed * Time.deltaTime;
+                transformModifier = transform.forward;
             }
             if(InputManager.Backward()) {
-                transform.position += -transform.forward * movementSpeed * Time.deltaTime;
+                transformModifier = -transform.forward;
             }
             if(InputManager.Right()) {
-                transform.position += transform.right * movementSpeed * Time.deltaTime;
+                transformModifier = transform.right;
             }
             if(InputManager.Left()) {
-                transform.position += -transform.right * movementSpeed * Time.deltaTime;
+                transformModifier = -transform.right;
             }
+            transform.position += transformModifier * movementSpeed * Time.deltaTime;
 
             if(InputManager.usingXboxOneController()) {
                 //Rotate with controller
