@@ -15,6 +15,9 @@ public class Player : BaseCharacter
     private weaponDatabase         m_weaponDatabase;
     private bool                   m_isReloading        = false;
 
+    [SerializeField] private float m_energy    = 100.0f;
+    [SerializeField] private float m_maxEnergy = 100.0f;
+
     [SerializeField] private readonly float m_distanceThreshold  = 5.0f;
     [SerializeField] private readonly float m_navMeshRadius      = 3.0f;
     [SerializeField] private readonly float m_targetCircleRadius = 0.1f;
@@ -47,6 +50,9 @@ public class Player : BaseCharacter
 
         // Enable animation script
         GetComponent<PlayerAnimationScript>().enabled = true;
+
+        // Set AI speed to speed set in player controller
+        m_nav.speed = m_playerController.GetMovementSpeed();
     }
 
     // Update is called once per frame
@@ -251,5 +257,90 @@ public class Player : BaseCharacter
     public bool IsReloading()
     {
         return m_isReloading;
+    }
+
+    public float GetEnergy()
+    {
+        return m_energy;
+    }
+
+    public void SetEnergy(float energy)
+    {
+        m_energy = energy;
+    }
+
+    public float GetMaxEnergy()
+    {
+        return m_maxEnergy;
+    }
+
+    public void SetMaxEnergy(float maxEnergy)
+    {
+        m_maxEnergy = maxEnergy;
+    }
+
+    public void IncrementHealth(float percentage)
+    {
+        if (!m_isDead)
+            m_health += m_health * (percentage / 100.0f);
+    }
+
+    public void DecrementHealth(float percentage)
+    {
+        if (!m_isDead)
+        {
+            m_health -= m_health * (percentage / 100.0f);
+            if (m_health < 0.0f) m_health = 0.0f;
+        }
+    }
+
+    public void IncrementMaxHealth(float percentage)
+    {
+        m_maxHealth += m_maxHealth * (percentage / 100.0f);
+    }
+
+    public void DecrementMaxHealth(float percentage)
+    {
+        m_maxHealth -= m_maxHealth * (percentage / 100.0f);
+        if (m_maxHealth < 0.0f) m_maxHealth = 0.0f;
+    }
+
+    public void IncrementEnergy(float percentage)
+    {
+        m_energy += m_energy * (percentage / 100.0f);
+    }
+
+    public void DecrementEnergy(float percentage)
+    {
+        m_energy -= m_energy * (percentage / 100.0f);
+        if (m_energy < 0.0f) m_energy = 0.0f;
+    }
+
+    public void IncrementMaxEnergy(float percentage)
+    {
+        m_maxEnergy += m_maxEnergy * (percentage / 100.0f);
+    }
+
+    public void DecrementMaxEnergy(float percentage)
+    {
+        m_maxEnergy -= m_maxEnergy * (percentage / 100.0f);
+        if (m_maxEnergy < 0.0f) m_maxEnergy = 0.0f;
+    }
+
+    public void IncrementMovementSpeed(float percentage)
+    {
+        float movementSpeed = m_playerController.GetMovementSpeed();
+        movementSpeed += movementSpeed * (percentage / 100.0f);
+        m_playerController.SetMovementSpeed(movementSpeed);
+        m_nav.speed = movementSpeed;
+    }
+
+    public void DecrementMovementSpeed(float percentage)
+    {
+        float movementSpeed = m_playerController.GetMovementSpeed();
+        movementSpeed -= movementSpeed * (percentage / 100.0f);
+        if (movementSpeed < 0.0f) movementSpeed = 0.0f;
+        m_playerController.SetMovementSpeed(movementSpeed);
+        m_nav.speed = movementSpeed;
     }
 }

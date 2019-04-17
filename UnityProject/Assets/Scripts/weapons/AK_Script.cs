@@ -66,7 +66,7 @@ public class AK_Script : MonoBehaviour
                 }
                 muzzleFlash.Play();
                 //creates a clone of the bullet
-                GameObject bullet = Instantiate(database.weapons[id].bulleType, gameObject.transform);
+                GameObject bullet = Instantiate(database.weapons[id].bulleType);
 
                 //tells the bullets collision to ignore collision with itself 
                 //and the charactor to which the spawn point is attached
