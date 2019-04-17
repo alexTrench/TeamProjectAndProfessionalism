@@ -5,22 +5,43 @@ using UnityEngine;
 public class ZombieManagerScript : MonoBehaviour
 {
     private List<Zombie> m_zombieCharacters;
+    [SerializeField] private Transform[] spawnPoints = null;
+    [SerializeField] private GameObject enemy_template = null;
+
+    //[zombiesKilled] Tracks how many zombies have been killed
+    //during the gameplay session.
+    private int zombiesKilled = 0;
 
     private void Awake()
     {
         // Add zombies already in scene to list
         m_zombieCharacters = new List<Zombie>();
-        GameObject[] zombies = GameObject.FindGameObjectsWithTag("Enemy");
-        foreach (var zombie in zombies)
-        {
-            m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
-        }
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Empty
+    /**
+     * @brief Spawns an enemy in a random location.
+     * @param waveModifier - Modifiers to affect the enemies stats.
+     */
+    public void Spawn(float waveModifier) {
+        if(gameObject != null && gameObject.activeInHierarchy) {
+            int spawnIndex = Random.Range(0, spawnPoints.Length);
+
+            GameObject zombie;
+
+            zombie = Instantiate(
+                enemy_template, 
+                spawnPoints[spawnIndex].position, 
+                spawnPoints[spawnIndex].rotation,
+                gameObject.transform
+            ) as GameObject;
+
+            zombie.SetActive(true);
+            zombie.GetComponent<ZombieAttack>().
+                ApplyAttackDamageModifier(waveModifier);
+            zombie.GetComponent<ZombieAnimationScript>().
+                ApplySpeedModifier(waveModifier);
+            m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
+        }
     }
 
     // Update is called once per frame
@@ -30,18 +51,30 @@ public class ZombieManagerScript : MonoBehaviour
         List<int> zombiesToRemove = new List<int>();
 
         // Loop through zombies
-        // If zombie is dead, add index to list so the zombie can be removeed
+        // If zombie is dead, add index to list so the zombie can be removed
         for (int i = 0; i < m_zombieCharacters.Count; i++)
         {
             if (m_zombieCharacters[i].IsDead())
+            {
                 zombiesToRemove.Add(i);
+                OnZombieDeath();
+            }
         }
-
         // Remove dead zombies from list
         foreach (var index in zombiesToRemove)
         {
             m_zombieCharacters.RemoveAt(index);
         }
+    }
+
+    /**
+     * @brief Actions to occur when a zombie dies.
+     */
+    private void OnZombieDeath()
+    {
+        zombiesKilled++;
+        GameplayManager.GM.EnemyHasDied();
+        //Give the user EX (@Haoming)
     }
 
     // Returns a list of all zombie characters
@@ -61,4 +94,7 @@ public class ZombieManagerScript : MonoBehaviour
     {
         return m_zombieCharacters.Count;
     }
+
+    //@returns the total number of zombies the player has killed.
+    public int GetNumberOfZombiesKilled() => zombiesKilled;
 }

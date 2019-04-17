@@ -129,8 +129,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c0bbb68b3232cd4788f5554608d48d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 5
-  m_maxHealth: 5
+  m_health: 100
+  m_maxHealth: 100
   m_secsBeforePlayerSearch: 2
   m_secsBeforeDestroy: 10
 --- !u!114 &4634163032942507743
@@ -145,7 +145,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9af2fa7b7e57544bbb6285b8eeb8d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_characterManager: {fileID: 0}
 --- !u!114 &8301859741182313088
 MonoBehaviour:
   m_ObjectHideFlags: 0

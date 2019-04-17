@@ -37,6 +37,14 @@ public class ZombieAttack : MonoBehaviour
             Attack();
     }
 
+    /**
+     * @brief Applys a modifier to the zombie's attack.
+     * @param attackDamage - The modifier to be applied.
+     */
+    public void ApplyAttackDamageModifier(float attackDamage) {
+        m_attackDamage *= (int)attackDamage;
+    }
+
     void Attack()
     {
         m_attackTimer = 0.0f;

@@ -12,9 +12,19 @@ public class Player : BaseCharacter
     private ZombieManagerScript    m_zombieManager;
     private Transform              m_lookAtTransform;
     private Inventory              m_inventory;
-    
-    [SerializeField] private float m_distanceThreshold = 5.0f;
-    [SerializeField] private float m_navMeshRadius     = 3.0f;
+    private weaponDatabase         m_weaponDatabase;
+    private bool                   m_isReloading        = false;
+
+    [SerializeField] private float m_energy    = 100.0f;
+    [SerializeField] private float m_maxEnergy = 100.0f;
+
+    [SerializeField] private readonly float m_distanceThreshold  = 5.0f;
+    [SerializeField] private readonly float m_navMeshRadius      = 3.0f;
+    [SerializeField] private readonly float m_targetCircleRadius = 0.1f;
+    [SerializeField] private readonly float m_fireRateMultiplier = 2.5f;
+
+    private float m_fireDelay  = 1.0f;
+    private float m_delayTimer = 0.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -32,10 +42,17 @@ public class Player : BaseCharacter
 
         // Get Inventory script
         m_inventory = GetComponent<Inventory>();
-        Debug.Assert(m_inventory != null, "Could not find Inventory script!");
+        Debug.Assert(m_inventory != null, "Could not find Inventory!");
+
+        // Get WeaponDatabase script
+        m_weaponDatabase = GameObject.FindGameObjectWithTag("GameController").GetComponent<weaponDatabase>();
+        Debug.Assert(m_weaponDatabase != null, "Could not find WeaponDatabase!");
 
         // Enable animation script
         GetComponent<PlayerAnimationScript>().enabled = true;
+
+        // Set AI speed to speed set in player controller
+        m_nav.speed = m_playerController.GetMovementSpeed();
     }
 
     // Update is called once per frame
@@ -55,18 +72,55 @@ public class Player : BaseCharacter
             // If the player character is too far away from user-controlled 
             // player character, get closer 
             if (GetDistanceToControlledPlayer() > m_distanceThreshold)
-                m_nav.SetDestination(GetRandomNavMeshLocation());
+                m_nav.SetDestination(GetRandomNavMeshLocation(m_navMeshRadius, m_characterManager.GetCurrentPlayer().transform.position));
 
             // Look at nearest zombie target
             if (m_zombieManager.GetNumOfZombies() > 0)
                 m_lookAtTransform = GetNearestZombie().transform;
-
             transform.LookAt(m_lookAtTransform);
 
             // Shoot at nearest target
             if (m_zombieManager.GetNumOfZombies() > 0)
                 FireWeapon();
         }
+        else
+        {
+            for (int i = 0; i < m_inventory.slots.Length; i++)
+            {
+                if (m_inventory.isActive[i])
+                {
+                    int weaponID = m_inventory.slots[i].gameObject.transform.GetComponentInChildren<ItemId>().itemId;
+                    switch (weaponID)
+                    {
+                        case 0:
+                            AK_Script ak = GetComponentInChildren<AK_Script>();
+                            m_isReloading = ak.GetIsReloading();
+                            break;
+                        case 1:
+                            ShotgunScript shotgun = GetComponentInChildren<ShotgunScript>();
+                            m_isReloading = shotgun.GetIsReloading();
+                            break;
+                        case 2:
+                            RPG_Script rpg = GetComponentInChildren<RPG_Script>();
+                            //
+                            break;
+                        case 3:
+                            M4_Script m4 = GetComponentInChildren<M4_Script>();
+                            m_isReloading = m4.GetIsReloading();
+                            break;
+                        case 4:
+                            HeavyRifleScript heavy = GetComponentInChildren<HeavyRifleScript>();
+                            m_isReloading = heavy.GetIsReloading();
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+        }
+
+        // Update delay timer
+        m_delayTimer += Time.deltaTime;
     }
 
     // Returns true if this player character is controlled by the user
@@ -125,15 +179,14 @@ public class Player : BaseCharacter
         return (this.transform.position - controlledPlayer.transform.position).magnitude;
     }
 
-    // Returns a random position within a sphere of "m_navMeshRadius" where the 
-    // currently controlled player character is the centre of the sphere
-    private Vector3 GetRandomNavMeshLocation()
+    // Returns a random position within a sphere of the given radius and centre point
+    private Vector3 GetRandomNavMeshLocation(float sphereRadius, in Vector3 sphereCentre)
     {
-        Vector3 randomDirection = Random.insideUnitSphere * m_navMeshRadius;
-        randomDirection += m_characterManager.GetCurrentPlayer().transform.position;
+        Vector3 randomDirection = Random.insideUnitSphere * sphereRadius;
+        randomDirection += sphereCentre;
         NavMeshHit hit;
         Vector3 finalPosition = Vector3.zero;
-        if (NavMesh.SamplePosition(randomDirection, out hit, m_navMeshRadius, 1))
+        if (NavMesh.SamplePosition(randomDirection, out hit, sphereRadius, 1))
             finalPosition = hit.position;
 
         return finalPosition;
@@ -142,38 +195,152 @@ public class Player : BaseCharacter
     // Fires the equipped weapon. NOTE: Only called by AI controlled character
     private void FireWeapon()
     {
+        // Reset fire delay timer
+        if (m_delayTimer >= m_fireDelay)
+            m_delayTimer = 0.0f;
+        else
+            return;
+
+        // Get target position
+        Vector3 targetPosition = GetRandomNavMeshLocation(m_targetCircleRadius, m_lookAtTransform.position);
+        //GameObject obj = new GameObject();
+        //obj.transform.SetPositionAndRotation( m_lookAtTransform.position, m_lookAtTransform.rotation);
+        //obj.transform.position = targetPosition - m_lookAtTransform.position;
+
+        //m_lookAtTransform = obj.transform;
+        //transform.LookAt(m_lookAtTransform);
+
+        // Fire equipped weapon
         for (int i = 0; i < m_inventory.slots.Length; i++)
         {
             if (m_inventory.isActive[i])
             {
                 int weaponID = m_inventory.slots[i].gameObject.transform.GetComponentInChildren<ItemId>().itemId;
 
+                float fireRate = m_weaponDatabase.weapons[weaponID].fireRate;
+                m_fireDelay = Random.Range(fireRate, fireRate * m_fireRateMultiplier);
+
                 switch (weaponID)
                 {
-                    // AK-47
                     case 0:
-                        GetComponentInChildren<AK_Script>().Fire();
+                        AK_Script ak = GetComponentInChildren<AK_Script>();
+                        ak.Fire();
+                        m_isReloading = ak.GetIsReloading();
                         break;
-
-                    // Shotgun
                     case 1:
-                        GetComponentInChildren<ShotgunScript>().Fire();
+                        ShotgunScript shotgun = GetComponentInChildren<ShotgunScript>();
+                        shotgun.Fire();
+                        m_isReloading = shotgun.GetIsReloading();
                         break;
-
-                    // Rocket launcher
                     case 2:
-                        GetComponentInChildren<RPG_Script>().Fire();
+                        RPG_Script rpg = GetComponentInChildren<RPG_Script>();
+                        rpg.Fire();
                         break;
-
-                    // M4
                     case 3:
-                        GetComponentInChildren<M4_Script>().Fire();
+                        M4_Script m4 = GetComponentInChildren<M4_Script>();
+                        m4.Fire();
+                        m_isReloading = m4.GetIsReloading();
                         break;
-
+                    case 4:
+                        HeavyRifleScript heavy = GetComponentInChildren<HeavyRifleScript>();
+                        heavy.Fire();
+                        m_isReloading = heavy.GetIsReloading();
+                        break;
                     default:
                         break;
                 }
             }
         }
+    }
+
+    // Returns true if the player is reloading
+    public bool IsReloading()
+    {
+        return m_isReloading;
+    }
+
+    public float GetEnergy()
+    {
+        return m_energy;
+    }
+
+    public void SetEnergy(float energy)
+    {
+        m_energy = energy;
+    }
+
+    public float GetMaxEnergy()
+    {
+        return m_maxEnergy;
+    }
+
+    public void SetMaxEnergy(float maxEnergy)
+    {
+        m_maxEnergy = maxEnergy;
+    }
+
+    public void IncrementHealth(float percentage)
+    {
+        if (!m_isDead)
+            m_health += m_health * (percentage / 100.0f);
+    }
+
+    public void DecrementHealth(float percentage)
+    {
+        if (!m_isDead)
+        {
+            m_health -= m_health * (percentage / 100.0f);
+            if (m_health < 0.0f) m_health = 0.0f;
+        }
+    }
+
+    public void IncrementMaxHealth(float percentage)
+    {
+        m_maxHealth += m_maxHealth * (percentage / 100.0f);
+    }
+
+    public void DecrementMaxHealth(float percentage)
+    {
+        m_maxHealth -= m_maxHealth * (percentage / 100.0f);
+        if (m_maxHealth < 0.0f) m_maxHealth = 0.0f;
+    }
+
+    public void IncrementEnergy(float percentage)
+    {
+        m_energy += m_energy * (percentage / 100.0f);
+    }
+
+    public void DecrementEnergy(float percentage)
+    {
+        m_energy -= m_energy * (percentage / 100.0f);
+        if (m_energy < 0.0f) m_energy = 0.0f;
+    }
+
+    public void IncrementMaxEnergy(float percentage)
+    {
+        m_maxEnergy += m_maxEnergy * (percentage / 100.0f);
+    }
+
+    public void DecrementMaxEnergy(float percentage)
+    {
+        m_maxEnergy -= m_maxEnergy * (percentage / 100.0f);
+        if (m_maxEnergy < 0.0f) m_maxEnergy = 0.0f;
+    }
+
+    public void IncrementMovementSpeed(float percentage)
+    {
+        float movementSpeed = m_playerController.GetMovementSpeed();
+        movementSpeed += movementSpeed * (percentage / 100.0f);
+        m_playerController.SetMovementSpeed(movementSpeed);
+        m_nav.speed = movementSpeed;
+    }
+
+    public void DecrementMovementSpeed(float percentage)
+    {
+        float movementSpeed = m_playerController.GetMovementSpeed();
+        movementSpeed -= movementSpeed * (percentage / 100.0f);
+        if (movementSpeed < 0.0f) movementSpeed = 0.0f;
+        m_playerController.SetMovementSpeed(movementSpeed);
+        m_nav.speed = movementSpeed;
     }
 }

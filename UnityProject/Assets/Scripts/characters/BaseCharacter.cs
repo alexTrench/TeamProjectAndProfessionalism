@@ -6,19 +6,7 @@ public class BaseCharacter : MonoBehaviour, IDamagable
     [SerializeField] protected float m_maxHealth = 100.0f;
 
     protected bool m_isDead = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Empty   
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Empty
-    }
-
+    
     // Take damage interface
     public void TakeDamage(float damage)
     {
@@ -46,5 +34,11 @@ public class BaseCharacter : MonoBehaviour, IDamagable
     public float GetMaxHealth()
     {
         return m_maxHealth;
+    }
+
+    // Sets the max health of the character
+    public void SetMaxHealth(float maxHealth)
+    {
+        m_maxHealth = maxHealth;
     }
 }

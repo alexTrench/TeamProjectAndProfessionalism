@@ -8,7 +8,7 @@
  */
 public class PlayerController : MonoBehaviour {
     //[movementSpeed] How quickly the player is moving.
-    [SerializeField] private int movementSpeed = 12;
+    [SerializeField] private float movementSpeed = 12.0f;
 
 
     /**
@@ -23,50 +23,64 @@ public class PlayerController : MonoBehaviour {
      */
     void Update()
     {
-        //Move the player.
-        if(InputManager.Forward()) {
-            transform.position += transform.forward * movementSpeed * Time.deltaTime;
-        }
-        if(InputManager.Backward()) {
-            transform.position += -transform.forward * movementSpeed * Time.deltaTime;
-        }
-        if(InputManager.Right()) {
-            transform.position += transform.right * movementSpeed * Time.deltaTime;
-        }
-        if(InputManager.Left()) {
-            transform.position += -transform.right * movementSpeed * Time.deltaTime;
-        }
+        if(!OpenPauseMenu.IsPaused()) {
+            Vector3 transformModifier  = new Vector3(0, 0, 0);
 
-        if(InputManager.usingXboxOneController()) {
-            //Rotate with controller
-            Vector3 playerDirection = Vector3.right * 
-            InputManager.lookRightAxis.ToFloat() + 
-            Vector3.forward * -InputManager.lookForwardAxis.ToFloat();
-
-            //If the player has moved.
-            if (playerDirection.sqrMagnitude > 0.0f) {
-                transform.rotation = Quaternion.LookRotation(
-                    playerDirection, 
-                    Vector3.up
-                );
+            //Move the player.
+            if(InputManager.Forward()) {
+                transform.position += transform.forward * movementSpeed * Time.deltaTime;
             }
-        } else {
-            Plane floor = new Plane(Vector3.up, new Vector3(0, this.transform.position.y, 0));
+            if(InputManager.Backward()) {
+                transform.position += -transform.forward * movementSpeed * Time.deltaTime;
+            }
+            if(InputManager.Right()) {
+                transform.position += transform.right * movementSpeed * Time.deltaTime;
+            }
+            if(InputManager.Left()) {
+                transform.position += -transform.right * movementSpeed * Time.deltaTime;
+            }
 
-            //Rotate with mouse
-            Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if(InputManager.usingXboxOneController()) {
+                //Rotate with controller
+                Vector3 playerDirection = Vector3.right * 
+                InputManager.lookRightAxis.ToFloat() + 
+                Vector3.forward * -InputManager.lookForwardAxis.ToFloat();
 
-            if (floor.Raycast(cameraRay, out float rayLength))
-            {
-                Vector3 pointToLook = cameraRay.GetPoint(rayLength);
-                Debug.DrawLine(cameraRay.origin, pointToLook, Color.blue);
+                //If the player has moved.
+                if (playerDirection.sqrMagnitude > 0.0f) {
+                    transform.rotation = Quaternion.LookRotation(
+                        playerDirection, 
+                        Vector3.up
+                    );
+                }
+            } else {
+                Plane floor = new Plane(Vector3.up, new Vector3(0, this.transform.position.y, 0));
 
-                transform.LookAt(new Vector3(
-                    pointToLook.x,
-                    transform.position.y,
-                    pointToLook.z
-                ));
+                //Rotate with mouse
+                Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+                if (floor.Raycast(cameraRay, out float rayLength))
+                {
+                    Vector3 pointToLook = cameraRay.GetPoint(rayLength);
+                    Debug.DrawLine(cameraRay.origin, pointToLook, Color.blue);
+
+                    transform.LookAt(new Vector3(
+                        pointToLook.x,
+                        transform.position.y,
+                        pointToLook.z
+                    ));
+                }
             }
         }
+    }
+
+    public float GetMovementSpeed()
+    {
+        return movementSpeed;
+    }
+
+    public void SetMovementSpeed(float newMovementSpeed)
+    {
+        movementSpeed = newMovementSpeed;
     }
 }

@@ -5,10 +5,10 @@ using UnityEngine.AI;
 
 public class CharacterManagerScript : MonoBehaviour
 {
-    [SerializeField] private Player m_character1;
-    [SerializeField] private Player m_character2;
-    [SerializeField] private Player m_character3;
-    [SerializeField] private Player m_character4;
+    [SerializeField] private Player m_character1 = null;
+    [SerializeField] private Player m_character2 = null;
+    [SerializeField] private Player m_character3 = null;
+    [SerializeField] private Player m_character4 = null;
 
     private List<Player>  m_playerCharacters;
     private int           m_currentPlayerIndex   = 0;
@@ -35,7 +35,7 @@ public class CharacterManagerScript : MonoBehaviour
         // Set initial player controlled character
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -44,6 +44,14 @@ public class CharacterManagerScript : MonoBehaviour
             SwitchPreviousCharacter();
         else if (InputManager.NextCharacter())
             SwitchNextCharacter();
+        else if (InputManager.CharacterHotKey1())
+            SwitchToSpecificCharacter(0);
+        else if (InputManager.CharacterHotKey2())
+            SwitchToSpecificCharacter(1);
+        else if (InputManager.CharacterHotKey3())
+            SwitchToSpecificCharacter(2);
+        else if (InputManager.CharacterHotKey4())
+            SwitchToSpecificCharacter(3);
 
         // Check for dead player characters
         foreach (var player in m_playerCharacters)
@@ -52,6 +60,35 @@ public class CharacterManagerScript : MonoBehaviour
             if (player.IsDead() && !m_deadPlayerCharacters.Contains(player))
                 m_deadPlayerCharacters.Enqueue(player);
         }
+    }
+
+    /**
+     * @brief Allows the player to switch to a specific character.
+     * @param characterIndex - The index of the character to be
+     *                         switched to.
+     */
+    void SwitchToSpecificCharacter(int characterIndex) {
+        //Check the index is within range.
+        if(characterIndex < 0 || characterIndex >= m_playerCharacters.Count) {
+            return;
+        }
+        //Check that the character is not already selected.
+        if(m_currentPlayerIndex == characterIndex) {
+            return;
+        }
+        //Check that the character is not dead.
+        if(m_playerCharacters[characterIndex].IsDead()) {
+            return;
+        }
+
+        //Change the player's character.
+        m_currentPlayerIndex = characterIndex;
+
+        // Enable current character and disable others
+        EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
+
+        //Make the camera follow the new character.
+        m_followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
 
     // Switches to next character
@@ -80,7 +117,7 @@ public class CharacterManagerScript : MonoBehaviour
 
         // Enable current character and disable others
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
-        
+
         m_followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
 
@@ -128,7 +165,6 @@ public class CharacterManagerScript : MonoBehaviour
                 playerCharacter.GetComponent<NavMeshAgent>().enabled = false;
                 playerCharacter.GetComponent<Player>().SetIsPlayerControlled(true);
                 playerCharacter.GetComponent<WeaponPickup>().enabled = true;
-    
             }
             // Disable other character
             else
@@ -141,7 +177,7 @@ public class CharacterManagerScript : MonoBehaviour
             }
         }
     }
-    
+
     // Returns the currently controlled player character
     public Player GetCurrentPlayer()
     {
@@ -184,5 +220,85 @@ public class CharacterManagerScript : MonoBehaviour
     {
         if (m_deadPlayerCharacters.Count > 0)
             m_deadPlayerCharacters.Dequeue().Revive();
+    }
+
+    public void IncrementPlayerHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementHealth(percentage);
+        }
+    }
+
+    public void DecrementPlayerHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementHealth(percentage);
+        }
+    }
+
+    public void IncrementPlayerMaxHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementMaxHealth(percentage);
+        }
+    }
+
+    public void DecrementPlayerMaxHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementMaxHealth(percentage);
+        }
+    }
+
+    public void IncrementPlayerMovementSpeed(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementMovementSpeed(percentage);
+        }
+    }
+
+    public void DecrementPlayerMovementSpeed(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementMovementSpeed(percentage);
+        }
+    }
+
+    public void IncrementPlayerEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementEnergy(percentage);
+        }
+    }
+
+    public void DecrementPlayerEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementEnergy(percentage);
+        }
+    }
+
+    public void IncrementPlayerMaxEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementMaxEnergy(percentage);
+        }
+    }
+
+    public void DecrementPlayerMaxEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementMaxEnergy(percentage);
+        }
     }
 }

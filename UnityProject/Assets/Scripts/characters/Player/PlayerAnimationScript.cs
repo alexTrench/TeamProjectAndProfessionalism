@@ -24,39 +24,36 @@ public class PlayerAnimationScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check if player is dead
-        if (m_player.IsDead())
-        {
-            m_animator.SetTrigger(m_isDeadHash);
-            return;
-        }
+        if(!OpenPauseMenu.IsPaused()) {
+            // Check if player is dead
+            if (m_player.IsDead())
+            {
+                m_animator.SetTrigger(m_isDeadHash);
+                return;
+            }
 
-        // Update speed and direction
-        float speed = 0.0f;
-        float direction = 0.0f;
-        if (m_player.IsPlayerControlled()) // Player controlled
-        {
-            speed = InputManager.GetBackwardAxis();
-            direction = InputManager.GetRightAxis();
-        }
-        else // AI controlled
-        {
-            speed = m_nav.velocity.magnitude;
-            //direction = m_nav.
-        }
-        m_animator.SetFloat(m_directionHash, direction);
-        m_animator.SetFloat(m_speedHash, speed);
+            // Update speed and direction
+            float speed = 0.0f;
+            float direction = 0.0f;
+            if (m_player.IsPlayerControlled()) // Player controlled
+            {
+                speed = InputManager.GetBackwardAxis();
+                direction = InputManager.GetRightAxis();
+            }
+            else // AI controlled
+            {
+                speed = m_nav.velocity.magnitude;
+            }
+            m_animator.SetFloat(m_directionHash, direction);
+            m_animator.SetFloat(m_speedHash, speed);
 
-        if (InputManager.Reload()) {
-            // Play reload animation
-            m_animator.SetTrigger(m_isReloadingHash);
-        }
-        if (InputManager.ThrowGrenade()) {
-            // Play throwing grenade animation
-            m_animator.SetTrigger(m_isThrowingGrenadeHash);
-        }
-        if (InputManager.Die()) {
-            m_animator.SetTrigger(m_isDeadHash);
+            // Reloading
+            m_animator.SetBool("IsReloading", m_player.IsReloading());
+
+            if (InputManager.ThrowGrenade()) {
+                // Play throwing grenade animation
+                m_animator.SetTrigger(m_isThrowingGrenadeHash);
+            }
         }
     }
 }
