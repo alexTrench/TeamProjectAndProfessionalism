@@ -28,18 +28,17 @@ public class PlayerController : MonoBehaviour {
 
             //Move the player.
             if(InputManager.Forward()) {
-                transformModifier = transform.forward;
+                transform.position += transform.forward * movementSpeed * Time.deltaTime;
             }
             if(InputManager.Backward()) {
-                transformModifier = -transform.forward;
+                transform.position += -transform.forward * movementSpeed * Time.deltaTime;
             }
             if(InputManager.Right()) {
-                transformModifier = transform.right;
+                transform.position += transform.right * movementSpeed * Time.deltaTime;
             }
             if(InputManager.Left()) {
-                transformModifier = -transform.right;
+                transform.position += -transform.right * movementSpeed * Time.deltaTime;
             }
-            transform.position += transformModifier * movementSpeed * Time.deltaTime;
 
             if(InputManager.usingXboxOneController()) {
                 //Rotate with controller

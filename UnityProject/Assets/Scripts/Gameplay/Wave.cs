@@ -73,9 +73,13 @@ public class Wave
 
         Debug.Log("Wave: " + GetWaveID() + "\tEnemies: " + totalEnemies);
 
-        for(int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) {
+        float waveModifer = (waveNo / DIMINISH_RETURNS);
+        if(waveModifer > 5.0f) { waveModifer = 5.0f; }
+        Debug.Log("modifer:\t" + waveModifer);
+
+        for (int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) {
             if(enemyManager != null && enemyManager.isActiveAndEnabled) {
-                enemyManager.Spawn();
+                enemyManager.Spawn(waveModifer);
                 yield return new WaitForSeconds(spawnInterval);
             }
         }
