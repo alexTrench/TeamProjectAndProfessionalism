@@ -20,8 +20,9 @@ public class ZombieManagerScript : MonoBehaviour
 
     /**
      * @brief Spawns an enemy in a random location.
+     * @param waveModifier - Modifiers to affect the enemies stats.
      */
-    public void Spawn() {
+    public void Spawn(float waveModifier) {
         if(gameObject != null && gameObject.activeInHierarchy) {
             int spawnIndex = Random.Range(0, spawnPoints.Length);
 
@@ -35,6 +36,10 @@ public class ZombieManagerScript : MonoBehaviour
             ) as GameObject;
 
             zombie.SetActive(true);
+            zombie.GetComponent<ZombieAttack>().
+                ApplyAttackDamageModifier(waveModifier);
+            zombie.GetComponent<ZombieAnimationScript>().
+                ApplySpeedModifier(waveModifier);
             m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
         }
     }
