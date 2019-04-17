@@ -13,8 +13,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
+<<<<<<< HEAD
   lastUpdatedAtString: 2019-04-17T10:39:10.996+01:00
   initializedAtString: 2019-04-17T10:39:10.996+01:00
+=======
+<<<<<<< HEAD
+  lastUpdatedAtString: 2019-04-15T17:25:00.432+01:00
+  initializedAtString: 2019-04-15T17:25:00.432+01:00
+=======
+  lastUpdatedAtString: 2019-04-15T21:55:02.015+01:00
+  initializedAtString: 2019-04-15T21:55:02.015+01:00
+>>>>>>> parent of 939c7196... Added More weapon managers
+>>>>>>> 64405f488499f4e91aad042064ffc133120b555e
   currentGitRemote:
     name: origin
     url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git

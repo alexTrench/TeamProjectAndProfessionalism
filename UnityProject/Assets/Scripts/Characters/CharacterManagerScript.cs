@@ -164,7 +164,7 @@ public class CharacterManagerScript : MonoBehaviour
                 playerCharacter.GetComponent<PlayerController>().enabled = true;
                 playerCharacter.GetComponent<NavMeshAgent>().enabled = false;
                 playerCharacter.GetComponent<Player>().SetIsPlayerControlled(true);
-
+                playerCharacter.GetComponent<WeaponPickup>().enabled = true;
             }
             // Disable other character
             else
@@ -173,7 +173,7 @@ public class CharacterManagerScript : MonoBehaviour
                 playerCharacter.GetComponent<PlayerController>().enabled = false;
                 playerCharacter.GetComponent<NavMeshAgent>().enabled = true;
                 playerCharacter.GetComponent<Player>().SetIsPlayerControlled(false);
-
+                playerCharacter.GetComponent<WeaponPickup>().enabled = false;
             }
         }
     }

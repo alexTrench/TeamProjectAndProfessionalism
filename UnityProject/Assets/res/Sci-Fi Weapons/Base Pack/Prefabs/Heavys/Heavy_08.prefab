@@ -4939,7 +4939,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
   bulletSpawn: {fileID: 5904353884517063371}
-  muzzleFlash: {fileID: 413016127}
+  muzzleFlash: {fileID: 5900990985027773970, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
+    type: 3}
 --- !u!114 &1602753650
 MonoBehaviour:
   m_ObjectHideFlags: 0
