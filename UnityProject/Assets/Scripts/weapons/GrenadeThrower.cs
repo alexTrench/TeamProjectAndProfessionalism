@@ -18,8 +18,17 @@ public class GrenadeThrower : MonoBehaviour
 
     void ThrowGrenade()
     {
-       GameObject grenadeCopy = Instantiate(grenade, transform.position, transform.rotation);
-       Rigidbody rb = grenadeCopy.GetComponent<Rigidbody>();
-       rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        if (gameObject != null && gameObject.activeInHierarchy) {
+            GameObject grenadeCopy = Instantiate(
+                grenade, 
+                transform.position, 
+                transform.rotation,
+                gameObject.transform
+            );
+
+            Rigidbody rb = grenadeCopy.GetComponent<Rigidbody>();
+
+            rb.AddForce(transform.forward * throwForce, ForceMode.VelocityChange);
+        }
     }
 }

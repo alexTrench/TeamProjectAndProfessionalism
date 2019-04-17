@@ -10,9 +10,9 @@ public class CharacterManagerScript : MonoBehaviour
     [SerializeField] private Player m_character3 = null;
     [SerializeField] private Player m_character4 = null;
 
-    private List<Player> m_playerCharacters;
-    private int m_currentPlayerIndex = 0;
-    private FollowTarget m_followingCamera;
+    private List<Player>  m_playerCharacters;
+    private int           m_currentPlayerIndex   = 0;
+    private FollowTarget  m_followingCamera;
     private Queue<Player> m_deadPlayerCharacters;
 
     private void Awake()
@@ -220,5 +220,85 @@ public class CharacterManagerScript : MonoBehaviour
     {
         if (m_deadPlayerCharacters.Count > 0)
             m_deadPlayerCharacters.Dequeue().Revive();
+    }
+
+    public void IncrementPlayerHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementHealth(percentage);
+        }
+    }
+
+    public void DecrementPlayerHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementHealth(percentage);
+        }
+    }
+
+    public void IncrementPlayerMaxHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementMaxHealth(percentage);
+        }
+    }
+
+    public void DecrementPlayerMaxHealth(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementMaxHealth(percentage);
+        }
+    }
+
+    public void IncrementPlayerMovementSpeed(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementMovementSpeed(percentage);
+        }
+    }
+
+    public void DecrementPlayerMovementSpeed(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementMovementSpeed(percentage);
+        }
+    }
+
+    public void IncrementPlayerEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementEnergy(percentage);
+        }
+    }
+
+    public void DecrementPlayerEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementEnergy(percentage);
+        }
+    }
+
+    public void IncrementPlayerMaxEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.IncrementMaxEnergy(percentage);
+        }
+    }
+
+    public void DecrementPlayerMaxEnergy(float percentage)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.DecrementMaxEnergy(percentage);
+        }
     }
 }
