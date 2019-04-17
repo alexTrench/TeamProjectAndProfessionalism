@@ -49,10 +49,10 @@ public class ZombieManagerScript : MonoBehaviour
         // If zombie is dead, add index to list so the zombie can be removed
         for (int i = 0; i < m_zombieCharacters.Count; i++)
         {
-            if (m_zombieCharacters[i].IsDead()) {
+            if (m_zombieCharacters[i].IsDead())
+            {
                 zombiesToRemove.Add(i);
-                zombiesKilled++;
-                GameplayManager.GM.EnemyHasDied();
+                OnZombieDeath();
             }
         }
         // Remove dead zombies from list
@@ -60,6 +60,16 @@ public class ZombieManagerScript : MonoBehaviour
         {
             m_zombieCharacters.RemoveAt(index);
         }
+    }
+
+    /**
+     * @brief Actions to occur when a zombie dies.
+     */
+    private void OnZombieDeath()
+    {
+        zombiesKilled++;
+        GameplayManager.GM.EnemyHasDied();
+        //Give the user EX (@Haoming)
     }
 
     // Returns a list of all zombie characters
