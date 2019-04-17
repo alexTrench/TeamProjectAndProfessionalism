@@ -13,119 +13,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2019-04-15T22:22:50.218+01:00
-  initializedAtString: 2019-04-15T22:00:24.279+01:00
+  lastUpdatedAtString: 2019-04-17T10:44:34.704+01:00
+  initializedAtString: 2019-04-17T10:39:11.150+01:00
   entries:
-  - path: UnityProject\.vs\UnityProject\v15\.suo
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\.suo
-    projectPath: .vs\UnityProject\v15\.suo
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-shm
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\.vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    projectPath: .vs\UnityProject\v15\Server\sqlite3\storage.ide-wal
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assembly-CSharp.csproj
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assembly-CSharp.csproj
-    projectPath: Assembly-CSharp.csproj
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\GameControllers\GameController 1.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\GameControllers\GameController
-      1.prefab
-    projectPath: Assets\GameControllers\GameController 1.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\GameControllers\GameController.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\GameControllers\GameController.prefab
-    projectPath: Assets\GameControllers\GameController.prefab
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\GameControllers\GameController.prefab.meta
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\GameControllers\GameController.prefab.meta
-    projectPath: Assets\GameControllers\GameController.prefab.meta
-    originalPath: 
-    status: 5
-    staged: 0
-  - path: UnityProject\Assets\GameControllers\GameController2.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\GameControllers\GameController2.prefab
-    projectPath: Assets\GameControllers\GameController2.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\GameControllers\GameController3.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\GameControllers\GameController3.prefab
-    projectPath: Assets\GameControllers\GameController3.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\GameControllers\GameController4.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\GameControllers\GameController4.prefab
-    projectPath: Assets\GameControllers\GameController4.prefab
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Heavys\Heavy_08.prefab
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\res\Sci-Fi
-      Weapons\Base Pack\Prefabs\Heavys\Heavy_08.prefab
-    projectPath: Assets\res\Sci-Fi Weapons\Base Pack\Prefabs\Heavys\Heavy_08.prefab
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scenes\MainMapStart.unity
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scenes\MainMapStart.unity
-    projectPath: Assets\Scenes\MainMapStart.unity
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\Characters\CharacterManagerScript.cs
-    projectPath: Assets\Scripts\Characters\CharacterManagerScript.cs
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\Assets\Scripts\weapons\WeaponManagement\Player2Pickup.cs
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\WeaponManagement\Player2Pickup.cs
-    projectPath: Assets\Scripts\weapons\WeaponManagement\Player2Pickup.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\weapons\WeaponManagement\Player3Pickup.cs
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\WeaponManagement\Player3Pickup.cs
-    projectPath: Assets\Scripts\weapons\WeaponManagement\Player3Pickup.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\weapons\WeaponManagement\Player4Pickup.cs
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\WeaponManagement\Player4Pickup.cs
-    projectPath: Assets\Scripts\weapons\WeaponManagement\Player4Pickup.cs
-    originalPath: 
-    status: 1
-    staged: 0
-  - path: UnityProject\Assets\Scripts\weapons\WeaponManagement\WeaponPickup.cs
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Assets\Scripts\weapons\WeaponManagement\WeaponPickup.cs
-    projectPath: Assets\Scripts\weapons\WeaponManagement\WeaponPickup.cs
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\assetDatabase3
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\assetDatabase3
     projectPath: Library\assetDatabase3
@@ -156,33 +46,9 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: UnityProject\Library\InspectorExpandedItems.asset
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\InspectorExpandedItems.asset
-    projectPath: Library\InspectorExpandedItems.asset
-    originalPath: 
-    status: 3
-    staged: 0
   - path: UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\Library\shadercompiler-UnityShaderCompiler.exe0.log
     projectPath: Library\shadercompiler-UnityShaderCompiler.exe0.log
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    projectPath: obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    projectPath: obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: UnityProject\ProjectSettings\TagManager.asset
-    fullPath: D:\Documents\Unity\TeamProjectAndProfessionalism\UnityProject\ProjectSettings\TagManager.asset
-    projectPath: ProjectSettings\TagManager.asset
     originalPath: 
     status: 3
     staged: 0
