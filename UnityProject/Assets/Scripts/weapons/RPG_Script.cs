@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class RPG_Script : MonoBehaviour
 {
@@ -35,12 +33,18 @@ public class RPG_Script : MonoBehaviour
 
     public void Fire()
     {
-
-        GameObject o = Instantiate(database.weapons[id].bulleType, bulletSpawnLocation.position, bulletSpawnLocation.rotation);
-        //add the speed of the bullet to the rigid body
-        o.GetComponent<Rigidbody>().AddForce(o.transform.forward * database.weapons[id].bulletSpeed);
-        //makes it so the objects all under the layer "bullet" do not collide with each other
-        Physics.IgnoreLayerCollision(8, 8);
+        if(gameObject != null && gameObject.activeInHierarchy) {
+            GameObject o = Instantiate(
+                database.weapons[id].bulleType, 
+                bulletSpawnLocation.position, 
+                bulletSpawnLocation.rotation,
+                gameObject.transform
+            );
+            //add the speed of the bullet to the rigid body
+            o.GetComponent<Rigidbody>().AddForce(o.transform.forward * database.weapons[id].bulletSpeed);
+            //makes it so the objects all under the layer "bullet" do not collide with each other
+            Physics.IgnoreLayerCollision(8, 8);
+        }
        
     }
     

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2019-04-17T11:14:53.515+01:00
-  initializedAtString: 2019-04-17T11:14:53.515+01:00
+  lastUpdatedAtString: 2019-04-17T11:36:10.870+01:00
+  initializedAtString: 2019-04-17T11:36:10.870+01:00
   currentGitRemote:
     name: origin
     url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: AlexNewBranch
-    tracking: origin/AlexNewBranch
+    name: alexandrus_branch
+    tracking: origin/alexandrus_branch
   currentConfigBranch:
-    name: AlexNewBranch
+    name: alexandrus_branch
     remote:
       name: origin
       url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git
-    trackingBranch: AlexNewBranch
+    trackingBranch: alexandrus_branch
   currentConfigRemote:
     name: origin
     url: https://github.com/CarlPendleton/TeamProjectAndProfessionalism.git

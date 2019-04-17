@@ -33,26 +33,33 @@ public class GrenadeScript : MonoBehaviour
 
     void Explode()
     {
-        Debug.Log("BOOM!");
+        if(gameObject != null && gameObject.activeInHierarchy) {
+            Debug.Log("BOOM!");
 
-        //show effect
-        Instantiate(explosionEffect, transform.position, transform.rotation);
-        //get nearby objects
-        Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
+            //show effect
+            Instantiate(
+                explosionEffect, 
+                transform.position, 
+                transform.rotation,
+                gameObject.transform
+            );
+            //get nearby objects
+            Collider[] colliders = Physics.OverlapSphere(transform.position, radius);
 
-        foreach (Collider nearbyObject in colliders)
-        {
-            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-            if(rb !=null)
+            foreach (Collider nearbyObject in colliders)
             {
-                rb.AddExplosionForce(force, transform.position, radius);
+                Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+                if(rb !=null)
+                {
+                    rb.AddExplosionForce(force, transform.position, radius);
+                }
             }
-        }
        
-             //add force to them
-             //damage them
-             //remove grenade
-        Destroy(gameObject);
+                 //add force to them
+                 //damage them
+                 //remove grenade
+            Destroy(gameObject);
+        }
     }
 
 }
