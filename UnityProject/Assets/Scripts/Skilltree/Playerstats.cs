@@ -52,7 +52,7 @@ public class Playerstats : MonoBehaviour
     public int ReloadSpeedLevel { get; set; }
 
     public Text ReloadSpeedStatsDisplay;     // UI text for Max Energy Level Stats ??? <<<
-    public float CurrentReloadSpeedStats { get; set; }
+    public int CurrentReloadSpeedStats { get; set; }
 
     // ----------------------------------MoveSpeed-------------------------------------- //
 
@@ -85,7 +85,7 @@ public class Playerstats : MonoBehaviour
     public int FireRateLevel { get; set; }
 
     public Text FireRateStatsDisplay;     // UI text for Skill CDR Stats ??? <<<
-    public float CurrentFireRateStats { get; set; }
+    public int CurrentFireRateStats { get; set; }
 
     // ----------------------------------Grenade Damage Area-------------------------------------- //
 
@@ -96,7 +96,7 @@ public class Playerstats : MonoBehaviour
     public int GrenadeDamageAreaLevel { get; set; }
 
     public Text GrenadeDamageAreaStatsDisplay;     // UI text for Skill Grenade Damage Area Stats ??? <<<
-    public int CurrentGrenadeDamageAreaStats { get; set; }
+    public float CurrentGrenadeDamageAreaStats { get; set; }
 
     // ----------------------------------Gun Damage Increase-------------------------------------- //
 
@@ -118,7 +118,7 @@ public class Playerstats : MonoBehaviour
     public int GrenadeDamageLevel { get; set; }
 
     public Text GrenadeDamageStatsDisplay;     // UI text for Skill Grenade Damage Area Stats ??? <<<
-    public int CurrentGrenadeDamageStats { get; set; }
+    public float CurrentGrenadeDamageStats { get; set; }
 
     // ----------------------------------Speed Boost-------------------------------------- //
 
@@ -267,7 +267,7 @@ public class Playerstats : MonoBehaviour
 
         // ----------------------------------ReloadSpeed-------------------------------------- // 这里需要确定 怎么表达 属性
         ReloadSpeedLevelDisplay.text = ReloadSpeedLevel.ToString() + "/10";
-        ReloadSpeedStatsDisplay.text = "-" + CurrentReloadSpeedStats.ToString("0.00") + "s";
+        ReloadSpeedStatsDisplay.text = "-" + CurrentReloadSpeedStats.ToString("0.00") + "%";
 
         // ----------------------------------MoveSpeed-------------------------------------- //  这里需要确定 怎么表达 属性
         MoveSpeedLevelDisplay.text = MoveSpeedLevel.ToString() + "/10";
@@ -279,7 +279,7 @@ public class Playerstats : MonoBehaviour
 
         // ----------------------------------Fire rate-------------------------------------- //  这里需要确定 怎么表达 属性
         FireRateLevelDisplay.text = FireRateLevel.ToString() + "/10";
-        FireRateStatsDisplay.text = "+" + CurrentFireRateStats.ToString();
+        FireRateStatsDisplay.text = "+" + CurrentFireRateStats.ToString() + "%";
 
         // ----------------------------------Grenade Damage Area-------------------------------------- //  这里需要确定 怎么表达 属性
         GrenadeDamageAreaLevelDisplay.text = GrenadeDamageAreaLevel.ToString() + "/10";
@@ -300,7 +300,7 @@ public class Playerstats : MonoBehaviour
         
         // ----------------------------------Health Regen Increase-------------------------------------- //
         HealthRegenLevelDisplay.text = HealthRegenLevel.ToString() + "/10";
-        HealthRegenStatsDisplay.text = CurrentHealthRegenStats.ToString() + "%";
+        HealthRegenStatsDisplay.text = CurrentHealthRegenStats.ToString();
 
 
 
@@ -429,7 +429,7 @@ public class Playerstats : MonoBehaviour
             if (ReloadSpeedLevel < 10)
             {
                 ReloadSpeedLevel += amount;
-                CurrentReloadSpeedStats += 0.1f;
+                CurrentReloadSpeedStats += 1;
                 Skillpoint -= 1;
             }
         }
@@ -442,7 +442,7 @@ public class Playerstats : MonoBehaviour
             if (ReloadSpeedLevel > 0)
             {
                 ReloadSpeedLevel -= amount;
-                CurrentReloadSpeedStats -= 0.1f;
+                CurrentReloadSpeedStats -= 1;
                 Skillpoint += 1;
             }
         }
@@ -515,8 +515,8 @@ public class Playerstats : MonoBehaviour
             if (FireRateLevel < 10)
             {
                 FireRateLevel += amount;
-                CurrentFireRateStats += 10;
-                Skillpoint -= 1;
+                CurrentFireRateStats += 2;
+                Skillpoint -= 2;
             }
         }
     }
@@ -527,8 +527,8 @@ public class Playerstats : MonoBehaviour
             if (FireRateLevel > 0)
             {
                 FireRateLevel -= amount;
-                CurrentFireRateStats -= 10;
-                Skillpoint += 1;
+                CurrentFireRateStats -= 2;
+                Skillpoint += 2;
             }
         }
     }
@@ -542,7 +542,7 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageAreaLevel < 10)
             {
                 GrenadeDamageAreaLevel += amount;
-                CurrentGrenadeDamageAreaStats += 5;
+                CurrentGrenadeDamageAreaStats += 1.5f;
                 Skillpoint -= 3;
             }
         }
@@ -555,7 +555,7 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageAreaLevel > 0)
             {
                 GrenadeDamageAreaLevel -= amount;
-                CurrentGrenadeDamageAreaStats -= 5;
+                CurrentGrenadeDamageAreaStats -= 1.5f;
                 Skillpoint += 3;
             }
         }
@@ -570,7 +570,7 @@ public class Playerstats : MonoBehaviour
             if (GunDamageLevel < 10)
             {
                 GunDamageLevel += amount;
-                CurrentGunDamageStats += 5;
+                CurrentGunDamageStats += 2;
                 Skillpoint -= 3;
             }
         }
@@ -582,7 +582,7 @@ public class Playerstats : MonoBehaviour
             if (GunDamageLevel > 0)
             {
                 GunDamageLevel -= amount;
-                CurrentGunDamageStats -= 5;
+                CurrentGunDamageStats -= 2;
                 Skillpoint += 3;
             }
         }
@@ -597,7 +597,7 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageLevel < 10)
             {
                 GrenadeDamageLevel += amount;
-                CurrentGrenadeDamageStats += 5;
+                CurrentGrenadeDamageStats += 1.5f;
                 Skillpoint -= 3;
             }
         }
@@ -609,7 +609,7 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageLevel > 0)
             {
                 GrenadeDamageLevel -= amount;
-                CurrentGrenadeDamageStats -= 5;
+                CurrentGrenadeDamageStats -= 1.5f;
                 Skillpoint += 3;
             }
         }
@@ -657,7 +657,7 @@ public class Playerstats : MonoBehaviour
             if (HealthRegenLevel < 10)
             {
                 HealthRegenLevel += amount;
-                CurrentHealthRegenStats += 5;
+                CurrentHealthRegenStats += 10;
                 Skillpoint -= 2;
             }
         }
@@ -669,7 +669,7 @@ public class Playerstats : MonoBehaviour
             if (HealthRegenLevel > 0)
             {
                 HealthRegenLevel -= amount;
-                CurrentHealthRegenStats -= 5;
+                CurrentHealthRegenStats -= 10;
                 Skillpoint += 2;
             }
         }
