@@ -91,8 +91,8 @@ public class ShotgunScript : MonoBehaviour
                     GameObject o = Instantiate(
                         database.weapons[id].bulleType, 
                         bulletSpawn.position, 
-                        bulletSpawn.rotation, 
-                        gameObject.transform);
+                        bulletSpawn.rotation 
+                       );
                     //shoots out the bullets forward at a angle max to spread angle
                     o.transform.rotation = Quaternion.RotateTowards(o.transform.rotation, bullets[i], spreadAngle);
                     //add the speed of the bullet to the rigid body

@@ -8,7 +8,7 @@
  */
 public class PlayerController : MonoBehaviour {
     //[movementSpeed] How quickly the player is moving.
-    [SerializeField] private int movementSpeed = 12;
+    [SerializeField] private float movementSpeed = 12.0f;
 
 
     /**
@@ -72,5 +72,15 @@ public class PlayerController : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public float GetMovementSpeed()
+    {
+        return movementSpeed;
+    }
+
+    public void SetMovementSpeed(float newMovementSpeed)
+    {
+        movementSpeed = newMovementSpeed;
     }
 }

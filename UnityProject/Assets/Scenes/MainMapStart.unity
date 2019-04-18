@@ -7778,7 +7778,7 @@ RectTransform:
   - {fileID: 237555821}
   - {fileID: 46362840}
   - {fileID: 4940764552093985180}
-  - {fileID: 867220808}
+  - {fileID: 1016923371648277021}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -41257,6 +41257,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798604359}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!1 &798997932
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1016923371648277020}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1016923371648277021}
+  m_Layer: 0
+  m_Name: CheckCurrentWave (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &801708004
 GameObject:
   m_ObjectHideFlags: 0
@@ -43037,12 +43053,26 @@ Transform:
   m_Father: {fileID: 1769034921}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &867220808 stripped
+--- !u!224 &867220808
 RectTransform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 1016923371353663316, guid: 89629362da66d5745931ed5cd9fc68c8,
     type: 3}
   m_PrefabInstance: {fileID: 1016923371648277020}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918102827}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1016923371648277021}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &867734908
 GameObject:
   m_ObjectHideFlags: 0
@@ -49601,9 +49631,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_character1: {fileID: 2064840054}
-  m_character2: {fileID: 149552334}
-  m_character3: {fileID: 151468853}
-  m_character4: {fileID: 1605142019}
+  m_character2: {fileID: 151468853}
+  m_character3: {fileID: 1605142019}
+  m_character4: {fileID: 149552334}
 --- !u!4 &1030215376
 Transform:
   m_ObjectHideFlags: 0
@@ -81481,7 +81511,7 @@ PrefabInstance:
     - target: {fileID: 1059649828222353621, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.373
       objectReference: {fileID: 0}
     - target: {fileID: 1059649829788746759, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -97055,6 +97085,22 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 352159263}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1918102827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1016923371648277020}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 867220808}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1919664742
 GameObject:
   m_ObjectHideFlags: 0
@@ -116036,11 +116082,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 74091409}
     m_Modifications:
-    - target: {fileID: 1016923371353663323, guid: 89629362da66d5745931ed5cd9fc68c8,
-        type: 3}
-      propertyPath: m_Name
-      value: CheckCurrentWave
-      objectReference: {fileID: 0}
     - target: {fileID: 1016923371353663316, guid: 89629362da66d5745931ed5cd9fc68c8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -116146,6 +116187,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1016923371353663323, guid: 89629362da66d5745931ed5cd9fc68c8,
+        type: 3}
+      propertyPath: m_Name
+      value: CheckCurrentWave
+      objectReference: {fileID: 0}
     - target: {fileID: 1016923371353663317, guid: 89629362da66d5745931ed5cd9fc68c8,
         type: 3}
       propertyPath: waveText
@@ -116163,6 +116209,21 @@ PrefabInstance:
       objectReference: {fileID: 1134651071}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89629362da66d5745931ed5cd9fc68c8, type: 3}
+--- !u!4 &1016923371648277021
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1016923371648277020}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798997932}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 867220808}
+  m_Father: {fileID: 74091409}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1055891300257466752 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 29765956283419059, guid: 3beb0f43acbb38049908e249bd23b712,

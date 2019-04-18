@@ -75,10 +75,10 @@ public class M4_Script : MonoBehaviour
                 muzzleFlash.Play();
                 //creates a clone of the bullet
                 GameObject bullet = Instantiate(
-                    database.weapons[id].bulleType, 
-                    gameObject.transform
-                );
-
+                        database.weapons[id].bulleType,
+                        bulletSpawn.position,
+                        bulletSpawn.rotation
+                       );
                 //tells the bullets collision to ignore collision with itself 
                 //and the charactor to which the spawn point is attached
                 Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
