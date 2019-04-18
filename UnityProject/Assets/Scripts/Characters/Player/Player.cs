@@ -10,6 +10,7 @@ public class Player : BaseCharacter
     private NavMeshAgent           m_nav;
     private CharacterManagerScript m_characterManager;
     private ZombieManagerScript    m_zombieManager;
+    private CapsuleCollider        m_capsuleCollider;
     private Transform              m_lookAtTransform;
     private Inventory              m_inventory;
     private weaponDatabase         m_weaponDatabase;
@@ -18,11 +19,16 @@ public class Player : BaseCharacter
     [SerializeField] private float m_energy    = 100.0f;
     [SerializeField] private float m_maxEnergy = 100.0f;
 
+    // AI fields
+    private readonly float m_maxFiringRangeDistance = 15.0f; // Enemy must be within this distance
+    private bool           m_shootAtZombie          = false;
+    
+    private readonly float m_fireRateMultiplier = 35.0f; // Range (fire rate - fire rate * multiplier)
+
     [SerializeField] private readonly float m_distanceThreshold  = 5.0f;
     [SerializeField] private readonly float m_navMeshRadius      = 3.0f;
     [SerializeField] private readonly float m_targetCircleRadius = 0.1f;
-    [SerializeField] private readonly float m_fireRateMultiplier = 2.5f;
-
+    
     private float m_fireDelay  = 1.0f;
     private float m_delayTimer = 0.0f;
 
@@ -30,6 +36,7 @@ public class Player : BaseCharacter
     void Start()
     {
         m_playerController = GetComponent<PlayerController>();
+        m_capsuleCollider = GetComponent<CapsuleCollider>();
         m_nav = GetComponent<NavMeshAgent>();
 
         // Get CharacterManagerScript
@@ -63,6 +70,7 @@ public class Player : BaseCharacter
         {
             m_nav.enabled = false;
             m_playerController.enabled = false;
+            m_capsuleCollider.enabled = false;
             return;
         }
 
@@ -71,17 +79,24 @@ public class Player : BaseCharacter
         {
             // If the player character is too far away from user-controlled 
             // player character, get closer 
-            if (GetDistanceToControlledPlayer() > m_distanceThreshold)
-                m_nav.SetDestination(GetRandomNavMeshLocation(m_navMeshRadius, m_characterManager.GetCurrentPlayer().transform.position));
-
-            // Look at nearest zombie target
-            if (m_zombieManager.GetNumOfZombies() > 0)
+            if (GetDistanceToCharacter(m_characterManager.GetCurrentPlayer()) > m_distanceThreshold)
+               m_nav.SetDestination(GetRandomNavMeshLocation(m_navMeshRadius, m_characterManager.GetCurrentPlayer().transform.position));
+            
+            // Look at nearest zombie if within range
+            if (m_zombieManager.GetNumOfZombies() > 0 && GetDistanceToCharacter(GetNearestZombie()) <= m_maxFiringRangeDistance)
+            {
                 m_lookAtTransform = GetNearestZombie().transform;
+                m_shootAtZombie = true;
+            }
+            else
+            {
+                m_shootAtZombie = false;
+            }
+
             transform.LookAt(m_lookAtTransform);
 
             // Shoot at nearest target
-            if (m_zombieManager.GetNumOfZombies() > 0)
-                FireWeapon();
+            if (m_shootAtZombie) FireWeapon();
         }
         else
         {
@@ -119,8 +134,11 @@ public class Player : BaseCharacter
             }
         }
 
-        // Update delay timer
-        m_delayTimer += Time.deltaTime;
+        // Update delay timer (and prevent overflow)
+        if (m_delayTimer + Time.deltaTime > float.MaxValue)
+            m_delayTimer = m_delayTimer + 1.0f;
+        else
+            m_delayTimer += Time.deltaTime;
     }
 
     // Returns true if this player character is controlled by the user
@@ -140,6 +158,8 @@ public class Player : BaseCharacter
     {
         m_isDead = false;
         m_health = m_maxHealth;
+        m_playerController.enabled = true;
+        m_capsuleCollider.enabled = true;
     }
 
     // Returns the nearest zombie character
@@ -165,18 +185,10 @@ public class Player : BaseCharacter
         return zombies[index];
     }
 
-    // Returns the distance between this player and the user-controlled player character
-    private float GetDistanceToControlledPlayer()
+    // Returns the distance between this player and the given character
+    private float GetDistanceToCharacter(BaseCharacter character)
     {
-        // Get currently controlled player
-        Player controlledPlayer = m_characterManager.GetCurrentPlayer();
-
-        // Check if this is currently controlled character
-        if (this == controlledPlayer)
-            return 0.0f;
-
-        // Return distance betweem
-        return (this.transform.position - controlledPlayer.transform.position).magnitude;
+        return (this != character) ? (this.transform.position - character.transform.position).magnitude : 0.0f;
     }
 
     // Returns a random position within a sphere of the given radius and centre point

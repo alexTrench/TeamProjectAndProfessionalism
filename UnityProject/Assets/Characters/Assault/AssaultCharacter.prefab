@@ -85,6 +85,7 @@ MonoBehaviour:
   m_maxHealth: 100
   m_energy: 100
   m_maxEnergy: 100
+  m_maxFiringRangeDistance: 15
 --- !u!114 &1413193281340909745
 MonoBehaviour:
   m_ObjectHideFlags: 0

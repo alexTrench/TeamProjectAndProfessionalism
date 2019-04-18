@@ -9,8 +9,7 @@
 public class PlayerController : MonoBehaviour {
     //[movementSpeed] How quickly the player is moving.
     [SerializeField] private float movementSpeed = 12.0f;
-
-
+    
     /**
      * @brief Initialises the Player Controller.
      */
