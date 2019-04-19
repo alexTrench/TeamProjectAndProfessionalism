@@ -26,20 +26,58 @@ public static class InputManager {
         InputBinding.AXIS.XBOX_LEFT_STICK_HORIZONTAL
     );
 
+    private static InputBinding throwGrenade = new InputBinding(
+        InputBinding.AXIS.XBOX_LEFT_TRIGGER
+    );
+    private static InputBinding fireWeapon = new InputBinding(
+        InputBinding.AXIS.XBOX_RIGHT_TRIGGER
+    );
 
-    public static InputBinding lookForwardAxis = new InputBinding(
+    private static InputBinding lookForwardAxis = new InputBinding(
         InputBinding.AXIS.XBOX_RIGHT_STICK_VERTICAL
     );
-    public static InputBinding lookRightAxis = new InputBinding(
+    private static InputBinding lookRightAxis = new InputBinding(
         InputBinding.AXIS.XBOX_RIGHT_STICK_HORIZONTAL
     );
 
-    public static InputBinding throwGrenade = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_TRIGGER
-    );
-    public static InputBinding fireWeapon = new InputBinding(
-        InputBinding.AXIS.XBOX_RIGHT_TRIGGER
-    );
+    /**
+     * @brief Rotates a transform to look in the direction 
+     *        of a given axis.
+     * @param transform - The transform to be rotated.
+     */
+    public static void LookAtAxis(Transform transform) {
+        if (usingXboxOneController()) {
+            //Rotate with controller
+            Vector3 playerDirection = Vector3.right *
+            lookRightAxis.ToFloat() +
+            Vector3.forward * -lookForwardAxis.ToFloat();
+
+            //If the player has moved.
+            if (playerDirection.sqrMagnitude > 0.0f) {
+                transform.rotation = Quaternion.LookRotation(
+                    playerDirection,
+                    Vector3.up
+                );
+            }
+        }
+        else {
+            Plane floor = new Plane(Vector3.up, new Vector3(0, transform.position.y, 0));
+
+            //Rotate with mouse
+            Ray cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+            if (floor.Raycast(cameraRay, out float rayLength)) {
+                Vector3 pointToLook = cameraRay.GetPoint(rayLength);
+                Debug.DrawLine(cameraRay.origin, pointToLook, Color.blue);
+
+                transform.LookAt(new Vector3(
+                    pointToLook.x,
+                    transform.position.y,
+                    pointToLook.z
+                ));
+            }
+        }
+    }
 
     public static float GetBackwardAxis() {
         if(usingXboxOneController()) {
