@@ -7780,7 +7780,7 @@ RectTransform:
   - {fileID: 4940764552093985180}
   - {fileID: 1016923371648277021}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -8934,7 +8934,7 @@ GameObject:
   - component: {fileID: 96855049}
   m_Layer: 0
   m_Name: JerryCan
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10906,6 +10906,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: DemolitionCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 8317551795885399291, guid: 8e5ef13128537604eb5f240183c83491,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317551795885399291, guid: 8e5ef13128537604eb5f240183c83491,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317551795885399286, guid: 8e5ef13128537604eb5f240183c83491,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12766,6 +12776,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 1.003
       objectReference: {fileID: 0}
+    - target: {fileID: 7070417344435331735, guid: 8e5ef13128537604eb5f240183c83491,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7070417344435331735, guid: 8e5ef13128537604eb5f240183c83491,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e5ef13128537604eb5f240183c83491, type: 3}
 --- !u!1 &149552333 stripped
@@ -12925,7 +12945,7 @@ GameObject:
   - component: {fileID: 151080522}
   m_Layer: 0
   m_Name: Bushes
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13772,6 +13792,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HeavyCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481658356826870848, guid: e3e9547d9e46ea44ca04f5bf66802568,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8481658356826870848, guid: e3e9547d9e46ea44ca04f5bf66802568,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8481658356826870852, guid: e3e9547d9e46ea44ca04f5bf66802568,
         type: 3}
@@ -15603,6 +15633,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.000000029802322
       objectReference: {fileID: 0}
+    - target: {fileID: 8262657337817558953, guid: e3e9547d9e46ea44ca04f5bf66802568,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8262657337817558953, guid: e3e9547d9e46ea44ca04f5bf66802568,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e9547d9e46ea44ca04f5bf66802568, type: 3}
 --- !u!114 &151468853 stripped
@@ -16765,6 +16805,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 862796707}
     m_Modifications:
+    - target: {fileID: 1000013978085458, guid: a17e63ac067398545be32fcc12637fef, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011137014058, guid: a17e63ac067398545be32fcc12637fef, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.187578
@@ -17045,6 +17089,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmTree (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.6559515
@@ -17180,6 +17228,10 @@ PrefabInstance:
     - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_Name
       value: PalmTree (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19092,6 +19144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmTree (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
       value: -21.727272
@@ -19543,6 +19599,10 @@ PrefabInstance:
     - target: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000013197854908, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -20808,6 +20868,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327404147}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!1 &329950120 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000011289305706, guid: 6d3bf552b0cd867429f4eefb6e8b123c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2049501918}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &329950124
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329950120}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &330315663
 GameObject:
   m_ObjectHideFlags: 0
@@ -22855,7 +22937,7 @@ GameObject:
   - component: {fileID: 390558493}
   m_Layer: 0
   m_Name: Pots
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24783,6 +24865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LargeRock (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011289305706, guid: 6d3bf552b0cd867429f4eefb6e8b123c, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011011056574, guid: 6d3bf552b0cd867429f4eefb6e8b123c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.014025
@@ -24900,6 +24986,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 436717132}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!1 &443787160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013978085458, guid: a17e63ac067398545be32fcc12637fef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1456387747}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &443787164
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 443787160}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &444048213
 GameObject:
   m_ObjectHideFlags: 0
@@ -25061,6 +25169,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467024887}
     m_Modifications:
+    - target: {fileID: 1000010349412380, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010471316470, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.693
@@ -25115,6 +25227,10 @@ PrefabInstance:
     - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_Name
       value: PalmTree2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000012702717516, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -25255,6 +25371,10 @@ PrefabInstance:
     - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_Name
       value: PalmTree2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000012702717516, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -27521,6 +27641,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511247935}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!1 &511406582 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1040602417}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &511406586
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 511406582}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &513041602
 GameObject:
   m_ObjectHideFlags: 0
@@ -33912,7 +34054,7 @@ GameObject:
   - component: {fileID: 566674513}
   m_Layer: 0
   m_Name: Ladders
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -34361,7 +34503,11 @@ MonoBehaviour:
   - {fileID: 705274565}
   - {fileID: 158000344}
   - {fileID: 543145227}
-  enemy_template: {fileID: 5900339710907024119, guid: 65d85da0cf3ec1949b6b73bd3e6c4b39,
+  zombie_template_war: {fileID: 5900339710907024119, guid: 65d85da0cf3ec1949b6b73bd3e6c4b39,
+    type: 3}
+  zombie_template_derrick: {fileID: 5272850905939481936, guid: a028a6aed013cce4dafe7a0460feb92a,
+    type: 3}
+  zombie_template_girl: {fileID: 6266080106274829013, guid: 94371768417da694f91d69dd376c1ef1,
     type: 3}
 --- !u!1 &583171415
 GameObject:
@@ -35221,7 +35367,7 @@ GameObject:
   - component: {fileID: 599473513}
   m_Layer: 0
   m_Name: Props
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36998,6 +37144,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmTree (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.32596
@@ -37061,7 +37211,7 @@ GameObject:
   - component: {fileID: 668894004}
   m_Layer: 0
   m_Name: Container
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37486,7 +37636,7 @@ GameObject:
   - component: {fileID: 685296303}
   m_Layer: 0
   m_Name: Grenades
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39547,6 +39697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmTree (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.3230147
@@ -41361,6 +41515,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 604b70f722d634f488376d7f276d2e43, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 604b70f722d634f488376d7f276d2e43, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.112831
@@ -43028,7 +43186,7 @@ GameObject:
   - component: {fileID: 862796707}
   m_Layer: 0
   m_Name: Houses
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47384,6 +47542,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467024887}
     m_Modifications:
+    - target: {fileID: 1000011028299496, guid: b4242ad590ded2e4ba03693ca2f77815, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011811767286, guid: b4242ad590ded2e4ba03693ca2f77815, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.06
@@ -47787,7 +47949,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4952
+      value: -0.064
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -47802,22 +47964,22 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000004702957
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.3996779
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000029436842
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.91665566
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -47832,7 +47994,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 47.116
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -48210,6 +48372,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467024887}
     m_Modifications:
+    - target: {fileID: 1000010349412380, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010471316470, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.69
@@ -48873,7 +49039,7 @@ GameObject:
   - component: {fileID: 1007593505}
   m_Layer: 0
   m_Name: Crates
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49659,7 +49825,7 @@ GameObject:
   - component: {fileID: 1030460513}
   m_Layer: 0
   m_Name: Barrels
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50308,6 +50474,10 @@ PrefabInstance:
     - target: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000013197854908, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -51106,6 +51276,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467024887}
     m_Modifications:
+    - target: {fileID: 1000011289305706, guid: 6d3bf552b0cd867429f4eefb6e8b123c, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011011056574, guid: 6d3bf552b0cd867429f4eefb6e8b123c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9950128
@@ -52475,6 +52649,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1087668802}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!1 &1088925783 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950726215}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1088925787
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088925783}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1089299533
 GameObject:
   m_ObjectHideFlags: 0
@@ -52587,7 +52783,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5102005
+      value: -0.201
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -52602,22 +52798,22 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.000000056205312
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.3835891
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.00000001984133
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9235039
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -52632,7 +52828,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 45.112003
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -54384,7 +54580,7 @@ PrefabInstance:
     - target: {fileID: 7468397952823504349, guid: dc8221bef6966a8458c0ec7ccdac1699,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7468397952823504349, guid: dc8221bef6966a8458c0ec7ccdac1699,
         type: 3}
@@ -54801,6 +54997,10 @@ PrefabInstance:
     - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_Name
       value: PalmTree (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57572,6 +57772,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467024887}
     m_Modifications:
+    - target: {fileID: 1000011585174526, guid: b30888b3932787947b0481b8cca0dd5e, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010393884064, guid: b30888b3932787947b0481b8cca0dd5e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5
@@ -57703,6 +57907,10 @@ PrefabInstance:
     - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_Name
       value: PalmTree (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57993,6 +58201,10 @@ PrefabInstance:
     - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_Name
       value: PalmTree (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -63806,6 +64018,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259773715}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!1 &1260141794 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013978085458, guid: a17e63ac067398545be32fcc12637fef,
+    type: 3}
+  m_PrefabInstance: {fileID: 184976179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1260141798
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260141794}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1262458293
 GameObject:
   m_ObjectHideFlags: 0
@@ -65282,6 +65516,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 362264320}
     m_Modifications:
+    - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012702717516, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.9876442
@@ -65495,7 +65733,7 @@ GameObject:
   - component: {fileID: 1307355178}
   m_Layer: 0
   m_Name: Tires
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65530,7 +65768,7 @@ GameObject:
   - component: {fileID: 1310820396}
   m_Layer: 0
   m_Name: Barriers
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67034,6 +67272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmTree2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012702717516, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -17.678478
@@ -67206,7 +67448,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.594
+      value: -0.368
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -67221,22 +67463,22 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000005487309
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.32584047
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000023273575
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.94542485
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -67251,7 +67493,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 38.033
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -67319,6 +67561,28 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1351840989}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1355715032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 276099357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1355715036
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1355715032}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &1359366788
 GameObject:
   m_ObjectHideFlags: 0
@@ -68923,7 +69187,7 @@ GameObject:
   - component: {fileID: 1403468914}
   m_Layer: 0
   m_Name: LightPoles
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -75322,6 +75586,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013978085458, guid: a17e63ac067398545be32fcc12637fef, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011137014058, guid: a17e63ac067398545be32fcc12637fef, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.46
@@ -75710,7 +75978,7 @@ GameObject:
   - component: {fileID: 1467024887}
   m_Layer: 0
   m_Name: Rocks
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81421,7 +81689,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.862
+      value: -0.454
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -81436,22 +81704,22 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00000005586843
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.36821625
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000020770992
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9297402
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -81466,7 +81734,7 @@ PrefabInstance:
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 43.211002
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 1059649828891871816, guid: d33a83f0737b9564bb741094af20017c,
         type: 3}
@@ -82618,6 +82886,10 @@ PrefabInstance:
     - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_Name
       value: PalmTree (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -83917,6 +84189,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467024887}
     m_Modifications:
+    - target: {fileID: 1000010981268152, guid: 2bc4056af02ca9e40b3fa92e53f866e1, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013225880310, guid: 2bc4056af02ca9e40b3fa92e53f866e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.05
@@ -84352,6 +84628,10 @@ PrefabInstance:
     - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_Name
       value: PalmTree (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -85346,6 +85626,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LightCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 1766068139273559108, guid: 1e73e6abbf83a274d8af133a67ff5887,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4047015415223305084, guid: 1e73e6abbf83a274d8af133a67ff5887,
         type: 3}
@@ -87092,6 +87377,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.16475868
       objectReference: {fileID: 0}
+    - target: {fileID: 4563318730528591057, guid: 1e73e6abbf83a274d8af133a67ff5887,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563318730528591057, guid: 1e73e6abbf83a274d8af133a67ff5887,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e73e6abbf83a274d8af133a67ff5887, type: 3}
 --- !u!114 &1605142019 stripped
@@ -87813,6 +88108,10 @@ PrefabInstance:
     - target: {fileID: 1000010349412380, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
       propertyPath: m_Name
       value: SmallRock (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000010349412380, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000010471316470, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
       propertyPath: m_LocalPosition.x
@@ -89720,6 +90019,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PalmTree2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000012702717516, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.306213
@@ -91244,7 +91547,7 @@ GameObject:
   - component: {fileID: 1723070912}
   m_Layer: 0
   m_Name: Vegetation
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92125,7 +92428,7 @@ GameObject:
   - component: {fileID: 1765875496}
   m_Layer: 0
   m_Name: Genorator
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94350,6 +94653,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 362264320}
     m_Modifications:
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.944149
@@ -95388,7 +95695,7 @@ GameObject:
   - component: {fileID: 1868344422}
   m_Layer: 0
   m_Name: PressureTank
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95419,6 +95726,10 @@ PrefabInstance:
     - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_Name
       value: PalmTree (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011272703546, guid: 95da9912935f49e4bac6440555493088, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000011035133264, guid: 95da9912935f49e4bac6440555493088, type: 3}
       propertyPath: m_LocalPosition.x
@@ -95632,6 +95943,10 @@ PrefabInstance:
     - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_Name
       value: PalmTree2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000012702717516, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -96000,6 +96315,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: House (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013978085458, guid: a17e63ac067398545be32fcc12637fef, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011137014058, guid: a17e63ac067398545be32fcc12637fef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.17
@@ -96035,6 +96354,16 @@ PrefabInstance:
     - target: {fileID: 4000011137014058, guid: a17e63ac067398545be32fcc12637fef, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: 64000011806531512, guid: a17e63ac067398545be32fcc12637fef,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64000011806531512, guid: a17e63ac067398545be32fcc12637fef,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a17e63ac067398545be32fcc12637fef, type: 3}
@@ -96209,7 +96538,7 @@ GameObject:
   - component: {fileID: 1893217631}
   m_Layer: 0
   m_Name: AmmoBoxes
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97975,6 +98304,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013017435850, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000013197854908, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.87
@@ -98010,6 +98343,11 @@ PrefabInstance:
     - target: {fileID: 4000013197854908, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 64000013722750940, guid: 334b3cce14e18b748b3e8da82a3e02ee,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 334b3cce14e18b748b3e8da82a3e02ee, type: 3}
@@ -104832,7 +105170,7 @@ GameObject:
   - component: {fileID: 2011520648}
   m_Layer: 0
   m_Name: Grenades&Ammo
-  m_TagString: Untagged
+  m_TagString: Environment
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -105763,6 +106101,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SmallRock (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000010349412380, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010471316470, guid: 7bd1898b4e6f55749b12eee5bc673928, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.67
@@ -106146,6 +106488,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1467024887}
     m_Modifications:
+    - target: {fileID: 1000011289305706, guid: 6d3bf552b0cd867429f4eefb6e8b123c, type: 3}
+      propertyPath: m_TagString
+      value: Environment
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011011056574, guid: 6d3bf552b0cd867429f4eefb6e8b123c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.47
@@ -108416,6 +108762,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.07261801
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691037260844312039, guid: 1492acb3dac29b84d80dce227bda9cf2,
+        type: 3}
+      propertyPath: m_health
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4556251293571081552, guid: 1492acb3dac29b84d80dce227bda9cf2,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464129901331255260, guid: 1492acb3dac29b84d80dce227bda9cf2,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1464129901331255260, guid: 1492acb3dac29b84d80dce227bda9cf2,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1492acb3dac29b84d80dce227bda9cf2, type: 3}
@@ -113309,6 +113675,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068730107}
   m_Mesh: {fileID: 4300000, guid: c58f251a22830404da819b10cd083dc1, type: 3}
+--- !u!1 &2075101291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013978085458, guid: a17e63ac067398545be32fcc12637fef,
+    type: 3}
+  m_PrefabInstance: {fileID: 1888431056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &2075101295
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075101291}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2076121955
 GameObject:
   m_ObjectHideFlags: 0
@@ -113597,6 +113985,10 @@ PrefabInstance:
     - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_Name
       value: PalmTree2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012283705188, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
+      propertyPath: m_TagString
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4000012702717516, guid: cbd413c474196fa40a913e42b500ea02, type: 3}
       propertyPath: m_LocalPosition.x
@@ -115248,6 +115640,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shotgun 1
       objectReference: {fileID: 0}
+    - target: {fileID: 472287921009250260, guid: 81425b678d838294da4fea3105b814ab,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 472287921009250260, guid: 81425b678d838294da4fea3105b814ab,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 472287921009250259, guid: 81425b678d838294da4fea3105b814ab,
         type: 3}
       propertyPath: m_RootOrder
@@ -116728,7 +117130,7 @@ PrefabInstance:
     - target: {fileID: 7753991680662973479, guid: 2e657776cc028084aafd83d28c9109ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7753991680662973479, guid: 2e657776cc028084aafd83d28c9109ad,
         type: 3}

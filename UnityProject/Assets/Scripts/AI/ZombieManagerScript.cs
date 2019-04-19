@@ -6,7 +6,9 @@ public class ZombieManagerScript : MonoBehaviour
 {
     private List<Zombie> m_zombieCharacters;
     [SerializeField] private Transform[] spawnPoints = null;
-    [SerializeField] private GameObject enemy_template = null;
+    [SerializeField] private GameObject zombie_template_war = null;
+    [SerializeField] private GameObject zombie_template_derrick = null;
+    [SerializeField] private GameObject zombie_template_girl = null;
 
     //[zombiesKilled] Tracks how many zombies have been killed
     //during the gameplay session.
@@ -28,12 +30,34 @@ public class ZombieManagerScript : MonoBehaviour
 
             GameObject zombie;
 
-            zombie = Instantiate(
-                enemy_template, 
-                spawnPoints[spawnIndex].position, 
-                spawnPoints[spawnIndex].rotation,
-                gameObject.transform
-            ) as GameObject;
+            // Calculate randon num (0, 1 or 2)
+            int randomNum = Random.Range(0, 3);
+
+            // Spawn different zombie type depending on randon num
+            if (randomNum == 0) {
+                zombie = Instantiate(
+                    zombie_template_war, 
+                    spawnPoints[spawnIndex].position, 
+                    spawnPoints[spawnIndex].rotation,
+                    gameObject.transform
+                ) as GameObject;
+            }
+            else if (randomNum == 1) {
+                zombie = Instantiate(
+                    zombie_template_derrick,
+                    spawnPoints[spawnIndex].position,
+                    spawnPoints[spawnIndex].rotation,
+                    gameObject.transform
+                ) as GameObject;
+            }
+            else  {
+                zombie = Instantiate(
+                    zombie_template_girl,
+                    spawnPoints[spawnIndex].position,
+                    spawnPoints[spawnIndex].rotation,
+                    gameObject.transform
+                ) as GameObject;
+            }
 
             zombie.SetActive(true);
             zombie.GetComponent<ZombieAttack>().

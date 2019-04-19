@@ -64,7 +64,12 @@ public class SciFiRifleScript : MonoBehaviour
         IsReloading = false;
     }
 
-    private void Fire()
+    public bool GetIsReloading()
+    {
+        return IsReloading;
+    }
+
+    public void Fire()
     {
         muzzleFlash.Play();
         fireSound.Play();
@@ -86,12 +91,7 @@ public class SciFiRifleScript : MonoBehaviour
 
         //creates a clone of the bullet
         GameObject bullet = Instantiate(database.weapons[id].bulleType);
-
-        //tells the bullets collision to ignore collision with itself 
-        //and the charactor to which the spawn point is attached
-        Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
-            bulletSpawn.parent.GetComponent<Collider>());
-
+        
         //spawns at the bullet spawn point
         bullet.transform.position = bulletSpawn.position;
         //transforms the roatation into angles, into 360 degrees
