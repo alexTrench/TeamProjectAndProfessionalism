@@ -26,45 +26,54 @@ public class ZombieManagerScript : MonoBehaviour
      */
     public void Spawn(float waveModifier) {
         if(gameObject != null && gameObject.activeInHierarchy) {
-            int spawnIndex = Random.Range(0, spawnPoints.Length);
+            
+            //[zombieType] The type of zombie to be created.
+            GameObject zombieType = null;
 
-            GameObject zombie;
+            string zomType = ""; //temp for debugging.
 
-            // Calculate randon num (0, 1 or 2)
-            int randomNum = Random.Range(0, 3);
-
-            // Spawn different zombie type depending on randon num
-            if (randomNum == 0) {
-                zombie = Instantiate(
-                    zombie_template_war, 
-                    spawnPoints[spawnIndex].position, 
-                    spawnPoints[spawnIndex].rotation,
-                    gameObject.transform
-                ) as GameObject;
-            }
-            else if (randomNum == 1) {
-                zombie = Instantiate(
-                    zombie_template_derrick,
-                    spawnPoints[spawnIndex].position,
-                    spawnPoints[spawnIndex].rotation,
-                    gameObject.transform
-                ) as GameObject;
-            }
-            else  {
-                zombie = Instantiate(
-                    zombie_template_girl,
-                    spawnPoints[spawnIndex].position,
-                    spawnPoints[spawnIndex].rotation,
-                    gameObject.transform
-                ) as GameObject;
+            //Work out which type of zombie to create.
+            switch(Random.Range(0, 3)) {
+                case (0):
+                    zomType = "War Zombie";
+                    zombieType = zombie_template_war;
+                    break;
+                case (1):
+                    zomType = "Zombie Girl";
+                    zombieType = zombie_template_girl;
+                    break;
+                case (2):
+                    zomType = "Zombie Derrick";
+                    zombieType = zombie_template_derrick;
+                    break;
             }
 
-            zombie.SetActive(true);
-            zombie.GetComponent<ZombieAttack>().
-                ApplyAttackDamageModifier(waveModifier);
-            zombie.GetComponent<ZombieAnimationScript>().
-                ApplySpeedModifier(waveModifier);
-            m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
+            //Spawn the zombie.
+            if(zombieType != null) {
+
+                //[spawnPoint] Where to spawn the zombie.
+                int spawnPoint = Random.Range(0, spawnPoints.Length);
+
+                //[zombie] The zombie being created.
+                GameObject zombie = Instantiate(
+                    zombieType,
+                    spawnPoints[spawnPoint].position,
+                    spawnPoints[spawnPoint].rotation,
+                    gameObject.transform
+                ) as GameObject;
+
+                zombie.SetActive(true);
+
+                zombie.GetComponent<ZombieAttack>().
+                    ApplyAttackDamageModifier(waveModifier);
+                zombie.GetComponent<ZombieAnimationScript>().
+                    ApplySpeedModifier(waveModifier);
+
+                m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
+            } else {
+                Debug.LogError("Unable to spawn:\t"+zomType);
+            }
+
         }
     }
 
