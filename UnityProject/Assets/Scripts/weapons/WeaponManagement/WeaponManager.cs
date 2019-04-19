@@ -56,38 +56,30 @@ public class WeaponManager : MonoBehaviour
     {
         //used later to check if the weapon has been changed
         int previousSelectedWeapon = selectedWeapon;
-        if(InputManager.usingXboxOneController()) {
-            if(InputManager.SwapWeapon() && GetComponentInParent<Player>().IsPlayerControlled()) {
-                //checks how many children the weapon manager had, each weapon is one child
-                //this will loop the cycle of changing weapons back to the first child
-                if (selectedWeapon >= transform.childCount - 1) {
-                    selectedWeapon = 0;
-                }
-                else {
-                    selectedWeapon++;
-                }
+        //scroll wheel used
+        if (Input.mouseScrollDelta.y > 0f && GetComponentInParent<Player>().IsPlayerControlled())
+        {
+            //checks how many children the weapon manager had, each weapon is one child
+            //this will loop the cycle of changing weapons back to the first child
+            if (selectedWeapon >= transform.childCount - 1)
+            {
+                selectedWeapon = 0;
+            }
+            else
+            {
+                selectedWeapon++;
             }
         }
-        else {
-            //scroll wheel used
-            if (Input.mouseScrollDelta.y > 0f && GetComponentInParent<Player>().IsPlayerControlled()) {
-                //checks how many children the weapon manager had, each weapon is one child
-                //this will loop the cycle of changing weapons back to the first child
-                if (selectedWeapon >= transform.childCount - 1) {
-                    selectedWeapon = 0;
-                }
-                else {
-                    selectedWeapon++;
-                }
+        //oposite of the above
+        if (Input.mouseScrollDelta.y < 0f && GetComponentInParent<Player>().IsPlayerControlled())
+        {
+            if (selectedWeapon <= 0)
+            {
+                selectedWeapon = transform.childCount - 1;
             }
-            //oposite of the above
-            if (Input.mouseScrollDelta.y < 0f && GetComponentInParent<Player>().IsPlayerControlled()) {
-                if (selectedWeapon <= 0) {
-                    selectedWeapon = transform.childCount - 1;
-                }
-                else {
-                    selectedWeapon--;
-                }
+            else
+            {
+                selectedWeapon--;
             }
         }
 

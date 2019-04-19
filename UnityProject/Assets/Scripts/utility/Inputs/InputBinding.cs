@@ -14,7 +14,6 @@ public class InputBinding {
     public enum AXIS {
         MOUSE_HORIZONTAL,
         MOUSE_VERTICAL,
-        MOUSE_WHEEL,
         XBOX_DPAD_HORIZONTAL,
         XBOX_DPAD_VERTICAL,
         XBOX_LEFT_STICK_HORIZONTAL,
@@ -71,9 +70,6 @@ public class InputBinding {
             case(AXIS.MOUSE_VERTICAL):
                 currentAxis = "MOUSE_VERTICAL";
                 break;
-            case (AXIS.MOUSE_WHEEL):
-                currentAxis = "MOUSE_WHEEL";
-                break;
             case(AXIS.XBOX_DPAD_HORIZONTAL):
                 currentAxis = "XBOX_DPAD_HORIZONTAL";
                 break;
@@ -115,7 +111,7 @@ public class InputBinding {
                 return Input.GetKey(positive) ||
                 Input.GetKey(altPositive);
             }
-            return (Input.GetAxis(currentAxis) > 0.0f) || 
+            return (Input.GetAxis(currentAxis) > 0) || 
                 Input.GetKey(positive) ||
                 Input.GetKey(altPositive);
         } catch(ArgumentOutOfRangeException e) {
@@ -143,15 +139,6 @@ public class InputBinding {
             return false;
         }
     }
-
-    //@returns the bindings positive key.
-    public KeyCode GetPositiveKey() => positive;
-    //@returns the bindings alt positive key.
-    public KeyCode GetAltPositiveKey() => altPositive;
-    //@reutns the bindings negative key.
-    public KeyCode GetNegativeKey() => negative;
-    //@returns the bindings alt negative key.
-    public KeyCode GetAltNegativeKey() => altNegative;
 
     /**
      * @returns The state of this input in float format.
