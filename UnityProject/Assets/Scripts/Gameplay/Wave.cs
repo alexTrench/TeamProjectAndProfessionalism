@@ -6,12 +6,12 @@ using UnityEngine;
  * @brief   Manages a wave.
  * @author  Andrew Alford
  * @date    10/04/19
- * @version 1.1 - 11/04/19
+ * @version 1.2 - 19/04/19
  */
 public class Wave
 {
     //[totalWaves] How many waves have occurred so far.
-    public static int WAVE_ID = 0;
+    private static int WAVE_ID = 0;
 
     //[waveNo] The wave that is currently in session.
     private readonly int waveNo;
@@ -47,19 +47,27 @@ public class Wave
     /**
      * @brief Constructor for a Wave.
      */
-    public Wave() {
-        //Update the wave number.
-        waveNo = ++WAVE_ID;
+    public Wave(int jump = 0) {
 
-        //Calculate the number of enemies to spawn in this wave.
-        totalEnemies = (int)(waveNo * (BASE_ENEMIES / DIMINISH_RETURNS));
-        //Clamp the number of enemies to help with the games performance.
-        if(totalEnemies > MAX_ENEMIES) {
-            totalEnemies = MAX_ENEMIES;
-        }
+        waveNo = jump + WAVE_ID++;
+
+        CalculateNumEnemies();
 
         //Reset the number of enemies remaining.
         enemiesRemaining = totalEnemies;
+    }
+
+    /**
+     * @brief Calculates how many enemies will be 
+     *        spawned in the wave.
+     */
+    private void CalculateNumEnemies() {
+        //Calculate the number of enemies to spawn in this wave.
+        totalEnemies = (int)(waveNo * (BASE_ENEMIES / DIMINISH_RETURNS));
+        //Clamp the number of enemies to help with the games performance.
+        if (totalEnemies > MAX_ENEMIES) {
+            totalEnemies = MAX_ENEMIES;
+        }
     }
 
     /**
@@ -73,9 +81,13 @@ public class Wave
 
         Debug.Log("Wave: " + GetWaveID() + "\tEnemies: " + totalEnemies);
 
-        for(int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) {
+        float waveModifer = (waveNo / DIMINISH_RETURNS);
+        if(waveModifer > 5.0f) { waveModifer = 5.0f; }
+        Debug.Log("modifer:\t" + waveModifer);
+
+        for (int i = 0; (i < totalEnemies) && (i < MAX_ENEMIES); i++) {
             if(enemyManager != null && enemyManager.isActiveAndEnabled) {
-                enemyManager.Spawn();
+                enemyManager.Spawn(waveModifer);
                 yield return new WaitForSeconds(spawnInterval);
             }
         }
@@ -110,4 +122,7 @@ public class Wave
 
     //@returns 'true' if the spawning period is currently in progress.
     public bool IsSpawningPeriodInProgress() => spawningPeriodInProgress;
+
+    //@brief Resets the wave ID.
+    public static void Reset() => WAVE_ID = 0;
 }

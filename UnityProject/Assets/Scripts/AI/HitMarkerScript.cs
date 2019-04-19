@@ -3,13 +3,14 @@
 public class HitMarkerScript : MonoBehaviour
 {
     private CapsuleCollider m_capsuleCollider;
-    private int m_attackDamage;
+    private int m_markerAttackDamage;
 
     // Start is called before the first frame update
     void Start()
     {
         m_capsuleCollider = GetComponent<CapsuleCollider>();
-        m_attackDamage = GetComponentInParent<ZombieAttack>().m_attackDamage / 2;
+        DisableMarker();
+        m_markerAttackDamage = GetComponentInParent<ZombieAttack>().m_attackDamage;
     }
     
     public void EnableMarker()
@@ -29,6 +30,6 @@ public class HitMarkerScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
-            other.GetComponent<Player>().TakeDamage(m_attackDamage);
+            other.GetComponent<Player>().TakeDamage(m_markerAttackDamage);
     }
 }

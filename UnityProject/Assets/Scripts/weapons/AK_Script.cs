@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AK_Script : MonoBehaviour
@@ -67,12 +66,7 @@ public class AK_Script : MonoBehaviour
                 }
                 muzzleFlash.Play();
                 //creates a clone of the bullet
-                GameObject bullet = Instantiate(database.weapons[id].bulleType, gameObject.transform);
-
-                //tells the bullets collision to ignore collision with itself 
-                //and the charactor to which the spawn point is attached
-                Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
-                    bulletSpawn.parent.GetComponent<Collider>());
+                GameObject bullet = Instantiate(database.weapons[id].bulleType);
 
                 //spawns at the bullet spawn point
                 bullet.transform.position = bulletSpawn.position;

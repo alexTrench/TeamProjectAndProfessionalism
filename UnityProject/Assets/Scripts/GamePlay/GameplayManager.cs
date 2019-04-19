@@ -16,6 +16,9 @@ public class GameplayManager : MonoBehaviour
     //[enemyManager] Manages all the enemies in the game.
     [SerializeField] ZombieManagerScript enemyManager = null;
 
+    //[characterManager] Manages all of the characters in the game.
+    [SerializeField] CharacterManagerScript characterManager = null;
+
     //[COOLDOWN] The amount of time (in seconds) 
     //allocated between waves.
     public const float COOLDOWN = 15.0f;
@@ -61,9 +64,7 @@ public class GameplayManager : MonoBehaviour
             }
         }
         //Cooldown in session.
-        else if(!WaveInProgress() && cooldownInProgress) {
-
-        }
+        else if(!WaveInProgress() && cooldownInProgress) { }
         //Error
         else if(WaveInProgress() && cooldownInProgress) {
             Debug.LogError("Unrecognised gameplay state");
@@ -92,6 +93,8 @@ public class GameplayManager : MonoBehaviour
      */
     private IEnumerator CooldownPeriod() {
         cooldownInProgress = true;
+        //Repawn the most the player who most recently died.
+        characterManager.RevivePlayer();
         yield return new WaitForSeconds(COOLDOWN);
         cooldownInProgress = false;
     }
@@ -114,5 +117,13 @@ public class GameplayManager : MonoBehaviour
         if (WaveInProgress()) {
             currentWave.DecrementEnemiesRemaining();
         }
+    }
+
+    /**
+     * @brief End the game.
+     */
+    public void EndGame() {
+        Wave.Reset();
+        GM = null;
     }
 }

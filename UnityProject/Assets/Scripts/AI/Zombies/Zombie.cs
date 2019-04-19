@@ -8,10 +8,11 @@ public class Zombie : BaseCharacter
     private List<Player>           m_playerCharacters;
     private Transform              m_targetTransform;
     private NavMeshAgent           m_nav;
+    private CapsuleCollider        m_capsuleCollider;
     private float                  m_timer;
 
-    public float m_secsBeforePlayerSearch = 5.0f;
-    public float m_secsBeforeDestroy      = 10.0f;
+    [SerializeField] private float m_secsBeforePlayerSearch = 5.0f;
+    [SerializeField] private float m_secsBeforeDestroy      = 10.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,9 @@ public class Zombie : BaseCharacter
         // Init nav agent
         m_nav = GetComponent<NavMeshAgent>();
 
+        // Init capsule collider
+        m_capsuleCollider = GetComponent<CapsuleCollider>();
+
         // Init timer
         m_timer = m_secsBeforePlayerSearch;
     }
@@ -37,6 +41,7 @@ public class Zombie : BaseCharacter
         if (m_isDead)
         {
             m_nav.enabled = false;
+            m_capsuleCollider.enabled = false;
             Destroy(gameObject, m_secsBeforeDestroy);
             return;
         }

@@ -10,6 +10,7 @@ public class ZombieAnimationScript : MonoBehaviour
     
     private readonly int m_isDeadHash = Animator.StringToHash("IsDead");
     private readonly int m_speedHash = Animator.StringToHash("Speed");
+    private float speedModifier = 1;
     
     // Start is called before the first frame update
     void Start()
@@ -43,9 +44,16 @@ public class ZombieAnimationScript : MonoBehaviour
         float currentSpeed = m_nav.velocity.magnitude;
         m_animator.SetFloat(m_speedHash, currentSpeed);
 
-        if (Input.GetKeyDown(KeyCode.N))
-            m_nav.speed = 0.5f;
-        else if (Input.GetKeyDown(KeyCode.M))
-            m_nav.speed = 2.0f;
+        if (m_nav.speed != speedModifier) {
+            m_nav.speed = speedModifier;
+        }
+    }
+
+    /**
+     * @brief Applys a modifier to the zombie's speed.
+     * @param speed - The modifier to be applied.
+     */
+    public void ApplySpeedModifier(float speed) {
+            speedModifier = speed;
     }
 }

@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class M4_Script : MonoBehaviour
@@ -66,38 +65,44 @@ public class M4_Script : MonoBehaviour
 
     public void Fire()
     {
-
-        if (CurrentAmmo > 0)
-        {
-            if(fireSound) {
-                fireSound.Play();
-            }
-
-            muzzleFlash.Play();
-            //creates a clone of the bullet
-            GameObject bullet = Instantiate(database.weapons[id].bulleType);
-
-            //tells the bullets collision to ignore collision with itself 
-            //and the charactor to which the spawn point is attached
-            Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
-                bulletSpawn.parent.GetComponent<Collider>());
-
-            //spawns at the bullet spawn point
-            bullet.transform.position = bulletSpawn.position;
-            //transforms the roatation into angles, into 360 degrees
-            Vector3 rotation = bullet.transform.rotation.eulerAngles;
-            bullet.transform.rotation = Quaternion.Euler(rotation.x, transform.eulerAngles.y, rotation.z);
-
-            //adds the speed to the rigid body, creating movement
-            bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * database.weapons[id].bulletSpeed, ForceMode.Impulse);
-            CurrentAmmo--;
-
-        }
-        else
-        {
-            if (IsReloading == false)
+        if(gameObject != null && gameObject.activeInHierarchy) {
+            if (CurrentAmmo > 0)
             {
-                StartCoroutine(Reload());
+                if(fireSound) {
+                    fireSound.Play();
+                }
+
+                muzzleFlash.Play();
+                //creates a clone of the bullet
+                GameObject bullet = Instantiate(
+                        database.weapons[id].bulleType,
+                        bulletSpawn.position,
+                        bulletSpawn.rotation
+                       );
+                //tells the bullets collision to ignore collision with itself 
+                //and the charactor to which the spawn point is attached
+                if(bullet.GetComponent<Collider>()) {
+                    Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
+                        bulletSpawn.parent.GetComponent<Collider>());
+                }
+
+                //spawns at the bullet spawn point
+                bullet.transform.position = bulletSpawn.position;
+                //transforms the roatation into angles, into 360 degrees
+                Vector3 rotation = bullet.transform.rotation.eulerAngles;
+                bullet.transform.rotation = Quaternion.Euler(rotation.x, transform.eulerAngles.y, rotation.z);
+
+                //adds the speed to the rigid body, creating movement
+                bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * database.weapons[id].bulletSpeed, ForceMode.Impulse);
+                CurrentAmmo--;
+
+            }
+            else
+            {
+                if (IsReloading == false)
+                {
+                    StartCoroutine(Reload());
+                }
             }
         }
     }
