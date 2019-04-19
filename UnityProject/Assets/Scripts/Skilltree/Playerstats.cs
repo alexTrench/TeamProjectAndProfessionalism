@@ -52,7 +52,7 @@ public class Playerstats : MonoBehaviour
     public int ReloadSpeedLevel { get; set; }
 
     public Text ReloadSpeedStatsDisplay;     // UI text for Max Energy Level Stats ??? <<<
-    public int CurrentReloadSpeedStats { get; set; }
+    public float CurrentReloadSpeedStats { get; set; }
 
     // ----------------------------------MoveSpeed-------------------------------------- //
 
@@ -74,7 +74,7 @@ public class Playerstats : MonoBehaviour
     public int SkillCDRLevel { get; set; }
 
     public Text SkillCDRStatsDisplay;     // UI text for Skill CDR Stats ??? <<<
-    public int CurrentSkillCDRStats { get; set; }
+    public float CurrentSkillCDRStats { get; set; }
 
     // ----------------------------------Fire rate-------------------------------------- //
 
@@ -85,7 +85,7 @@ public class Playerstats : MonoBehaviour
     public int FireRateLevel { get; set; }
 
     public Text FireRateStatsDisplay;     // UI text for Skill CDR Stats ??? <<<
-    public int CurrentFireRateStats { get; set; }
+    public float CurrentFireRateStats { get; set; }
 
     // ----------------------------------Grenade Damage Area-------------------------------------- //
 
@@ -107,7 +107,7 @@ public class Playerstats : MonoBehaviour
     public int GunDamageLevel { get; set; }
 
     public Text GunDamageStatsDisplay;     // UI text for Skill Grenade Damage Area Stats ??? <<<
-    public int CurrentGunDamageStats { get; set; }
+    public float CurrentGunDamageStats { get; set; }
 
     // ----------------------------------Grenade Damage Increase-------------------------------------- //
 
@@ -120,34 +120,13 @@ public class Playerstats : MonoBehaviour
     public Text GrenadeDamageStatsDisplay;     // UI text for Skill Grenade Damage Area Stats ??? <<<
     public float CurrentGrenadeDamageStats { get; set; }
 
-    // ----------------------------------Speed Boost-------------------------------------- //
 
-    public Button SpeedBoostIncrease;    // + button for Speed Boost
-    public Button SpeedBoostDecrease;    // - button for Speed Boost 
 
-    public Text SpeedBoostLevelDisplay;              // UI text for Current skill Speed Boost Level ' 0 '/10
-    public int SpeedBoostLevel { get; set; }
 
-    public Text SpeedBoostStatsDisplay;     // UI text for Skill Speed Boost Stats ??? <<<
-    public int CurrentSpeedBoostStats { get; set; } 
-    
-    // ----------------------------------Health Regen-------------------------------------- //
 
-    public Button HealthRegenIncrease;    // + button for Health Regen
-    public Button HealthRegenDecrease;    // - button for Health Regen 
 
-    public Text HealthRegenLevelDisplay;              // UI text for Current Health Regen Level ' 0 '/10
-    public int HealthRegenLevel { get; set; }
-
-    public Text HealthRegenStatsDisplay;     // UI text for Skill Health Regen Stats ??? <<<
-    public int CurrentHealthRegenStats { get; set; }
-
- 
     public Text MaxHp;
     public Text CurrentHp;
-
-
-
     public Text MaxExpText;
     public Text CurrentExpText;
     public Text LevelText;
@@ -156,10 +135,6 @@ public class Playerstats : MonoBehaviour
 
     public int MaxHealth { get; set; }
     public int CurrentHealth { get; set; }
-
-    public int MaxEnergy { get; set; }
-    public int CurrentEnergy { get; set; }
-
     public int MaxExp { get; set; }
     public int CurrentExp { get; set; }
 
@@ -174,16 +149,12 @@ public class Playerstats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Button MaxHpLevelIncrease = GetComponent<Button>();
+        // Button MaxHpLevelDecrease = GetComponent<Button>();
+
+
+        Skillpoint = 100;
         Level = 1;
-
-        MaxHealth = 100;
-        CurrentHealth = MaxHealth;
-
-        MaxEnergy = 100;
-        CurrentHealth = MaxEnergy;
-
-        Skillpoint = 200;
-
 
         // -----------------------------MaxHp------------------------------//
         CurrentMaxHpStats = 0;
@@ -225,15 +196,8 @@ public class Playerstats : MonoBehaviour
         GrenadeDamageLevel = 0;
         CurrentGrenadeDamageStats = 0;
 
-        // ----------------------------------Speed Boost Increase-------------------------------------- //
-        SpeedBoostLevel = 0;
-        CurrentSpeedBoostStats = 0;
-
-        // ----------------------------------Health Regen Increase-------------------------------------- //
-        HealthRegenLevel = 0;
-        CurrentHealthRegenStats = 0;
-
-
+        // MaxHealth = 100;
+        //  CurrentHealth = MaxHealth;
         // healthbar.value = CalculateHealth();
 
 
@@ -267,7 +231,7 @@ public class Playerstats : MonoBehaviour
 
         // ----------------------------------ReloadSpeed-------------------------------------- // 这里需要确定 怎么表达 属性
         ReloadSpeedLevelDisplay.text = ReloadSpeedLevel.ToString() + "/10";
-        ReloadSpeedStatsDisplay.text = "-" + CurrentReloadSpeedStats.ToString("0.00") + "%";
+        ReloadSpeedStatsDisplay.text = "-" + CurrentReloadSpeedStats.ToString() + "s";
 
         // ----------------------------------MoveSpeed-------------------------------------- //  这里需要确定 怎么表达 属性
         MoveSpeedLevelDisplay.text = MoveSpeedLevel.ToString() + "/10";
@@ -275,32 +239,25 @@ public class Playerstats : MonoBehaviour
 
         // ----------------------------------Skill CDR-------------------------------------- // 这里需要确定 怎么表达 属性
         SkillCDRLevelDisplay.text = SkillCDRLevel.ToString() + "/10";
-        SkillCDRStatsDisplay.text = "+" + CurrentSkillCDRStats.ToString("0.00") + "%";
+        SkillCDRStatsDisplay.text = "-" + CurrentSkillCDRStats.ToString() + "s";
 
         // ----------------------------------Fire rate-------------------------------------- //  这里需要确定 怎么表达 属性
         FireRateLevelDisplay.text = FireRateLevel.ToString() + "/10";
-        FireRateStatsDisplay.text = "+" + CurrentFireRateStats.ToString() + "%";
+        FireRateStatsDisplay.text = "+" + CurrentFireRateStats.ToString();
 
         // ----------------------------------Grenade Damage Area-------------------------------------- //  这里需要确定 怎么表达 属性
         GrenadeDamageAreaLevelDisplay.text = GrenadeDamageAreaLevel.ToString() + "/10";
-        GrenadeDamageAreaStatsDisplay.text = "+" + CurrentGrenadeDamageAreaStats.ToString() + "%";
+        GrenadeDamageAreaStatsDisplay.text = "+" + CurrentGrenadeDamageAreaStats.ToString();
 
         // ----------------------------------Gun Damage Increase-------------------------------------- // 这里需要确定 怎么表达 属性
         GunDamageLevelDisplay.text = GunDamageLevel.ToString() + "/10";
-        GunDamageStatsDisplay.text = "+" + CurrentGunDamageStats.ToString() + "%";
+        GunDamageStatsDisplay.text = "+" + CurrentGunDamageStats.ToString();
 
         // ----------------------------------Grenade Damage Increase-------------------------------------- // 这里需要确定 怎么表达 属性
         GrenadeDamageLevelDisplay.text = GrenadeDamageLevel.ToString() + "/10";
-        GrenadeDamageStatsDisplay.text = "+" + CurrentGrenadeDamageStats.ToString() + "%";
+        GrenadeDamageStatsDisplay.text = "+" + CurrentGrenadeDamageStats.ToString();
 
-        // ----------------------------------Speed Boost Increase-------------------------------------- //
-        SpeedBoostLevelDisplay.text = SpeedBoostLevel.ToString() + "/10";
-        SpeedBoostStatsDisplay.text = CurrentSpeedBoostStats.ToString() + "%";
-       
-        
-        // ----------------------------------Health Regen Increase-------------------------------------- //
-        HealthRegenLevelDisplay.text = HealthRegenLevel.ToString() + "/10";
-        HealthRegenStatsDisplay.text = CurrentHealthRegenStats.ToString();
+
 
 
 
@@ -322,30 +279,37 @@ public class Playerstats : MonoBehaviour
                        TakeDamage(10);
                    }
                }
-               if (Input.GetKeyDown(KeyCode.B)) -------------------->>>  hp
+               if (Input.GetKeyDown(KeyCode.B))
                {
                    addmaxhp(10);
                }
-               if (Input.GetKeyDown(KeyCode.C))-------------------->>>  exp
+               if (Input.GetKeyDown(KeyCode.C))
                    Addexp(10);
 
          */
 
 
     }
-
+    /*
+   void IncreaseMaxHpLevelonClick()
+   {
+       IncreaseMaxHpLevel(1);
+   }
+   void DecreaseMaxHpLevelonClick()
+   {
+       DecreaseMaxHpLevel(1);
+   }
+ */
     // -----------------------------MaxHp----------------------------- //
     public void IncreaseMaxHpLevel(int amount)
     {
-        if (Skillpoint > 0)
+        if (Skillpoint >0)
         {
             if (MaxHpLevel < 30)
             {
                 MaxHpLevel += amount;
                 CurrentMaxHpStats += 10;
                 Skillpoint -= 1;
-
-                //player.setmaxhp(Player.getmaxhp() + 10); 
             }
         }
     }
@@ -429,7 +393,7 @@ public class Playerstats : MonoBehaviour
             if (ReloadSpeedLevel < 10)
             {
                 ReloadSpeedLevel += amount;
-                CurrentReloadSpeedStats += 1;
+                CurrentReloadSpeedStats += 0.1f;
                 Skillpoint -= 1;
             }
         }
@@ -442,7 +406,7 @@ public class Playerstats : MonoBehaviour
             if (ReloadSpeedLevel > 0)
             {
                 ReloadSpeedLevel -= amount;
-                CurrentReloadSpeedStats -= 1;
+                CurrentReloadSpeedStats -= 0.1f;
                 Skillpoint += 1;
             }
         }
@@ -458,7 +422,7 @@ public class Playerstats : MonoBehaviour
             if (MoveSpeedLevel < 10)
             {
                 MoveSpeedLevel += amount;
-                CurrentMoveSpeedStats += 2;
+                CurrentMoveSpeedStats += 10;
                 Skillpoint -= 1;
             }
         }
@@ -471,7 +435,7 @@ public class Playerstats : MonoBehaviour
             if (MoveSpeedLevel > 0)
             {
                 MoveSpeedLevel -= amount;
-                CurrentMoveSpeedStats -= 2;
+                CurrentMoveSpeedStats -= 10;
                 Skillpoint += 1;
             }
         }
@@ -487,7 +451,7 @@ public class Playerstats : MonoBehaviour
             if (SkillCDRLevel < 10)
             {
                 SkillCDRLevel += amount;
-                CurrentSkillCDRStats += 1;
+                CurrentSkillCDRStats += 0.1f;
                 Skillpoint -= 1;
             }
         }
@@ -499,7 +463,7 @@ public class Playerstats : MonoBehaviour
             if (SkillCDRLevel > 0)
             {
                 SkillCDRLevel -= amount;
-                CurrentSkillCDRStats -= 1;
+                CurrentSkillCDRStats -= 0.1f;
                 Skillpoint += 1;
             }
         }
@@ -515,8 +479,8 @@ public class Playerstats : MonoBehaviour
             if (FireRateLevel < 10)
             {
                 FireRateLevel += amount;
-                CurrentFireRateStats += 2;
-                Skillpoint -= 2;
+                CurrentFireRateStats += 10;
+                Skillpoint -= 1;
             }
         }
     }
@@ -527,8 +491,8 @@ public class Playerstats : MonoBehaviour
             if (FireRateLevel > 0)
             {
                 FireRateLevel -= amount;
-                CurrentFireRateStats -= 2;
-                Skillpoint += 2;
+                CurrentFireRateStats -= 10;
+                Skillpoint += 1;
             }
         }
     }
@@ -542,7 +506,7 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageAreaLevel < 10)
             {
                 GrenadeDamageAreaLevel += amount;
-                CurrentGrenadeDamageAreaStats += 1.5f;
+                CurrentGrenadeDamageAreaStats += 10;
                 Skillpoint -= 3;
             }
         }
@@ -555,7 +519,7 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageAreaLevel > 0)
             {
                 GrenadeDamageAreaLevel -= amount;
-                CurrentGrenadeDamageAreaStats -= 1.5f;
+                CurrentGrenadeDamageAreaStats -= 10;
                 Skillpoint += 3;
             }
         }
@@ -570,7 +534,7 @@ public class Playerstats : MonoBehaviour
             if (GunDamageLevel < 10)
             {
                 GunDamageLevel += amount;
-                CurrentGunDamageStats += 2;
+                CurrentGunDamageStats += 10;
                 Skillpoint -= 3;
             }
         }
@@ -582,7 +546,7 @@ public class Playerstats : MonoBehaviour
             if (GunDamageLevel > 0)
             {
                 GunDamageLevel -= amount;
-                CurrentGunDamageStats -= 2;
+                CurrentGunDamageStats -= 10;
                 Skillpoint += 3;
             }
         }
@@ -597,7 +561,7 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageLevel < 10)
             {
                 GrenadeDamageLevel += amount;
-                CurrentGrenadeDamageStats += 1.5f;
+                CurrentGrenadeDamageStats += 10;
                 Skillpoint -= 3;
             }
         }
@@ -609,80 +573,17 @@ public class Playerstats : MonoBehaviour
             if (GrenadeDamageLevel > 0)
             {
                 GrenadeDamageLevel -= amount;
-                CurrentGrenadeDamageStats -= 1.5f;
+                CurrentGrenadeDamageStats -= 10;
                 Skillpoint += 3;
             }
         }
     }
     // ----------------------------------Grenade Damage Increase-------------------------------------- //
 
-    
-
-
-    // ----------------------------------Speed Boost Increase-------------------------------------- //
-
-    public void IncreaseSpeedBoostLevel(int amount)
-    {
-        if (Skillpoint > 0)
-        {
-            if (SpeedBoostLevel < 10)
-            {
-                SpeedBoostLevel += amount;
-                CurrentSpeedBoostStats += 10;
-                Skillpoint -= 2;
-            }
-        }
-    }
-    public void DecreaseSpeedBoostLevel(int amount)
-    {
-        if (Skillpoint > 0)
-        {
-            if (SpeedBoostLevel > 0)
-            {
-                SpeedBoostLevel -= amount;
-                CurrentSpeedBoostStats -= 10;
-                Skillpoint += 2;
-            }
-        }
-    }
-    // ----------------------------------Speed Boost Increase-------------------------------------- //
-    
-    // ----------------------------------Health Regen Increase-------------------------------------- //
-
-  
-    public void IncreaseHealthRegenLevel(int amount)
-    {
-        if (Skillpoint > 0)
-        {
-            if (HealthRegenLevel < 10)
-            {
-                HealthRegenLevel += amount;
-                CurrentHealthRegenStats += 10;
-                Skillpoint -= 2;
-            }
-        }
-    }
-    public void DecreaseHealthRegenLevel(int amount)
-    {
-        if (Skillpoint > 0)
-        {
-            if (HealthRegenLevel > 0)
-            {
-                HealthRegenLevel -= amount;
-                CurrentHealthRegenStats -= 10;
-                Skillpoint += 2;
-            }
-        }
-    }
-
-
-
-
-    // ----------------------------------Health Regen Increase-------------------------------------- //
 
     public void ResetAllskill()
     {
-        Skillpoint = 100;
+        Skillpoint = 100;   
 
         // -----------------------------MaxHp------------------------------//
         CurrentMaxHpStats = 0;
@@ -723,52 +624,55 @@ public class Playerstats : MonoBehaviour
         // ----------------------------------Grenade Damage Increase-------------------------------------- //
         GrenadeDamageLevel = 0;
         CurrentGrenadeDamageStats = 0;
-
-        // ----------------------------------Speed Boost Increase-------------------------------------- //
-        SpeedBoostLevel = 0;
-        CurrentSpeedBoostStats = 0;
-
-        // ----------------------------------Health Regen Increase-------------------------------------- //
-        HealthRegenLevel = 0;
-        CurrentHealthRegenStats = 0;
     }
 
 
-
-
-
-
-
     /*
-     * zombie 
-     * 
-     * void TakeDamage(int amount)
+                void addmaxhp(int amount)
+                {
+                    MaxHealth += amount;
+                }
+
+                void TakeDamage(int amount)
                 {
                     CurrentHealth -= amount;
+
+                    healthbar.value = CalculateHealth();
+                    Debug.Log(CurrentHealth);
                     if (CurrentHealth <= 0)
-                    Die(10);
+                        Die();
                 }
-     * void Die(int amountexp)
+
+                float CalculateHealth()
                 {
-     *               player.CurrentExp += amountexp;
-     *               if (CurrentExp == 100)
-                        LevelUp();
+                    return CurrentHealth / MaxHealth;
+                }
+
+
+                void Die()
+                {
+                    CurrentHealth = 0;
+                    Debug.Log("You are dead");
 
                 }
-     * 
-     * 
-               void LevelUp()
+                void Addexp(int amountexp)
+                {
+                    CurrentExp += amountexp;
+                    expbar.value = CalculateExp();
+                    if (CurrentExp == 100)
+                        LevelUp();
+                }
+                int CalculateExp()
+                {
+                    return CurrentExp / MaxExp;
+                }
+                void LevelUp()
                 {
                     Level += 1;
                     CurrentExp = 0;
                     MaxExp += 10;
                     CurrentHealth = MaxHealth;
-                    CurrentEnergy = MaxEnergy;
-                    
-                }
-     * void addmaxhp(int amount)
-                {
-                    MaxHealth += amount;
+                    Debug.Log("You Leveled Up");
                 }
                  */
 }

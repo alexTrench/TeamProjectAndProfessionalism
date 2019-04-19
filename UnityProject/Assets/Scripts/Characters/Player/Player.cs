@@ -18,19 +18,16 @@ public class Player : BaseCharacter
 
     [SerializeField] private float m_energy    = 100.0f;
     [SerializeField] private float m_maxEnergy = 100.0f;
-
-    // AI fields
-    private readonly float m_maxFiringRangeDistance = 15.0f; // Enemy must be within this distance
-    private bool           m_shootAtZombie          = false;
-    
-    private readonly float m_fireRateMultiplier = 35.0f; // Range (fire rate - fire rate * multiplier)
-
     [SerializeField] private readonly float m_distanceThreshold  = 5.0f;
     [SerializeField] private readonly float m_navMeshRadius      = 3.0f;
-    [SerializeField] private readonly float m_targetCircleRadius = 0.1f;
-    
-    private float m_fireDelay  = 1.0f;
-    private float m_delayTimer = 0.0f;
+
+    // AI specific fields
+    private readonly float m_maxFiringRangeDistance = 11.0f; // Enemy must be within this distance
+    private bool           m_shootAtZombie          = false;
+    private readonly float m_fireRateMultiplier     = 35.0f; // Range (fire rate - fire rate * multiplier)
+    private float          m_fireDelay              = 1.0f;
+    private float          m_delayTimer             = 0.0f;
+    private bool           m_isDestinationSet       = false;
 
     // Start is called before the first frame update
     void Start()
@@ -79,9 +76,15 @@ public class Player : BaseCharacter
         {
             // If the player character is too far away from user-controlled 
             // player character, get closer 
-            if (GetDistanceToCharacter(m_characterManager.GetCurrentPlayer()) > m_distanceThreshold)
-               m_nav.SetDestination(GetRandomNavMeshLocation(m_navMeshRadius, m_characterManager.GetCurrentPlayer().transform.position));
-            
+            float distanceToPlayer = GetDistanceToCharacter(m_characterManager.GetCurrentPlayer());
+            if (distanceToPlayer > m_distanceThreshold && !m_isDestinationSet)
+            {
+                m_nav.SetDestination(GetRandomNavMeshLocation(m_navMeshRadius, m_characterManager.GetCurrentPlayer().transform.position));
+                m_isDestinationSet = true;
+            }
+
+            if (IsNavAgentAtDest()) m_isDestinationSet = false;
+
             // Look at nearest zombie if within range
             if (m_zombieManager.GetNumOfZombies() > 0 && GetDistanceToCharacter(GetNearestZombie()) <= m_maxFiringRangeDistance)
             {
@@ -126,6 +129,10 @@ public class Player : BaseCharacter
                         case 4:
                             HeavyRifleScript heavy = GetComponentInChildren<HeavyRifleScript>();
                             m_isReloading = heavy.GetIsReloading();
+                            break;
+                        case 6:
+                            SciFiRifleScript rifle = GetComponentInChildren<SciFiRifleScript>();
+                            m_isReloading = rifle.GetIsReloading();
                             break;
                         default:
                             break;
@@ -188,9 +195,9 @@ public class Player : BaseCharacter
     // Returns the distance between this player and the given character
     private float GetDistanceToCharacter(BaseCharacter character)
     {
-        return (this != character) ? (this.transform.position - character.transform.position).magnitude : 0.0f;
+        return (this != character) ? (transform.position - character.transform.position).magnitude : 0.0f;
     }
-
+    
     // Returns a random position within a sphere of the given radius and centre point
     private Vector3 GetRandomNavMeshLocation(float sphereRadius, in Vector3 sphereCentre)
     {
@@ -212,16 +219,7 @@ public class Player : BaseCharacter
             m_delayTimer = 0.0f;
         else
             return;
-
-        // Get target position
-        Vector3 targetPosition = GetRandomNavMeshLocation(m_targetCircleRadius, m_lookAtTransform.position);
-        //GameObject obj = new GameObject();
-        //obj.transform.SetPositionAndRotation( m_lookAtTransform.position, m_lookAtTransform.rotation);
-        //obj.transform.position = targetPosition - m_lookAtTransform.position;
-
-        //m_lookAtTransform = obj.transform;
-        //transform.LookAt(m_lookAtTransform);
-
+        
         // Fire equipped weapon
         for (int i = 0; i < m_inventory.slots.Length; i++)
         {
@@ -257,6 +255,11 @@ public class Player : BaseCharacter
                         HeavyRifleScript heavy = GetComponentInChildren<HeavyRifleScript>();
                         heavy.Fire();
                         m_isReloading = heavy.GetIsReloading();
+                        break;
+                    case 6:
+                        SciFiRifleScript rifle = GetComponentInChildren<SciFiRifleScript>();
+                        rifle.Fire();
+                        m_isReloading = rifle.GetIsReloading();
                         break;
                     default:
                         break;
@@ -354,5 +357,22 @@ public class Player : BaseCharacter
         if (movementSpeed < 0.0f) movementSpeed = 0.0f;
         m_playerController.SetMovementSpeed(movementSpeed);
         m_nav.speed = movementSpeed;
+    }
+
+    // Returns true if the nav agent has reached its destination
+    private bool IsNavAgentAtDest()
+    {
+        if (!m_nav.pathPending)
+        {
+            if (m_nav.remainingDistance <= m_nav.stoppingDistance)
+            {
+                if (!m_nav.hasPath || m_nav.velocity.sqrMagnitude == 0f)
+                {
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 }

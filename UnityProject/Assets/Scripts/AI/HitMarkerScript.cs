@@ -10,7 +10,7 @@ public class HitMarkerScript : MonoBehaviour
     {
         m_capsuleCollider = GetComponent<CapsuleCollider>();
         DisableMarker();
-        m_markerAttackDamage = GetComponentInParent<ZombieAttack>().m_attackDamage / 2;
+        m_markerAttackDamage = GetComponentInParent<ZombieAttack>().m_attackDamage;
     }
     
     public void EnableMarker()

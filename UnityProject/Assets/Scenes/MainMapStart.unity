@@ -7780,7 +7780,7 @@ RectTransform:
   - {fileID: 4940764552093985180}
   - {fileID: 1016923371648277021}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -12784,7 +12784,7 @@ PrefabInstance:
     - target: {fileID: 7070417344435331735, guid: 8e5ef13128537604eb5f240183c83491,
         type: 3}
       propertyPath: m_Acceleration
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e5ef13128537604eb5f240183c83491, type: 3}
@@ -15641,7 +15641,7 @@ PrefabInstance:
     - target: {fileID: 8262657337817558953, guid: e3e9547d9e46ea44ca04f5bf66802568,
         type: 3}
       propertyPath: m_Acceleration
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e9547d9e46ea44ca04f5bf66802568, type: 3}
@@ -34503,7 +34503,11 @@ MonoBehaviour:
   - {fileID: 705274565}
   - {fileID: 158000344}
   - {fileID: 543145227}
-  enemy_template: {fileID: 5900339710907024119, guid: 65d85da0cf3ec1949b6b73bd3e6c4b39,
+  zombie_template_war: {fileID: 5900339710907024119, guid: 65d85da0cf3ec1949b6b73bd3e6c4b39,
+    type: 3}
+  zombie_template_derrick: {fileID: 5272850905939481936, guid: a028a6aed013cce4dafe7a0460feb92a,
+    type: 3}
+  zombie_template_girl: {fileID: 6266080106274829013, guid: 94371768417da694f91d69dd376c1ef1,
     type: 3}
 --- !u!1 &583171415
 GameObject:
@@ -54576,7 +54580,7 @@ PrefabInstance:
     - target: {fileID: 7468397952823504349, guid: dc8221bef6966a8458c0ec7ccdac1699,
         type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7468397952823504349, guid: dc8221bef6966a8458c0ec7ccdac1699,
         type: 3}
@@ -87381,7 +87385,7 @@ PrefabInstance:
     - target: {fileID: 4563318730528591057, guid: 1e73e6abbf83a274d8af133a67ff5887,
         type: 3}
       propertyPath: m_Acceleration
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e73e6abbf83a274d8af133a67ff5887, type: 3}
@@ -108777,7 +108781,7 @@ PrefabInstance:
     - target: {fileID: 1464129901331255260, guid: 1492acb3dac29b84d80dce227bda9cf2,
         type: 3}
       propertyPath: m_Acceleration
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1492acb3dac29b84d80dce227bda9cf2, type: 3}
@@ -117126,7 +117130,7 @@ PrefabInstance:
     - target: {fileID: 7753991680662973479, guid: 2e657776cc028084aafd83d28c9109ad,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7753991680662973479, guid: 2e657776cc028084aafd83d28c9109ad,
         type: 3}
