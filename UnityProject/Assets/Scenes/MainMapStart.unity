@@ -93148,6 +93148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyManager: {fileID: 581917001}
+  characterManager: {fileID: 1030215375}
 --- !u!4 &1780791541
 Transform:
   m_ObjectHideFlags: 0
