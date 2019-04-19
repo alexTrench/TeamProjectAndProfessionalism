@@ -81,8 +81,10 @@ public class M4_Script : MonoBehaviour
                        );
                 //tells the bullets collision to ignore collision with itself 
                 //and the charactor to which the spawn point is attached
-                Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
-                    bulletSpawn.parent.GetComponent<Collider>());
+                if(bullet.GetComponent<Collider>()) {
+                    Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
+                        bulletSpawn.parent.GetComponent<Collider>());
+                }
 
                 //spawns at the bullet spawn point
                 bullet.transform.position = bulletSpawn.position;

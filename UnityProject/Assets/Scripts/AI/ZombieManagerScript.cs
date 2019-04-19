@@ -6,7 +6,9 @@ public class ZombieManagerScript : MonoBehaviour
 {
     private List<Zombie> m_zombieCharacters;
     [SerializeField] private Transform[] spawnPoints = null;
-    [SerializeField] private GameObject enemy_template = null;
+    [SerializeField] private GameObject zombie_template_war = null;
+    [SerializeField] private GameObject zombie_template_derrick = null;
+    [SerializeField] private GameObject zombie_template_girl = null;
 
     //[zombiesKilled] Tracks how many zombies have been killed
     //during the gameplay session.
@@ -24,23 +26,54 @@ public class ZombieManagerScript : MonoBehaviour
      */
     public void Spawn(float waveModifier) {
         if(gameObject != null && gameObject.activeInHierarchy) {
-            int spawnIndex = Random.Range(0, spawnPoints.Length);
+            
+            //[zombieType] The type of zombie to be created.
+            GameObject zombieType = null;
 
-            GameObject zombie;
+            string zomType = ""; //temp for debugging.
 
-            zombie = Instantiate(
-                enemy_template, 
-                spawnPoints[spawnIndex].position, 
-                spawnPoints[spawnIndex].rotation,
-                gameObject.transform
-            ) as GameObject;
+            //Work out which type of zombie to create.
+            switch(Random.Range(0, 3)) {
+                case (0):
+                    zomType = "War Zombie";
+                    zombieType = zombie_template_war;
+                    break;
+                case (1):
+                    zomType = "Zombie Girl";
+                    zombieType = zombie_template_girl;
+                    break;
+                case (2):
+                    zomType = "Zombie Derrick";
+                    zombieType = zombie_template_derrick;
+                    break;
+            }
 
-            zombie.SetActive(true);
-            zombie.GetComponent<ZombieAttack>().
-                ApplyAttackDamageModifier(waveModifier);
-            zombie.GetComponent<ZombieAnimationScript>().
-                ApplySpeedModifier(waveModifier);
-            m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
+            //Spawn the zombie.
+            if(zombieType != null) {
+
+                //[spawnPoint] Where to spawn the zombie.
+                int spawnPoint = Random.Range(0, spawnPoints.Length);
+
+                //[zombie] The zombie being created.
+                GameObject zombie = Instantiate(
+                    zombieType,
+                    spawnPoints[spawnPoint].position,
+                    spawnPoints[spawnPoint].rotation,
+                    gameObject.transform
+                ) as GameObject;
+
+                zombie.SetActive(true);
+
+                zombie.GetComponent<ZombieAttack>().
+                    ApplyAttackDamageModifier(waveModifier);
+                zombie.GetComponent<ZombieAnimationScript>().
+                    ApplySpeedModifier(waveModifier);
+
+                m_zombieCharacters.Add(zombie.GetComponent<Zombie>());
+            } else {
+                Debug.LogError("Unable to spawn:\t"+zomType);
+            }
+
         }
     }
 

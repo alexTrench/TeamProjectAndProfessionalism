@@ -41,7 +41,6 @@ GameObject:
   - component: {fileID: 8295357700765683110}
   - component: {fileID: 4859068347436746904}
   - component: {fileID: 8062837471411691025}
-  - component: {fileID: 4609991516186487062}
   - component: {fileID: 839718727217639059}
   - component: {fileID: 762947875082319001}
   - component: {fileID: 2750384277204536739}
@@ -113,19 +112,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &4609991516186487062
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7740790511739563705}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.85978156, y: 0.25513774, z: 0.06359728}
-  m_Center: {x: -0.13222, y: -0.012109373, z: -0.0000000037252903}
 --- !u!114 &839718727217639059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,11 +243,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8295357700765683110}
     m_Modifications:
-    - target: {fileID: 8649388433993897991, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
-        type: 3}
-      propertyPath: m_Name
-      value: MuzzleFlash (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 357015572048086647, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -316,6 +297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8649388433993897991, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
+        type: 3}
+      propertyPath: m_Name
+      value: MuzzleFlash (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce027b94cc02aad4f8e2d88d7d7ada55, type: 3}
