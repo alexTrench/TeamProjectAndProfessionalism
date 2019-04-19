@@ -37,7 +37,7 @@ public class OpenEndGameMenu : MonoBehaviour
                 {
                     // count the dead people
                     numberOfDead++;
-                    Debug.Log("Character " + index + " has died. Number of dead people: " + numberOfDead);
+                    //Debug.Log("Character " + index + " has died. Number of dead people: " + numberOfDead);
                 }
             }
         }

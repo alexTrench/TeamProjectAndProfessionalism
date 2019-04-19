@@ -115,4 +115,12 @@ public class GameplayManager : MonoBehaviour
             currentWave.DecrementEnemiesRemaining();
         }
     }
+
+    /**
+     * @brief End the game.
+     */
+    public void EndGame() {
+        Wave.Reset();
+        GM = null;
+    }
 }
