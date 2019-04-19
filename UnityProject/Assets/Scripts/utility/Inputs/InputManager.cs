@@ -10,39 +10,50 @@ using UnityEngine;
  */
 public static class InputManager {   
 
-    private static InputBinding backwardAxisPC = new InputBinding(
-        InputBinding.AXIS.NONE,
-        KeyCode.W, KeyCode.S, KeyCode.UpArrow, KeyCode.DownArrow
+    private static InputBinding backwardAxis = new InputBinding(
+        InputBinding.AXIS.XBOX_LEFT_STICK_VERTICAL,                     //axis
+        KeyCode.W, KeyCode.S, KeyCode.UpArrow, KeyCode.DownArrow,       //pc
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
     );
-    private static InputBinding rightAxisPC = new InputBinding(
-        InputBinding.AXIS.NONE,
-        KeyCode.D, KeyCode.RightArrow, KeyCode.A, KeyCode.LeftArrow
-    );
-
-    private static InputBinding backwardAxisXbox = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_STICK_VERTICAL
-    );
-    private static InputBinding rightAxisXbox = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_STICK_HORIZONTAL
-    );
-
-    private static InputBinding throwGrenade = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_TRIGGER
-    );
-    private static InputBinding fireWeapon = new InputBinding(
-        InputBinding.AXIS.XBOX_RIGHT_TRIGGER
-    );
-
-    private static InputBinding swapWeapon = new InputBinding(
-        InputBinding.AXIS.MOUSE_WHEEL,
-        KeyCode.JoystickButton3
+    private static InputBinding rightAxis = new InputBinding(
+        InputBinding.AXIS.XBOX_LEFT_STICK_HORIZONTAL,                   //axis
+        KeyCode.D, KeyCode.A, KeyCode.RightArrow, KeyCode.LeftArrow,    //pc
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
     );
 
     private static InputBinding lookForwardAxis = new InputBinding(
-        InputBinding.AXIS.XBOX_RIGHT_STICK_VERTICAL
+        InputBinding.AXIS.XBOX_RIGHT_STICK_VERTICAL,                //axis
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //pc
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None      //xbox
     );
     private static InputBinding lookRightAxis = new InputBinding(
-        InputBinding.AXIS.XBOX_RIGHT_STICK_HORIZONTAL
+        InputBinding.AXIS.XBOX_RIGHT_STICK_HORIZONTAL,              //axis
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //pc
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None      //xbox
+    );
+
+    private static InputBinding swapCharacter = new InputBinding(
+        InputBinding.AXIS.NONE,                                                         //axis
+        KeyCode.E, KeyCode.None, KeyCode.Q, KeyCode.None,                               //pc
+        KeyCode.JoystickButton5, KeyCode.None, KeyCode.JoystickButton4, KeyCode.None    //xbox
+    );
+
+    private static InputBinding throwGrenade = new InputBinding(
+        InputBinding.AXIS.XBOX_LEFT_TRIGGER,                            //axis
+        KeyCode.Mouse1, KeyCode.None, KeyCode.G, KeyCode.None,          //pc
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
+    );
+
+    private static InputBinding fireWeapon = new InputBinding(
+        InputBinding.AXIS.XBOX_RIGHT_TRIGGER,                           //axis
+        KeyCode.Mouse0, KeyCode.None, KeyCode.None, KeyCode.None,       //PC
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
+    );
+
+    private static InputBinding swapWeapon = new InputBinding(
+        InputBinding.AXIS.MOUSE_WHEEL,                                      //axis
+        KeyCode.Y, KeyCode.None, KeyCode.None, KeyCode.None,                //pc
+        KeyCode.JoystickButton3, KeyCode.None, KeyCode.None, KeyCode.None   //xbox
     );
 
     /**
@@ -83,36 +94,16 @@ public static class InputManager {
             }
         }
     }
-    public static float GetBackwardAxis() {
-        if (usingXboxOneController()) {
-            return backwardAxisXbox.ToFloat();
-        }
-        else {
-            return backwardAxisPC.ToFloat();
-        }
-    }
 
-    public static float GetRightAxis() {
-        if (usingXboxOneController()) {
-            return rightAxisXbox.ToFloat();
-        }
-        else {
-            return rightAxisPC.ToFloat();
-        }
-    }
+    public static float GetBackwardAxis() => backwardAxis.ToFloat();
+
+    public static float GetRightAxis() => rightAxis.ToFloat();
 
     /**
      * @returns 'true' if the forward input is active.
      */
     public static bool Forward() {
-        try {
-            if (usingXboxOneController()) {
-                return backwardAxisXbox.GetNegative();
-            }
-            else {
-                return backwardAxisPC.GetPositive();
-            }
-        }
+        try { return backwardAxis.GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -123,14 +114,7 @@ public static class InputManager {
      * @returns 'true' if the backward input is active.
      */
     public static bool Backward() {
-        try {
-            if (usingXboxOneController()) {
-                return backwardAxisXbox.GetPositive();
-            }
-            else {
-                return backwardAxisPC.GetNegative();
-            }
-        }
+        try { return backwardAxis.GetNegative(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -141,14 +125,7 @@ public static class InputManager {
      * @returns 'true' if the right input is active.
      */
     public static bool Right() {
-        try {
-            if (usingXboxOneController()) {
-                return rightAxisXbox.GetPositive();
-            }
-            else {
-                return rightAxisPC.GetPositive();
-            }
-        }
+        try { return rightAxis.GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -159,14 +136,7 @@ public static class InputManager {
      * @returns 'true' if the left input is active.
      */
     public static bool Left() {
-        try {
-            if (usingXboxOneController()) {
-                return rightAxisXbox.GetNegative();
-            }
-            else {
-                return rightAxisPC.GetNegative();
-            }
-        }
+        try { return rightAxis.GetNegative(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -174,9 +144,7 @@ public static class InputManager {
     }
 
     public static bool ThrowGrenade() {
-        try {
-            return throwGrenade.GetPositive();
-        }
+        try { return throwGrenade.GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -184,12 +152,7 @@ public static class InputManager {
     }
 
     public static bool NextCharacter() {
-        try {
-            if (usingXboxOneController()) {
-                return Input.GetKeyDown(KeyCode.JoystickButton5);
-            }
-            return Input.GetKeyDown(KeyCode.E);
-        }
+        try { return swapCharacter.PositiveKeyDown(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -197,10 +160,7 @@ public static class InputManager {
     }
 
     public static bool PreviousCharacter() {
-        try {
-            return Input.GetKeyDown(KeyCode.Q) ||
-                Input.GetKeyDown(KeyCode.JoystickButton4);
-        }
+        try { return swapCharacter.NegativeKeyDown(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -288,12 +248,7 @@ public static class InputManager {
     }
 
     public static bool FireWeapon() {
-        try {
-            if (usingXboxOneController()) {
-                return fireWeapon.GetPositive();
-            }
-            return Input.GetKey(KeyCode.Mouse0);
-        }
+        try { return fireWeapon.GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -301,10 +256,7 @@ public static class InputManager {
     }
 
     public static bool SwapWeapon() {
-        try {
-            return Input.GetKeyDown(swapWeapon.GetPositiveKey())
-                || Input.GetKeyDown(swapWeapon.GetAltPositiveKey());
-        }
+        try { return swapWeapon.PositiveKeyDown(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
