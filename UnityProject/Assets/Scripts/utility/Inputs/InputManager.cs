@@ -33,6 +33,11 @@ public static class InputManager {
         InputBinding.AXIS.XBOX_RIGHT_TRIGGER
     );
 
+    private static InputBinding swapWeapon = new InputBinding(
+        InputBinding.AXIS.MOUSE_WHEEL,
+        KeyCode.JoystickButton3
+    );
+
     private static InputBinding lookForwardAxis = new InputBinding(
         InputBinding.AXIS.XBOX_RIGHT_STICK_VERTICAL
     );
@@ -78,19 +83,20 @@ public static class InputManager {
             }
         }
     }
-
     public static float GetBackwardAxis() {
-        if(usingXboxOneController()) {
+        if (usingXboxOneController()) {
             return backwardAxisXbox.ToFloat();
-        } else {
+        }
+        else {
             return backwardAxisPC.ToFloat();
         }
     }
 
     public static float GetRightAxis() {
-        if(usingXboxOneController()) {
+        if (usingXboxOneController()) {
             return rightAxisXbox.ToFloat();
-        } else {
+        }
+        else {
             return rightAxisPC.ToFloat();
         }
     }
@@ -100,11 +106,14 @@ public static class InputManager {
      */
     public static bool Forward() {
         try {
-            if(usingXboxOneController()) {
+            if (usingXboxOneController()) {
                 return backwardAxisXbox.GetNegative();
             }
-            return Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow);
-        } catch(ArgumentOutOfRangeException e) {
+            else {
+                return backwardAxisPC.GetPositive();
+            }
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
@@ -115,11 +124,14 @@ public static class InputManager {
      */
     public static bool Backward() {
         try {
-            if(usingXboxOneController()) {
+            if (usingXboxOneController()) {
                 return backwardAxisXbox.GetPositive();
             }
-            return Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow);
-        } catch(ArgumentOutOfRangeException e) {
+            else {
+                return backwardAxisPC.GetNegative();
+            }
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
@@ -130,11 +142,14 @@ public static class InputManager {
      */
     public static bool Right() {
         try {
-            if(usingXboxOneController()) {
+            if (usingXboxOneController()) {
                 return rightAxisXbox.GetPositive();
             }
-            return Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow);
-        } catch(ArgumentOutOfRangeException e) {
+            else {
+                return rightAxisPC.GetPositive();
+            }
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
@@ -145,23 +160,14 @@ public static class InputManager {
      */
     public static bool Left() {
         try {
-            if(usingXboxOneController()) {
+            if (usingXboxOneController()) {
                 return rightAxisXbox.GetNegative();
             }
-            return Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow);
-        } catch(ArgumentOutOfRangeException e) {
-            Debug.LogError(e);
-            return false;
-        }
-    }
-
-    public static bool Reload() {
-        try {
-            if(usingXboxOneController()) {
-                return Input.GetKeyDown(KeyCode.JoystickButton2);
+            else {
+                return rightAxisPC.GetNegative();
             }
-            return Input.GetKeyDown(KeyCode.R);
-        } catch(ArgumentOutOfRangeException e) {
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
@@ -169,23 +175,9 @@ public static class InputManager {
 
     public static bool ThrowGrenade() {
         try {
-            if(usingXboxOneController()) {
-                return throwGrenade.GetPositive();
-            }
-            return Input.GetKeyDown(KeyCode.Mouse1);
-        } catch(ArgumentOutOfRangeException e) {
-            Debug.LogError(e);
-            return false;
+            return throwGrenade.GetPositive();
         }
-    }
-
-    public static bool Die() {
-        try {
-            if(usingXboxOneController()) {
-                return Input.GetKeyDown(KeyCode.JoystickButton3);
-            }
-            return Input.GetKeyDown(KeyCode.P);
-        } catch(ArgumentOutOfRangeException e) {
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
@@ -193,11 +185,12 @@ public static class InputManager {
 
     public static bool NextCharacter() {
         try {
-            if(usingXboxOneController()) {
+            if (usingXboxOneController()) {
                 return Input.GetKeyDown(KeyCode.JoystickButton5);
             }
             return Input.GetKeyDown(KeyCode.E);
-        } catch(ArgumentOutOfRangeException e) {
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
@@ -207,7 +200,8 @@ public static class InputManager {
         try {
             return Input.GetKeyDown(KeyCode.Q) ||
                 Input.GetKeyDown(KeyCode.JoystickButton4);
-        } catch(ArgumentOutOfRangeException e) {
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
@@ -295,8 +289,23 @@ public static class InputManager {
 
     public static bool FireWeapon() {
         try {
+            if (usingXboxOneController()) {
+                return fireWeapon.GetPositive();
+            }
             return Input.GetKey(KeyCode.Mouse0);
-        } catch(ArgumentOutOfRangeException e) {
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
+    public static bool SwapWeapon() {
+        try {
+            return Input.GetKeyDown(swapWeapon.GetPositiveKey())
+                || Input.GetKeyDown(swapWeapon.GetAltPositiveKey());
+        }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
