@@ -42,6 +42,7 @@ public class ZombieAnimationScript : MonoBehaviour
 
         // Update movement speed
         float currentSpeed = m_nav.velocity.magnitude;
+
         m_animator.SetFloat(m_speedHash, currentSpeed);
 
         if (m_nav.speed != speedModifier) {

@@ -34505,9 +34505,9 @@ MonoBehaviour:
   - {fileID: 543145227}
   zombie_template_war: {fileID: 5900339710907024119, guid: 65d85da0cf3ec1949b6b73bd3e6c4b39,
     type: 3}
-  zombie_template_derrick: {fileID: 5272850905939481936, guid: a028a6aed013cce4dafe7a0460feb92a,
+  zombie_template_derrick: {fileID: 5272850905939481936, guid: c192e2d415e7c684c86550b606dd819a,
     type: 3}
-  zombie_template_girl: {fileID: 6266080106274829013, guid: 94371768417da694f91d69dd376c1ef1,
+  zombie_template_girl: {fileID: 6266080106274829013, guid: f62913a9daccbe240a5606319670130b,
     type: 3}
 --- !u!1 &583171415
 GameObject:
