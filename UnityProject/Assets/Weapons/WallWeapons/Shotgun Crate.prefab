@@ -116,16 +116,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4603488574679919952}
     m_Modifications:
-    - target: {fileID: 3060078949943812694, guid: d444f8d61059df443b4579f95bcf1b9c,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Shotgun Purchase '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3060078949943812694, guid: d444f8d61059df443b4579f95bcf1b9c,
-        type: 3}
-      propertyPath: m_Layer
-      value: 12
-      objectReference: {fileID: 0}
     - target: {fileID: 3060078949943812681, guid: d444f8d61059df443b4579f95bcf1b9c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -196,6 +186,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.9
       objectReference: {fileID: 0}
+    - target: {fileID: 3060078949943812694, guid: d444f8d61059df443b4579f95bcf1b9c,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Shotgun Purchase '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3060078949943812694, guid: d444f8d61059df443b4579f95bcf1b9c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3060078949943812683, guid: d444f8d61059df443b4579f95bcf1b9c,
         type: 3}
       propertyPath: m_IsTrigger
@@ -245,7 +245,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d1ce435be9200c4418c576f6d86ed10d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d444f8d61059df443b4579f95bcf1b9c, type: 3}
 --- !u!4 &1555278852727893768 stripped

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2553469273902371623}
   - component: {fileID: 784397837688926852}
   - component: {fileID: 793061341873415244}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Sci-FiPistol_Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
