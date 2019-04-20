@@ -11,73 +11,97 @@ using UnityEngine;
 public static class InputManager {   
 
     private static InputBinding backwardAxis = new InputBinding(
+        "forward movement",                                             //ID
         InputBinding.AXIS.XBOX_LEFT_STICK_VERTICAL,                     //axis
         KeyCode.W, KeyCode.S, KeyCode.UpArrow, KeyCode.DownArrow,       //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,         //xbox
+        true                                                            //rebindable
     );
     private static InputBinding rightAxis = new InputBinding(
+        "strafe movement",                                              //ID
         InputBinding.AXIS.XBOX_LEFT_STICK_HORIZONTAL,                   //axis
         KeyCode.D, KeyCode.A, KeyCode.RightArrow, KeyCode.LeftArrow,    //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,         //xbox
+        true                                                            //rebindable
     );
 
     private static InputBinding lookForwardAxis = new InputBinding(
+        "look forward",                                             //ID
         InputBinding.AXIS.XBOX_RIGHT_STICK_VERTICAL,                //axis
         KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None      //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //xbox
+        false                                                       //rebindable
     );
     private static InputBinding lookRightAxis = new InputBinding(
+        "look right",                                               //ID
         InputBinding.AXIS.XBOX_RIGHT_STICK_HORIZONTAL,              //axis
         KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None      //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //xbox
+        false                                                       //rebindable
     );
 
     private static InputBinding swapCharacter = new InputBinding(
+        "swap character",                                                               //ID
         InputBinding.AXIS.NONE,                                                         //axis
         KeyCode.E, KeyCode.None, KeyCode.Q, KeyCode.None,                               //pc
-        KeyCode.JoystickButton5, KeyCode.None, KeyCode.JoystickButton4, KeyCode.None    //xbox
+        KeyCode.JoystickButton5, KeyCode.None, KeyCode.JoystickButton4, KeyCode.None,   //xbox
+        true                                                                            //rebindable
     );
 
     private static InputBinding throwGrenade = new InputBinding(
+        "throw grenade",                                                //ID
         InputBinding.AXIS.XBOX_LEFT_TRIGGER,                            //axis
         KeyCode.Mouse1, KeyCode.None, KeyCode.G, KeyCode.None,          //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,         //xbox
+        true                                                            //rebindable
     );
 
     private static InputBinding fireWeapon = new InputBinding(
+        "fire weapon",                                                  //ID
         InputBinding.AXIS.XBOX_RIGHT_TRIGGER,                           //axis
         KeyCode.Mouse0, KeyCode.None, KeyCode.None, KeyCode.None,       //PC
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,         //xbox
+        true                                                            //rebindable
     );
 
     private static InputBinding swapWeapon = new InputBinding(
+        "swap weapon",                                                      //ID
         InputBinding.AXIS.MOUSE_WHEEL,                                      //axis
         KeyCode.Y, KeyCode.None, KeyCode.None, KeyCode.None,                //pc
-        KeyCode.JoystickButton3, KeyCode.None, KeyCode.None, KeyCode.None   //xbox
-    );
+        KeyCode.JoystickButton3, KeyCode.None, KeyCode.None, KeyCode.None,  //xbox
+        true                                                                //rebindable
+    );  
 
     private static InputBinding characterHotKeys = new InputBinding(
+        "character hot keys",                                               //ID
         InputBinding.AXIS.NONE,                                             //axis
         KeyCode.Alpha1, KeyCode.Alpha3, KeyCode.Alpha2, KeyCode.Alpha4,     //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None              //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,             //xbox
+        true                                                                //rebindable
     );
 
     private static InputBinding abilities = new InputBinding(
+        "ability hot keys",                                                 //ID
         InputBinding.AXIS.NONE,                                             //axis
         KeyCode.Z, KeyCode.C, KeyCode.X, KeyCode.V,                         //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None              //xbox
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,             //xbox
+        true                                                                //rebindable
     );
 
     private static InputBinding menuMovement = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_STICK_VERTICAL,
-        KeyCode.UpArrow, KeyCode.W, KeyCode.DownArrow, KeyCode.S,
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None
+        "menu movement",                                                    //ID
+        InputBinding.AXIS.XBOX_LEFT_STICK_VERTICAL,                         //axis
+        KeyCode.UpArrow, KeyCode.W, KeyCode.DownArrow, KeyCode.S,           //pc
+        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,             //xbox
+        false                                                               //rebindable
     );
 
     private static InputBinding menuInteract = new InputBinding(
-        InputBinding.AXIS.NONE,
-        KeyCode.Return , KeyCode.KeypadEnter, KeyCode.Escape, KeyCode.Backspace,
-        KeyCode.JoystickButton0, KeyCode.None, KeyCode.JoystickButton1, KeyCode.None
+        "menu interact",                                                                //ID
+        InputBinding.AXIS.NONE,                                                         //axis
+        KeyCode.Return , KeyCode.KeypadEnter, KeyCode.Escape, KeyCode.Backspace,        //pc
+        KeyCode.JoystickButton0, KeyCode.None, KeyCode.JoystickButton1, KeyCode.None,   //xbox
+        false                                                                           //rebindable
     );
 
     /**
