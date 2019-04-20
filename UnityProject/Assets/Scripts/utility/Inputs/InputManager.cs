@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 /**
@@ -8,53 +9,30 @@ using UnityEngine;
  * @date    25/03/2019
  * @version 1.1 - 12/04/2019
  */
-public static class InputManager {   
+public static class InputManager {
 
-    private static InputBinding backwardAxis = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_STICK_VERTICAL,                     //axis
-        KeyCode.W, KeyCode.S, KeyCode.UpArrow, KeyCode.DownArrow,       //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
-    );
-    private static InputBinding rightAxis = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_STICK_HORIZONTAL,                   //axis
-        KeyCode.D, KeyCode.A, KeyCode.RightArrow, KeyCode.LeftArrow,    //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
-    );
+    //[inputs] A list of all game inputs.
+    public static List<InputBinding> inputs = new List<InputBinding>();
 
-    private static InputBinding lookForwardAxis = new InputBinding(
-        InputBinding.AXIS.XBOX_RIGHT_STICK_VERTICAL,                //axis
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None      //xbox
-    );
-    private static InputBinding lookRightAxis = new InputBinding(
-        InputBinding.AXIS.XBOX_RIGHT_STICK_HORIZONTAL,              //axis
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None,     //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None      //xbox
-    );
-
-    private static InputBinding swapCharacter = new InputBinding(
-        InputBinding.AXIS.NONE,                                                         //axis
-        KeyCode.E, KeyCode.None, KeyCode.Q, KeyCode.None,                               //pc
-        KeyCode.JoystickButton5, KeyCode.None, KeyCode.JoystickButton4, KeyCode.None    //xbox
-    );
-
-    private static InputBinding throwGrenade = new InputBinding(
-        InputBinding.AXIS.XBOX_LEFT_TRIGGER,                            //axis
-        KeyCode.Mouse1, KeyCode.None, KeyCode.G, KeyCode.None,          //pc
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
-    );
-
-    private static InputBinding fireWeapon = new InputBinding(
-        InputBinding.AXIS.XBOX_RIGHT_TRIGGER,                           //axis
-        KeyCode.Mouse0, KeyCode.None, KeyCode.None, KeyCode.None,       //PC
-        KeyCode.None, KeyCode.None, KeyCode.None, KeyCode.None          //xbox
-    );
-
-    private static InputBinding swapWeapon = new InputBinding(
-        InputBinding.AXIS.MOUSE_WHEEL,                                      //axis
-        KeyCode.Y, KeyCode.None, KeyCode.None, KeyCode.None,                //pc
-        KeyCode.JoystickButton3, KeyCode.None, KeyCode.None, KeyCode.None   //xbox
-    );
+    /**
+     * @brief Retrieves an Input Binding via its ID.
+     * @param id - The ID of the Input Binding being retrieved.
+     * @returns the requested Input Binding.
+     */
+    private static InputBinding GetInputByID(string id) {
+        try {
+            foreach(InputBinding input in inputs) {
+                if(input.GetID().Equals(id)) {
+                    return input;
+                }
+            }
+            throw new Exception("Input not found");
+        }
+        catch(Exception e) {
+            Debug.LogError(e);
+            return null;
+        }
+    }
 
     /**
      * @brief Rotates a transform to look in the direction 
@@ -62,11 +40,11 @@ public static class InputManager {
      * @param transform - The transform to be rotated.
      */
     public static void LookAtAxis(Transform transform) {
-        if (usingXboxOneController()) {
+        if (UsingXboxOneController()) {
             //Rotate with controller
             Vector3 playerDirection = Vector3.right *
-            lookRightAxis.ToFloat() +
-            Vector3.forward * -lookForwardAxis.ToFloat();
+            GetInputByID("look right").ToFloat() +
+            Vector3.forward * -GetInputByID("look forward").ToFloat();
 
             //If the player has moved.
             if (playerDirection.sqrMagnitude > 0.0f) {
@@ -95,81 +73,78 @@ public static class InputManager {
         }
     }
 
-    public static float GetBackwardAxis() => backwardAxis.ToFloat();
+    public static float GetBackwardAxis() => GetInputByID("forward movement").ToFloat();
 
-    public static float GetRightAxis() => rightAxis.ToFloat();
+    public static float GetRightAxis() => GetInputByID("strafe movement").ToFloat();
 
-    /**
-     * @returns 'true' if the forward input is active.
-     */
+    //@returns 'true' if the player should move forward.
     public static bool Forward() {
-        try { return backwardAxis.GetPositive(); }
+        try { return GetInputByID("forward movement").GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
-    /**
-     * @returns 'true' if the backward input is active.
-     */
+    //@returns 'true' if the player should move backward.
     public static bool Backward() {
-        try { return backwardAxis.GetNegative(); }
+        try { return GetInputByID("forward movement").GetNegative(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
-    /**
-     * @returns 'true' if the right input is active.
-     */
+    //@returns 'true' if the player should move right.
     public static bool Right() {
-        try { return rightAxis.GetPositive(); }
+        try { return GetInputByID("strafe movement").GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
-    /**
-     * @returns 'true' if the left input is active.
-     */
+    //@returns 'true' if the player should move left.
     public static bool Left() {
-        try { return rightAxis.GetNegative(); }
+        try { return GetInputByID("strafe movement").GetNegative(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player should throw a grenade.
     public static bool ThrowGrenade() {
-        try { return throwGrenade.GetPositive(); }
+        try { return GetInputByID("throw grenade").GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player should swap to the next character.
     public static bool NextCharacter() {
-        try { return swapCharacter.PositiveKeyDown(); }
+        try { return GetInputByID("swap character").PositiveKeyDown(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player should swap to the previous character.
     public static bool PreviousCharacter() {
-        try { return swapCharacter.NegativeKeyDown(); }
+        try { return GetInputByID("swap character").NegativeKeyDown(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey1() {
         try {
-            return Input.GetKeyDown(KeyCode.Alpha1);
+            return Input.GetKeyDown(GetInputByID("character hot keys").GetPositiveKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("character hot keys").GetPositiveKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -177,9 +152,11 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey2() {
         try {
-            return Input.GetKeyDown(KeyCode.Alpha2);
+            return Input.GetKeyDown(GetInputByID("character hot keys").GetAltPositiveKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("character hot keys").GetAltPositiveKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -187,9 +164,11 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey3() {
         try {
-            return Input.GetKeyDown(KeyCode.Alpha3);
+            return Input.GetKeyDown(GetInputByID("character hot keys").GetNegativeKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("character hot keys").GetNegativeKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -197,9 +176,11 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey4() {
         try {
-            return Input.GetKeyDown(KeyCode.Alpha4);
+            return Input.GetKeyDown(GetInputByID("character hot keys").GetAltNegativeKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("character hot keys").GetAltNegativeKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -207,9 +188,11 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey1() {
         try {
-            return Input.GetKeyDown(KeyCode.Z);
+            return Input.GetKeyDown(GetInputByID("ability hot keys").GetPositiveKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("ability hot keys").GetPositiveKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -217,9 +200,11 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey2() {
         try {
-            return Input.GetKeyDown(KeyCode.X);
+            return Input.GetKeyDown(GetInputByID("ability hot keys").GetAltPositiveKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("ability hot keys").GetAltPositiveKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -227,9 +212,11 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey3() {
         try {
-            return Input.GetKeyDown(KeyCode.C);
+            return Input.GetKeyDown(GetInputByID("ability hot keys").GetNegativeKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("ability hot keys").GetNegativeKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -237,9 +224,11 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey4() {
         try {
-            return Input.GetKeyDown(KeyCode.V);
+            return Input.GetKeyDown(GetInputByID("ability hot keys").GetAltNegativeKey_pc()) ||
+                Input.GetKeyDown(GetInputByID("ability hot keys").GetAltNegativeKey_xbox());
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -247,61 +236,62 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player should fire their weapon.
     public static bool FireWeapon() {
-        try { return fireWeapon.GetPositive(); }
+        try { return GetInputByID("fire weapon").GetPositive(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player should swap their weapons.
     public static bool SwapWeapon() {
-        try { return swapWeapon.PositiveKeyDown(); }
+        try { return GetInputByID("swap weapon").PositiveKeyDown(); }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player goes up on the menu.
     public static bool MenuUp() {
-        try {
-            return Input.GetKeyDown(KeyCode.UpArrow);
-        } catch(ArgumentOutOfRangeException e) {
+        try { return GetInputByID("menu movement").GetPositive(); }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player goes down on the menu.
     public static bool MenuDown() {
-        try {
-            return Input.GetKeyDown(KeyCode.DownArrow);
-        } catch(ArgumentOutOfRangeException e) {
+        try { return GetInputByID("menu movement").GetNegative(); }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
+    //@returns 'true' if the player selects an item on the menu.
     public static bool MenuSelect() {
-        try {
-            return Input.GetKeyDown(KeyCode.Return) ||
-                Input.GetKeyDown(KeyCode.KeypadEnter);
-        } catch(ArgumentOutOfRangeException e) {
+        try { return GetInputByID("menu interact").GetPositive(); }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
-
+    
+    //@returns 'true' if the player goes back to the previous menu.
     public static bool MenuBack() {
-        try {
-            return Input.GetKeyDown(KeyCode.Escape) ||
-                Input.GetKeyDown(KeyCode.Backspace);
-        } catch(ArgumentOutOfRangeException e) {
+        try { return GetInputByID("menu interact").GetNegative(); }
+        catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
         }
     }
 
-    public static bool usingXboxOneController() {
+    //@returns 'true' if the player is currently using an xbox controller.
+    public static bool UsingXboxOneController() {
 
          string[] names = Input.GetJoystickNames();
          for (int i = 0; i < names.Length; i++) {
