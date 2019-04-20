@@ -1,6 +1,26 @@
 ﻿using System;
 using UnityEngine;
 
+[Serializable]
+public class ControlSchemePreset { 
+    public InputData[] contols;
+}
+
+[Serializable]
+public class InputData {
+    public string id;
+    public string axis;
+    public string positive_pc;
+    public string negative_pc;
+    public string altPositive_pc;
+    public string altNegative_pc;
+    public string positive_xbox;
+    public string negative_xbox;
+    public string altPositive_xbox;
+    public string altNegative_xbox;
+    public bool rebindable;
+}
+
 /**
  * @brief   Class to define game inputs which can be
  *          customised at runtime.
@@ -8,7 +28,7 @@ using UnityEngine;
  * @date    26/03/2019
  * @version 2.1 - 20/04/2019
  */
-public class InputBinding {
+public class InputBinding : ScriptableObject{
 
     //[AXIS] All the different axis that an input can use.
     public enum AXIS {
@@ -27,7 +47,7 @@ public class InputBinding {
     }
 
     //[id] The ID for this Input Binding.
-    private readonly string id;
+    private string id;
 
     //[currentAxis] The axis this input is currently using.
     private string currentAxis;
@@ -52,41 +72,83 @@ public class InputBinding {
     //[rebindable] If 'true' then this input can be rebinded.
     private bool rebindable;
 
+    ///**
+    // * @brief A constructor for a new input.
+    // * @param initialAxisBinding         - The axis this input will use.
+    // * @param positive_pc                - The positive key this input will use.
+    // * @param negative_pc                - The negative key this input will use.
+    // * @param altPositive_pc             - The other positive key this input will use.
+    // * @param altNegative_pc             - The other negative key this input will use.
+    // * @param positive_xbox              - The positive key this input will use.
+    // * @param negative_xbox              - The negative key this input will use.
+    // * @param altPositive_xbox           - The other positive key this input will use.
+    // * @param altNegative_xbox           - The other negative key this input will use.
+    // */
+    //public InputBinding(
+    //    string id,
+    //    AXIS initialAxisBinding, 
+    //    KeyCode positive_pc         = KeyCode.None, 
+    //    KeyCode negative_pc         = KeyCode.None,
+    //    KeyCode altPositive_pc      = KeyCode.None, 
+    //    KeyCode altNegative_pc      = KeyCode.None,
+    //    KeyCode positive_xbox       = KeyCode.None,
+    //    KeyCode negative_xbox       = KeyCode.None,
+    //    KeyCode altPositive_xbox    = KeyCode.None,
+    //    KeyCode altNegative_xbox    = KeyCode.None,
+    //    bool rebindable             = false) {
+    //    this.id = id;
+    //    FindAxis(initialAxisBinding);
+    //    this.positive_pc = positive_pc;
+    //    this.negative_pc = negative_pc;
+    //    this.altPositive_pc = altPositive_pc;
+    //    this.altNegative_pc = altNegative_pc;
+    //    this.positive_xbox = positive_xbox;
+    //    this.negative_xbox = negative_xbox;
+    //    this.altPositive_xbox = altPositive_xbox;
+    //    this.altNegative_xbox = altNegative_xbox;
+    //    this.rebindable = rebindable;
+    //}
+
     /**
-     * @brief A constructor for a new input.
-     * @param initialAxisBinding         - The axis this input will use.
-     * @param positive_pc                - The positive key this input will use.
-     * @param negative_pc                - The negative key this input will use.
-     * @param altPositive_pc             - The other positive key this input will use.
-     * @param altNegative_pc             - The other negative key this input will use.
-     * @param positive_xbox              - The positive key this input will use.
-     * @param negative_xbox              - The negative key this input will use.
-     * @param altPositive_xbox           - The other positive key this input will use.
-     * @param altNegative_xbox           - The other negative key this input will use.
+     * @brief Initialises the Input.
+     * @param data - The data for the input.
      */
-    public InputBinding(
-        string id,
-        AXIS initialAxisBinding, 
-        KeyCode positive_pc         = KeyCode.None, 
-        KeyCode negative_pc         = KeyCode.None,
-        KeyCode altPositive_pc      = KeyCode.None, 
-        KeyCode altNegative_pc      = KeyCode.None,
-        KeyCode positive_xbox       = KeyCode.None,
-        KeyCode negative_xbox       = KeyCode.None,
-        KeyCode altPositive_xbox    = KeyCode.None,
-        KeyCode altNegative_xbox    = KeyCode.None,
-        bool rebindable             = false) {
-        this.id = id;
-        FindAxis(initialAxisBinding);
-        this.positive_pc = positive_pc;
-        this.negative_pc = negative_pc;
-        this.altPositive_pc = altPositive_pc;
-        this.altNegative_pc = altNegative_pc;
-        this.positive_xbox = positive_xbox;
-        this.negative_xbox = negative_xbox;
-        this.altPositive_xbox = altPositive_xbox;
-        this.altNegative_xbox = altNegative_xbox;
-        this.rebindable = rebindable;
+    public void Init(InputData data) {
+        id = data.id;
+        currentAxis = data.axis;
+        positive_pc = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.positive_pc
+        );
+        negative_pc = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.negative_pc
+        );
+        altPositive_pc = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.altPositive_pc
+        );
+        altNegative_pc = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.altNegative_pc
+        );
+        positive_xbox = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.positive_xbox
+        );
+        negative_xbox = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.negative_xbox
+        );
+        altPositive_xbox = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.altPositive_xbox
+        );
+        altNegative_xbox = (KeyCode)Enum.Parse(
+            typeof(KeyCode), 
+            data.altNegative_xbox
+        );
+        rebindable = data.rebindable;
     }
 
     //@returns the Input Bindings ID.

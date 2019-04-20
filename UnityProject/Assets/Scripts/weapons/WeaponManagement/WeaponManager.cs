@@ -56,7 +56,7 @@ public class WeaponManager : MonoBehaviour
     {
         //used later to check if the weapon has been changed
         int previousSelectedWeapon = selectedWeapon;
-        if (InputManager.usingXboxOneController()) {
+        if (InputManager.UsingXboxOneController()) {
             if (InputManager.SwapWeapon() && GetComponentInParent<Player>().IsPlayerControlled()) {
                 //checks how many children the weapon manager had, each weapon is one child
                 //this will loop the cycle of changing weapons back to the first child
