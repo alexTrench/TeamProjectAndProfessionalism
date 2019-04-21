@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
   shellCount: 6
-  spreadAngle: 30
+  spreadAngle: 20
   bulletSpawn: {fileID: 5995803984094382493}
   muzzleFlash: {fileID: 6112062174130780171}
 --- !u!114 &5231937612286667114

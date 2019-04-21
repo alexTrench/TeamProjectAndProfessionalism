@@ -36,6 +36,7 @@ public class HeavySciFiBullet : MonoBehaviour
         }
         else if (other.gameObject.tag == "Enemy")
         {
+            Instantiate(blood, transform.position, transform.rotation);
             Destroy(gameObject);
         }
         else
