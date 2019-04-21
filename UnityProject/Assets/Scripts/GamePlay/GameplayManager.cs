@@ -46,6 +46,8 @@ public class GameplayManager : MonoBehaviour
         else if (GM != this) {
             Destroy(gameObject);
         }
+
+        Cursor.visible = false;
         InputManager.AssignControls();
     }
 
