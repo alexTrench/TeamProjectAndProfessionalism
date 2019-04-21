@@ -7,7 +7,7 @@ using UnityEngine;
  * @extends MonoBehaviour
  * @author  Andrew Alford
  * @date    10/04/19
- * @version 1.2 - 20/04/19
+ * @version 1.3 - 21/04/19
  */
 public class GameplayManager : MonoBehaviour
 {
@@ -22,7 +22,7 @@ public class GameplayManager : MonoBehaviour
 
     //[COOLDOWN] The amount of time (in seconds) 
     //allocated between waves.
-    public const float COOLDOWN = 15.0f;
+    public const float COOLDOWN = 10.0f;
 
     //[currentWave] The wave currently in progress.
     private Wave currentWave = null;
