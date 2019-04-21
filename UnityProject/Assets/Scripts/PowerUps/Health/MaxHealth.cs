@@ -18,7 +18,7 @@ public class MaxHealth : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             other.GetComponent<Player>().IncrementHealth(100);
-
+            Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }

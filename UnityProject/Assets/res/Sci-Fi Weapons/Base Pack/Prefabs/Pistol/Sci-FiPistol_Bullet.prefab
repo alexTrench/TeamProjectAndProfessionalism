@@ -92,8 +92,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.016980033, y: 0.016980045, z: 0.012633419}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.016980035, y: 0.016980045, z: 0.022467881}
+  m_Center: {x: 0, y: 0, z: 0.004917228}
 --- !u!54 &2553469273902371623
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -137,3 +137,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 5
   Life: 4
+  blood: {fileID: 198000011254678926, guid: abb9f519b142e304d9c45b56afa768bc, type: 3}
