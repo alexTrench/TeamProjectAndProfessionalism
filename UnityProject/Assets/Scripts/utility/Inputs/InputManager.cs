@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 
 /**
@@ -7,12 +8,33 @@ using UnityEngine;
  *          which inputs are in use.
  * @author  Andrew Alford
  * @date    25/03/2019
- * @version 1.1 - 12/04/2019
+ * @version 1.2 - 21/04/2019
  */
 public static class InputManager {
 
     //[inputs] A list of all game inputs.
     public static List<InputBinding> inputs = new List<InputBinding>();
+
+    /**
+     * @brief Reads through the users preferred control 
+     *        scheme and assigns the controls.
+     */
+    public static void AssignControls() {
+
+        //[scheme] Holds the player's preferred control scheme.
+        string scheme = PlayerPrefs.GetString("preferredScheme", "defualt");
+
+        //Read the json file of the preferred control scheme.
+        ControlSchemePreset preferredControlScheme = JsonUtility.FromJson<ControlSchemePreset>(
+            File.ReadAllText(Application.streamingAssetsPath + "/ControlSchemes/" + scheme + ".json")
+        );
+
+        //Extract each input from the control scheme.
+        foreach (InputData input in preferredControlScheme.contols) {
+            InputManager.inputs.Add((InputBinding)ScriptableObject.CreateInstance("InputBinding"));
+            InputManager.inputs[InputManager.inputs.Count - 1].Init(input);
+        }
+    }
 
     /**
      * @brief Retrieves an Input Binding via its ID.
