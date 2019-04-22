@@ -1,7 +1,7 @@
 {
     "contols": [
         {
-            "id": "forward movement",
+            "id": "forwardMovement",
             "axis": "XBOX_LEFT_STICK_VERTICAL",
             "positive_pc": "W",
             "negative_pc": "S",
@@ -14,7 +14,7 @@
             "rebindable": true
         },
         {
-            "id": "strafe movement",
+            "id": "strafeMovement",
             "axis": "XBOX_LEFT_STICK_HORIZONTAL",
             "positive_pc": "D",
             "negative_pc": "A",
@@ -27,7 +27,7 @@
             "rebindable": true
         },
         {
-            "id": "look forward",
+            "id": "lookForward",
             "axis": "XBOX_RIGHT_STICK_VERTICAL",
             "positive_pc": "None",
             "negative_pc": "None",
@@ -40,7 +40,7 @@
             "rebindable": false
         },
         {
-            "id": "look right",
+            "id": "lookRight",
             "axis": "XBOX_RIGHT_STICK_HORIZONTAL",
             "positive_pc": "None",
             "negative_pc": "None",
@@ -53,7 +53,20 @@
             "rebindable": false
         },
         {
-            "id": "swap character",
+            "id": "interact",
+            "axis": "NONE",
+            "positive_pc": "F",
+            "negative_pc": "None",
+            "altPositive_pc": "None",
+            "altNegative_pc": "None",
+            "positive_xbox": "JoystickButton0",
+            "negative_xbox": "None",
+            "altPositive_xbox": "None",
+            "altNegative_xbox": "None",
+            "rebindable": true
+        },
+        {
+            "id": "swapCharacter",
             "axis": "NONE",
             "positive_pc": "E",
             "negative_pc": "Q",
@@ -66,7 +79,7 @@
             "rebindable": true
         },
         {
-            "id": "throw grenade",
+            "id": "throwGrenade",
             "axis": "XBOX_LEFT_TRIGGER",
             "positive_pc": "Mouse1",
             "negative_pc": "None",
@@ -79,7 +92,7 @@
             "rebindable": true
         },
         {
-            "id": "fire weapon",
+            "id": "fireWeapon",
             "axis": "XBOX_RIGHT_TRIGGER",
             "positive_pc": "Mouse0",
             "negative_pc": "None",
@@ -92,7 +105,7 @@
             "rebindable": true
         },
         {
-            "id": "fire weapon",
+            "id": "fireWeapon",
             "axis": "XBOX_RIGHT_TRIGGER",
             "positive_pc": "Mouse0",
             "negative_pc": "None",
@@ -105,7 +118,7 @@
             "rebindable": true
         },
         {
-            "id": "swap weapon",
+            "id": "swapWeapon",
             "axis": "MOUSE_WHEEL",
             "positive_pc": "Y",
             "negative_pc": "None",
@@ -118,7 +131,7 @@
             "rebindable": true
         },
         {
-            "id": "character hot keys",
+            "id": "characterHotKeys",
             "axis": "NONE",
             "positive_pc": "Alpha1",
             "negative_pc": "Alpha3",
@@ -131,7 +144,7 @@
             "rebindable": true
         },
         {
-            "id": "ability hot keys",
+            "id": "abilityHotKeys",
             "axis": "NONE",
             "positive_pc": "Z",
             "negative_pc": "C",
@@ -144,7 +157,7 @@
             "rebindable": true
         },
         {
-            "id": "menu movement",
+            "id": "menuMovement",
             "axis": "XBOX_LEFT_STICK_VERTICAL",
             "positive_pc": "UpArrow",
             "negative_pc": "DownArrow",
@@ -157,7 +170,7 @@
             "rebindable": false
         },
         {
-            "id": "menu interact",
+            "id": "menuInteract",
             "axis": "XBOX_LEFT_STICK_VERTICAL",
             "positive_pc": "Return",
             "negative_pc": "Escape",

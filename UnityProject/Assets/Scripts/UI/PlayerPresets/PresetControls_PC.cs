@@ -14,8 +14,13 @@ public class PresetControls_PC : MonoBehaviour
     //[presetSelect] A drop down to select presets.
     [SerializeField] private Dropdown presetSelect = null;
 
+    [SerializeField] private List<GameObject> controlSchemeOptions = new List<GameObject>();
+
     //@brief Sets up the Preset Controls
     private void Start() {
+        foreach(GameObject GO in controlSchemeOptions) {
+            Debug.Log(GO.name);
+        }
         FindPresets();
     }
 
@@ -35,8 +40,6 @@ public class PresetControls_PC : MonoBehaviour
 
         //Add the defualt preset.
         presetOptions.Add("defualt");
-        presetOptions.Add("test 1");
-        presetOptions.Add("test 2");
 
         //Find all other presets.
         for (int i = 0; i < numPresets; i++) {
