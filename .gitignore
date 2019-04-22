@@ -37,10 +37,6 @@ UnityProject/obj/
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
 
-# Unity3D generated meta files
-*.pidb.meta
-*.pdb.meta
-
 # VS/MD solution and project files
 [Ee]xportedObj/
 *.booproj
