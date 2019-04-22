@@ -116,11 +116,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1342213255844609756}
     m_Modifications:
-    - target: {fileID: 8672799353389128660, guid: 46e7779764870224c8c74a2bca60fa7c,
-        type: 3}
-      propertyPath: m_Name
-      value: Sci-Fi Pistol Purchase
-      objectReference: {fileID: 0}
     - target: {fileID: 8672799353389128661, guid: 46e7779764870224c8c74a2bca60fa7c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -176,11 +171,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8672799353389128660, guid: 46e7779764870224c8c74a2bca60fa7c,
+        type: 3}
+      propertyPath: m_Name
+      value: Sci-Fi Pistol Purchase
+      objectReference: {fileID: 0}
     - target: {fileID: 8672799353389128649, guid: 46e7779764870224c8c74a2bca60fa7c,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: d1ce435be9200c4418c576f6d86ed10d, type: 2}
     - target: {fileID: 8672799353389128651, guid: 46e7779764870224c8c74a2bca60fa7c,
         type: 3}
       propertyPath: m_Size.y
