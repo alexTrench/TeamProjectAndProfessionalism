@@ -218,9 +218,10 @@ public class CharacterManagerScript : MonoBehaviour
     // Revives the player character at the front of the queue
     public void RevivePlayer()
     {
-        Debug.Log("reviving dead player");
-        if (m_deadPlayerCharacters.Count > 0)
+        if (m_deadPlayerCharacters.Count > 0) {
+            Debug.Log("reviving dead player");
             m_deadPlayerCharacters.Dequeue().Revive();
+        }
     }
 
     public void IncrementPlayerHealth(float percentage)

@@ -7,50 +7,43 @@
  * @version 1.1 - 26/03/2019
  */
 public class PlayerController : MonoBehaviour {
-    //[movementSpeed] How quickly the player is moving.
-    [SerializeField] private float movementSpeed = 12.0f;
-    
-    /**
-     * @brief Initialises the Player Controller.
-     */
-    private void Awake() {
-        Cursor.visible = false;
-    }
+    //[movementSpeed] How fast the player is moving.
+    [SerializeField] private float movementSpeed = 10.0f;
 
-    /**
-     * Updates the player once every frame.
-     */
-    void Update()
-    {
+    //@brief Updates the player.
+    private void FixedUpdate() {
         if(!OpenPauseMenu.IsPaused()) {
-            Vector3 transformModifier  = new Vector3(0, 0, 0);
 
-            //Move the player.
-            if(InputManager.Forward()) {
-                transform.position += transform.forward * movementSpeed * Time.deltaTime;
+            Vector3 vertical = new Vector3();
+            Vector3 horizontal = new Vector3();
+
+            if (InputManager.Forward()) {
+                vertical = transform.forward * movementSpeed * Time.deltaTime;
+            } else if (InputManager.Backward()) {
+                vertical = -transform.forward * movementSpeed * Time.deltaTime;
             }
-            if(InputManager.Backward()) {
-                transform.position += -transform.forward * movementSpeed * Time.deltaTime;
+
+            if (InputManager.Right()) {
+                horizontal = transform.right * movementSpeed * Time.deltaTime;
+            } else if (InputManager.Left()) {
+                horizontal = -transform.right * movementSpeed * Time.deltaTime;
             }
-            if(InputManager.Right()) {
-                transform.position += transform.right * movementSpeed * Time.deltaTime;
-            }
-            if(InputManager.Left()) {
-                transform.position += -transform.right * movementSpeed * Time.deltaTime;
-            }
+
+            transform.position += vertical + horizontal;
 
             //Rotate the player.
             InputManager.LookAtAxis(transform);
+
         }
     }
 
-    public float GetMovementSpeed()
-    {
-        return movementSpeed;
-    }
+    //Retrives the players movement speed.
+    public float GetMovementSpeed() => movementSpeed;
 
-    public void SetMovementSpeed(float newMovementSpeed)
-    {
-        movementSpeed = newMovementSpeed;
-    }
+    /**
+     * @brief Allows the player's movement speed to be set.
+     * @param newMovementSpeed - The new movement speed
+     *                           for the player.
+     */
+    public void SetMovementSpeed(float newMovementSpeed) => movementSpeed = newMovementSpeed;
 }

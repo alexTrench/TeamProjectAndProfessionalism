@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.IO;
 using UnityEngine;
 
 /**
@@ -7,7 +6,7 @@ using UnityEngine;
  * @extends MonoBehaviour
  * @author  Andrew Alford
  * @date    10/04/19
- * @version 1.2 - 20/04/19
+ * @version 1.3 - 21/04/19
  */
 public class GameplayManager : MonoBehaviour
 {
@@ -22,7 +21,7 @@ public class GameplayManager : MonoBehaviour
 
     //[COOLDOWN] The amount of time (in seconds) 
     //allocated between waves.
-    public const float COOLDOWN = 15.0f;
+    public const float COOLDOWN = 10.0f;
 
     //[currentWave] The wave currently in progress.
     private Wave currentWave = null;
@@ -47,26 +46,12 @@ public class GameplayManager : MonoBehaviour
         else if (GM != this) {
             Destroy(gameObject);
         }
-        AssignControls();
+
+        Cursor.visible = false;
+        InputManager.AssignControls();
     }
 
-    /**
-     * @brief Reads through the users preferred control 
-     *        scheme and assigns the controls.
-     */
-    private void AssignControls() {
 
-        //Read the json file of the preferred control scheme.
-        ControlSchemePreset preferredControlScheme = JsonUtility.FromJson<ControlSchemePreset>(
-            File.ReadAllText(Application.streamingAssetsPath + "/controls.json")
-        );
-
-        //Extract each input from the control scheme.
-        foreach(InputData input in preferredControlScheme.contols) {
-            InputManager.inputs.Add((InputBinding)ScriptableObject.CreateInstance("InputBinding"));
-            InputManager.inputs[InputManager.inputs.Count - 1].Init(input);
-        }
-    }
 
     /**
      * @brief Updates the Gameplay Manager once every frame.
