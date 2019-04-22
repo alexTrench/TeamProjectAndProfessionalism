@@ -18,6 +18,8 @@ public class PresetControls_PC : MonoBehaviour
 
     [SerializeField] private List<GameObject> controlSchemeOptions = new List<GameObject>();
 
+    [SerializeField] private Button reset_btn = null;
+
     Event keyEvent;
 
     Text buttonText;
@@ -35,10 +37,16 @@ public class PresetControls_PC : MonoBehaviour
     //@brief Sets up the Preset Controls
     private void Start() {
         FindPresets();
-        FillOptions();
+        FillOptions(presetSelect.options[presetSelect.value].text);
 
         //Update the preset options every time the dropdown is changed.
-        presetSelect.onValueChanged.AddListener(delegate { FillOptions(); });
+        presetSelect.onValueChanged.AddListener(delegate {
+            FillOptions(presetSelect.options[presetSelect.value].text);
+        });
+
+        reset_btn.onClick.AddListener(delegate {
+            FillOptions(presetSelect.options[presetSelect.value].text);
+        });
     }
 
     private void UpdateControl(Button btn, string inputID, CONTROL_TYPE controlType) {
@@ -53,11 +61,11 @@ public class PresetControls_PC : MonoBehaviour
         startAssignmnet(inputID, btn);
     }
 
-    //@brief Reads the selected control scheme and maps the inputs to the buttons.
-    private void FillOptions() {
-
-        //[selectedPreset] The name of the currently selected preset.
-        string selectedPreset = presetSelect.options[presetSelect.value].text;
+    /**
+     * @brief Reads the selected control scheme and maps the inputs to the buttons.
+     * @param selectedPreset - The name of the currently selected preset.
+     */
+    private void FillOptions(string selectedPreset) {
 
         //Read the json file of the preferred control scheme.
         ControlSchemePreset preferredControlScheme = JsonUtility.FromJson<ControlSchemePreset>(
@@ -294,15 +302,11 @@ public class PresetControls_PC : MonoBehaviour
         //presses a key.
         yield return waitForKey();
 
-        //updateKeyBinding(keyName);
-        UpdateButtonText(keyName, btn);
+        btn.GetComponentInChildren<Text>().text = newKey.ToString();
+        updateKeyBinding(keyName);
 
         //Wait for a frame before execution ends.
         yield return null;
-    }
-
-    private void UpdateButtonText(string keyName, Button btn) {
-        btn.GetComponentInChildren<Text>().text = newKey.ToString();
     }
 
     /**

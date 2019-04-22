@@ -4655,6 +4655,7 @@ MonoBehaviour:
   - {fileID: 7167824182572690211}
   - {fileID: 1200696081378865727}
   - {fileID: 7889613967469036378}
+  reset_btn: {fileID: 2654780513601199792}
 --- !u!1 &3720872234580504184
 GameObject:
   m_ObjectHideFlags: 0
