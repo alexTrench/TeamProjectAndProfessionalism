@@ -48,8 +48,7 @@ public class Wave
      * @brief Constructor for a Wave.
      */
     public Wave(int jump = 0) {
-
-        waveNo = jump + WAVE_ID++;
+        waveNo = jump + ++WAVE_ID;
 
         CalculateNumEnemies();
 
@@ -62,6 +61,7 @@ public class Wave
      *        spawned in the wave.
      */
     private void CalculateNumEnemies() {
+        Debug.Log("Wave num: " + waveNo);
         //Calculate the number of enemies to spawn in this wave.
         totalEnemies = (int)(waveNo * (BASE_ENEMIES / DIMINISH_RETURNS));
         //Clamp the number of enemies to help with the games performance.
