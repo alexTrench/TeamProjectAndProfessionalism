@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -20,45 +21,127 @@ public class PresetControls_PC : MonoBehaviour
 
     [SerializeField] private Button reset_btn = null;
 
-    Event keyEvent;
+    [SerializeField] private Button save_btn = null;
 
-    Text buttonText;
-    KeyCode newKey;
+    private Event keyEvent;
+
+    private KeyCode newKey;
 
     private bool waitingForKey = false;
 
-    private enum CONTROL_TYPE {
-        POSITIVE, 
-        NEGATIVE,
-        ALT_POSITIVE,
-        ALT_NEGATIVE
-    };
-
     //@brief Sets up the Preset Controls
     private void Start() {
+        PlayerPrefs.DeleteAll();
         FindPresets();
         FillOptions(presetSelect.options[presetSelect.value].text);
 
         //Update the preset options every time the dropdown is changed.
         presetSelect.onValueChanged.AddListener(delegate {
             FillOptions(presetSelect.options[presetSelect.value].text);
+            PlayerPrefs.GetString("preferredScheme", presetSelect.options[presetSelect.value].text);
         });
 
         reset_btn.onClick.AddListener(delegate {
             FillOptions(presetSelect.options[presetSelect.value].text);
         });
+
+        save_btn.onClick.AddListener(delegate { SaveControlScheme(); });
     }
 
-    private void UpdateControl(Button btn, string inputID, CONTROL_TYPE controlType) {
-        Debug.Log("Updating Control");
+    private void SaveControlScheme() {
+        int numPresets = PlayerPrefs.GetInt("numPresets", 0);
+        numPresets++;
+        PlayerPrefs.SetInt("numPresets", numPresets);
+        PlayerPrefs.SetString("preset" + numPresets, "preset" + PlayerPrefs.GetInt("numPresets", 0));
 
-        Text btnText = btn.GetComponentInChildren<Text>();
+        //Convert the control scheme to JSON.
+        string controlSchemeJSON = JsonUtility.ToJson(CreateControlScheme());
 
-        if (btnText) {
-            sendText(btnText);
+        Debug.Log(controlSchemeJSON);
+
+        Debug.Log("Num Presets:\t" + numPresets);
+
+        //open file stream
+        StreamWriter writer = new StreamWriter(Application.streamingAssetsPath +
+                "/ControlSchemes/preset" + numPresets + ".json", true);
+        writer.WriteLine(controlSchemeJSON);
+        writer.Close();
+
+
+        FindPresets();
+        presetSelect.RefreshShownValue();
+        presetSelect.value = presetSelect.options.Count - 1;
+    }
+
+    /**
+     * @brief Reads through all the button text and creates a new control scheme.
+     * @returns the new control scheme.
+     */
+    private ControlSchemePreset CreateControlScheme() {
+
+        ControlSchemePreset createdControlScheme = JsonUtility.FromJson<ControlSchemePreset>(
+            File.ReadAllText(
+                Application.streamingAssetsPath +
+                "/ControlSchemes/defualt.json"
+            )
+        );
+
+        foreach (GameObject action in controlSchemeOptions)
+        {
+            Button[] options = action.GetComponentsInChildren<Button>();
+            Button option1 = options[0];
+            Button option2 = null;
+            if (options.Length > 1) { option2 = options[1]; }
+
+            string[] actionInfo = action.name.Split(' ');
+
+            //Find the appropriate indexes.
+            FindIndexes(
+                createdControlScheme, actionInfo[0],
+                out int jsonIndex, out int characterHotKeysIndex
+            );
+
+            //Add text to buttons and delagate events to update the text when
+            //they are clicked.
+            if (actionInfo.Length > 1)
+            {
+                switch (actionInfo[1])
+                {
+                    case ("pos"):
+                        createdControlScheme.contols[jsonIndex].positive_pc = option1.GetComponentInChildren<Text>().text;
+                        if (option2 != null) {
+                            createdControlScheme.contols[jsonIndex].altPositive_pc = option2.GetComponentInChildren<Text>().text;
+                        }
+                        break;
+                    case ("neg"):
+                        createdControlScheme.contols[jsonIndex].negative_pc = option1.GetComponentInChildren<Text>().text;
+                        if (option2 != null) {
+                            createdControlScheme.contols[jsonIndex].altNegative_pc = option2.GetComponentInChildren<Text>().text;
+                        }
+                        break;
+                    case ("Assault"):
+                        createdControlScheme.contols[characterHotKeysIndex].positive_pc = option1.GetComponentInChildren<Text>().text;
+                        break;
+                    case ("Heavy"):
+                        createdControlScheme.contols[characterHotKeysIndex].negative_pc = option1.GetComponentInChildren<Text>().text;
+                        break;
+                    case ("Light"):
+                        createdControlScheme.contols[characterHotKeysIndex].altPositive_pc = option1.GetComponentInChildren<Text>().text;
+                        break;
+                    case ("Demolition"):
+                        createdControlScheme.contols[characterHotKeysIndex].altNegative_pc = option1.GetComponentInChildren<Text>().text;
+                        break;
+                }
+            }
+            else {
+                createdControlScheme.contols[jsonIndex].positive_pc = option1.GetComponentInChildren<Text>().text;
+                if (option2 != null) {
+                    createdControlScheme.contols[jsonIndex].altPositive_pc = option2.GetComponentInChildren<Text>().text;
+                }
+            }
         }
 
-        startAssignmnet(inputID, btn);
+        return createdControlScheme;
     }
 
     /**
@@ -67,15 +150,32 @@ public class PresetControls_PC : MonoBehaviour
      */
     private void FillOptions(string selectedPreset) {
 
-        //Read the json file of the preferred control scheme.
-        ControlSchemePreset preferredControlScheme = JsonUtility.FromJson<ControlSchemePreset>(
-            File.ReadAllText(
-                Application.streamingAssetsPath + 
-                "/ControlSchemes/" + selectedPreset + ".json"
-            )
-        );
+        ControlSchemePreset preferredControlScheme = new ControlSchemePreset();
 
-        foreach(GameObject action in controlSchemeOptions) {
+        try {
+            //Read the json file of the preferred control scheme.
+            preferredControlScheme = JsonUtility.FromJson<ControlSchemePreset>(
+                File.ReadAllText(
+                    Application.streamingAssetsPath + 
+                    "/ControlSchemes/" + selectedPreset + ".json"
+                )
+            );
+
+        }
+        catch(Exception e)
+        {
+            Debug.LogError("Unable to find preset: " + e);
+
+            //Read the json file of the defualt control scheme.
+            preferredControlScheme = JsonUtility.FromJson<ControlSchemePreset>(
+                File.ReadAllText(
+                    Application.streamingAssetsPath +
+                    "/ControlSchemes/defualt.json"
+                )
+            );
+        }
+
+        foreach (GameObject action in controlSchemeOptions) {
 
             Button[] options = action.GetComponentsInChildren<Button>();
             Button option1 = options[0];
@@ -94,7 +194,6 @@ public class PresetControls_PC : MonoBehaviour
             //Add text to buttons and delagate events to update the text when
             //they are clicked.
             if (actionInfo.Length > 1) {
-                Debug.Log(actionInfo[1]);
                 switch (actionInfo[1]) {
                     case ("pos"):
                         option1.enabled = true;
@@ -102,7 +201,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text = 
                             preferredControlScheme.contols[jsonIndex].positive_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.POSITIVE);
+                            startAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.enabled = true;
@@ -110,7 +209,7 @@ public class PresetControls_PC : MonoBehaviour
                             option2.GetComponentInChildren<Text>().text = 
                                 preferredControlScheme.contols[jsonIndex].altPositive_pc;
                             option2.onClick.AddListener(delegate {
-                                UpdateControl(option2, actionInfo[0], CONTROL_TYPE.ALT_POSITIVE);
+                                startAssignmnet(actionInfo[0], option2);
                             });
                         }
                         break;
@@ -120,7 +219,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text = 
                             preferredControlScheme.contols[jsonIndex].negative_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.NEGATIVE);
+                            startAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.enabled = true;
@@ -128,7 +227,7 @@ public class PresetControls_PC : MonoBehaviour
                             option2.GetComponentInChildren<Text>().text = 
                                 preferredControlScheme.contols[jsonIndex].altNegative_pc;
                             option2.onClick.AddListener(delegate {
-                                UpdateControl(option2, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
+                                startAssignmnet(actionInfo[0], option2);
                             });
                         }
                         break;
@@ -138,7 +237,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].positive_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.POSITIVE);
+                            startAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -151,7 +250,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].negative_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.NEGATIVE);
+                            startAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -164,7 +263,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].altPositive_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.ALT_POSITIVE);
+                            startAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -177,7 +276,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].altNegative_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
+                            startAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -192,7 +291,7 @@ public class PresetControls_PC : MonoBehaviour
                 option1.GetComponentInChildren<Text>().text = 
                     preferredControlScheme.contols[jsonIndex].positive_pc;
                 option1.onClick.AddListener(delegate {
-                    UpdateControl(option1, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
+                    startAssignmnet(actionInfo[0], option1);
                 });
                 if (option2 != null) {
                     option2.enabled = true;
@@ -200,7 +299,7 @@ public class PresetControls_PC : MonoBehaviour
                     option2.GetComponentInChildren<Text>().text = 
                         preferredControlScheme.contols[jsonIndex].altPositive_pc;
                     option2.onClick.AddListener(delegate {
-                        UpdateControl(option2, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
+                        startAssignmnet(actionInfo[0], option2);
                     });
                 }
             }
@@ -238,9 +337,11 @@ public class PresetControls_PC : MonoBehaviour
         List<string> presetOptions = new List<string> { "defualt" };
 
         //Find all other presets.
-        for (int i = 0; i < numPresets; i++) {
+        for (int i = 1; i <= numPresets; i++) {
             //[presetName] Stores the name of the preset.
             string presetName = PlayerPrefs.GetString("preset" + i, null);
+
+            Debug.Log(presetName);
 
             //Add the preset.
             if(!presetName.Equals(null)) {
@@ -275,11 +376,6 @@ public class PresetControls_PC : MonoBehaviour
         {
             StartCoroutine(AssignKey(keyName, btn));
         }
-    }
-
-    public void sendText(Text text)
-    {
-        buttonText = text;
     }
 
     /**
