@@ -18,6 +18,9 @@ public class HealthHandler : MonoBehaviour
     private float uPlayerHealth;
     private int   uPlayerIndex;
 
+    // updated player health and index
+    private float uMaxPlayerHealth;
+
     // current player index
     private int   cPlayerIndex;
 
@@ -44,6 +47,8 @@ public class HealthHandler : MonoBehaviour
         uPlayerHealth = charactersManager.GetCurrentPlayer().GetHealth();
         uPlayerIndex  = charactersManager.GetCurrentPlayerIndex();
 
+        uMaxPlayerHealth = charactersManager.GetCurrentPlayer().GetMaxHealth();
+
         // if updated index is different
         if (uPlayerIndex != cPlayerIndex)
         {
@@ -52,6 +57,7 @@ public class HealthHandler : MonoBehaviour
             // adjust the health bar to the new system 
             cPlayerIndex = uPlayerIndex;
             healthSystem.setHealth(playersHealth[uPlayerIndex]);
+            healthSystem.setHealthMax(uMaxPlayerHealth);
 
             if (uPlayerHealth < playersHealth[uPlayerIndex])
             {

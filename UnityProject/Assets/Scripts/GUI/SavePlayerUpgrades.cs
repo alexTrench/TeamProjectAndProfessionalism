@@ -1,9 +1,12 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
 public class BinaryCharacterSaver : MonoBehaviour
 {
+    readonly Playerstats stats;
+
 
     public CharacterData characterData;
     const string folderName = "BinaryCharacterData";
@@ -13,6 +16,16 @@ public class BinaryCharacterSaver : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.S))
         {
+            Dictionary<string, int> map = new Dictionary<string, int>();
+
+            foreach(KeyValuePair<string, int> item in map) {
+                PlayerPrefs.SetInt(item.Key, item.Value);
+            }
+
+            PlayerPrefs.SetInt("health", stats.MaxHealth);
+
+            PlayerPrefs.GetInt("health", 100);
+
             string folderPath = Path.Combine(Application.persistentDataPath, folderName);
             if (!Directory.Exists(folderPath))
                 Directory.CreateDirectory(folderPath);

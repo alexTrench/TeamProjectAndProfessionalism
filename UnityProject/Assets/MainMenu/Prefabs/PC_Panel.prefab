@@ -1289,7 +1289,7 @@ GameObject:
   - component: {fileID: 3032080524151212507}
   - component: {fileID: 2263384177414767309}
   m_Layer: 5
-  m_Name: swapCharacter pos
+  m_Name: swapCharacter neg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4516,15 +4516,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3720872234490966212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 908ffb495324ed14bb6d5d6b321f4884, type: 3}
+  m_Script: {fileID: 11500000, guid: 86b37d7e14669174e86e784e3f31a5bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   presetSelect: {fileID: 3720872233534181332}
   controlSchemeOptions:
   - {fileID: 3720872234343809466}
   - {fileID: 153891863881419595}
-  - {fileID: 2043329373300297782}
   - {fileID: 4107128923077979668}
+  - {fileID: 2043329373300297782}
   - {fileID: 6525453946647263455}
   - {fileID: 1762778245288590228}
   - {fileID: 5300585100455416578}

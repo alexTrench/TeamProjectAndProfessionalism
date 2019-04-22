@@ -8,6 +8,9 @@ public class Playerstats : MonoBehaviour
 {
     public Button Reset;
 
+    // local characters manager
+    private CharacterManagerScript charactersManager;
+
     // -----------------------------MaxHp----------------------------- //
 
     public Button MaxHpLevelIncrease;       // + button for MaxHp
@@ -152,6 +155,8 @@ public class Playerstats : MonoBehaviour
         //Button MaxHpLevelIncrease = GetComponent<Button>();
         // Button MaxHpLevelDecrease = GetComponent<Button>();
 
+        // look up on the list of objects and get CharacterManagerScript component for the object tagged as CharacterManager
+        charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
 
         Skillpoint = 100;
         Level = 1;
@@ -307,6 +312,8 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxHpLevel < 30)
             {
+                charactersManager.IncrementPlayerHealth(10.0f);
+                charactersManager.IncrementPlayerMaxHealth(10.0f);
                 MaxHpLevel += amount;
                 CurrentMaxHpStats += 10;
                 Skillpoint -= 1;
