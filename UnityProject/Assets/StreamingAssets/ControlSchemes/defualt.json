@@ -105,19 +105,6 @@
             "rebindable": true
         },
         {
-            "id": "fireWeapon",
-            "axis": "XBOX_RIGHT_TRIGGER",
-            "positive_pc": "Mouse0",
-            "negative_pc": "None",
-            "altPositive_pc": "None",
-            "altNegative_pc": "None",
-            "positive_xbox": "None",
-            "negative_xbox": "None",
-            "altPositive_xbox": "None",
-            "altNegative_xbox": "None",
-            "rebindable": true
-        },
-        {
             "id": "swapWeapon",
             "axis": "MOUSE_WHEEL",
             "positive_pc": "Y",
