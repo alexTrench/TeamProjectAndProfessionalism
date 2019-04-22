@@ -31,8 +31,8 @@ public static class InputManager {
 
         //Extract each input from the control scheme.
         foreach (InputData input in preferredControlScheme.contols) {
-            InputManager.inputs.Add((InputBinding)ScriptableObject.CreateInstance("InputBinding"));
-            InputManager.inputs[InputManager.inputs.Count - 1].Init(input);
+            inputs.Add((InputBinding)ScriptableObject.CreateInstance("InputBinding"));
+            inputs[inputs.Count - 1].Init(input);
         }
     }
 

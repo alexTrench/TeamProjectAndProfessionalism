@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,6 +18,13 @@ public class PresetControls_PC : MonoBehaviour
 
     [SerializeField] private List<GameObject> controlSchemeOptions = new List<GameObject>();
 
+    Event keyEvent;
+
+    Text buttonText;
+    KeyCode newKey;
+
+    private bool waitingForKey = false;
+
     private enum CONTROL_TYPE {
         POSITIVE, 
         NEGATIVE,
@@ -31,23 +39,18 @@ public class PresetControls_PC : MonoBehaviour
 
         //Update the preset options every time the dropdown is changed.
         presetSelect.onValueChanged.AddListener(delegate { FillOptions(); });
-
-        //Add actions to the buttons.
-        DelagateButtonTasks();
     }
 
-    private void DelagateButtonTasks() {
-        foreach (GameObject action in controlSchemeOptions) {
-
-            Button[] options = action.GetComponentsInChildren<Button>();
-            Button option1 = options[0];
-            Button option2 = null;
-            if (options.Length > 1) { option2 = options[1]; }
-        }
-    }
-
-    private void UpdateControl(CONTROL_TYPE controlType) {
+    private void UpdateControl(Button btn, string inputID, CONTROL_TYPE controlType) {
         Debug.Log("Updating Control");
+
+        Text btnText = btn.GetComponentInChildren<Text>();
+
+        if (btnText) {
+            sendText(btnText);
+        }
+
+        startAssignmnet(inputID, btn);
     }
 
     //@brief Reads the selected control scheme and maps the inputs to the buttons.
@@ -91,7 +94,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text = 
                             preferredControlScheme.contols[jsonIndex].positive_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(CONTROL_TYPE.POSITIVE);
+                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.POSITIVE);
                         });
                         if (option2 != null) {
                             option2.enabled = true;
@@ -99,7 +102,7 @@ public class PresetControls_PC : MonoBehaviour
                             option2.GetComponentInChildren<Text>().text = 
                                 preferredControlScheme.contols[jsonIndex].altPositive_pc;
                             option2.onClick.AddListener(delegate {
-                                UpdateControl(CONTROL_TYPE.ALT_POSITIVE);
+                                UpdateControl(option2, actionInfo[0], CONTROL_TYPE.ALT_POSITIVE);
                             });
                         }
                         break;
@@ -109,7 +112,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text = 
                             preferredControlScheme.contols[jsonIndex].negative_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(CONTROL_TYPE.NEGATIVE);
+                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.NEGATIVE);
                         });
                         if (option2 != null) {
                             option2.enabled = true;
@@ -117,7 +120,7 @@ public class PresetControls_PC : MonoBehaviour
                             option2.GetComponentInChildren<Text>().text = 
                                 preferredControlScheme.contols[jsonIndex].altNegative_pc;
                             option2.onClick.AddListener(delegate {
-                                UpdateControl(CONTROL_TYPE.ALT_NEGATIVE);
+                                UpdateControl(option2, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
                             });
                         }
                         break;
@@ -127,7 +130,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].positive_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(CONTROL_TYPE.POSITIVE);
+                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.POSITIVE);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -140,7 +143,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].negative_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(CONTROL_TYPE.NEGATIVE);
+                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.NEGATIVE);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -153,7 +156,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].altPositive_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(CONTROL_TYPE.ALT_POSITIVE);
+                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.ALT_POSITIVE);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -166,7 +169,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].altNegative_pc;
                         option1.onClick.AddListener(delegate {
-                            UpdateControl(CONTROL_TYPE.ALT_NEGATIVE);
+                            UpdateControl(option1, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -180,11 +183,17 @@ public class PresetControls_PC : MonoBehaviour
                 option1.interactable = true;
                 option1.GetComponentInChildren<Text>().text = 
                     preferredControlScheme.contols[jsonIndex].positive_pc;
+                option1.onClick.AddListener(delegate {
+                    UpdateControl(option1, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
+                });
                 if (option2 != null) {
                     option2.enabled = true;
                     option2.interactable = true;
                     option2.GetComponentInChildren<Text>().text = 
                         preferredControlScheme.contols[jsonIndex].altPositive_pc;
+                    option2.onClick.AddListener(delegate {
+                        UpdateControl(option2, actionInfo[0], CONTROL_TYPE.ALT_NEGATIVE);
+                    });
                 }
             }
         }
@@ -236,5 +245,85 @@ public class PresetControls_PC : MonoBehaviour
             presetSelect.ClearOptions();
             presetSelect.AddOptions(presetOptions);
         }
+    }
+
+    // Rendering and handling GUI events.
+    private void OnGUI()
+    {
+        keyEvent = Event.current;
+
+        //Track the users input.
+        if (keyEvent.isKey && waitingForKey)
+        {
+            Debug.Log("Key Pressed");
+            newKey = keyEvent.keyCode;
+            waitingForKey = false;
+        }
+    }
+
+    public void startAssignmnet(string keyName, Button btn)
+    {
+        if (!waitingForKey)
+        {
+            StartCoroutine(AssignKey(keyName, btn));
+        }
+    }
+
+    public void sendText(Text text)
+    {
+        buttonText = text;
+    }
+
+    /**
+     * @brief Control statement to wait until 
+     *        a user presses a key.
+     */
+    IEnumerator waitForKey()
+    {
+        while (!keyEvent.isKey)
+        {
+            yield return null;
+        }
+    }
+
+    public IEnumerator AssignKey(string keyName, Button btn)
+    {
+        waitingForKey = true;
+
+        //Stop the corourine from executing until a user
+        //presses a key.
+        yield return waitForKey();
+
+        //updateKeyBinding(keyName);
+        UpdateButtonText(keyName, btn);
+
+        //Wait for a frame before execution ends.
+        yield return null;
+    }
+
+    private void UpdateButtonText(string keyName, Button btn) {
+        btn.GetComponentInChildren<Text>().text = newKey.ToString();
+    }
+
+    /**
+     * @brief Updates a key and saves the users preferences.
+     * @param keyName - The name of the key being updated.
+     */
+    private void updateKeyBinding(string keyName)
+    {
+        //foreach (GameInput input in GameManager.GM.inputs)
+        //{
+        //    if (keyName.Equals(input.name))
+        //    {
+        //        Debug.Log("updating binding");
+        //        input.SetKeyCode(newKey, (GameInput.AVAILABLE_INPUTS)index);
+        //        itemsUI[input.GetID()].GetComponentsInChildren<Button>()[index]
+        //            .GetComponentInChildren<Text>().text = input.GetInput((GameInput.AVAILABLE_INPUTS)index).ToString();
+        //        PlayerPrefs.SetString(
+        //            input.GetPlayerPreference((GameInput.AVAILABLE_INPUTS)index),
+        //            input.GetInput((GameInput.AVAILABLE_INPUTS)index).ToString()
+        //        );
+        //    }
+        //}
     }
 }
