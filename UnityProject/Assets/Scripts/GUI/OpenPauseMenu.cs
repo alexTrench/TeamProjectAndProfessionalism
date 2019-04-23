@@ -33,7 +33,7 @@ public class OpenPauseMenu : MonoBehaviour
             pressedOnce = true;
         }
 
-        if (isPaused)
+        if (isPaused && !OpenEndGameMenu.IsEndGame())
         {
             ActivateMenu();
         }

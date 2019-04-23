@@ -33,6 +33,7 @@ public class OpenEndGameMenu : MonoBehaviour
     void ActivateEndMenu()
     {
         // pause the time, make pause menu active and set the cursor to active
+        isEndGame = true;
         Time.timeScale = 0.0f;
         Cursor.visible = true;
         endGameUI.SetActive(true);

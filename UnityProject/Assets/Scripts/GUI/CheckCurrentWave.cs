@@ -10,8 +10,9 @@ public class CheckCurrentWave : MonoBehaviour
     [SerializeField] private Text endGameWaveText    = null; // the UI Text element for Wave Count Number
     [SerializeField] private Text endGameEnemiesText = null; // the UI Text element for Wave Count Number
 
-    private int currentWave; // local variable that memorise the current wave
-    private int updatedWave; // local variable that reads the updated wave
+    private int currentWave;   // local variable that memorise the current wave
+    private int updatedWave;   // local variable that reads the updated wave
+    private int zombiesKilled; // local variable that remembers the number zombies killed
 
     // local zombie manager
     private ZombieManagerScript zombieManager;
@@ -32,9 +33,10 @@ public class CheckCurrentWave : MonoBehaviour
     {
         // update the wave number
         updatedWave = Wave.GetWaveID();
+        zombiesKilled = zombieManager.GetNumberOfZombiesKilled();
 
         // check whether or not the updated wave number has changed
-        if(updatedWave != currentWave)
+        if (updatedWave != currentWave)
         {
             // update the GUI Text Element and the current wave variable
             waveText.text = updatedWave.ToString();
@@ -46,7 +48,7 @@ public class CheckCurrentWave : MonoBehaviour
         {
             // update the number of waves survived inside End Game Panel
             endGameWaveText.text = updatedWave.ToString();
-            endGameEnemiesText.text = zombieManager.GetNumberOfZombiesKilled().ToString();
+            endGameEnemiesText.text = zombiesKilled.ToString();
         }
     }
 }

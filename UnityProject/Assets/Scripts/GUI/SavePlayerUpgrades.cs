@@ -62,6 +62,7 @@ public class SavePlayerUpgrades : MonoBehaviour
         }
 
         PlayerPrefs.Save();
+
     }
 
     public void LoadUpgrades()
