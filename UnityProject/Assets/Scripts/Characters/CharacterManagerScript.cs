@@ -14,6 +14,10 @@ public class CharacterManagerScript : MonoBehaviour
     private int           m_currentPlayerIndex   = 0;
     private FollowTarget  m_followingCamera;
     private Queue<Player> m_deadPlayerCharacters;
+    private bool          m_startSwitchTimer     = false;
+    private float         m_switchPlayerTimer    = 0.0f;
+
+    private AudioSource m_audioSource;
 
     private void Awake()
     {
@@ -34,6 +38,9 @@ public class CharacterManagerScript : MonoBehaviour
 
         // Set initial player controlled character
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
+
+        // Init audio source
+        m_audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -60,6 +67,22 @@ public class CharacterManagerScript : MonoBehaviour
             if (player.IsDead() && !m_deadPlayerCharacters.Contains(player))
                 m_deadPlayerCharacters.Enqueue(player);
         }
+
+        // If controlled character dies, auto switch to next character after n seconds
+        if (GetCurrentPlayer().IsDead())
+            m_startSwitchTimer = true;
+
+        if (m_startSwitchTimer)
+        {
+            m_switchPlayerTimer += Time.deltaTime;
+            if (m_switchPlayerTimer >= 3.5f)
+            {
+                SwitchNextCharacter();
+                m_switchPlayerTimer = 0.0f;
+                m_startSwitchTimer = false;
+            }
+        }
+            
     }
 
     /**
@@ -86,6 +109,9 @@ public class CharacterManagerScript : MonoBehaviour
 
         // Enable current character and disable others
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
+
+        // Play sound
+        m_audioSource.Play();
 
         //Make the camera follow the new character.
         m_followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
@@ -118,6 +144,9 @@ public class CharacterManagerScript : MonoBehaviour
         // Enable current character and disable others
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
 
+        // Play sound
+        m_audioSource.Play();
+
         m_followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
 
@@ -148,6 +177,9 @@ public class CharacterManagerScript : MonoBehaviour
 
         // Enable current character and disable others
         EnableCharacter(m_playerCharacters[m_currentPlayerIndex]);
+
+        // Play sound
+        m_audioSource.Play();
 
         m_followingCamera.setTarget(m_playerCharacters[m_currentPlayerIndex].gameObject.transform);
     }
