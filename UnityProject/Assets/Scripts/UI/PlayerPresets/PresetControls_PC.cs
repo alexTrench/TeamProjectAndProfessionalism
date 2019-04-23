@@ -10,28 +10,34 @@ using UnityEngine.UI;
  *          control presets (for PC)
  * @author  Andrew Alford
  * @date    21/04/19
- * @version 1.1 - 22/04/19
+ * @version 1.2 - 23/04/19
  */
 public class PresetControls_PC : MonoBehaviour
 {
     //[presetSelect] A drop down to select presets.
     [SerializeField] private Dropdown presetSelect = null;
 
+    //[controlSchemeOptions] A list of all possible controls.
     [SerializeField] private List<GameObject> controlSchemeOptions = new List<GameObject>();
 
+    //[reset_btn] Resets to the defualt layout when clicked.
     [SerializeField] private Button reset_btn = null;
 
+    //[save_btn] Saves the current preset when clicked.
     [SerializeField] private Button save_btn = null;
 
+    //[keyEvent] Tracks when keys have been pressed.
     private Event keyEvent;
 
+    //[newKey] The newest key to be pressed.
     private KeyCode newKey;
-
+    
+    //[waitingForKey] 'true' while no keys have been pressed.
     private bool waitingForKey = false;
 
     //@brief Sets up the Preset Controls
     private void Start() {
-        PlayerPrefs.DeleteAll();
+        
         FindPresets();
         FillOptions(presetSelect.options[presetSelect.value].text);
 
@@ -48,6 +54,7 @@ public class PresetControls_PC : MonoBehaviour
         save_btn.onClick.AddListener(delegate { SaveControlScheme(); });
     }
 
+    //@brief Saves the control scheme as a new preset.
     private void SaveControlScheme() {
         int numPresets = PlayerPrefs.GetInt("numPresets", 0);
         numPresets++;
@@ -56,10 +63,6 @@ public class PresetControls_PC : MonoBehaviour
 
         //Convert the control scheme to JSON.
         string controlSchemeJSON = JsonUtility.ToJson(CreateControlScheme());
-
-        Debug.Log(controlSchemeJSON);
-
-        Debug.Log("Num Presets:\t" + numPresets);
 
         //open file stream
         StreamWriter writer = new StreamWriter(Application.streamingAssetsPath +
@@ -201,7 +204,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text = 
                             preferredControlScheme.contols[jsonIndex].positive_pc;
                         option1.onClick.AddListener(delegate {
-                            startAssignmnet(actionInfo[0], option1);
+                            StartAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.enabled = true;
@@ -209,7 +212,7 @@ public class PresetControls_PC : MonoBehaviour
                             option2.GetComponentInChildren<Text>().text = 
                                 preferredControlScheme.contols[jsonIndex].altPositive_pc;
                             option2.onClick.AddListener(delegate {
-                                startAssignmnet(actionInfo[0], option2);
+                                StartAssignmnet(actionInfo[0], option2);
                             });
                         }
                         break;
@@ -219,7 +222,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text = 
                             preferredControlScheme.contols[jsonIndex].negative_pc;
                         option1.onClick.AddListener(delegate {
-                            startAssignmnet(actionInfo[0], option1);
+                            StartAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.enabled = true;
@@ -227,7 +230,7 @@ public class PresetControls_PC : MonoBehaviour
                             option2.GetComponentInChildren<Text>().text = 
                                 preferredControlScheme.contols[jsonIndex].altNegative_pc;
                             option2.onClick.AddListener(delegate {
-                                startAssignmnet(actionInfo[0], option2);
+                                StartAssignmnet(actionInfo[0], option2);
                             });
                         }
                         break;
@@ -237,7 +240,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].positive_pc;
                         option1.onClick.AddListener(delegate {
-                            startAssignmnet(actionInfo[0], option1);
+                            StartAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -250,7 +253,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].negative_pc;
                         option1.onClick.AddListener(delegate {
-                            startAssignmnet(actionInfo[0], option1);
+                            StartAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -263,7 +266,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].altPositive_pc;
                         option1.onClick.AddListener(delegate {
-                            startAssignmnet(actionInfo[0], option1);
+                            StartAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -276,7 +279,7 @@ public class PresetControls_PC : MonoBehaviour
                         option1.GetComponentInChildren<Text>().text =
                             preferredControlScheme.contols[characterHotKeysIndex].altNegative_pc;
                         option1.onClick.AddListener(delegate {
-                            startAssignmnet(actionInfo[0], option1);
+                            StartAssignmnet(actionInfo[0], option1);
                         });
                         if (option2 != null) {
                             option2.GetComponentInChildren<Text>().text = "N/A";
@@ -291,7 +294,7 @@ public class PresetControls_PC : MonoBehaviour
                 option1.GetComponentInChildren<Text>().text = 
                     preferredControlScheme.contols[jsonIndex].positive_pc;
                 option1.onClick.AddListener(delegate {
-                    startAssignmnet(actionInfo[0], option1);
+                    StartAssignmnet(actionInfo[0], option1);
                 });
                 if (option2 != null) {
                     option2.enabled = true;
@@ -299,13 +302,14 @@ public class PresetControls_PC : MonoBehaviour
                     option2.GetComponentInChildren<Text>().text = 
                         preferredControlScheme.contols[jsonIndex].altPositive_pc;
                     option2.onClick.AddListener(delegate {
-                        startAssignmnet(actionInfo[0], option2);
+                        StartAssignmnet(actionInfo[0], option2);
                     });
                 }
             }
         }
     }
 
+    //@brief Finds the appropriate locations of items in the JSON file.
     private void FindIndexes(
         in ControlSchemePreset controlScheme, in string lookup,
         out int jsonIndex, out int characterHotKeysIndex)
@@ -341,8 +345,6 @@ public class PresetControls_PC : MonoBehaviour
             //[presetName] Stores the name of the preset.
             string presetName = PlayerPrefs.GetString("preset" + i, null);
 
-            Debug.Log(presetName);
-
             //Add the preset.
             if(!presetName.Equals(null)) {
                 presetOptions.Add(presetName);
@@ -357,23 +359,24 @@ public class PresetControls_PC : MonoBehaviour
     }
 
     // Rendering and handling GUI events.
-    private void OnGUI()
-    {
+    private void OnGUI() {
         keyEvent = Event.current;
 
         //Track the users input.
-        if (keyEvent.isKey && waitingForKey)
-        {
+        if (keyEvent.isKey && waitingForKey) {
             Debug.Log("Key Pressed");
             newKey = keyEvent.keyCode;
             waitingForKey = false;
         }
     }
 
-    public void startAssignmnet(string keyName, Button btn)
-    {
-        if (!waitingForKey)
-        {
+    /**
+     * @brief Begins the assignment of a new control.
+     * @param keyName - The key to be binded.
+     * @param btn - The control to bind the key to.
+     */
+    public void StartAssignmnet(string keyName, Button btn) {
+        if (!waitingForKey) {
             StartCoroutine(AssignKey(keyName, btn));
         }
     }
@@ -382,48 +385,27 @@ public class PresetControls_PC : MonoBehaviour
      * @brief Control statement to wait until 
      *        a user presses a key.
      */
-    IEnumerator waitForKey()
-    {
-        while (!keyEvent.isKey)
-        {
+    IEnumerator WaitForKey() {
+        while (!keyEvent.isKey) {
             yield return null;
         }
     }
 
-    public IEnumerator AssignKey(string keyName, Button btn)
-    {
+    /**
+     * @brief Assigns the new control.
+     * @param keyName - The key to be binded.
+     * @param btn - The control to bind the key to.
+     */
+    public IEnumerator AssignKey(string keyName, Button btn) {
         waitingForKey = true;
 
         //Stop the corourine from executing until a user
         //presses a key.
-        yield return waitForKey();
+        yield return WaitForKey();
 
         btn.GetComponentInChildren<Text>().text = newKey.ToString();
-        updateKeyBinding(keyName);
 
         //Wait for a frame before execution ends.
         yield return null;
-    }
-
-    /**
-     * @brief Updates a key and saves the users preferences.
-     * @param keyName - The name of the key being updated.
-     */
-    private void updateKeyBinding(string keyName)
-    {
-        //foreach (GameInput input in GameManager.GM.inputs)
-        //{
-        //    if (keyName.Equals(input.name))
-        //    {
-        //        Debug.Log("updating binding");
-        //        input.SetKeyCode(newKey, (GameInput.AVAILABLE_INPUTS)index);
-        //        itemsUI[input.GetID()].GetComponentsInChildren<Button>()[index]
-        //            .GetComponentInChildren<Text>().text = input.GetInput((GameInput.AVAILABLE_INPUTS)index).ToString();
-        //        PlayerPrefs.SetString(
-        //            input.GetPlayerPreference((GameInput.AVAILABLE_INPUTS)index),
-        //            input.GetInput((GameInput.AVAILABLE_INPUTS)index).ToString()
-        //        );
-        //    }
-        //}
     }
 }

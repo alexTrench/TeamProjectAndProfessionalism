@@ -43,6 +43,16 @@ public class MiniHealthHandler : MonoBehaviour
         uPlayerHealth = charactersManager.GetPlayerByIndex(playerIndex).GetHealth();
         uPlayerMaxHealth = charactersManager.GetPlayerByIndex(playerIndex).GetMaxHealth();
 
+        if(playerMaxHealth < uPlayerMaxHealth)
+        {
+            if (!charactersManager.GetPlayerByIndex(playerIndex).IsDead())
+            {
+                healthSystem = new HealthSystem(uPlayerMaxHealth);
+                healthBar.Setup(healthSystem);
+                healthSystem.setHealth(uPlayerHealth);
+            }
+        }
+
         if (uPlayerHealth < playerHealth)
         {
             // decrease the visual aspect of the bar and update the player's health

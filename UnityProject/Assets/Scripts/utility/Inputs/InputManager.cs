@@ -101,7 +101,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should move forward.
     public static bool Forward() {
-        try { return GetInputByID("forwardMovement").GetPositive(); }
+        try {
+            if(GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("forwardMovement").GetPositive();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -110,7 +116,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should move backward.
     public static bool Backward() {
-        try { return GetInputByID("forwardMovement").GetNegative(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("forwardMovement").GetNegative();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -119,7 +131,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should move right.
     public static bool Right() {
-        try { return GetInputByID("strafeMovement").GetPositive(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("strafeMovement").GetPositive();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -128,7 +146,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should move left.
     public static bool Left() {
-        try { return GetInputByID("strafeMovement").GetNegative(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("strafeMovement").GetNegative();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -137,7 +161,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should throw a grenade.
     public static bool ThrowGrenade() {
-        try { return GetInputByID("throwGrenade").GetPositive(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("throwGrenade").GetPositive();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -146,7 +176,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should swap to the next character.
     public static bool NextCharacter() {
-        try { return GetInputByID("swapCharacter").PositiveKeyDown(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("swapCharacter").PositiveKeyDown();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -155,7 +191,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should swap to the previous character.
     public static bool PreviousCharacter() {
-        try { return GetInputByID("swapCharacter").NegativeKeyDown(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("swapCharacter").NegativeKeyDown();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -165,8 +207,12 @@ public static class InputManager {
     //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey1() {
         try {
-            return Input.GetKeyDown(GetInputByID("characterHotKeys").GetPositiveKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("characterHotKeys").GetPositiveKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("characterHotKeys").GetPositiveKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("characterHotKeys").GetPositiveKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -177,8 +223,12 @@ public static class InputManager {
     //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey2() {
         try {
-            return Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltPositiveKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltPositiveKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltPositiveKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltPositiveKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -189,8 +239,12 @@ public static class InputManager {
     //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey3() {
         try {
-            return Input.GetKeyDown(GetInputByID("characterHotKeys").GetNegativeKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("characterHotKeys").GetNegativeKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("characterHotKeys").GetNegativeKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("characterHotKeys").GetNegativeKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -201,8 +255,12 @@ public static class InputManager {
     //@returns 'true' if the player should swap to the specific character.
     public static bool CharacterHotKey4() {
         try {
-            return Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltNegativeKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltNegativeKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltNegativeKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("characterHotKeys").GetAltNegativeKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -213,8 +271,12 @@ public static class InputManager {
     //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey1() {
         try {
-            return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetPositiveKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("abilityHotKeys").GetPositiveKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetPositiveKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("abilityHotKeys").GetPositiveKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -225,8 +287,12 @@ public static class InputManager {
     //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey2() {
         try {
-            return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltPositiveKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltPositiveKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltPositiveKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltPositiveKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -237,8 +303,12 @@ public static class InputManager {
     //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey3() {
         try {
-            return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetNegativeKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("abilityHotKeys").GetNegativeKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetNegativeKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("abilityHotKeys").GetNegativeKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -249,8 +319,12 @@ public static class InputManager {
     //@returns 'true' if the player should use a specific ability.
     public static bool AbilityHotKey4() {
         try {
-            return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltNegativeKey_pc()) ||
-                Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltNegativeKey_xbox());
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltNegativeKey_pc()) ||
+                    Input.GetKeyDown(GetInputByID("abilityHotKeys").GetAltNegativeKey_xbox());
+            } else {
+                return false;
+            }
         }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
@@ -260,7 +334,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should fire their weapon.
     public static bool FireWeapon() {
-        try { return GetInputByID("fireWeapon").GetPositive(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("fireWeapon").GetPositive();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -269,7 +349,13 @@ public static class InputManager {
 
     //@returns 'true' if the player should swap their weapons.
     public static bool SwapWeapon() {
-        try { return GetInputByID("swapWeapon").PositiveKeyDown(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("swapWeapon").PositiveKeyDown();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -278,7 +364,13 @@ public static class InputManager {
 
     //@returns 'true' if the player goes up on the menu.
     public static bool MenuUp() {
-        try { return GetInputByID("menuMovement").GetPositive(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("menuMovement").GetPositive();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -287,7 +379,13 @@ public static class InputManager {
 
     //@returns 'true' if the player goes down on the menu.
     public static bool MenuDown() {
-        try { return GetInputByID("menuMovement").GetNegative(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("menuMovement").GetNegative();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -296,7 +394,13 @@ public static class InputManager {
 
     //@returns 'true' if the player selects an item on the menu.
     public static bool MenuSelect() {
-        try { return GetInputByID("menuInteract").GetPositive(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("menuInteract").GetPositive();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
@@ -305,7 +409,13 @@ public static class InputManager {
     
     //@returns 'true' if the player goes back to the previous menu.
     public static bool MenuBack() {
-        try { return GetInputByID("menuInteract").GetNegative(); }
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("menuInteract").GetNegative();
+            } else {
+                return false;
+            }
+        }
         catch (ArgumentOutOfRangeException e) {
             Debug.LogError(e);
             return false;
