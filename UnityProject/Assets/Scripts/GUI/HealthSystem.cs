@@ -45,6 +45,7 @@ public class HealthSystem
     public void setHealthMax(float newHealthMax)
     {
         healthMAX = newHealthMax;
+        OnHealthChanged?.Invoke(this, EventArgs.Empty);
     }
 
     // deal damage to player
