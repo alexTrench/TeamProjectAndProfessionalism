@@ -35114,6 +35114,7 @@ MonoBehaviour:
   zombie_template_girl: {fileID: 6266080106274829013, guid: 94371768417da694f91d69dd376c1ef1,
     type: 3}
   viewTracker: {fileID: 832323750}
+  characterManager: {fileID: 1030215375}
 --- !u!1 &583171415
 GameObject:
   m_ObjectHideFlags: 0

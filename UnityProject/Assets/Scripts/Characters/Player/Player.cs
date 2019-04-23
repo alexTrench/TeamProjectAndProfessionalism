@@ -375,4 +375,35 @@ public class Player : BaseCharacter
 
         return false;
     }
+
+    /**
+     * @brief Reads through a list of possible positions and returns 
+     *        the closest position.
+     * @param possiblePositions - The list of all possible positions.
+     * @returns The closest position.
+     */
+    public Transform GetClosest(Transform[] possiblePositions) {
+
+        Vector2 playerPosition_2D = new Vector2(gameObject.transform.position.x, gameObject.transform.position.z);
+
+        Vector2 firstPosition_2D = new Vector2(possiblePositions[0].transform.position.x, possiblePositions[0].transform.position.z);
+
+        float closestDistance = Vector2.Distance(playerPosition_2D, firstPosition_2D);
+
+        Transform closestPosition = possiblePositions[0];
+
+        for (int i = 1; i < possiblePositions.Length; i++) {
+            Vector2 position_2D = new Vector2(possiblePositions[i].transform.position.x, possiblePositions[i].transform.position.z);
+
+            float distance = Vector2.Distance(playerPosition_2D, position_2D);
+
+            if (distance < closestDistance)
+            {
+                closestDistance = distance;
+                closestPosition = possiblePositions[i];
+            }
+        }     
+
+        return closestPosition;
+    }
 }
