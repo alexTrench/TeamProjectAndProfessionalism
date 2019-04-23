@@ -11,6 +11,9 @@ public class ZombieManagerScript : MonoBehaviour
 
     //[viewTracker] For tracking where to spawn zombies.
     [SerializeField] private ViewTracker viewTracker = null;
+    //[characterManager] Tracks the position of the player
+    //to spawn zombies nearby
+    [SerializeField] private CharacterManagerScript characterManager = null;
 
     //[zombiesKilled] Tracks how many zombies have been killed
     //during the gameplay session.
@@ -53,17 +56,19 @@ public class ZombieManagerScript : MonoBehaviour
             //Spawn the zombie.
             if(zombieType != null) {
 
-                List<Transform> possibleSpawnPoints = viewTracker.GetPointsNotInRange(spawnPoints);
+                //[spawnPoint] Holds the spawn point closest to the player 
+                //that is not viewable by the camera.
+                Transform spawnPoint = characterManager.GetCurrentPlayer().GetClosest(
+                    viewTracker.GetPointsNotInRange(spawnPoints).ToArray()
+                );
 
-                if(possibleSpawnPoints.Count > 0) {
-                    //[spawnPoint] Where to spawn the zombie.
-                    int spawnPoint = Random.Range(0, possibleSpawnPoints.Count);
+                if(spawnPoint != null) {
 
                     //[zombie] The zombie being created.
                     GameObject zombie = Instantiate(
                         zombieType,
-                        possibleSpawnPoints[spawnPoint].position,
-                        possibleSpawnPoints[spawnPoint].rotation,
+                        spawnPoint.position,
+                        spawnPoint.rotation,
                         gameObject.transform
                     ) as GameObject;
 

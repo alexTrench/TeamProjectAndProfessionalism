@@ -46,4 +46,5 @@ public class PlayerController : MonoBehaviour {
      *                           for the player.
      */
     public void SetMovementSpeed(float newMovementSpeed) => movementSpeed = newMovementSpeed;
+
 }
