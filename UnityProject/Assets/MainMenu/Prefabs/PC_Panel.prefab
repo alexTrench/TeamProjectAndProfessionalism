@@ -4516,7 +4516,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3720872234490966212}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86b37d7e14669174e86e784e3f31a5bd, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f76d808c0e2ef041a16aaecdd17e251, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   presetSelect: {fileID: 3720872233534181332}
@@ -4536,7 +4536,7 @@ MonoBehaviour:
   - {fileID: 7167824182572690211}
   - {fileID: 1200696081378865727}
   reset_btn: {fileID: 2654780513601199792}
-  save_btn: {fileID: 6783812228624536433}
+  save_btn: {fileID: 2964590862330386429}
 --- !u!1 &3720872234580504184
 GameObject:
   m_ObjectHideFlags: 0
