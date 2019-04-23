@@ -79,8 +79,9 @@ public class WeaponPickup : MonoBehaviour
 
     void PickupFromWall()
     {
-            //checks all of the inventory slots to see if any are free
-            for (int i = 0; i < inventory.slots.Length; i++)
+
+        //checks all of the inventory slots to see if any are free
+        for (int i = 0; i < inventory.slots.Length; i++)
             {
                 if (inventory.isFull[i] == false && database.weapons[id].isPurchased == false)
                 {
@@ -92,14 +93,14 @@ public class WeaponPickup : MonoBehaviour
                     {
                        //this spawns the weapon on the primary or secondary inventory slot
                        //at a rotated angle to take into consideration the -90 degree of the gun when imported
-                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, manager.transform.position, manager.transform.rotation * Quaternion.Euler(0,-90,0));
+                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, (manager.transform.position - new Vector3(-0.2f, 0.5f, 0.40f)), manager.transform.rotation * Quaternion.Euler(0,-90,0));
                        primaryWeapon.transform.SetParent(inventory.slots[i].transform);
                        //Debug.Log(inventory.slots[i].transform.position);
                     }
                     else
                     {
                        //these guns are the right allignment so no need to mess with the rotation
-                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, manager.transform.position, manager.transform.rotation);
+                       primaryWeapon = Instantiate(database.weapons[id].weaponObject, (manager.transform.position - new Vector3(-0.2f, 0.5f, 0.25f)), manager.transform.rotation);
                        primaryWeapon.transform.SetParent(inventory.slots[i].transform);
                        //Debug.Log(inventory.slots[i].transform.position);
                     }

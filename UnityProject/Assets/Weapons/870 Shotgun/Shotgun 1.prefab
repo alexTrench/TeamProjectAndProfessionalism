@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameController: {fileID: 0}
   shellCount: 6
-  spreadAngle: 1
+  spreadAngle: 20
   bulletSpawn: {fileID: 5995803984094382493}
   muzzleFlash: {fileID: 6112062174130780171}
 --- !u!114 &5231937612286667114
@@ -245,6 +245,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 472287921009250259}
     m_Modifications:
+    - target: {fileID: 8649388433993897991, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
+        type: 3}
+      propertyPath: m_Name
+      value: MuzzleFlash (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 357015572048086647, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -300,10 +305,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8649388433993897991, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
+    - target: {fileID: 357015572048086647, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
         type: 3}
-      propertyPath: m_Name
-      value: MuzzleFlash (1)
+      propertyPath: m_LocalScale.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 357015572048086647, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 357015572048086647, guid: ce027b94cc02aad4f8e2d88d7d7ada55,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce027b94cc02aad4f8e2d88d7d7ada55, type: 3}

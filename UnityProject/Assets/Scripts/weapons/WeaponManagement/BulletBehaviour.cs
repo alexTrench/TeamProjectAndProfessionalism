@@ -9,6 +9,7 @@ public class BulletBehaviour : MonoBehaviour
     weaponDatabase database;
     public float Life = 4f;
     private float damage;
+    [SerializeField] private ParticleSystem blood = null;
 
     private void Start()
     {
@@ -24,17 +25,18 @@ public class BulletBehaviour : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Projectille")
+        if (other.gameObject.tag == "Enemy")
         {
-
-        }
-        else if (other.gameObject.tag == "Enemy")
-        {
+            Destroy(gameObject);
             other.GetComponent<Zombie>().GetComponentInParent<BaseCharacter>().TakeDamage((int)damage);
             //Debug.Log("damage = " + damage);
+            Instantiate(blood, other.GetComponent<Zombie>().transform.position, Random.rotation);
 
-            Destroy(gameObject);
-           
+
+        }
+        else if(other.gameObject.tag == "Projectille")
+        {
+
         }
         else
         {

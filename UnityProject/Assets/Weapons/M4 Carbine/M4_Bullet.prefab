@@ -124,3 +124,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   Life: 4
+  blood: {fileID: 198000011254678926, guid: abb9f519b142e304d9c45b56afa768bc, type: 3}

@@ -36,6 +36,7 @@ public class HeavySciFiBullet : MonoBehaviour
         }
         else if (other.gameObject.tag == "Enemy")
         {
+         
             Destroy(gameObject);
         }
         else

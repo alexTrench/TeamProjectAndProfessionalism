@@ -2,71 +2,95 @@
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BinaryCharacterSaver : MonoBehaviour
+public class SavePlayerUpgrades : MonoBehaviour
 {
-    readonly Playerstats stats;
+    private Playerstats stats;
 
+    [SerializeField] private GameObject canvas = null;
 
-    public CharacterData characterData;
-    const string folderName = "BinaryCharacterData";
-    const string fileExtension = ".dat";
+    private Dictionary<string, float> mapFLOAT;
+    private Dictionary<string, int>   mapINT;
 
-    void Update()
+    public void Start()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            Dictionary<string, int> map = new Dictionary<string, int>();
-
-            foreach(KeyValuePair<string, int> item in map) {
-                PlayerPrefs.SetInt(item.Key, item.Value);
-            }
-
-            PlayerPrefs.SetInt("health", stats.MaxHealth);
-
-            PlayerPrefs.GetInt("health", 100);
-
-            string folderPath = Path.Combine(Application.persistentDataPath, folderName);
-            if (!Directory.Exists(folderPath))
-                Directory.CreateDirectory(folderPath);
-
-            string dataPath = Path.Combine(folderPath, characterData.characterName + fileExtension);
-            SaveCharacter(characterData, dataPath);
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            string[] filePaths = GetFilePaths();
-
-            if (filePaths.Length > 0)
-                characterData = LoadCharacter(filePaths[0]);
-        }
+        stats = canvas.GetComponent<Playerstats>();
+        PlayerPrefs.DeleteAll();
     }
 
-    static void SaveCharacter(CharacterData data, string path)
+    public void SaveUpgrades()
     {
-        BinaryFormatter binaryFormatter = new BinaryFormatter();
+        mapINT   = new Dictionary<string, int>();
+        mapFLOAT = new Dictionary<string, float>();
 
-        using (FileStream fileStream = File.Open(path, FileMode.OpenOrCreate))
+        mapINT.Add("maxHpLevel",                      stats.MaxHpLevel);
+        mapINT.Add("currentMaxHpStats",               stats.CurrentMaxHpStats);
+        mapINT.Add("maxAmmoSizeLevel",                stats.MaxAmmoSizeLevel);
+        mapINT.Add("currentMaxAmmoSizeStats",         stats.CurrentMaxAmmoSizeStats);
+        mapINT.Add("maxEnergyLevel",                  stats.MaxEnergyLevel);
+        mapINT.Add("maxEnergyStats",                  stats.MaxEnergyStats);
+        mapINT.Add("reloadSpeedLevel",                stats.ReloadSpeedLevel);
+        mapFLOAT.Add("currentReloadSpeedStats",       stats.CurrentReloadSpeedStats);
+        mapINT.Add("moveSpeedLevel",                  stats.MoveSpeedLevel);
+        mapINT.Add("currentMoveSpeedStats",           stats.CurrentMoveSpeedStats);
+        mapINT.Add("skillCDRLevel",                   stats.SkillCDRLevel);
+        mapFLOAT.Add("currentSkillCDRStats",          stats.CurrentSkillCDRStats);
+        mapINT.Add("fireRateLevel",                   stats.FireRateLevel);
+        mapFLOAT.Add("currentFireRateStats",          stats.CurrentFireRateStats);
+        mapINT.Add("grenadeDamageAreaLevel",          stats.GrenadeDamageAreaLevel);
+        mapFLOAT.Add("currentGrenadeDamageAreaStats", stats.CurrentGrenadeDamageAreaStats);
+        mapINT.Add("gunDamageLevel",                  stats.GunDamageLevel);
+        mapFLOAT.Add("currentGunDamageStats",         stats.CurrentGunDamageStats);
+        mapINT.Add("grenadeDamageLevel",              stats.GrenadeDamageLevel);
+        mapFLOAT.Add("currentGrenadeDamageStats",     stats.CurrentGrenadeDamageAreaStats);
+        mapINT.Add("maxHealth",                       stats.MaxHealth);
+        mapINT.Add("currentHealth",                   stats.CurrentHealth);
+        mapINT.Add("MaxExp",                          stats.MaxExp);
+        mapINT.Add("currentExp",                      stats.CurrentExp);
+        mapINT.Add("level",                           stats.Level);
+        mapINT.Add("skillPoints",                     stats.Skillpoint);
+
+        foreach (KeyValuePair<string, int> item in mapINT)
         {
-            binaryFormatter.Serialize(fileStream, data);
+            PlayerPrefs.SetInt(item.Key, item.Value);
         }
+
+        foreach (KeyValuePair<string, float> item in mapFLOAT)
+        {
+            PlayerPrefs.SetFloat(item.Key, item.Value);
+        }
+
+        PlayerPrefs.Save();
     }
 
-    static CharacterData LoadCharacter(string path)
+    public void LoadUpgrades()
     {
-        BinaryFormatter binaryFormatter = new BinaryFormatter();
-
-        using (FileStream fileStream = File.Open(path, FileMode.Open))
-        {
-            return (CharacterData)binaryFormatter.Deserialize(fileStream);
-        }
-    }
-
-    static string[] GetFilePaths()
-    {
-        string folderPath = Path.Combine(Application.persistentDataPath, folderName);
-
-        return Directory.GetFiles(folderPath, fileExtension);
+        stats.MaxHpLevel                    = PlayerPrefs.GetInt("maxHpLevel");
+        stats.CurrentMaxHpStats             = PlayerPrefs.GetInt("currentMaxHpStats");
+        stats.MaxAmmoSizeLevel              = PlayerPrefs.GetInt("maxAmmoSizeLevel");
+        stats.CurrentMaxAmmoSizeStats       = PlayerPrefs.GetInt("currentMaxAmmoSizeStats");
+        stats.MaxEnergyLevel                = PlayerPrefs.GetInt("maxEnergyLevel");
+        stats.MaxEnergyStats                = PlayerPrefs.GetInt("maxEnergyStats");
+        stats.ReloadSpeedLevel              = PlayerPrefs.GetInt("reloadSpeedLevel");
+        stats.CurrentReloadSpeedStats       = PlayerPrefs.GetFloat("currentReloadSpeedStats");
+        stats.MoveSpeedLevel                = PlayerPrefs.GetInt("moveSpeedLevel");
+        stats.CurrentMoveSpeedStats         = PlayerPrefs.GetInt("currentMoveSpeedStats");
+        stats.SkillCDRLevel                 = PlayerPrefs.GetInt("skillCDRLevel");
+        stats.CurrentSkillCDRStats          = PlayerPrefs.GetFloat("currentSkillCDRStats");
+        stats.FireRateLevel                 = PlayerPrefs.GetInt("fireRateLevel");
+        stats.CurrentFireRateStats          = PlayerPrefs.GetFloat("currentFireRateStats");
+        stats.GrenadeDamageAreaLevel        = PlayerPrefs.GetInt("grenadeDamageAreaLevel");
+        stats.CurrentGrenadeDamageAreaStats = PlayerPrefs.GetFloat("currentGrenadeDamageAreaStats");
+        stats.GunDamageLevel                = PlayerPrefs.GetInt("gunDamageLevel");
+        stats.CurrentGunDamageStats         = PlayerPrefs.GetFloat("currentGunDamageStats");
+        stats.GrenadeDamageLevel            = PlayerPrefs.GetInt("grenadeDamageLevel");
+        stats.CurrentGrenadeDamageAreaStats = PlayerPrefs.GetFloat("currentGrenadeDamageStats");
+        stats.MaxHealth                     = PlayerPrefs.GetInt("maxHealth");
+        stats.CurrentHealth                 = PlayerPrefs.GetInt("currentHealth");
+        stats.MaxExp                        = PlayerPrefs.GetInt("MaxExp");
+        stats.CurrentExp                    = PlayerPrefs.GetInt("currentExp");
+        stats.Level                         = PlayerPrefs.GetInt("level");
+        stats.Skillpoint                    = PlayerPrefs.GetInt("skillPoints");
     }
 }
