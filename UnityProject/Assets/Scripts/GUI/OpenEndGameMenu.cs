@@ -24,29 +24,8 @@ public class OpenEndGameMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // if it is not yet End Game (players are still alive)
-        if(!isEndGame)
+        if(charactersManager.AreAllPlayersDead())
         {
-            // initialise number of dead players each frame
-            numberOfDead = 0;
-            // loop through each individual player
-            for (int index = 0; index <= 3; index++)
-            {
-                // and check whether or not his health has reached 0 or below
-                if (charactersManager.GetPlayerByIndex(index).GetHealth() <= 0.0f)
-                {
-                    // count the dead people
-                    numberOfDead++;
-                    //Debug.Log("Character " + index + " has died. Number of dead people: " + numberOfDead);
-                }
-            }
-        }
-
-        // if all the people are dead
-        if(numberOfDead == 4)
-        {
-            // activate End Game Menu
-            isEndGame = true;
             ActivateEndMenu();
         }
     }
@@ -55,8 +34,8 @@ public class OpenEndGameMenu : MonoBehaviour
     {
         // pause the time, make pause menu active and set the cursor to active
         Time.timeScale = 0.0f;
-        endGameUI.SetActive(true);
         Cursor.visible = true;
+        endGameUI.SetActive(true);
     }
 
     public static bool IsEndGame() => isEndGame;

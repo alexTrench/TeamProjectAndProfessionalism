@@ -34,6 +34,18 @@ public class EnergySystem
         return energy / energyMAX;
     }
 
+    public void setEnergy(float newEnergy)
+    {
+        energy = newEnergy;
+        OnEnergyChanged?.Invoke(this, EventArgs.Empty);
+    }
+
+    public void setMaxEnergy(float newMaxEnergy)
+    {
+        energyMAX = newMaxEnergy;
+        OnEnergyChanged?.Invoke(this, EventArgs.Empty);
+    }
+
     // Decrease Energy by desired amount hold inside a parameter
     public void DecreaseEnergy(float decreaseAmount)
     {
