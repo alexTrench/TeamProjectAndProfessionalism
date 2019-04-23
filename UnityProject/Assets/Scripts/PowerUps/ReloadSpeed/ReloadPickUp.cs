@@ -36,8 +36,13 @@ public class ReloadPickUp : MonoBehaviour
         }
 
         //disable the power up object on the level so we cannot collide with it again till it destroys itself later
+<<<<<<< HEAD
         //GetComponent<MeshRenderer>().enabled = false;
         //GetComponent<Collider>().enabled = false;
+=======
+        GetComponent<MeshRenderer>().enabled = false;
+        GetComponent<Collider>().enabled = false;
+>>>>>>> master
 
         yield return new WaitForSeconds(duration);
 
