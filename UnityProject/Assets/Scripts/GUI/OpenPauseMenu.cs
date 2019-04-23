@@ -7,6 +7,7 @@ public class OpenPauseMenu : MonoBehaviour
 {
     // variable which is accesible from inside the editor in order to link scene objects
     [SerializeField] private GameObject pauseMenuUI = null; // visual representation of the pause menu
+    [SerializeField] private GameObject firstMenu   = null; // first menu from the pause menu
 
     private static bool isPaused;
 
@@ -35,7 +36,10 @@ public class OpenPauseMenu : MonoBehaviour
         }
         else
         {
-            DeactivateMenu();
+            if(firstMenu.GetComponent<CanvasGroup>().alpha == 1)
+            {
+                DeactivateMenu();
+            }
         }
     }
 

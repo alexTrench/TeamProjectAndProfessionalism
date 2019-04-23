@@ -312,7 +312,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxHpLevel < 30)
             {
-                charactersManager.IncrementPlayerHealth(10.0f);
+                //charactersManager.IncrementPlayerHealth(10.0f);
                 charactersManager.IncrementPlayerMaxHealth(10.0f);
                 MaxHpLevel += amount;
                 CurrentMaxHpStats += 10;
