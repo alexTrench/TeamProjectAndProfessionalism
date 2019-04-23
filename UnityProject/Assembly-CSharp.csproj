@@ -133,7 +133,6 @@
     <Compile Include="Assets\Scripts\characters\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\GamePlay\GameplayManager.cs" />
     <Compile Include="Assets\Scripts\GamePlay\Wave.cs" />
-    <Compile Include="Assets\Scripts\GUI\CharacterData.cs" />
     <Compile Include="Assets\Scripts\GUI\CheckCurrentWave.cs" />
     <Compile Include="Assets\Scripts\GUI\CheckEnemies.cs" />
     <Compile Include="Assets\Scripts\GUI\CountdownScript.cs" />
