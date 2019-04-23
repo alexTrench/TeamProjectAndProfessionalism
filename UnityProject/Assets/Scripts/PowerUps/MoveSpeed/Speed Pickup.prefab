@@ -11,13 +11,8 @@ GameObject:
   - component: {fileID: 5357987731709727201}
   - component: {fileID: 5357987731709727200}
   - component: {fileID: 5357987731709727231}
-<<<<<<< HEAD
   - component: {fileID: 6847153722792484468}
   - component: {fileID: 5248811767233768612}
-=======
-  - component: {fileID: 5357987731709727230}
-  - component: {fileID: 6847153722792484468}
->>>>>>> master
   m_Layer: 0
   m_Name: Speed Pickup
   m_TagString: Untagged
@@ -84,22 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-<<<<<<< HEAD
-=======
---- !u!135 &5357987731709727230
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5357987731709727229}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
->>>>>>> master
 --- !u!114 &6847153722792484468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +94,6 @@ MonoBehaviour:
   pickupEffect: {fileID: 1329845292236604, guid: 9bba9cf244c53c5439505dfc96fdd11c,
     type: 3}
   duration: 2
-<<<<<<< HEAD
 --- !u!65 &5248811767233768612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -129,5 +107,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 17, y: 31.176498, z: 17}
   m_Center: {x: 0.31404996, y: -0.4621501, z: 6.1154}
-=======
->>>>>>> master
