@@ -1,14 +1,13 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
-<<<<<<< HEAD
 Cmd: preprocess
   insize=3647 outsize=1262 ok=1
+Cmd: preprocess
+  insize=3610 outsize=1675 ok=1
 Cmd: preprocess
   insize=10388 outsize=3956 ok=1
 Cmd: preprocess
   insize=3569 outsize=2622 ok=1
-Cmd: preprocess
-  insize=3610 outsize=1675 ok=1
 Cmd: preprocess
   insize=7317 outsize=2448 ok=1
 Cmd: preprocess
@@ -21,7 +20,6 @@ Cmd: preprocess
   insize=4407 outsize=3641 ok=1
 Cmd: preprocess
   insize=7327 outsize=2458 ok=1
-=======
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -30,47 +28,3 @@ Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
->>>>>>> parent of f1d21877... Merge branch 'atomic_test' of https://github.com/CarlPendleton/TeamProjectAndProfessionalism into atomic_test
