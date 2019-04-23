@@ -124,12 +124,35 @@ public class Playerstats : MonoBehaviour
     public float CurrentGrenadeDamageStats { get; set; }
 
 
+    // ----------------------------------Speed Boost-------------------------------------- //
 
+    public Button SpeedBoostIncrease;    // + button for Speed Boost
+    public Button SpeedBoostDecrease;    // - button for Speed Boost 
+
+    public Text SpeedBoostLevelDisplay;              // UI text for Current skill Speed Boost Level ' 0 '/10
+    public int SpeedBoostLevel { get; set; }
+
+    public Text SpeedBoostStatsDisplay;     // UI text for Skill Speed Boost Stats ??? <<<
+    public int CurrentSpeedBoostStats { get; set; }
+
+    // ----------------------------------Health Regen-------------------------------------- //
+
+    public Button HealthRegenIncrease;    // + button for Health Regen
+    public Button HealthRegenDecrease;    // - button for Health Regen 
+
+    public Text HealthRegenLevelDisplay;              // UI text for Current Health Regen Level ' 0 '/10
+    public int HealthRegenLevel { get; set; }
+
+    public Text HealthRegenStatsDisplay;     // UI text for Skill Health Regen Stats ??? <<<
+    public int CurrentHealthRegenStats { get; set; }
 
 
 
     public Text MaxHp;
     public Text CurrentHp;
+
+
+
     public Text MaxExpText;
     public Text CurrentExpText;
     public Text LevelText;
@@ -138,6 +161,10 @@ public class Playerstats : MonoBehaviour
 
     public int MaxHealth { get; set; }
     public int CurrentHealth { get; set; }
+
+    public int MaxEnergy { get; set; }
+    public int CurrentEnergy { get; set; }
+
     public int MaxExp { get; set; }
     public int CurrentExp { get; set; }
 
@@ -149,6 +176,7 @@ public class Playerstats : MonoBehaviour
     public Slider expbar;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -158,8 +186,16 @@ public class Playerstats : MonoBehaviour
         // look up on the list of objects and get CharacterManagerScript component for the object tagged as CharacterManager
         charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
 
-        Skillpoint = 100;
         Level = 1;
+
+        MaxHealth = 100;
+        CurrentHealth = MaxHealth;
+
+        MaxEnergy = 100;
+        CurrentHealth = MaxEnergy;
+
+        Skillpoint = 200;
+
 
         // -----------------------------MaxHp------------------------------//
         CurrentMaxHpStats = 0;
@@ -201,16 +237,21 @@ public class Playerstats : MonoBehaviour
         GrenadeDamageLevel = 0;
         CurrentGrenadeDamageStats = 0;
 
-        // MaxHealth = 100;
-        //  CurrentHealth = MaxHealth;
+        // ----------------------------------Speed Boost Increase-------------------------------------- //
+        SpeedBoostLevel = 0;
+        CurrentSpeedBoostStats = 0;
+
+        // ----------------------------------Health Regen Increase-------------------------------------- //
+        HealthRegenLevel = 0;
+        CurrentHealthRegenStats = 0;
+
+
         // healthbar.value = CalculateHealth();
 
 
         //   MaxExp = 100;
         //   CurrentExp = 0;
         //   expbar.value = CalculateExp();
-
-
     }
 
 
@@ -262,6 +303,14 @@ public class Playerstats : MonoBehaviour
         GrenadeDamageLevelDisplay.text = GrenadeDamageLevel.ToString() + "/10";
         GrenadeDamageStatsDisplay.text = "+" + CurrentGrenadeDamageStats.ToString();
 
+        // ----------------------------------Speed Boost Increase-------------------------------------- //
+        SpeedBoostLevelDisplay.text = SpeedBoostLevel.ToString() + "/10";
+        SpeedBoostStatsDisplay.text = CurrentSpeedBoostStats.ToString() + "%";
+
+
+        // ----------------------------------Health Regen Increase-------------------------------------- //
+        HealthRegenLevelDisplay.text = HealthRegenLevel.ToString() + "/10";
+        HealthRegenStatsDisplay.text = CurrentHealthRegenStats.ToString() + "%";
 
 
 
@@ -312,7 +361,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxHpLevel < 30)
             {
-                charactersManager.IncrementPlayerHealth(10.0f);
+                
                 charactersManager.IncrementPlayerMaxHealth(10.0f);
                 MaxHpLevel += amount;
                 CurrentMaxHpStats += 10;
@@ -327,6 +376,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxHpLevel > 0)
             {
+                charactersManager.DecrementPlayerMaxHealth(10.0f);
                 MaxHpLevel -= amount;
                 CurrentMaxHpStats -= 10;
                 Skillpoint += 1;
@@ -343,6 +393,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxAmmoSizeLevel < 10)
             {
+               
                 MaxAmmoSizeLevel += amount;
                 CurrentMaxAmmoSizeStats += 2;
                 Skillpoint -= 2;
@@ -372,6 +423,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxEnergyLevel < 20)
             {
+                charactersManager.IncrementPlayerMaxEnergy(10.0f);
                 MaxEnergyLevel += amount;
                 MaxEnergyStats += 10;
                 Skillpoint -= 1;
@@ -384,6 +436,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxEnergyLevel > 0)
             {
+                charactersManager.DecrementPlayerMaxEnergy(10.0f);
                 MaxEnergyLevel -= amount;
                 MaxEnergyStats -= 10;
                 Skillpoint += 1;
@@ -428,6 +481,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MoveSpeedLevel < 10)
             {
+                charactersManager.IncrementPlayerMovementSpeed(10.0f);
                 MoveSpeedLevel += amount;
                 CurrentMoveSpeedStats += 10;
                 Skillpoint -= 1;
@@ -441,6 +495,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MoveSpeedLevel > 0)
             {
+                charactersManager.DecrementPlayerMovementSpeed(10.0f);
                 MoveSpeedLevel -= amount;
                 CurrentMoveSpeedStats -= 10;
                 Skillpoint += 1;
@@ -587,10 +642,66 @@ public class Playerstats : MonoBehaviour
     }
     // ----------------------------------Grenade Damage Increase-------------------------------------- //
 
+    // ----------------------------------Speed Boost Increase-------------------------------------- //
+
+    public void IncreaseSpeedBoostLevel(int amount)
+    {
+        if (Skillpoint > 0)
+        {
+            if (SpeedBoostLevel < 10)
+            {
+                SpeedBoostLevel += amount;
+                CurrentSpeedBoostStats += 10;
+                Skillpoint -= 2;
+            }
+        }
+    }
+    public void DecreaseSpeedBoostLevel(int amount)
+    {
+        if (Skillpoint > 0)
+        {
+            if (SpeedBoostLevel > 0)
+            {
+                SpeedBoostLevel -= amount;
+                CurrentSpeedBoostStats -= 10;
+                Skillpoint += 2;
+            }
+        }
+    }
+    // ----------------------------------Speed Boost Increase-------------------------------------- //
+
+    // ----------------------------------Health Regen Increase-------------------------------------- //
+    
+    public void IncreaseHealthRegenLevel(int amount)
+    {
+        if (Skillpoint > 0)
+        {
+            if (HealthRegenLevel < 10)
+            {
+                HealthRegenLevel += amount;
+                CurrentHealthRegenStats += 5;
+                Skillpoint -= 2;
+            }
+        }
+    }
+    public void DecreaseHealthRegenLevel(int amount)
+    {
+        if (Skillpoint > 0)
+        {
+            if (HealthRegenLevel > 0)
+            {
+                HealthRegenLevel -= amount;
+                CurrentHealthRegenStats -= 5;
+                Skillpoint += 2;
+            }
+        }
+    }
+    // ----------------------------------Health Regen Increase-------------------------------------- //
+
 
     public void ResetAllskill()
     {
-        Skillpoint = 100;   
+        Skillpoint = 100;
 
         // -----------------------------MaxHp------------------------------//
         CurrentMaxHpStats = 0;
@@ -631,7 +742,16 @@ public class Playerstats : MonoBehaviour
         // ----------------------------------Grenade Damage Increase-------------------------------------- //
         GrenadeDamageLevel = 0;
         CurrentGrenadeDamageStats = 0;
+
+        // ----------------------------------Speed Boost Increase-------------------------------------- //
+        SpeedBoostLevel = 0;
+        CurrentSpeedBoostStats = 0;
+
+        // ----------------------------------Health Regen Increase-------------------------------------- //
+        HealthRegenLevel = 0;
+        CurrentHealthRegenStats = 0;
     }
+
 
 
     /*
