@@ -10,11 +10,13 @@ public class OpenPauseMenu : MonoBehaviour
     [SerializeField] private GameObject firstMenu   = null; // first menu from the pause menu
 
     private static bool isPaused;
+    private bool pressedOnce;
 
     // Start is called before the first frame update
     void Start()
     {
-        // empty body
+        isPaused    = false;
+        pressedOnce = false;
     }
 
     // Update is called once per frame
@@ -28,6 +30,7 @@ public class OpenPauseMenu : MonoBehaviour
         {
             // switch between active/inactive
             isPaused = !isPaused;
+            pressedOnce = true;
         }
 
         if (isPaused)
@@ -36,10 +39,15 @@ public class OpenPauseMenu : MonoBehaviour
         }
         else
         {
-            if(firstMenu.GetComponent<CanvasGroup>().alpha == 1)
+            if(firstMenu.GetComponent<CanvasGroup>().alpha == 1 && pressedOnce)
             {
                 DeactivateMenu();
             }
+        }
+
+        if (!pressedOnce)
+        {
+            DeactivateMenu();
         }
     }
 
