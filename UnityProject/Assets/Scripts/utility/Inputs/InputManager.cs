@@ -362,6 +362,21 @@ public static class InputManager {
         }
     }
 
+    //@returns 'true' if the player has interacted with something.
+    public static bool Interact() {
+        try {
+            if (GameplayManager.GM != null && GameplayManager.GM.isActiveAndEnabled) {
+                return GetInputByID("interact").PositiveKeyDown();
+            } else {
+                return false;
+            }
+        }
+        catch (ArgumentOutOfRangeException e) {
+            Debug.LogError(e);
+            return false;
+        }
+    }
+
     //@returns 'true' if the player goes up on the menu.
     public static bool MenuUp() {
         try {
