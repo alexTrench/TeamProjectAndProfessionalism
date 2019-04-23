@@ -38,27 +38,24 @@ public class SciFiPistolScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!OpenPauseMenu.IsPaused())
+        //if the right mouse button is pressed
+        if (InputManager.FireWeapon() && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
         {
-            //if the right mouse button is pressed
-            if (InputManager.FireWeapon() && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
+
+            if (CurrentAmmo > 0)
             {
-
-                if (CurrentAmmo > 0)
-                {
-                    Fire();
-                    //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
-                    nextFireTime = Time.time + database.weapons[id].fireRate;
-                }
-                else
-                {
-                    if (IsReloading == false)
-                    {
-                        StartCoroutine(Reload());
-                    }
-                }
-
+                Fire();
+                //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
+                nextFireTime = Time.time + database.weapons[id].fireRate;
             }
+            else
+            {
+                if (IsReloading == false)
+                {
+                    StartCoroutine(Reload());
+                }
+            }
+
         }
     }
 
@@ -70,38 +67,8 @@ public class SciFiPistolScript : MonoBehaviour
 
     private void Fire()
     {
-
-
-        if (CurrentAmmo > 0)
-        {
-            muzzleFlash.Play();
-            fireSound.Play();
-
-
-            //creates a clone of the bullet
-            GameObject bullet = Instantiate(database.weapons[id].bulleType);
-
-            //spawns at the bullet spawn point
-            bullet.transform.position = bulletSpawn.position;
-            //transforms the roatation into angles, into 360 degrees
-            Vector3 rotation = bullet.transform.rotation.eulerAngles;
-            bullet.transform.rotation = Quaternion.Euler(rotation.x, transform.eulerAngles.y, rotation.z);
-
-            //adds the speed to the rigid body, creating movement
-            bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * database.weapons[id].bulletSpeed, ForceMode.Impulse);
-            CurrentAmmo--;
-        }
-        else
-        {
-            if (IsReloading == false)
-            {
-                StartCoroutine(Reload());
-            }
-        }
-
-
-
-
+        muzzleFlash.Play();
+        fireSound.Play();
         //raycasting
         //RaycastHit hit;
         //if we hit something with the ray
@@ -120,7 +87,23 @@ public class SciFiPistolScript : MonoBehaviour
     //        Debug.Log(target.m_health);
     //    }
    
+    //creates a clone of the bullet
+    GameObject bullet = Instantiate(database.weapons[id].bulleType);
 
+        //tells the bullets collision to ignore collision with itself 
+        //and the charactor to which the spawn point is attached
+        Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
+            bulletSpawn.parent.GetComponent<Collider>());
+
+        //spawns at the bullet spawn point
+        bullet.transform.position = bulletSpawn.position;
+        //transforms the roatation into angles, into 360 degrees
+        Vector3 rotation = bullet.transform.rotation.eulerAngles;
+        bullet.transform.rotation = Quaternion.Euler(rotation.x, transform.eulerAngles.y, rotation.z);
+
+        //adds the speed to the rigid body, creating movement
+        bullet.GetComponent<Rigidbody>().AddForce(bulletSpawn.forward * database.weapons[id].bulletSpeed, ForceMode.Impulse);
+        CurrentAmmo--;
     }
 
     IEnumerator Reload()

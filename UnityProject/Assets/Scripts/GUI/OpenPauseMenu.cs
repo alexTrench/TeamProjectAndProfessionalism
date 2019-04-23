@@ -7,16 +7,13 @@ public class OpenPauseMenu : MonoBehaviour
 {
     // variable which is accesible from inside the editor in order to link scene objects
     [SerializeField] private GameObject pauseMenuUI = null; // visual representation of the pause menu
-    [SerializeField] private GameObject firstMenu   = null; // first menu from the pause menu
 
     private static bool isPaused;
-    private bool pressedOnce;
 
     // Start is called before the first frame update
     void Start()
     {
-        isPaused    = false;
-        pressedOnce = false;
+        // empty body
     }
 
     // Update is called once per frame
@@ -30,7 +27,6 @@ public class OpenPauseMenu : MonoBehaviour
         {
             // switch between active/inactive
             isPaused = !isPaused;
-            pressedOnce = true;
         }
 
         if (isPaused)
@@ -38,14 +34,6 @@ public class OpenPauseMenu : MonoBehaviour
             ActivateMenu();
         }
         else
-        {
-            if(firstMenu.GetComponent<CanvasGroup>().alpha == 1 && pressedOnce)
-            {
-                DeactivateMenu();
-            }
-        }
-
-        if (!pressedOnce)
         {
             DeactivateMenu();
         }

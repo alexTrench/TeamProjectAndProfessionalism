@@ -36,16 +36,24 @@ public class M4_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!OpenPauseMenu.IsPaused())
+        //if the right mouse button is pressed
+        if (InputManager.FireWeapon() && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
         {
-            //if the right mouse button is pressed
-            if (InputManager.FireWeapon() && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
-            {
 
+            //if (CurrentAmmo > 0)
+            //{
                 Fire();
                 //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
                 nextFireTime = Time.time + database.weapons[id].fireRate;
-            }
+            //}
+            //else
+            //{
+            //    if (IsReloading == false)
+            //    {
+            //        StartCoroutine(Reload());
+            //    }
+            //}
+
         }
     }
 
@@ -71,6 +79,12 @@ public class M4_Script : MonoBehaviour
                         bulletSpawn.position,
                         bulletSpawn.rotation
                        );
+                //tells the bullets collision to ignore collision with itself 
+                //and the charactor to which the spawn point is attached
+                if(bullet.GetComponent<Collider>()) {
+                    Physics.IgnoreCollision(bullet.GetComponent<Collider>(),
+                        bulletSpawn.parent.GetComponent<Collider>());
+                }
 
                 //spawns at the bullet spawn point
                 bullet.transform.position = bulletSpawn.position;

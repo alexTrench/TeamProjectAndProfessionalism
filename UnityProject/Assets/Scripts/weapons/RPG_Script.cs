@@ -22,27 +22,23 @@ public class RPG_Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!OpenPauseMenu.IsPaused())
+        if(Input.GetKey(KeyCode.Mouse1) && Time.time >= nextFireTime)
         {
-            if (Input.GetKey(KeyCode.Mouse1) && Time.time >= nextFireTime)
-            {
-                Fire();
-                //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
-                nextFireTime = Time.time + database.weapons[id].fireRate;
-            }
+            Fire();
+            //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
+            nextFireTime = Time.time + database.weapons[id].fireRate;
         }
         
     }
 
     public void Fire()
     {
-
-
         if(gameObject != null && gameObject.activeInHierarchy) {
             GameObject o = Instantiate(
                 database.weapons[id].bulleType, 
                 bulletSpawnLocation.position, 
-                bulletSpawnLocation.rotation
+                bulletSpawnLocation.rotation,
+                gameObject.transform
             );
             //add the speed of the bullet to the rigid body
             o.GetComponent<Rigidbody>().AddForce(o.transform.forward * database.weapons[id].bulletSpeed);

@@ -13,7 +13,6 @@ public class HealthHandler : MonoBehaviour
     
     // list of all player's health
     private List<float> playersHealth;
-    private List<float> playersMaxHealth;
 
     // updated player health and index
     private float uPlayerHealth;
@@ -32,8 +31,7 @@ public class HealthHandler : MonoBehaviour
         charactersManager = GameObject.FindGameObjectWithTag("CharacterManager").GetComponent<CharacterManagerScript>();
 
         // initialise the list with basic health values for each character
-        playersHealth    = new List<float> { 100.0f, 100.0f, 100.0f, 100.0f };
-        playersMaxHealth = new List<float> { 100.0f, 100.0f, 100.0f, 100.0f };
+        playersHealth = new List<float> { 100.0f, 100.0f, 100.0f, 100.0f };
 
         // initialise the current player's index
         cPlayerIndex = charactersManager.GetCurrentPlayerIndex();
@@ -45,12 +43,11 @@ public class HealthHandler : MonoBehaviour
 
     private void Update()
     {
-        // update the current player's index, health and max health
-        uMaxPlayerHealth = charactersManager.GetCurrentPlayer().GetMaxHealth();
+        // update the current player's index and health
         uPlayerHealth = charactersManager.GetCurrentPlayer().GetHealth();
         uPlayerIndex  = charactersManager.GetCurrentPlayerIndex();
 
-        
+        uMaxPlayerHealth = charactersManager.GetCurrentPlayer().GetMaxHealth();
 
         // if updated index is different
         if (uPlayerIndex != cPlayerIndex)
@@ -59,21 +56,8 @@ public class HealthHandler : MonoBehaviour
             // update the health inside the health system and
             // adjust the health bar to the new system 
             cPlayerIndex = uPlayerIndex;
-
-            if (playersMaxHealth[uPlayerIndex] < uMaxPlayerHealth)
-            {
-                playersMaxHealth[uPlayerIndex] = uMaxPlayerHealth;
-                if (!charactersManager.GetPlayerByIndex(uPlayerIndex).IsDead())
-                {
-                    healthSystem.setHealth(uPlayerHealth);
-                    healthSystem.setHealthMax(uMaxPlayerHealth);
-                    healthBar.Setup(healthSystem);
-                }
-            }
-            else
-            {
-                healthSystem.setHealth(playersHealth[uPlayerIndex]);
-            }
+            healthSystem.setHealth(playersHealth[uPlayerIndex]);
+            healthSystem.setHealthMax(uMaxPlayerHealth);
 
             if (uPlayerHealth < playersHealth[uPlayerIndex])
             {
@@ -82,25 +66,11 @@ public class HealthHandler : MonoBehaviour
                 playersHealth[uPlayerIndex] = uPlayerHealth;
             }
         }
-        else
+        else if (uPlayerHealth < playersHealth[cPlayerIndex])
         {
-            if (playersMaxHealth[uPlayerIndex] < uMaxPlayerHealth)
-            {
-                playersMaxHealth[uPlayerIndex] = uMaxPlayerHealth;
-                if (!charactersManager.GetCurrentPlayer().IsDead())
-                {
-                    healthSystem.setHealth(uPlayerHealth);
-                    healthSystem.setHealthMax(uMaxPlayerHealth);
-                    healthBar.Setup(healthSystem);
-                }
-            }
-
-            if (uPlayerHealth < playersHealth[cPlayerIndex])
-            {
-                // decrease the visual aspect of the bar and update the player's health
-                healthSystem.Damage(playersHealth[cPlayerIndex] - uPlayerHealth);
-                playersHealth[cPlayerIndex] = uPlayerHealth;
-            }
+            // decrease the visual aspect of the bar and update the player's health
+            healthSystem.Damage(playersHealth[cPlayerIndex] - uPlayerHealth);
+            playersHealth[cPlayerIndex] = uPlayerHealth;
         }
     }
 }

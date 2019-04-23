@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3103179812401834749}
   - component: {fileID: 8098153532145597270}
   - component: {fileID: 5725804559458804866}
-  m_Layer: 15
+  m_Layer: 8
   m_Name: RPGprefab
   m_TagString: Projectille
   m_Icon: {fileID: 0}

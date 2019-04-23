@@ -161,12 +161,7 @@
     <Compile Include="Assets\Scripts\MainMenu\SelectOnInput.cs" />
     <Compile Include="Assets\Scripts\MainMenu\SetAudioLevels.cs" />
     <Compile Include="Assets\Scripts\MainMenu\Settings.cs" />
-    <Compile Include="Assets\Scripts\PowerUps\Damage\PowerUp.cs" />
-    <Compile Include="Assets\Scripts\PowerUps\FireRate\FireRateScript.cs" />
-    <Compile Include="Assets\Scripts\PowerUps\Health\IncreaseMaxHealth.cs" />
-    <Compile Include="Assets\Scripts\PowerUps\Health\MaxHealth.cs" />
-    <Compile Include="Assets\Scripts\PowerUps\MoveSpeed\MoveSpeedscript.cs" />
-    <Compile Include="Assets\Scripts\PowerUps\ReloadSpeed\ReloadPickUp.cs" />
+    <Compile Include="Assets\Scripts\PowerUps\PowerUp.cs" />
     <Compile Include="Assets\Scripts\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\ProximityActivate.cs" />
@@ -208,7 +203,6 @@
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MobileBloom.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\SSAA.shader" />
-    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\RadialBlur.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\DepthOfFieldDX11.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\ContrastComposite.shader" />
@@ -235,7 +229,7 @@
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionSelective.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\Bokeh34.shader" />
     <None Include="Assets\EffectExamples\Misc Effects\Shaders\Respawn.shader" />
-    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\CameraMotionBlurDX11.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\SeparableBlurPlus.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\MultiPassHollywoodFlares.shader" />
@@ -255,6 +249,7 @@
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\VortexEffect.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
+    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
@@ -262,8 +257,6 @@
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BrightPassFilter.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2.shader" />
     <None Include="Assets\EffectExamples\Magic Effects\Shaders\Ice.shader" />
-    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrection3DLut.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals.shader" />
@@ -272,9 +265,11 @@
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\BlendModesOverlay.shader" />
     <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\SimpleClear.shader" />
+    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA3Console.shader" />
     <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\Scripts\MainMenu\Resources\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAAPreset2.shader" />
     <None Include="Assets\res\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlurAndFlares.shader" />

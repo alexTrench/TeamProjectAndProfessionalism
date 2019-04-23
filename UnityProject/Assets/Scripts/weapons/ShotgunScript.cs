@@ -46,20 +46,26 @@ public class ShotgunScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!OpenPauseMenu.IsPaused())
+        //mouse 1 is right click
+        //get key does while
+        if (InputManager.FireWeapon() == true && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
         {
-            //mouse 1 is right click
-            //get key does while
-            if (InputManager.FireWeapon() == true && Time.time >= nextFireTime && GetComponentInParent<Player>().IsPlayerControlled())
-            {
-
+            //if (CurrentAmmo > 0)
+            //{
                 //the fire function
                 Fire();
                 //sets next fire time = to fire rate, making it fire at a rate of ever 0.2 seconds
                 nextFireTime = Time.time + database.weapons[id].fireRate;
-            }
-        }
 
+            //}
+            //else
+            //{
+            //    if (IsReloading == false)
+            //    {
+            //        StartCoroutine(Reload());
+            //    }
+            //}
+        }
     }
 
 
