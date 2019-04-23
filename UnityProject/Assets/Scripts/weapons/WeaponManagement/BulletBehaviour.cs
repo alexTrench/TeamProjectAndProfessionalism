@@ -9,8 +9,7 @@ public class BulletBehaviour : MonoBehaviour
     weaponDatabase database;
     public float Life = 4f;
     private float damage;
-    [SerializeField]
-    private ParticleSystem blood;
+    [SerializeField] private ParticleSystem blood = null;
 
     private void Start()
     {

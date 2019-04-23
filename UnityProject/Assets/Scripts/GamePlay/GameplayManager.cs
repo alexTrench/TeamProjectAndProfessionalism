@@ -80,7 +80,7 @@ public class GameplayManager : MonoBehaviour
      * @brief Begins the next wave.
      */
     private void StartWave() {
-        currentWave = new Wave(50);
+        currentWave = new Wave();
         StartCoroutine(currentWave.SpawnEnemies(enemyManager));
     }
 
