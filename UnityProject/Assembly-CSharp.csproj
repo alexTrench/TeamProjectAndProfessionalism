@@ -126,6 +126,7 @@
     <Compile Include="Assets\Scripts\AI\Zombies\Zombie.cs" />
     <Compile Include="Assets\Scripts\AI\Zombies\ZombieAnimationScript.cs" />
     <Compile Include="Assets\Scripts\AI\Zombies\ZombieAttack.cs" />
+    <Compile Include="Assets\Scripts\AI\Zombies\ZombieAudio.cs" />
     <Compile Include="Assets\Scripts\characters\BaseCharacter.cs" />
     <Compile Include="Assets\Scripts\characters\CharacterManagerScript.cs" />
     <Compile Include="Assets\Scripts\characters\Player\Player.cs" />
@@ -167,6 +168,7 @@
     <Compile Include="Assets\Scripts\PowerUps\Health\MaxHealth.cs" />
     <Compile Include="Assets\Scripts\PowerUps\MoveSpeed\MoveSpeedscript.cs" />
     <Compile Include="Assets\Scripts\PowerUps\ReloadSpeed\ReloadPickUp.cs" />
+    <Compile Include="Assets\Scripts\PowerUps\Weapon PowerUps\rocketTimed.cs" />
     <Compile Include="Assets\Scripts\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\ProximityActivate.cs" />
