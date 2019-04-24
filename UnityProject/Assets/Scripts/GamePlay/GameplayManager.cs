@@ -56,6 +56,7 @@ public class GameplayManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        Debug.Log("Game mode: " + (GAME_MODE)PlayerPrefs.GetInt("GAME_MODE", 0));
         //Set up the game mode.
         gameMode = (GAME_MODE)PlayerPrefs.GetInt("GAME_MODE", 0);
 
@@ -147,7 +148,6 @@ public class GameplayManager : MonoBehaviour
      */
     public void EndGame() {
         Wave.Reset();
-        gameMode = GAME_MODE.CLASSIC;
         GM = null;
     }
 }

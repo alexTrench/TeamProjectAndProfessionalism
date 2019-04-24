@@ -16,7 +16,7 @@ public class SavePlayerUpgrades : MonoBehaviour
     public void Start()
     {
         stats = canvas.GetComponent<Playerstats>();
-        PlayerPrefs.DeleteAll();
+        //PlayerPrefs.DeleteAll();
     }
 
     public void SaveUpgrades()

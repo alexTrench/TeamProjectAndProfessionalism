@@ -23,9 +23,12 @@ public class GameModeSelection : MonoBehaviour {
             "Barrage"
         });
 
+        gameModeSelect.value = PlayerPrefs.GetInt("GAME_MODE", 0);
+
         //Change the prefered game mode when the dropdown's value is changed.
         gameModeSelect.onValueChanged.AddListener(delegate {
             PlayerPrefs.SetInt("GAME_MODE", gameModeSelect.value);
+            PlayerPrefs.Save();
         });
     }
 }

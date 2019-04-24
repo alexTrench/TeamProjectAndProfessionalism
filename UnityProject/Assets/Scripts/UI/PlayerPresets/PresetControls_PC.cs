@@ -37,7 +37,7 @@ public class PresetControls_PC : MonoBehaviour
 
     //@brief Sets up the Preset Controls
     private void Start() {
-        
+        //PlayerPrefs.DeleteAll(); //for debuging.
         FindPresets();
         FillOptions(presetSelect.options[presetSelect.value].text);
 
@@ -60,6 +60,7 @@ public class PresetControls_PC : MonoBehaviour
         numPresets++;
         PlayerPrefs.SetInt("numPresets", numPresets);
         PlayerPrefs.SetString("preset" + numPresets, "preset" + PlayerPrefs.GetInt("numPresets", 0));
+        PlayerPrefs.Save();
 
         //Convert the control scheme to JSON.
         string controlSchemeJSON = JsonUtility.ToJson(CreateControlScheme());
