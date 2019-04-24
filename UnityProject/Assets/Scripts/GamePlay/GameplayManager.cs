@@ -19,6 +19,15 @@ public class GameplayManager : MonoBehaviour
     //[characterManager] Manages all of the characters in the game.
     [SerializeField] CharacterManagerScript characterManager = null;
 
+    //[GAME_MODE] Defines the different types of game modes.
+    public enum GAME_MODE {
+        CLASSIC,
+        BARRAGE
+    };
+
+    //[gameMode] The current game mode in use.
+    private GAME_MODE gameMode = GAME_MODE.CLASSIC;
+
     //[COOLDOWN] The amount of time (in seconds) 
     //allocated between waves.
     public const float COOLDOWN = 10.0f;
@@ -46,6 +55,9 @@ public class GameplayManager : MonoBehaviour
         else if (GM != this) {
             Destroy(gameObject);
         }
+
+        //Set up the game mode.
+        gameMode = (GAME_MODE)PlayerPrefs.GetInt("GAME_MODE", 0);
 
         Cursor.visible = false;
         InputManager.AssignControls();
@@ -80,7 +92,11 @@ public class GameplayManager : MonoBehaviour
      * @brief Begins the next wave.
      */
     private void StartWave() {
-        currentWave = new Wave();
+        if(gameMode.Equals(GAME_MODE.BARRAGE)) {
+            currentWave = new Wave(5);
+        } else {
+            currentWave = new Wave();
+        }
         StartCoroutine(currentWave.SpawnEnemies(enemyManager));
     }
 
@@ -100,7 +116,9 @@ public class GameplayManager : MonoBehaviour
         cooldownInProgress = true;
         //Repawn the most the player who most recently died.
         characterManager.RevivePlayer();
-        yield return new WaitForSeconds(COOLDOWN);
+        if(!gameMode.Equals(GAME_MODE.BARRAGE)) {
+            yield return new WaitForSeconds(COOLDOWN);
+        }
         cooldownInProgress = false;
     }
 
@@ -129,6 +147,7 @@ public class GameplayManager : MonoBehaviour
      */
     public void EndGame() {
         Wave.Reset();
+        gameMode = GAME_MODE.CLASSIC;
         GM = null;
     }
 }
