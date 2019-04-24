@@ -165,8 +165,9 @@ public class Player : BaseCharacter
     {
         m_isDead = false;
         m_health = m_maxHealth;
-        m_playerController.enabled = true;
+        GetComponent<PlayerAnimationScript>().Revive();
         m_capsuleCollider.enabled = true;
+        m_nav.enabled = true;
     }
 
     // Returns the nearest zombie character

@@ -14,7 +14,10 @@ public class BaseCharacter : MonoBehaviour, IDamagable
         {
             m_health -= damage;
             if (m_health <= 0.0f)
+            {
+                m_health = 0.0f;
                 m_isDead = true;
+            }
         }
     }
 

@@ -8,8 +8,8 @@ public class Zombie : BaseCharacter
     private List<Player>           m_playerCharacters;
     private Transform              m_targetTransform;
     private NavMeshAgent           m_nav;
-    private CapsuleCollider        m_capsuleCollider;
     private float                  m_timer;
+    private ZombieAudio            m_zombieAudio;
 
     [SerializeField] private float m_secsBeforePlayerSearch = 5.0f;
     [SerializeField] private float m_secsBeforeDestroy      = 10.0f;
@@ -27,11 +27,11 @@ public class Zombie : BaseCharacter
         // Init nav agent
         m_nav = GetComponent<NavMeshAgent>();
 
-        // Init capsule collider
-        m_capsuleCollider = GetComponent<CapsuleCollider>();
-
         // Init timer
         m_timer = m_secsBeforePlayerSearch;
+
+        // Init zombie audio
+        m_zombieAudio = GetComponent<ZombieAudio>();
     }
 
     // Update is called once per frame
@@ -41,7 +41,9 @@ public class Zombie : BaseCharacter
         if (m_isDead)
         {
             m_nav.enabled = false;
-            m_capsuleCollider.enabled = false;
+            GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<Rigidbody>().detectCollisions = false;
+            GetComponent<BoxCollider>().enabled = false;
             Destroy(gameObject, m_secsBeforeDestroy);
             return;
         }
@@ -57,6 +59,10 @@ public class Zombie : BaseCharacter
         // Look at and move to target transform
         transform.LookAt(m_targetTransform);
         m_nav.SetDestination(m_targetTransform.position);
+
+        // Play random sound
+        if (Random.Range(0, 1000) <= 1)
+            m_zombieAudio.PlaySound(transform.position);
     }
 
     // Returns the nearest player character

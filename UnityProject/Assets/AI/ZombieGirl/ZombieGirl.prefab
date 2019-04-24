@@ -30,6 +30,8 @@ GameObject:
   - component: {fileID: 4887090146206309543}
   - component: {fileID: 1016898734798701948}
   - component: {fileID: 471248502675220292}
+  - component: {fileID: 6862764764554617072}
+  - component: {fileID: 8870896403183881917}
   m_Layer: 0
   m_Name: ZombieGirl
   m_TagString: Enemy
@@ -158,6 +160,122 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_attackDamage: 14
+--- !u!82 &6862764764554617072
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6266080106274829013}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 24301952, guid: 0ac7fb39e445048d89688f69c2a1839a,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &8870896403183881917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6266080106274829013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 271da65d0d1df9244809e8628596b4f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_audioClipArray:
+  - {fileID: 8300000, guid: e66b136e063cc4049b96679b13228187, type: 3}
+  - {fileID: 8300000, guid: 1225b0f997026d64fa600c3fd93f1a74, type: 3}
+  - {fileID: 8300000, guid: efc7bb9783bdf8a4797f4caae38bea34, type: 3}
+  - {fileID: 8300000, guid: 8b9826c915109c446be0c38d54721a2d, type: 3}
+  - {fileID: 8300000, guid: 5cd921b91deac4f47b05c451951f7a53, type: 3}
+  m_audioSource: {fileID: 6862764764554617072}
 --- !u!1001 &211948867453766661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -168,38 +286,6 @@ PrefabInstance:
     - target: {fileID: 100128, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
       propertyPath: m_Name
       value: ZombieGirl
-      objectReference: {fileID: 0}
-    - target: {fileID: 400030, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.016201138
-      objectReference: {fileID: 0}
-    - target: {fileID: 400030, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.23909988
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.09654786
-      objectReference: {fileID: 0}
-    - target: {fileID: 400048, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0051688906
-      objectReference: {fileID: 0}
-    - target: {fileID: 400078, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.059196774
-      objectReference: {fileID: 0}
-    - target: {fileID: 400078, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.09949214
-      objectReference: {fileID: 0}
-    - target: {fileID: 400082, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.014586621
-      objectReference: {fileID: 0}
-    - target: {fileID: 400082, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.16459686
       objectReference: {fileID: 0}
     - target: {fileID: 400128, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -261,6 +347,38 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 91c96b52a840a7845a29a090d4227a84, type: 2}
+    - target: {fileID: 400030, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.016201138
+      objectReference: {fileID: 0}
+    - target: {fileID: 400030, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.23909988
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.014586621
+      objectReference: {fileID: 0}
+    - target: {fileID: 400082, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.16459686
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.09654786
+      objectReference: {fileID: 0}
+    - target: {fileID: 400048, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0051688906
+      objectReference: {fileID: 0}
+    - target: {fileID: 400078, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.059196774
+      objectReference: {fileID: 0}
+    - target: {fileID: 400078, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.09949214
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 340add89db9b7314f8cdb7ff4f36481b, type: 3}
 --- !u!1 &211948867453799205 stripped
