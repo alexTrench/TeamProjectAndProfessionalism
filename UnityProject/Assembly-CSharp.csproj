@@ -174,6 +174,7 @@
     <Compile Include="Assets\Scripts\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\Scripts\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Scripts\Skilltree\Playerstats.cs" />
+    <Compile Include="Assets\Scripts\UI\GameModes\GameModeSelection.cs" />
     <Compile Include="Assets\Scripts\UI\PlayerPresets\PresetControls_PC.cs" />
     <Compile Include="Assets\Scripts\utility\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\utility\Inputs\InputBinding.cs" />
