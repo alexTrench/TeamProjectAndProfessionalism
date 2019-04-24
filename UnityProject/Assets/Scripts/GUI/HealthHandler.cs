@@ -60,7 +60,7 @@ public class HealthHandler : MonoBehaviour
             // adjust the health bar to the new system 
             cPlayerIndex = uPlayerIndex;
 
-            if (playersMaxHealth[uPlayerIndex] < uMaxPlayerHealth)
+            if (playersMaxHealth[uPlayerIndex] != uMaxPlayerHealth)
             {
                 playersMaxHealth[uPlayerIndex] = uMaxPlayerHealth;
                 if (!charactersManager.GetPlayerByIndex(uPlayerIndex).IsDead())
@@ -84,7 +84,7 @@ public class HealthHandler : MonoBehaviour
         }
         else
         {
-            if (playersMaxHealth[uPlayerIndex] < uMaxPlayerHealth)
+            if (playersMaxHealth[uPlayerIndex] != uMaxPlayerHealth)
             {
                 playersMaxHealth[uPlayerIndex] = uMaxPlayerHealth;
                 if (!charactersManager.GetCurrentPlayer().IsDead())

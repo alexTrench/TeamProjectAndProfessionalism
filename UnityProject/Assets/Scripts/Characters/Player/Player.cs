@@ -311,12 +311,13 @@ public class Player : BaseCharacter
 
     public void IncrementMaxHealth(float percentage)
     {
-        m_maxHealth += m_maxHealth * (percentage / 100.0f);
+        m_maxHealth = m_maxHealth + percentage;
     }
+
 
     public void DecrementMaxHealth(float percentage)
     {
-        m_maxHealth -= m_maxHealth * (percentage / 100.0f);
+        m_maxHealth = m_maxHealth - percentage;
         if (m_maxHealth < 0.0f) m_maxHealth = 0.0f;
     }
 

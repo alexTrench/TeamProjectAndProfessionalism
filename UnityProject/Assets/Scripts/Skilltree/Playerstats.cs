@@ -8,10 +8,12 @@ using UnityEngine.UI;
 
 public class Playerstats : MonoBehaviour
 {
-    public Button Reset;
+    [SerializeField] private Button Reset = null;
 
     // local characters manager
     private CharacterManagerScript charactersManager;
+
+    public Button loadButton;
 
     // -----------------------------MaxHp----------------------------- //
 
@@ -154,6 +156,7 @@ public class Playerstats : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        loadButton.onClick.AddListener(updateEverything);
         //Button MaxHpLevelIncrease = GetComponent<Button>();
         // Button MaxHpLevelDecrease = GetComponent<Button>();
 
@@ -329,6 +332,7 @@ public class Playerstats : MonoBehaviour
         {
             if (MaxHpLevel > 0)
             {
+                charactersManager.DecrementPlayerMaxHealth(10.0f);
                 MaxHpLevel -= amount;
                 CurrentMaxHpStats -= 10;
                 Skillpoint += 1;
@@ -684,4 +688,8 @@ public class Playerstats : MonoBehaviour
                     Debug.Log("You Leveled Up");
                 }
                  */
+    public void updateEverything()
+    {
+        charactersManager.setPlayersMaxHealth(100.0f + CurrentMaxHpStats);
+    }
 }

@@ -248,6 +248,14 @@ public class CharacterManagerScript : MonoBehaviour
         }
     }
 
+    public void setPlayersMaxHealth(float newMaxHealth)
+    {
+        foreach (var player in m_playerCharacters)
+        {
+            player.SetMaxHealth(newMaxHealth);
+        }
+    }
+
     public void DecrementPlayerMaxHealth(float percentage)
     {
         foreach (var player in m_playerCharacters)
