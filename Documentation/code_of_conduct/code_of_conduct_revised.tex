@@ -1,0 +1,181 @@
+%Set up the document class.
+\documentclass[11pt]{article}
+
+%Include packages.
+\usepackage[]{authblk}
+\usepackage{pdflscape}
+\usepackage{lipsum}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{import}
+\usepackage{enumitem}
+\usepackage{etoolbox}
+\usepackage[super]{nth}
+\usepackage{hyperref}
+\usepackage[ampersand]{easylist}
+\usepackage{adjustbox}
+\usepackage[toc,page]{appendix}
+\usepackage{graphicx}
+\graphicspath{{img/}}
+
+%Commands
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\renewcommand{\labelenumii}{\Roman{enumii}}
+
+\begin{document}
+
+%The title page must be on it's own page.
+%Create the title, affiliation section, and date.
+
+%Add the logo.
+\begin{figure}[t]
+	\includegraphics[scale=0.75]{northumbria_logo.jpg}
+	\centering
+\end{figure}	
+\title{Code of Conduct}
+\author{Midnight Rising}
+\affil{Module: KV6002 - Team Project \& Professionalism\\~\\Northumbria University Newcastle}
+\date{
+	January 31, 2019\\
+	\small \textit{Revised: \today}
+}
+\maketitle
+
+\newpage
+
+%\begin{enumerate}
+%	\item Working Together
+%	\begin{enumerate}
+%		\task Test
+%	\end{enumerate}
+%	
+%	\item Meetings
+%	\begin{enumerate}
+%		\task Meetings will be conducted every Thursday from 1pm to 3pm, 
+%		with potentially at least one other meeting each week. It is 
+%		expected that members will attend these meetings.
+%	\end{enumerate}
+%\end{enumerate}
+
+\begin{easylist}
+& \textbf{Working Together}
+	\bigskip
+&&	All group members will be respectful of one another's beliefs and cultural
+	backgrounds.
+	\bigskip
+&&	There will be no discrimination of sex, sexual orientation, nationality,
+	colour, race, ethnic origin, religion, age, disability, or and other 
+	factor not specified in this document.
+	\bigskip
+&&	There will be no belittling the ideas and opinions of other group members.
+	Every member should be able to feel included in the group.
+	\bigskip
+&&	All group members will be treated equally and with respect.
+	\bigskip
+&&	Do not interrupt other group members whilst they are speaking.
+	\bigskip
+&&	There will be no personal attacks on group members. Instead, provide 
+	constructive criticism on ideas if necessary. 
+	\bigskip
+&&	If any conflicts arise between group members,they  will be dealt with
+	by talking it out with the rest of the team until a consensus is reached. If
+	the issue persists then the project supervisor will be consulted to help
+	resolve the matter.
+	\bigskip
+&&	There will be no collaboration between group members on subsystems as this
+	is considered cheating. Team members should still support each other however,
+	especially if other team members are struggling with the workload.
+	\bigskip
+&&	To maintain a high standard of integrity, good judgement will be used to 
+	deal with any ethical issues that arise which are not  detailed in this
+	document.
+	\bigskip
+& \textbf{Meetings \& Communication}
+	\bigskip
+&& 	Meetings will take place every Thursday from 2pm to 4pm, with potentially
+	at least one other meeting each week. It is expected that all members will
+	attend these meetings.
+	\bigskip
+&&	Preferably, the group will meet in the library study rooms. If there are
+	no rooms available then the group will meet in the CIS Games Lab (102)
+	instead.
+	\bigskip
+&&	Any group work must be completed during meetings.
+	\bigskip
+&&	All individual work must be completed outside of group meetings. If any
+	group member is struggling then they must communicate this with rest of
+	the group.
+	\bigskip
+&&	Facebook Messenger and email have been implemented for communication outside
+	of group meetings, allowing for 24/7 communication between group members.
+	This will be used if any issues arise that require a spontaneous meeting.
+	\bigskip
+&&	If a member of the group is unable to attend a meeting for any particular
+	reason, they must ensure other members of the group are aware of this before
+	the meeting takes place.
+	\bigskip
+& \textbf{Documentation \& Code}
+	\bigskip
+&&	All documentation and code will be submitted to a 
+	\href{https://github.com/CarlPendleton/TeamProjectAndProfessionalism}{private repository} on GitHub. Group members are expected to use this repository 
+	when working on the project.
+	\bigskip
+&&	All documentation detailing the actions of specific team members will require
+	that team member to sign-off that document via print \& signature. E.g., task
+	allocations in project supervisor meetings.
+	\bigskip
+&&	Any issues/bugs discovered in the code will be reported to GitHub's `issues'
+	system. The group member responsible for fixing the issue must be assigned
+	to the it.
+	\bigskip 
+&&	All group members will be expected to follow the agreed upon project 
+	style guide.
+	\bigskip 
+&&	All group members will be expected to complete their assigned subsystem(s) in
+	time for any project deadlines. If any group members are falling behind on the 
+	project, the project supervisor will be consulted to help resolve the issue.
+	\bigskip
+& \textbf{Task Allocation}
+	\bigskip
+&&	As a group, members will work on: game design; testing; sound effects and
+	music; environment and level design; as well as all project management.
+	\bigskip
+&&	Andrew Alford will work on the Gameplay Programming aspects of the project.
+	This will be expanded upon in the Terms of Reference document.
+	\bigskip
+&&	Alex Trench will work on the Weapons \& pick-ups in the project. 
+	This will be expanded upon in the Terms of Reference document.
+	\bigskip
+&&	Carl Pendleton will work on the Characters \& AI in the project. 
+	This will be expanded upon in the Terms of Reference document.
+	\bigskip
+&&	Alexandru-Daniel Pascal will work on the HUD \& UI aspects of the project.
+	This will be expanded upon in the Terms of Reference document.
+	\bigskip
+&&	Haoming Yuan will work on the Skill Tree \& progression aspects of the 
+	project. This will be expanded upon in the Terms of Reference document.
+	\bigskip
+\end{easylist}
+
+\bigskip
+\bigskip
+
+\begin{table}[H]
+\centering
+\begin{adjustbox}{width=0.75\textwidth}
+\begin{tabular}{|l|l|}
+\hline
+Code of Conduct         & Date \& Time: \phantom{This text will be invisible} \\ \hline
+Student                 & Signature     \\ \hline
+Andrew Alford           &               \\ \hline
+Alexandru-Daniel Pascal &               \\ \hline
+Carl Pendleton          &               \\ \hline
+Alex Trench             &               \\ \hline
+Haoming Yuan            &               \\ \hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+
+
+\end{document}
